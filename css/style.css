@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+padding:0px; margin:0px; text-decoration:none; outline:none; border:0px;
+}
+body{
+background:#fff;
+}
+/* div structure statrs */
+
+.outer-div{
+position:relative; width:1002px; padding:0px; margin:auto;
+}
+/* div structure ends */
+
+/* header panel starts */
+header{
+float:left; width:1002px;
+}
+
+/* nav panel starts */
+nav{
+float:left; width:1002px;
+}
+/* nav panel ends */
+
+/* header panel ends */
+
+/* middle panel starts */
+section{
+float:left; width:1002px;
+}
+section article{
+float:left; width:1002px;
+}
+section aside{
+float:left; width:1002px;
+}
+
+/* middle panel ends */
+
+/* footer panel starts */
+footer{
+float:left; width:1002px;
+}
+/* footer panel ends */
