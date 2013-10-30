@@ -138,7 +138,8 @@ class Common {
         $ssCloseScript = "<script src='" . Yii::app()->request->baseUrl . "/js/jquery.js'></script>";
         $ssCloseScript .= "<script src='" . Yii::app()->request->baseUrl . "/js/colorbox/jquery.colorbox.js'></script>";
         $ssCloseScript .= "<script type='text/javascript'>parent.jQuery.colorbox.close(); parent.window.location.reload(true);</script>";
-        return $ssCloseScript;
+        echo $ssCloseScript;
+        //return $ssCloseScript;
     }
 
     /**
