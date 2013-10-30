@@ -1,51 +1,31 @@
 <?php
+
 /**
- * class UserIdentity
- * @author Igor Ivanović
- * Main extended core yii framework class used for auth system 
+ * UserIdentity represents the data needed to identity a user.
+ * It contains the authentication method that checks if the provided
+ * data can identity the user.
  */
-class UserIdentity extends CUserIdentity
-{
+class UserIdentity extends CUserIdentity {
 
     /**
-     * 
-     * @var type int
+     * Authenticates a user.
+     * The example implementation makes sure if the username and password
+     * are both 'demo'.
+     * In practical applications, this should be changed to authenticate
+     * against some persistent user identity storage (e.g. database).
+     * @return boolean whether authentication succeeds.
      */
-    public $_id;
-
-    /**
-     * Overrided parent method
-     * @return type 
-     */
-    public function getId() 
-    {
-        return $this->_id;
-    }
-
-    /**
-     * Authenticate user
-     * @return type 
-     */
-    public function authenticate() 
-    {
-        $user = User::prepareUserForAuthorisation($this->username);
-        
-	if($user === NULL) 
-        {
+    public function authenticate() {
+        $users = Users::model()->find('email=:email', array(':email' => $this->username));
+        if (!$users)
             $this->errorCode = self::ERROR_USERNAME_INVALID;
-        } 
-        else if( !$user->ValidatePassword($this->password) ) 
-        {
-            $this->errorCode = self::ERROR_PASSWORD_INVALID;
-        } 
-        else 
-        {         
-            $this->_id       = $user->user_id;
-            $this->username  = $user->username;
-            $this->errorCode = self::ERROR_NONE;
-	}
-        
-	return $this->errorCode;
+        else {
+            if ($users->password !== md5($this->password))
+                $this->errorCode = self::ERROR_PASSWORD_INVALID;
+            else
+                $this->errorCode = self::ERROR_NONE;
+        }
+        return !$this->errorCode;
     }
-    
+
 }
