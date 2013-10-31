@@ -39,8 +39,15 @@
                 <div class="container">
                     <h1 class="logo"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" width="266" height="83" alt="Eventfish" title="Eventfish" /></h1>
                     <div class="header-right">
-                        <?php echo CHtml::htmlButton('<span><span>Sign Up</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/signUp") . '", "500","600");return false;', 'class' => 'ajax general-btn-1')); ?>
-                        <?php echo CHtml::htmlButton('<span><span>Log In</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/signIn") . '","500","600");return false;', 'class' => 'ajax general-btn')); ?>
+                        <?php
+                        if (Yii::app()->user->isGuest):
+                            echo CHtml::htmlButton('<span><span>Sign Up</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/signUp") . '", "500","600");return false;', 'class' => 'ajax general-btn-1'));
+                            echo CHtml::htmlButton('<span><span>Log In</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/login") . '","500","600");return false;', 'class' => 'ajax general-btn'));
+                        else:
+                            echo 'Hello, '.Yii::app()->user->name.'&nbsp';
+                            echo CHtml::link('<span><span>Logout</span></span>', array('site/logout'), array('class' => 'general-btn'));
+                        endif;
+                        ?>
                     </div>
                     <nav>
                         <ul>

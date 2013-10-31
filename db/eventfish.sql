@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 25, 2013 at 06:22 PM
+-- Generation Time: Oct 30, 2013 at 06:35 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -561,7 +561,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   KEY `role_id` (`role_id`),
   KEY `state_id` (`state_id`),
   KEY `country_id` (`country_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `users`
@@ -569,7 +569,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `parent_id`, `role_id`, `email`, `password`, `facebook_id`, `is_fblogin`, `ssn_number`, `routing_number`, `account_number`, `bank_name`, `first_name`, `last_name`, `address_1`, `address_2`, `city`, `state_id`, `country_id`, `zip`, `phone`, `phone_type`, `date_of_birth`, `gender`, `ethnicity`, `income`, `matial_status`, `user_type`, `user_type2`, `short_description`, `start_time`, `end_time`, `available_days`, `status`, `last_login_at`, `created_at`, `updated_at`) VALUES
 (1, 0, 1, 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', NULL, 0, NULL, NULL, NULL, NULL, 'Administrator', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Male', NULL, NULL, NULL, 1, 'INDIVDUAL', NULL, NULL, NULL, NULL, 1, NULL, '2013-10-22 00:00:00', '2013-10-22 00:00:00'),
-(2, 0, 2, 'prakash@gmail.com', '21232f297a57a5a743894a0e4a801fc3', NULL, 0, '85565SDF654565', 'SDF56SDF5', '5564955336', 'Corporate Bank', 'Prakash', 'Panchal', NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 'Male', NULL, NULL, NULL, 2, 'INDIVDUAL', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL);
+(2, 0, 2, 'prakash@gmail.com', '21232f297a57a5a743894a0e4a801fc3', NULL, 0, NULL, NULL, NULL, NULL, 'Prakash', 'Panchal', NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 'Male', NULL, NULL, NULL, 2, 'INDIVDUAL', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(3, 0, 3, 'anand@gmail.com', '21232f297a57a5a743894a0e4a801fc3', NULL, 0, '85565SDF654565', 'SDF56SDF5', '5564955336', 'Corporate Bank', 'Anand', 'Panchal', 'Test Address 1', 'Test Address 2', 'Modesto', 2, 1, '95397', '555-555-5225', 'Office', NULL, 'Male', NULL, NULL, NULL, 1, 'COMPANY', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 

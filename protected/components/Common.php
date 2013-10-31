@@ -134,11 +134,14 @@ class Common {
      * For close color box popup window.
      * @param string $ssCloseScript
      */
-    public static function closeColorBox() {
+    public static function closeColorBox($ssRedirectUrl) {        
+        $ssRedirectUrl = Yii::app()->params['site_url'].$ssRedirectUrl;
         $ssCloseScript = "<script src='" . Yii::app()->request->baseUrl . "/js/jquery.js'></script>";
         $ssCloseScript .= "<script src='" . Yii::app()->request->baseUrl . "/js/colorbox/jquery.colorbox.js'></script>";
-        $ssCloseScript .= "<script type='text/javascript'>parent.jQuery.colorbox.close(); parent.window.location.reload(true);</script>";
-        echo $ssCloseScript;
+        //$ssCloseScript .= "<script type='text/javascript'>parent.jQuery.colorbox.close(); parent.window.location.reload(true);</script>";
+        $ssCloseScript .= "<script type='text/javascript'>parent.jQuery.colorbox.close(); parent.window.location.href = '" . $ssRedirectUrl . "';</script>";
+
+        echo $ssCloseScript;exit;
         //return $ssCloseScript;
     }
 

@@ -7,6 +7,9 @@
  */
 class UserIdentity extends CUserIdentity {
 
+    private $_id;
+    public $email;
+
     /**
      * Authenticates a user.
      * The example implementation makes sure if the username and password
@@ -22,10 +25,25 @@ class UserIdentity extends CUserIdentity {
         else {
             if ($users->password !== md5($this->password))
                 $this->errorCode = self::ERROR_PASSWORD_INVALID;
-            else
+            else {
+                $this->_id = $users->id;
+                $this->email = $users->email;
+                $this->username = $users->first_name;
                 $this->errorCode = self::ERROR_NONE;
+                Yii::app()->admin->setId($this->_id);
+
+                $usersData = $users->attributes;
+                Yii::app()->admin->setState('user', $usersData);
+            }
         }
         return !$this->errorCode;
+    }
+
+    /**
+     * @return integer the ID of the user record
+     */
+    public function getId() {
+        return $this->_id;
     }
 
 }

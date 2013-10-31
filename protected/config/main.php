@@ -13,9 +13,10 @@ return array(
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
+        'application.models.User.*',
         'application.components.*',
         'ext.giix-components.*', // giix components
-        'application.modules.rights.*',
+        'application.modules.rights.*',        
         'application.modules.rights.components.*', // Correct paths if necessary.
         'ext.slajaxtabs.*',
         'application.helpers.*',
@@ -49,8 +50,8 @@ return array(
             'class' => 'ext.EPhpThumb.EPhpThumb',
             'options' => array()
         ),
-        'user' => array(           
-            'allowAutoLogin' => true,   // enable cookie-based authentication
+        'user' => array(
+            'allowAutoLogin' => true, // enable cookie-based authentication
         ),
         // uncomment the following to enable URLs in path-format
         'urlManager' => array(
@@ -58,11 +59,9 @@ return array(
             'rules' => array(
                 // backend routing rules //
                 'admin' => 'admin/index/index',
-                
                 // frontend routing rules //
                 'home' => 'site/index',
                 'page/<id:\w+>' => 'site/cms',
-                
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
@@ -74,9 +73,9 @@ return array(
             //'transportType' => 'php',
             'transportType' => 'smtp', /// case sensitive!            
             'transportOptions' => array(
-                'host' => 'mail.inheritx.com',
-                'username' => 'client1@inheritx.com',
-                'password' => 'client@123',
+                'host' => 'smtp.gmail.com',
+                'username' => 'prakashp@bitwiseonline.com',
+                'password' => 'pjpjpj2013',
                 'port' => '26',
             //'encryption'=>'ssl',
             ),
@@ -89,7 +88,7 @@ return array(
             'connectionString' => 'mysql:host=localhost;dbname=eventfish',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => 'mysql',
+            'password' => '',
             'charset' => 'utf8',
         ),
         'errorHandler' => array(

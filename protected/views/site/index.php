@@ -1,5 +1,5 @@
 <!--<figure>
-    <img src="<?php //echo Yii::app()->request->baseUrl;            ?>/images/banner-img.png" width="953" height="436" alt="Eventfish" title="Eventfish" />
+    <img src="<?php //echo Yii::app()->request->baseUrl;              ?>/images/banner-img.png" width="953" height="436" alt="Eventfish" title="Eventfish" />
 </figure>-->
 <!-- Start WOWSlider.com BODY section -->
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/slider/engine1/style.css" />
@@ -39,7 +39,7 @@
 
     <div class = "ws_shadow"></div>
     <div class = "btn_watch_vidoe" style = "position: absolute; right: 20px; z-index: 9999; bottom: 25px;">
-        <?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl."/images/watch_video.png"),"#")?>
+        <?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . "/images/watch_video.png"), "#") ?>
     </div>
 </div>
 
@@ -58,8 +58,8 @@
                         ?>
                         <li>
                             <div class="img">
-                                <!--<img src="<?php //echo Yii::app()->request->baseUrl; ?>/images/productbox01.png" width="137" height="97" alt="Eventfish" title="Eventfish" />-->
-                                <?php echo CHtml::image(Common::getCategoryImageUrl($omDataSet->category_image),'Eventfish',array('width' => '137', 'height' => '97'));?>
+                                <!--<img src="<?php //echo Yii::app()->request->baseUrl;   ?>/images/productbox01.png" width="137" height="97" alt="Eventfish" title="Eventfish" />-->
+                                <?php echo CHtml::image(Common::getCategoryImageUrl($omDataSet->category_image), 'Eventfish', array('width' => '137', 'height' => '97')); ?>
                             </div>
                             <div class="title">
                                 <?php echo CHtml::link($omDataSet->category_name, "#", array('title' => $omDataSet->category_name)); ?>
@@ -85,8 +85,8 @@
                         ?>
                         <li>
                             <div class="img">
-                                <!--<img src="<?php //echo Yii::app()->request->baseUrl; ?>/images/productbox01.png" width="137" height="97" alt="Eventfish" title="Eventfish" />-->
-                                <?php echo CHtml::image(Common::getCategoryImageUrl($omDataSet->category_image),'Eventfish',array('width' => '137', 'height' => '97'));?>
+                                <!--<img src="<?php //echo Yii::app()->request->baseUrl;   ?>/images/productbox01.png" width="137" height="97" alt="Eventfish" title="Eventfish" />-->
+                                <?php echo CHtml::image(Common::getCategoryImageUrl($omDataSet->category_image), 'Eventfish', array('width' => '137', 'height' => '97')); ?>
                             </div>
                             <div class="title">
                                 <?php echo CHtml::link($omDataSet->category_name, "#", array('title' => $omDataSet)); ?>
@@ -104,7 +104,14 @@
 <div class="home-social-block">
     <p class="small-banner"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/banner01.png" width="408" height="183" alt="Eventfish" title="Eventfish" /></p><br/>
     <div class="social-content-block">
-        <div class="social-icon"><a class="active" href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/footer-icon-large.png" width="89" height="89" alt="Eventfish" /></a> <a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/twitter-icon-large.png" width="89" height="89" alt="Eventfish" /></a> <a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/in-icon-large.png" width="89" height="89" alt="Eventfish" /></a> <a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/yt-icon-large.png" width="89" height="89" alt="Eventfish" /></a></div>
+        <div class="social-icon">
+            <?php
+            echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . '/images/footer-icon-large.png', 'Eventfish', array('width' => '89', 'height' => '89')), "https://www.facebook.com/eventfish", array('target' => '_blank', 'class' => 'active'));
+            echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . '/images/twitter-icon-large.png', 'Eventfish', array('width' => '89', 'height' => '89')), "https://twitter.com/eventfish", array('target' => '_blank', 'class' => 'active'));
+            echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . '/images/in-icon-large.png', 'Eventfish', array('width' => '89', 'height' => '89')), "http://linkd.in/1gvcoQW", array('target' => '_blank', 'class' => 'active'));
+            echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . '/images/yt-icon-large.png', 'Eventfish', array('width' => '89', 'height' => '89')), "http://www.youtube.com/channel/UCwzEDpI7GzzAF3Hz7btvPeA", array('target' => '_blank', 'class' => 'active'));
+            ?>            
+        </div>
         <p class="small-banner"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/facebook-img.png" width="393" height="170" alt="Eventfish" title="Eventfish" /></p><br/>
     </div>
 </div>

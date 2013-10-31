@@ -10,7 +10,7 @@ return array(
     'site_name' => 'Event-Fish',
     'uploadDir' => 'uploads/',
     'noImagePath' => 'images/noimage.jpg',
-    'uploadDirBasePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../uploads/',    
+    'uploadDirBasePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../uploads/',
     'defaultDateFormat' => 'm/d/Y',
     'categoryType' => array(
         'EVENT' => 'Event Planner',
@@ -22,5 +22,13 @@ return array(
     'defaultStatus' => array(
         '1' => 'Active',
         '0' => 'InActive',
-    ),    
+    ),
+    'defaultCountryId' => array(
+        'US' => '1'
+    ),
+    'compareUserType' => array(
+        'admin' => '1',
+        'event_planner' => '2',
+        'vendor' => '3',
+    ),
 );
