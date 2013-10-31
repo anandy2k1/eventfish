@@ -1,0 +1,122 @@
+.heading
+{
+    color:#545454;
+    font-size: 25px;
+    font-family: "trebuchet ms";
+
+}
+.clear
+{
+    clear:both;
+}
+.center-align
+{
+    text-align: center;
+}
+.left-align
+{
+    text-align: left;
+}
+.right-align
+{
+    text-align: right;
+}
+.float-left
+{
+    float:left;
+}
+.float-right
+{
+    float: right;
+}
+.top-align
+{
+    vertical-align: top;
+}
+.bottom-align
+{
+    vertical-align: bottom;
+}
+.middle-align
+{
+    vertical-align: middle;
+}
+/* COlOR BOX CSS OVERRIDE*/
+#cboxWrapper div:first-child {
+     display: none;
+ }
+#cboxWrapper div:nth-of-type(3) {
+    display: none;
+}
+#cboxWrapper .cboxMiddleLeft,
+#cboxWrapper .cboxMiddleRight
+{
+    display: none;
+}
+#colorbox {
+    /*background: url("../images/signupbg.png");*/
+}
+#cboxContent
+{
+    background: transparent !important;
+
+
+}
+#cboxOverlay
+{
+    background: none #000 !important;
+    opacity: 0.8 !important;
+    
+}
+/* -------------------   */
+
+/*  SIGN UP PAGE*/
+.usertype-radio input[type="radio"],
+.usertype-radio label
+{
+
+    color: #545454;
+    font-size: 20px;
+}
+.usertype-radio  label
+{
+  margin-right: 20px;
+}
+.usertype-radio
+{
+    margin-top:25px;
+    text-align: center;
+}
+.usertype-radio br
+{
+    display: none;
+}
+#cboxContent
+{
+    width:472px !important;
+    padding-top:7px;
+}
+#cboxClose
+{
+    top:-10px;
+    background: url("../images/pclose.png") !important ;
+    width:20px !important;
+    height: 20px !important;
+
+}
+/* --------------------*/
+/* TEXT BOX CSS*/
+input.input { border:1px solid #303030; background:#fff;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:5px 10px; }
+select.select{ border:1px solid #303030; background:#fff;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:4px 10px; }
+input.success { border:1px solid #76c03a;}
+input.error-msg { border:1px solid #cc0606;}
+/**/
+
+.errorMessage {
+    color: #FF0000;
+    font-size: 12px;
+}
+.signup-table td
+{
+    vertical-align: top;
+}

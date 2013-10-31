@@ -76,7 +76,8 @@ class SiteController extends Controller {
         $this->layout = false;
         $model = new Users();
         // Uncomment the following line if AJAX validation is needed
-        //$this->performAjaxValidation($model);
+        $this->performAjaxValidation($model);
+
 
 
         if (isset($_POST['Users'])) {
@@ -84,12 +85,15 @@ class SiteController extends Controller {
 
             if ($model->validate()) {
 
-                echo 'validate';
-                p($_POST);
+                $model->save();
+                $amUserData = Yii::app()->admin->getState('user');
+                $ssUrl = ($amUserData['user_type'] == UserRole::getRoleIdAsPerType('event_planner')) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('vendor/step1');
 
-                $this->redirect(array('admin'));
+                Common::closeColorBox($ssUrl);
+                //$this->redirect(array('admin'));
             }
         }
+        $model->user_type2 = 2;
 
         $this->render('signUp', array('model' => $model));
     }
@@ -152,7 +156,8 @@ class SiteController extends Controller {
      * @param CModel the model to be validated
      */
     protected function performAjaxValidation($model) {
-        if (isset($_POST['ajax']) && $_POST['ajax'] === 'sign-up-form') {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'sign-up-form')
+        {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }

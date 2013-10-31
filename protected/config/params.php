@@ -14,7 +14,7 @@ return array(
     'defaultDateFormat' => 'm/d/Y',
     'categoryType' => array(
         'EVENT' => 'Event Planner',
-        'VENDOR' => 'Vendor',
+        'VENDOR' => 'Service Provider',
     ),
     'category_image_thumb_width' => '137px',
     'category_image_thumb_height' => '97px',

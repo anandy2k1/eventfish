@@ -1,51 +1,81 @@
-<div>
-    <span>Pick your account type</span>
-</div>
-<div class="form">
+<link type="text/css" rel="stylesheet" href="/eventfish/css/local.css"/>
+<link type="text/css" rel="stylesheet" href="/eventfish/css/popup.css"/>
+
+<div class="form vendorform">
     <?php
     $form = $this->beginWidget('GxActiveForm', array(
         'id' => 'sign-up-form',
-        'enableAjaxValidation'=>false,
-//        'clientOptions'=>array(
-//            'validateOnSubmit'=>true,
-//            'beforeSend' => '$("#loading").show();',
-//            'complete' => '$("#loading").hide()'
-//        ),
+        'enableAjaxValidation' => true,
+        'clientOptions'=>array(
+            'validateOnSubmit'=>true,
+            'validateOnChange'=>true,
+            'validateOnType'=>false,
+        ),
     ));
     ?>
-    <div id="loading" style="display:none">Loading....</div>
-    <div class="row">
-        <h1><?php echo $form->labelEx($model, 'user_type2'); ?></h1>
+    <div class="center-align">
+        <span class="heading">Pick your account type</span><br/>
+        <span id="loading" style="display:none;">Loading ...</span>
+    </div>
+
+    <div class="row usertype-radio">
+        <!--<h1><?php /*echo $form->labelEx($model, 'user_type2'); */?></h1>-->
         <?php echo $form->radioButtonList($model, 'user_type2', Yii::app()->params['categoryType']); ?>
         <?php echo $form->error($model, 'user_type2'); ?>
-    </div><!-- row -->
-    <div class="row">
-        <h1><?php echo $form->labelEx($model, 'first_name'); ?></h1>
-        <?php echo $form->textField($model, 'first_name', array('maxlength' => 255)); ?>
-        <?php echo $form->error($model, 'first_name'); ?>
-    </div><!-- row -->
-    <div class="row">
-        <h1><?php echo $form->labelEx($model, 'last_name'); ?></h1>
-        <?php echo $form->textField($model, 'last_name'); ?>
-        <?php echo $form->error($model, 'last_name'); ?>
-    </div><!-- row -->
-    <div class="row">
-        <h1><?php echo $form->labelEx($model, 'email'); ?></h1>
-        <?php echo $form->textField($model, 'email'); ?>
-        <?php echo $form->error($model, 'email'); ?>
-    </div><!-- row -->
-    <div class="row">
-        <h1><?php echo $form->labelEx($model, 'password'); ?></h1>
-        <?php echo $form->passwordField($model, 'password'); ?>
-        <?php echo $form->error($model, 'password'); ?>
-    </div><!-- row -->
-    <div class="row">
-        <h1><?php echo $form->labelEx($model, 'retype_password'); ?></h1>
-        <?php echo $form->passwordField($model, 'retype_password'); ?>
-        <?php echo $form->error($model, 'retype_password'); ?>
-    </div><!-- row -->
-    <?php
-    echo GxHtml::submitButton(Yii::t('app', 'Sign Up'));
-    $this->endWidget();
-    ?>
+    </div>
+    <!-- row -->
+    <div class="facebook"></div>
+    <div style="text-align: center;color:#545454;padding:13px 0;font-size: 20px;" onclick="toggleEmailsignup();">or sign up with you <span style="color:#5481a4;cursor: pointer;">email address </span></div>
+    <div class="emailsignup" id="emailsignup">
+        <table class="signup-table">
+            <tr>
+                <td>
+                    <label><?php echo $form->labelEx($model, 'first_name'); ?></label>
+                    <?php echo $form->textField($model, 'first_name', array('class'=> 'input success')); ?>
+                    <?php echo $form->error($model, 'first_name'); ?>
+                </td>
+                <td>
+                    <label><?php echo $form->labelEx($model, 'last_name'); ?></label>
+                    <?php echo $form->textField($model, 'last_name',array('class'=> 'input success')); ?>
+                    <?php echo $form->error($model, 'last_name'); ?>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+
+                    <label><?php echo $form->labelEx($model, 'email'); ?></label><br/>
+                    <?php echo $form->textField($model, 'email',array('class'=> 'input success','style'=>'width:330px;')); ?>
+                    <?php echo $form->error($model, 'email'); ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><?php echo $form->labelEx($model, 'password'); ?></label>
+                    <?php echo $form->passwordField($model, 'password',array('class'=> 'input success')); ?>
+                    <?php echo $form->error($model, 'password'); ?>
+                </td>
+                <td>
+                    <label><?php echo $form->labelEx($model, 'retype_password'); ?></label>
+                    <?php echo $form->passwordField($model, 'retype_password',array('class'=> 'input success')); ?>
+                    <?php echo $form->error($model, 'retype_password'); ?>
+                </td>
+             </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <?php echo GxHtml::submitButton(Yii::t('app', 'Sign Up'),array("class"=>"orangebutton"));?>
+                </td>
+            </tr>
+
+        </table>
+        <?php
+
+        $this->endWidget();
+        ?>
+    </div>
+    <script type="text/javascript">
+        function toggleEmailsignup()
+        {
+            jQuery('#emailsignup').toggle('slow')
+        }
+    </script>
 </div><!-- form -->

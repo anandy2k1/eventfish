@@ -1,0 +1,43 @@
+html{
+
+    /*background: url("../images/signupbg.png") repeat transparent ;*/
+    font-family: "trebuchet ms";
+}
+body
+{
+    font-family: "trebuchet ms";
+}
+.cboxIframe{background:transparent;}
+
+.facebook {
+    background: url("../images/facebook.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 47px;
+    margin: 30px auto 0;
+    width: 280px;
+}
+#emailsignup
+{
+    display: none;
+    padding: 15px 50px 15px 50px;
+    min-height: 246px;
+    max-height: 246px;
+}
+.vendorform
+{
+    background: url("../images/signupbg.png");
+
+
+    padding-top: 21px ;
+    width: 450px !important;
+}
+.orangebutton
+{
+    background: url("../images/buttonbg.png");
+    border: none;
+    width: 105px;
+    height:52px;
+    font-size: 20px;
+    font-family: "trebuchet ms";
+    color:#fff;
+    margin-top: 10px;
+}
