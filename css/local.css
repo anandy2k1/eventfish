@@ -5,6 +5,14 @@
     font-family: "trebuchet ms";
 
 }
+.no-margin
+{
+    margin:0px;
+}
+.no-padding
+{
+    padding:0px;
+}
 .clear
 {
     clear:both;
