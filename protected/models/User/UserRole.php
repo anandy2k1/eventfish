@@ -2,9 +2,11 @@
 
 Yii::import('application.models.User._base.BaseUserRole');
 
-class UserRole extends BaseUserRole {
+class UserRole extends BaseUserRole
+{
 
-    public static function model($className = __CLASS__) {
+    public static function model($className = __CLASS__)
+    {
         return parent::model($className);
     }
 
@@ -14,7 +16,8 @@ class UserRole extends BaseUserRole {
      * return	string
      */
 
-    public static function getRoleNameAsPerId($snRoleId) {
+    public static function getRoleNameAsPerId($snRoleId)
+    {
         $oModel = UserRole::model()->find(array(
             'condition' => 'id=:roleId',
             'params' => array(':roleId' => $snRoleId)
@@ -29,13 +32,24 @@ class UserRole extends BaseUserRole {
      * return	int
      */
 
-    public static function getRoleIdAsPerType($ssRoleType) {
+    public static function getRoleIdAsPerType($ssRoleType)
+    {
         $oModel = UserRole::model()->find(array(
             'condition' => 'role_type=:roleName',
             'params' => array(':roleName' => $ssRoleType)
         ));
 
         return ($oModel) ? $oModel->id : '';
+    }
+
+    public static function getUserRolesArray(){
+        $oCriteria = new CDbCriteria();
+        $oCriteria->condition = "id <> 1";
+
+        $omResult = UserRole::model()->findAll($oCriteria);
+        $amRoles = CHtml::listData($omResult,'id','role_name');
+
+        return $amRoles;
     }
 
 }

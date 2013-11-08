@@ -4787,3 +4787,1148 @@ in D:\data\Ampps\www\eventfish\index.php (22)
 in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
 in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
 in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:22:42 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:22:42 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:22:42 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:19 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:19 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:19 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:20 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:20 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:20 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:23 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:23 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:23 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:24 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:24 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:24 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (84)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (84)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (84)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'anand@gmail.com' for key 'email'. The SQL statement executed was: INSERT INTO `users` (`parent_id`, `is_fblogin`, `gender`, `user_type`, `user_type2`, `status`, `first_name`, `last_name`, `email`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (88)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:24:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'anand@gmail.com' for key 'email'. The SQL statement executed was: INSERT INTO `users` (`parent_id`, `is_fblogin`, `gender`, `user_type`, `user_type2`, `status`, `first_name`, `last_name`, `email`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in D:\data\Ampps\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php(88): CActiveRecord->save()
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignUp()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('signUp')
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signUp')
+#9 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#11 {main}
+REQUEST_URI=/eventfish/index.php/site/signUp
+HTTP_REFERER=http://127.0.0.1/eventfish/index.php/site/signUp
+---
+2013/10/31 12:30:00 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:30:00 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:30:00 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:35 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:35 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:35 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:36 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:36 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:36 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:38 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:38 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:38 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:56 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:56 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:32:56 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:33:13 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:33:13 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:33:13 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:33:23 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:33:23 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:33:23 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:34:55 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:34:55 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:34:55 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:35:01 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:35:01 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:35:01 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:35:24 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:35:24 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 12:35:24 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:20:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://127.0.0.1/eventfish/index.php/vendor/step1
+---
+2013/10/31 13:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://127.0.0.1/eventfish/index.php/vendor/step1
+---
+2013/10/31 13:30:37 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:37 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:37 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:39 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:39 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:39 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:53 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:53 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:53 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:55 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:55 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:55 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:58 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:58 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:30:58 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:31:14 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:31:14 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/10/31 13:31:14 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (162)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:04:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in D:\data\Ampps\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\data\Ampps\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\data\Ampps\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Category))
+#7 D:\data\Ampps\www\eventfish\protected\extensions\giix-components\GxActiveRecord.php(26): CActiveRecord::model('Category')
+#8 D:\data\Ampps\www\eventfish\protected\models\_base\BaseCategory.php(27): GxActiveRecord::model('Category')
+#9 D:\data\Ampps\www\eventfish\protected\models\Category.php(8): BaseCategory::model('Category')
+#10 D:\data\Ampps\www\eventfish\protected\models\Category.php(52): Category::model()
+#11 D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php(29): Category::getAllActiveCategories()
+#12 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#17 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#18 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#20 {main}
+REQUEST_URI=/eventfish/
+---
+2013/11/01 14:09:04 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:04 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:04 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:04 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:04 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:04 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:10 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:10 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:10 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:11 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:11 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:11 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:15 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:15 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:09:15 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:05 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:05 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:05 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:06 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:06 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:06 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:08 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:08 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:08 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:35 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:35 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:35 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:36 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:36 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:36 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:37 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:37 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:37 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:38 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:38 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:38 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:40 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:40 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:40 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:46 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:46 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:46 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:50 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:50 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:50 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:52 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:52 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:10:52 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:14 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:14 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:14 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:15 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:15 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:15 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:21 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:21 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:21 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:24 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:24 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:24 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:28 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:28 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:11:28 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (161)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:06 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:06 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:06 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:08 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:08 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:08 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:13 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:13 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:13 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:15 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:15 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:15 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:16 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:16 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:16 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:17 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:17 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:17 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
+---
+2013/11/01 14:14:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
+---
+2013/11/01 14:15:13 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:13 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:13 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:18 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:18 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:18 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:19 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:19 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:19 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:26 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:26 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:26 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:29 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:29 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:29 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:31 [warning] [application] Failed to set unsafe attribute "user_type2" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:31 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:15:31 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (159)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (79)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:26:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_id' in 'where clause'. The SQL statement executed was: SELECT * FROM `user_role` `t` WHERE role_id <> 1.
+in D:\data\Ampps\www\eventfish\protected\models\User\UserRole.php (49)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (98)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:26:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_id' in 'where clause'. The SQL statement executed was: SELECT * FROM `user_role` `t` WHERE role_id <> 1' in D:\data\Ampps\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\data\Ampps\www\eventfish\protected\models\User\UserRole.php(49): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php(98): UserRole::getUserRolesArray()
+#5 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignUp()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('signUp')
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signUp')
+#11 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#13 {main}
+REQUEST_URI=/eventfish/index.php/site/signUp
+HTTP_REFERER=http://localhost/eventfish/index.php/home
+---
+2013/11/01 14:32:16 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:16 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:16 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:18 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:18 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:18 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:23 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:23 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:23 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:24 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:24 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:24 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:26 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:26 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:26 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:29 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:29 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:29 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:34 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:34 [warning] [application] Failed to set unsafe attribute "password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:32:34 [warning] [application] Failed to set unsafe attribute "retype_password" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (165)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:42:31 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (87)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:42:48 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:42:53 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:01 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:03 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:09 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:10 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:16 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:18 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:19 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (87)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:40 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:43 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (167)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:44 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (87)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:43:44 [error] [exception.CException] exception 'CException' with message 'Property "SiteController._identity" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php(91): CComponent->__set('_identity', Object(UserIdentity))
+#1 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignUp()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('signUp')
+#6 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signUp')
+#7 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#9 {main}
+REQUEST_URI=/eventfish/index.php/site/signUp
+HTTP_REFERER=http://localhost/eventfish/index.php/site/signUp
+---
+2013/11/01 14:48:18 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (87)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:48:19 [error] [exception.CException] exception 'CException' with message 'Property "Users.username" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 D:\data\Ampps\www\eventfish\protected\models\Users.php(44): CActiveRecord->__get('username')
+#2 D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php(91): Users->login()
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignUp()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('signUp')
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signUp')
+#9 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#11 {main}
+REQUEST_URI=/eventfish/index.php/site/signUp
+HTTP_REFERER=http://localhost/eventfish/index.php/site/signUp
+---
+2013/11/01 14:51:10 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (87)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:51:11 [error] [exception.CException] exception 'CException' with message 'Property "Users.rememberMe" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 D:\data\Ampps\www\eventfish\protected\models\Users.php(48): CActiveRecord->__get('rememberMe')
+#2 D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php(91): Users->login('123123')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignUp()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('signUp')
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signUp')
+#9 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#11 {main}
+REQUEST_URI=/eventfish/index.php/site/signUp
+HTTP_REFERER=http://localhost/eventfish/index.php/site/signUp
+---
+2013/11/01 14:53:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
+---
+2013/11/01 14:54:35 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:54:37 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:54:48 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:54:57 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:54:59 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:55:02 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/01 14:55:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
+---
+2013/11/02 07:16:27 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:16:29 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:16:34 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:16:36 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:16:37 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:18:32 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:18:35 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:18:39 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:18:41 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:18:43 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:17 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:20 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:21 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:24 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:28 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:33 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:40 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:45 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:51 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:53 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:55 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:55 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:19:59 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:20:05 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (166)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (82)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/02 07:23:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
+---
+2013/11/02 07:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
+---
+2013/11/02 09:13:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
+---

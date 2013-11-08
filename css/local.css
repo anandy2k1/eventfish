@@ -112,6 +112,19 @@
     height: 20px !important;
 
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    .signup-table label
+    {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+    .usertype-radio {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
 /* --------------------*/
 /* TEXT BOX CSS*/
 input.input { border:1px solid #303030; background:#fff;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:5px 10px; }
@@ -122,7 +135,8 @@ input.error-msg { border:1px solid #cc0606;}
 
 .errorMessage {
     color: #FF0000;
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 11px;
 }
 .signup-table td
 {

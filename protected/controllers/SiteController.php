@@ -75,27 +75,32 @@ class SiteController extends Controller {
     public function actionSignUp() {
         $this->layout = false;
         $model = new Users();
+        $snEventPlannerRollId = UserRole::getRoleIdAsPerType('event_planner');
+        $model->role_id = $snEventPlannerRollId;
+
         // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($model);
 
-
-
         if (isset($_POST['Users'])) {
+            $smPassword = $_POST['Users']['password'];
+            $_POST['Users']['password'] = md5($smPassword);
             $model->setAttributes($_POST['Users']);
-
             if ($model->validate()) {
 
                 $model->save();
+                $model->login($smPassword);
                 $amUserData = Yii::app()->admin->getState('user');
-                $ssUrl = ($amUserData['user_type'] == UserRole::getRoleIdAsPerType('event_planner')) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('vendor/step1');
+                $ssUrl = ($amUserData['role_id'] == $snEventPlannerRollId) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('vendor/step1');
 
                 Common::closeColorBox($ssUrl);
                 //$this->redirect(array('admin'));
             }
         }
-        $model->user_type2 = 2;
-
-        $this->render('signUp', array('model' => $model));
+        $amRoles = UserRole::getUserRolesArray();
+        $this->render('signUp', array(
+            'model' => $model,
+            'amRoles' => $amRoles
+        ));
     }
 
     /**
@@ -117,7 +122,7 @@ class SiteController extends Controller {
             // validate user input and redirect to the previous page if valid
             if ($model->validate() && $model->login()) {                
                 $amUserData = Yii::app()->admin->getState('user');
-                $ssUrl = ($amUserData['user_type'] == UserRole::getRoleIdAsPerType('event_planner')) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('vendor/step1');
+                $ssUrl = ($amUserData['role_id'] == UserRole::getRoleIdAsPerType('event_planner')) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('vendor/step1');
                 Common::closeColorBox($ssUrl);
             }
         }
@@ -161,6 +166,7 @@ class SiteController extends Controller {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+
     }
 
 }

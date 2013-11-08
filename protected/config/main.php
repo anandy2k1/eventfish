@@ -19,6 +19,8 @@ return array(
         'application.modules.rights.*',        
         'application.modules.rights.components.*', // Correct paths if necessary.
         'ext.slajaxtabs.*',
+        'ext.facebook.*',
+        'ext.facebook.lib.*',
         'application.helpers.*',
         'application.extensions.inx.*',
         'application.extensions.yii-mail.*', //for mail
@@ -56,6 +58,7 @@ return array(
         // uncomment the following to enable URLs in path-format
         'urlManager' => array(
             'urlFormat' => 'path',
+            /*'showScriptName' => false,*/
             'rules' => array(
                 // backend routing rules //
                 'admin' => 'admin/index/index',

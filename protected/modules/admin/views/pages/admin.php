@@ -4,7 +4,7 @@ $this->breadcrumbs = array(
     Yii::t('app', 'List'),
 );
 $this->menu = array(
-    array('label' => Yii::t('app', 'Add Page'), 'url' => array('create')),
+    /*array('label' => Yii::t('app', 'Add Page'), 'url' => array('create')),*/
 );
 ?>
 <h1><?php echo Yii::t('app', 'List') . ' ' . GxHtml::encode($model->label(2)); ?></h1>

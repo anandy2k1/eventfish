@@ -124,7 +124,7 @@
         <ul>
             <li>
                 <div class="f-left">
-                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/blog-img.png" />
+                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/blog-img.png" width="80%" />
                 </div>
                 <div class="f-right">
                     <div class="postmeta">

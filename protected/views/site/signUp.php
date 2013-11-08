@@ -1,5 +1,5 @@
-<link type="text/css" rel="stylesheet" href="/eventfish/css/local.css"/>
-<link type="text/css" rel="stylesheet" href="/eventfish/css/popup.css"/>
+<link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/local.css"/>
+<link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/popup.css"/>
 
 <div class="form vendorform">
     <?php
@@ -8,7 +8,7 @@
         'enableAjaxValidation' => true,
         'clientOptions'=>array(
             'validateOnSubmit'=>true,
-            'validateOnChange'=>true,
+            'validateOnChange'=>false,
             'validateOnType'=>false,
         ),
     ));
@@ -20,7 +20,7 @@
 
     <div class="row usertype-radio">
         <!--<h1><?php /*echo $form->labelEx($model, 'user_type2'); */?></h1>-->
-        <?php echo $form->radioButtonList($model, 'user_type2', Yii::app()->params['categoryType']); ?>
+        <?php echo $form->radioButtonList($model, 'role_id', $amRoles); ?>
         <?php echo $form->error($model, 'user_type2'); ?>
     </div>
     <!-- row -->

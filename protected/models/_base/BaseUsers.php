@@ -35,8 +35,7 @@
  * @property string $ethnicity
  * @property string $income
  * @property string $matial_status
- * @property integer $user_type
- * @property string $user_type2
+ * @property string $user_type
  * @property string $short_description
  * @property string $start_time
  * @property string $end_time
@@ -46,14 +45,16 @@
  * @property string $created_at
  * @property string $updated_at
  *
+ * @property MstPages[] $mstPages
+ * @property MstPages[] $mstPages1
  * @property UserCategories[] $userCategories
  * @property UserComments[] $userComments
  * @property UserComments[] $userComments1
  * @property UserPhotos[] $userPhotoses
  * @property UserTop5Questions[] $userTop5Questions
- * @property CountryMaster $country
  * @property UserRole $role
  * @property StateMaster $state
+ * @property CountryMaster $country
  */
 abstract class BaseUsers extends GxActiveRecord {
 
@@ -75,27 +76,29 @@ abstract class BaseUsers extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('parent_id, is_fblogin, state_id, country_id, user_type, status', 'numerical', 'integerOnly'=>true),
+			array('parent_id, is_fblogin, state_id, country_id, status', 'numerical', 'integerOnly'=>true),
 			array('role_id', 'length', 'max'=>10),
 			array('email, password, facebook_id, ssn_number, routing_number, account_number, bank_name, first_name, last_name, city, zip, phone, phone_type, ethnicity, income, matial_status, available_days', 'length', 'max'=>255),
 			array('gender', 'length', 'max'=>6),
-			array('user_type2', 'length', 'max'=>9),
+			array('user_type', 'length', 'max'=>9),
 			array('address_1, address_2, date_of_birth, short_description, start_time, end_time, last_login_at, created_at, updated_at', 'safe'),
-			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, phone_type, date_of_birth, gender, ethnicity, income, matial_status, user_type, user_type2, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, phone_type, date_of_birth, gender, ethnicity, income, matial_status, user_type, user_type2, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'safe', 'on'=>'search'),
+			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, phone_type, date_of_birth, gender, ethnicity, income, matial_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, phone_type, date_of_birth, gender, ethnicity, income, matial_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
+			'mstPages' => array(self::HAS_MANY, 'MstPages', 'created_user_id'),
+			'mstPages1' => array(self::HAS_MANY, 'MstPages', 'updated_user_id'),
 			'userCategories' => array(self::HAS_MANY, 'UserCategories', 'user_id'),
-			'userComments' => array(self::HAS_MANY, 'UserComments', 'vendor_id'),
-			'userComments1' => array(self::HAS_MANY, 'UserComments', 'event_planner_id'),
+			'userComments' => array(self::HAS_MANY, 'UserComments', 'event_planner_id'),
+			'userComments1' => array(self::HAS_MANY, 'UserComments', 'vendor_id'),
 			'userPhotoses' => array(self::HAS_MANY, 'UserPhotos', 'user_id'),
 			'userTop5Questions' => array(self::HAS_MANY, 'UserTop5Questions', 'vendor_id'),
-			'country' => array(self::BELONGS_TO, 'CountryMaster', 'country_id'),
 			'role' => array(self::BELONGS_TO, 'UserRole', 'role_id'),
 			'state' => array(self::BELONGS_TO, 'StateMaster', 'state_id'),
+			'country' => array(self::BELONGS_TO, 'CountryMaster', 'country_id'),
 		);
 	}
 
@@ -133,7 +136,6 @@ abstract class BaseUsers extends GxActiveRecord {
 			'income' => Yii::t('app', 'Income'),
 			'matial_status' => Yii::t('app', 'Matial Status'),
 			'user_type' => Yii::t('app', 'User Type'),
-			'user_type2' => Yii::t('app', 'User Type2'),
 			'short_description' => Yii::t('app', 'Short Description'),
 			'start_time' => Yii::t('app', 'Start Time'),
 			'end_time' => Yii::t('app', 'End Time'),
@@ -142,14 +144,16 @@ abstract class BaseUsers extends GxActiveRecord {
 			'last_login_at' => Yii::t('app', 'Last Login At'),
 			'created_at' => Yii::t('app', 'Created At'),
 			'updated_at' => Yii::t('app', 'Updated At'),
+			'mstPages' => null,
+			'mstPages1' => null,
 			'userCategories' => null,
 			'userComments' => null,
 			'userComments1' => null,
 			'userPhotoses' => null,
 			'userTop5Questions' => null,
-			'country' => null,
 			'role' => null,
 			'state' => null,
+			'country' => null,
 		);
 	}
 
@@ -182,8 +186,7 @@ abstract class BaseUsers extends GxActiveRecord {
 		$criteria->compare('ethnicity', $this->ethnicity, true);
 		$criteria->compare('income', $this->income, true);
 		$criteria->compare('matial_status', $this->matial_status, true);
-		$criteria->compare('user_type', $this->user_type);
-		$criteria->compare('user_type2', $this->user_type2, true);
+		$criteria->compare('user_type', $this->user_type, true);
 		$criteria->compare('short_description', $this->short_description, true);
 		$criteria->compare('start_time', $this->start_time, true);
 		$criteria->compare('end_time', $this->end_time, true);
