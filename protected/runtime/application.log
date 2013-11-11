@@ -5932,3 +5932,902 @@ Stack trace:
 REQUEST_URI=/eventfish/index.php/vendor/img/help.png
 HTTP_REFERER=http://localhost/eventfish/index.php/vendor/step1
 ---
+2013/11/08 11:06:37 [error] [php] Undefined variable: facebook (D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php:113)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/site/login?code=AQA7HHiztyn67-GH4OGDxq0phBgGEpCXLMx0hi4dF00uvl6UO_oYERH2p2USDKYm8tmKA9nequcylE1PZp0DEN1kO_BCDIg5uqkpRA-SZDkAZECx5yLmsTG96lOQDvs4w50d8GhfNQyzUnaa5iAqfRzNui3kuHD2eDBvJ2RFh57bgxEhOw1FX117_SxzLRzySgauFXgDRc0MF_t1ETdvLXK3-IHeRIH3Qy2UOqtl4P6GhKX8TDYek6YrKkB6KI80k7Lpxu8ljYD1RR4RyBZaMiE8BQvnQej0yGyVOPth8iohRJX9xJQmVHV3gGi523wTKfM&state=2fe7c970bc29f77b3aa1f22283fe5fc1
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (113)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/08 11:23:54 [error] [php] Undefined variable: facebook (D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php:113)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/site/login?code=AQCEWmsrScfYZU-SoVufaxPyxUQ77AF6o9pzB7_d4Kqy4VxIzuy_E7Ecsz52N-8Z3rDQOC3qYmrcHdLeDe0O7CzXlgj1xD3VcCzSpGzaWvmpfVqCBr-ZHFlnx_PMiMC1qWg_DORD0yALDKMjDgsgLro2o5OdNZ9RtjV5m1Sg4rYyAX1e_XNBtFO-am2dIrvobzbMQm5TXaaJ2B22ktCBxq-mQ0uota_RU17F3K3mQf2j7zg7SCLG777V3xKfO4ReKkmzlHqCPbUob6bO31q1-7J3DRb7mbiXJPi6Gni6cyf3P7ZRn-aoDvt8RzjU_SQaMMY&state=61d427109e10770e8deb4bb49ed29ddc
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (113)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/08 11:33:10 [error] [php] Undefined variable: facebook (D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php:113)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/site/login?code=AQBLINIrRYsNHskxX1G6_k-QwzRB-wWSTb300_-Hwm1fHJw9lhHqb7WSqJW9a_b667tsxiqwz8BMlIMmhURqaewuJ2j0LJLokF7HhI-jLIP5z2OfgoUwZwjpou6VmKKHDnuWH5WjQTs5vT4HTKSBDg6l1Kh9mKMjQC_1E_yYPYWU0WCSAC7bO1KYuCeHNQpD836O1j0Q5L0N8gkaSMASZn46Dbcyhbzd60XVYRpI7e5Pzd9y_gABgKslCMt_UO_GB07IWYzBKrJUG8GJ16edlrPs8wM7po9qZobipwReTdxS-CYYd7ic_OYZUbxZA6LhXnw&state=76457be2a625186b85ca88de56a473eb
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (113)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/08 11:34:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "a4lMEtL0g4-O1MeoLhMbXpN_gvqr1RFuXDbu1C1oiH_vvHgJLjC0Jpi9ipQ0MXhG-K1FXkMoYGxo&state=76457be2a625186b85ca88de56a473eb".' in D:\data\Ampps\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('a4lMEtL0g4-O1Me...')
+#1 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/eventfish/index.php/a4lMEtL0g4-O1MeoLhMbXpN_gvqr1RFuXDbu1C1oiH_vvHgJLjC0Jpi9ipQ0MXhG-K1FXkMoYGxo&state=76457be2a625186b85ca88de56a473eb
+---
+2013/11/08 11:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yry4RCHkydX-yjGEcoYE8Idfw5gT5Bz6fu3P1TBeUqLJ0Zc6QsFV24r9xwTGWvO7Jx785i0qfyaPxwjl9S4&state=746318e85dd7d022d5ebb4fe04d8c6eb".' in D:\data\Ampps\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('yry4RCHkydX-yjG...')
+#1 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/eventfish/index.php/yry4RCHkydX-yjGEcoYE8Idfw5gT5Bz6fu3P1TBeUqLJ0Zc6QsFV24r9xwTGWvO7Jx785i0qfyaPxwjl9S4&state=746318e85dd7d022d5ebb4fe04d8c6eb
+---
+2013/11/08 12:05:58 [error] [php] Undefined variable: facebook (D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/site/login?code=AQD7HOo_b1qSEPar0piJqCbkrX6_n04JhemVk59XQ5G3C4YijPsyKNTK_-kNwyJ1sYuNYGs_ZG_x0NoID_10Zb-qfc5t96hC5qWTXLk3PAvO_eJckB1Ae4vtw2KdS2JdcxJafEEHdeGOh1BCgrACye_PJInpxb3T8cB6k35ouoyy1hLxIyYvMPJisxMzx8zHN1AD1N2Ou295Q_izQBKyT9NrE58lllaNys_Wc2PKxvuHwV-c8wAFv1Zn7hy59y08qM3erUlIglX6uPoqMyu3I2AgrxGNC3Lg6QDybHz5F7fC-c56TMaqTies6KUOSZY3kcc&state=53bf69c28a45332f480ae6ab7a8f14f9
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (118)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/08 12:22:41 [error] [php] Missing argument 1 for Facebook::__construct(), called in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php on line 125 and defined (D:\data\Ampps\www\eventfish\protected\extensions\facebook\lib\facebook.php:35)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#4 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/site/login?code=AQDko1mGwUTfTd-8vFcGjB5DmUcRT9IEdesaHbdE-4P3Svlunu_08xA-5S0XUjuQZY_XPgMTGJH9hpKQfskksrHvyvJSbrGaHAx3SXq6gOkaYkC-f1v21CZHUZ5aEiJpV4-D7LuI1fDACyxJ9fM61GgkO8VrmtYWzYiHDUpCdAScTzTa7EJyJSgy5OYQxoYCXnjOBXprxXJwyM1aImqquaK8smL1nABFVZ-d_BRuiD1P2AHpr6gzxDTz0PgUyDHu6XaD5QJkrh24Iw-XY02ZNjUy-hy8DqMkvBSt3GQ6uZxKabEM8x8NNKb_DRVfvj93Aig&state=61e14e909a4931720d66265aabc2a006
+in D:\data\Ampps\www\eventfish\protected\extensions\facebook\lib\facebook.php (35)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (125)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/08 14:31:02 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:19 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:20 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:21 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:24 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:28 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:30 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:31 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:31:32 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:32:40 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:32:54 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/08 14:35:53 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('inx.email001@gm...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Mac', 'John', 'inx.email001', 'inx.email001@gm...', '01nilegblub0cji...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Mac&surname=John&username=inx.email001&email=inx.email001%40gmail.com&session=01nilegblub0cjiktngo27dmf7
+HTTP_REFERER=http://local.test.com/index.php/site/signUp
+---
+2013/11/09 09:07:17 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('anandy2k1@gmail...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 09:14:33 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('anandy2k1@gmail...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 09:15:09 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'e_mail' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE LOWER(e_mail)=? LIMIT 1.
+in D:\data\Ampps\www\eventfish\protected\models\User.php (47)
+in D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php (36)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/09 09:15:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'e_mail' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE LOWER(e_mail)=? LIMIT 1' in D:\data\Ampps\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryRow()
+#2 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(1396): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\data\Ampps\www\eventfish\protected\models\User.php(47): CActiveRecord->find('LOWER(e_mail)=?', Array)
+#4 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('anandy2k1@gmail...')
+#5 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#6 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#7 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#13 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 09:15:28 [error] [exception.CException] exception 'CException' with message 'Property "User.e_mail" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('e_mail', 'anandy2k1@gmail...')
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(41): CActiveRecord->__set('e_mail', 'anandy2k1@gmail...')
+#2 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#4 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#10 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 09:17:12 [error] [exception.CException] exception 'CException' with message 'Property "User.e_mail" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('e_mail', 'anandy2k1@gmail...')
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(41): CActiveRecord->__set('e_mail', 'anandy2k1@gmail...')
+#2 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#4 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#10 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 09:18:07 [error] [exception.CException] exception 'CException' with message 'Users and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): Users->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('anandy2k1@gmail...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 09:52:30 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('anandy2k1@gmail...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 09:56:26 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "notDeleted".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('notDeleted', Array)
+#1 D:\data\Ampps\www\eventfish\protected\models\User.php(38): CActiveRecord->__call('notDeleted', Array)
+#2 D:\data\Ampps\www\eventfish\protected\models\User.php(38): User->notDeleted()
+#3 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(36): User::prepareUserForAuthorisation('anandy2k1@gmail...')
+#4 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#5 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#6 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 10:36:07 [error] [php] Undefined variable: user (D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php:38)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(287): FacebookController->runAction()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(266): FacebookController->runActionWithFilters()
+#4 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): FacebookController->run()
+#5 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+in D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php (38)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/09 10:38:27 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('username', 'anand.panchal.9...')
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(43): CActiveRecord->__set('username', 'anand.panchal.9...')
+#2 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#4 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#10 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 10:39:14 [error] [exception.CException] exception 'CException' with message 'Property "User.e_mail" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('e_mail')
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(49): CActiveRecord->__get('e_mail')
+#2 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#4 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#10 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 10:40:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'anandy2k1@gmail.com' for key 'email'. The SQL statement executed was: INSERT INTO `users` (`parent_id`, `is_fblogin`, `gender`, `status`, `email`, `first_name`, `last_name`, `facebook_id`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php (46)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/09 10:40:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'anandy2k1@gmail.com' for key 'email'. The SQL statement executed was: INSERT INTO `users` (`parent_id`, `is_fblogin`, `gender`, `status`, `email`, `first_name`, `last_name`, `facebook_id`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in D:\data\Ampps\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(46): CActiveRecord->insert()
+#2 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#4 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#10 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 10:40:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'anandy2k1@gmail.com' for key 'email'. The SQL statement executed was: INSERT INTO `users` (`parent_id`, `is_fblogin`, `gender`, `status`, `email`, `first_name`, `last_name`, `facebook_id`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php (46)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/09 10:40:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'anandy2k1@gmail.com' for key 'email'. The SQL statement executed was: INSERT INTO `users` (`parent_id`, `is_fblogin`, `gender`, `status`, `email`, `first_name`, `last_name`, `facebook_id`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in D:\data\Ampps\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(46): CActiveRecord->insert()
+#2 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#4 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#10 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 10:49:05 [error] [php] include(User1.php): failed to open stream: No such file or directory (D:\data\Ampps\www\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(38): spl_autoload_call()
+#1 unknown(0): FacebookController->actionLogin()
+#2 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(287): FacebookController->runAction()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(266): FacebookController->runActionWithFilters()
+#7 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): FacebookController->run()
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+in D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php (38)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/09 10:50:54 [error] [php] Undefined variable: user (D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php:53)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(287): FacebookController->runAction()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(266): FacebookController->runActionWithFilters()
+#4 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): FacebookController->run()
+#5 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+in D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php (53)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/09 10:52:06 [error] [php] Undefined variable: user (D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php:53)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(287): FacebookController->runAction()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(266): FacebookController->runActionWithFilters()
+#4 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): FacebookController->run()
+#5 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+in D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php (53)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/09 11:03:54 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "loadModel".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('loadModel', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(51): CActiveRecord->__call('loadModel', Array)
+#2 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(51): User->loadModel('20')
+#3 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#4 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#5 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#11 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 11:08:59 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "loadModel".' in D:\data\Ampps\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('loadModel', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(52): CActiveRecord->__call('loadModel', Array)
+#2 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(52): User->loadModel('20')
+#3 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#4 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#5 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#11 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 11:15:24 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in D:\data\Ampps\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 D:\data\Ampps\www\eventfish\protected\controllers\FacebookController.php(48): CActiveRecord->__get('username')
+#2 [internal function]: FacebookController->actionLogin(NULL, 'Anand', 'Panchal', 'anand.panchal.9...', 'anandy2k1@gmail...', NULL, '27a204n7cphc0p4...')
+#3 D:\data\Ampps\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FacebookController), Array)
+#4 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FacebookController), Object(ReflectionMethod), Array)
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#9 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('facebook/login')
+#10 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/facebook/login?name=Anand&surname=Panchal&username=anand.panchal.9041&email=anandy2k1%40gmail.com&session=27a204n7cphc0p402co15pbc26
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 11:16:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in D:\data\Ampps\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/index')
+#1 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user/index
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signup
+---
+2013/11/09 11:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('index')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/index')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/index
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 11:56:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:14:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('index')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/index')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/index
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 12:16:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/vendor/step1".' in D:\data\Ampps\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index.php/vendo...')
+#1 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/index.php/vendor/step1
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 12:18:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/vendor/step1".' in D:\data\Ampps\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index.php/vendo...')
+#1 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/index.php/vendor/step1
+HTTP_REFERER=http://local.eventfish.com/index.php/site/signUp
+---
+2013/11/09 12:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:26:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:31:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:32:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:45:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:48:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 12:57:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 13:00:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/09 13:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/11 13:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---
+2013/11/11 14:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/vendor/img/help.png
+HTTP_REFERER=http://local.eventfish.com/index.php/vendor/step1
+---

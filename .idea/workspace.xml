@@ -2,185 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51228d4a-46ba-4165-8a89-b4f231aa4d3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/add-new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/buttonbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/changelog.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/date-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/default-img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/rating/delete.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/listview/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eventfish.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eventfish_02112013.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_loading.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_nav_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_nav_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_ne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_nw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_se.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_sw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_shadow_w.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_title_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_title_main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_title_over.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancy_title_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancybox-x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancybox-y.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/fancybox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/fb_ca_chain_bundle.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/folder-closed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/folder.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/autocomplete/indicator.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/listview/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/my-wish-select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/my-wish.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pclose.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/proses-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/proses-line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ribbon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signupbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/small-btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/square-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/rating/star.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/step-gree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/step-green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/step-orang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-black-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-black.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-default-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-default.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-famfamfam-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-famfamfam.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-gray-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-gray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-red-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/images/treeview-red.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-icons_2e83ff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-icons_454545_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-icons_888888_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/images/ui-icons_cd0a0a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/up-photos.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/listview/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/update.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vedio-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/video.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.htaccess_" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/FacebookComponent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/FacebookException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/FacebookUserIdentity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.12/GiixModelCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/VendorController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/_eventfish.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/base_facebook.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/facebook.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/css/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/js/jquery-ui-i18n.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/js/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.ajaxqueue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/autocomplete/jquery.autocomplete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.ba-bbq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.bgiframe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/jquery.fancybox-1.3.1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/fancybox/jquery.fancybox-1.3.1.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.history.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.maskedinput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.maskedinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.metadata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.multifile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/rating/jquery.rating.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.rating.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/jquery.tooltip-1.2.6.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.treeview.async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/treeview/jquery.treeview.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.treeview.edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.treeview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.accordion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.autocomplete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.button.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.core.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.progressbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.resizable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.selectable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.tabs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jui/css/base/jquery.ui.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.yii.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.yiiactiveform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/jquery.yiigridview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/listview/jquery.yiilistview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/yiitab/jquery.yiitab.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bb30e12b/jquery.yiitab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/6944fd90/pager.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/css/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/dc4a429e/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/eventPlanner/step1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vendor/step1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/detailview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/gridview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/4a242b8/listview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/widgets/facebook/views/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/_base/BaseUsers.php" afterPath="$PROJECT_DIR$/protected/models/_base/BaseUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Category.php" afterPath="$PROJECT_DIR$/protected/models/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Common.php" afterPath="$PROJECT_DIR$/protected/components/Common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" afterPath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/widgets/facebook/Facebook.php" afterPath="$PROJECT_DIR$/protected/widgets/facebook/Facebook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FacebookController.php" afterPath="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/User.php" afterPath="$PROJECT_DIR$/protected/models/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/UserCategories.php" afterPath="$PROJECT_DIR$/protected/models/UserCategories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Users.php" afterPath="$PROJECT_DIR$/protected/models/Users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/pages/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/pages/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/extensions/facebook/lib/base_facebook.php" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/base_facebook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/eventfish.css" afterPath="$PROJECT_DIR$/css/eventfish.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/extensions/facebook/lib/facebook.php" afterPath="$PROJECT_DIR$/protected/extensions/facebook/lib/facebook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/login.php" afterPath="$PROJECT_DIR$/protected/views/site/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/params.php" afterPath="$PROJECT_DIR$/protected/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/popup.css" afterPath="$PROJECT_DIR$/css/popup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/signUp.php" afterPath="$PROJECT_DIR$/protected/views/site/signUp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/eventPlanner/step1.php" afterPath="$PROJECT_DIR$/protected/views/eventPlanner/step1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventfish.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383901270295" ignored="false" />
-    <file path="/SiteController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383317631771" ignored="false" />
-    <file path="/a.dummy" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383378064446" ignored="false" />
+    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384176304171" ignored="false" />
+    <file path="/SiteController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383916375516" ignored="false" />
+    <file path="/a.dummy" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383993585889" ignored="false" />
     <file path="/leftnavbeta.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383125688143" ignored="false" />
     <file path="/category.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383126531079" ignored="false" />
     <file path="/custom.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383285534533" ignored="false" />
     <file path="/admin_login.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383135953769" ignored="false" />
-    <file path="/eventfish.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383383509127" ignored="false" />
+    <file path="/eventfish.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384177264252" ignored="false" />
     <file path="/Common.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383139199624" ignored="false" />
-    <file path="/main.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383383297845" ignored="false" />
-    <file path="/signUp.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383379575613" ignored="false" />
+    <file path="/main.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384002131288" ignored="false" />
+    <file path="/signUp.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383997910739" ignored="false" />
     <file path="/local.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383380572042" ignored="false" />
-    <file path="/popup.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383225656988" ignored="false" />
+    <file path="/popup.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383995924013" ignored="false" />
     <file path="/colorbox.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383202753107" ignored="false" />
-    <file path="/fragment.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383376882071" ignored="false" />
-    <file path="/login.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383225210219" ignored="false" />
+    <file path="/fragment.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383995247072" ignored="false" />
+    <file path="/login.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384001361028" ignored="false" />
     <file path="/newsletter.html" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383292167307" ignored="false" />
     <file path="/newsletter.htm" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383295261172" ignored="false" />
     <file path="/UserRole.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383315922976" ignored="false" />
@@ -188,6 +52,13 @@
     <file path="/index.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383381184942" ignored="false" />
     <file path="/main.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383383706425" ignored="false" />
     <file path="/Newsletter_060.htm" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383384535017" ignored="false" />
+    <file path="/base_facebook.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383912178099" ignored="false" />
+    <file path="/FacebookController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383996131005" ignored="false" />
+    <file path="/index.html" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383984176659" ignored="false" />
+    <file path="/User.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383988708846" ignored="false" />
+    <file path="/logout.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384000414133" ignored="false" />
+    <file path="/Facebook.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384001034838" ignored="false" />
+    <file path="/step2.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384177730842" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,124 +78,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/admin.php">
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="132" selection-end="136" vertical-scroll-proportion="0.0">
+            <state line="59" column="27" selection-start="1199" selection-end="1199" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseUsers.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseUsers.php">
+      <file leaf-file-name="Common.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="8630" vertical-scroll-proportion="0.0">
+            <state line="141" column="89" selection-start="4792" selection-end="4823" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <file leaf-file-name="logout.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/views/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="18" selection-start="7777" selection-end="7777" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="312" column="25" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventfish.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/eventfish.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="363" column="17" selection-start="6145" selection-end="6145" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../eh/protected/config/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="17" selection-start="1329" selection-end="1370" vertical-scroll-proportion="-14.384615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Deals.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../eh/protected/models/Deals.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="12" selection-start="7736" selection-end="7736" vertical-scroll-proportion="-16.26923">
-              <folding>
-                <element signature="n#getTotalDeals#0;n#Deals#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../eh/protected/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="39.23077">
-              <folding>
-                <element signature="n#actions#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionError#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionLogin#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionHome#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionIndex#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionLogout#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionCustomerSignUp#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionVenueSignUp#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionTest#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionSearch#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionRetrievePassword#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionConfirmAccount#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionContacts#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionProfileInformation#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionUploadPhoto#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionInterests#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionBasicInformation#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionUploadLogo#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionUploadCoverPhoto#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionSignupComplete#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionStatesList#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionSubcategory#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionFacebooklogin#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionFacebooklogout#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionPage#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionCms#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionContactus#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionDepositeAmount#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionGotIdea#0;n#IndexController#0;n#!!top" expanded="true" />
-                <element signature="n#actionGotIdeaCount#0;n#IndexController#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/pages/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="129" selection-end="203" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popup.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/popup.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="19" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+            <state line="2" column="4" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -333,7 +108,59 @@
       <file leaf-file-name="signUp.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/signUp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
+            <state line="55" column="10" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="column1.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/column1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1383153951878" expanded="true" signature="102:134" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="column2.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/column2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1383153951878" expanded="true" signature="105:182" placeholder="..." />
+                <marker date="1383153951878" expanded="true" signature="125:159" placeholder="..." />
+                <marker date="1383153951878" expanded="true" signature="208:499" placeholder="..." />
+                <marker date="1383153951878" expanded="true" signature="228:476" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step1.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/vendor/step1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CWidget.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/web/widgets/CWidget.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="242" column="0" selection-start="7914" selection-end="7914" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Facebook.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/Facebook.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="32" selection-start="3859" selection-end="3859" vertical-scroll-proportion="-17.653847">
               <folding />
             </state>
           </provider>
@@ -342,7 +169,52 @@
       <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="64" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-8.576923">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserIdentity.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="87" selection-start="711" selection-end="726" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popup.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/popup.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="25" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventfish.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/eventfish.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1609" column="18" selection-start="30982" selection-end="30982" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventPlannerController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="54" selection-start="1645" selection-end="1656" vertical-scroll-proportion="-11.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step2.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="123" selection-start="3703" selection-end="3703" vertical-scroll-proportion="-21.576923">
               <folding />
             </state>
           </provider>
@@ -351,25 +223,133 @@
       <file leaf-file-name="local.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/local.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="5" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
+            <state line="4" column="11" selection-start="60" selection-end="62" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <file leaf-file-name="CController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/web/CController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="106" selection-start="6774" selection-end="6785" vertical-scroll-proportion="0.0">
+            <state line="967" column="0" selection-start="36894" selection-end="36894" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <file leaf-file-name="CBaseController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/web/CBaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="29" selection-start="885" selection-end="885" vertical-scroll-proportion="0.46608946">
+            <state line="174" column="0" selection-start="6265" selection-end="6265" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMap.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/collections/CMap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="319" column="0" selection-start="8797" selection-end="8797" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CModule.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/base/CModule.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YiiBase.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/YiiBase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="135" column="0" selection-start="4819" selection-end="4819" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="39" selection-start="3173" selection-end="3173" vertical-scroll-proportion="-13.730769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacebookController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="89" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="5" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseUsers.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseUsers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="424" selection-start="3715" selection-end="3731" vertical-scroll-proportion="-6.5384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventfish.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://G:/Latest Eventfish (10_11_2013)/db/latest/eventfish.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="757" column="0" selection-start="43259" selection-end="43740" vertical-scroll-proportion="-15.68">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/amazonProducts/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="35" selection-start="520" selection-end="520" vertical-scroll-proportion="0.4170274">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventfish.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://G:/Latest Eventfish (10_11_2013)/css/eventfish.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="395" column="0" selection-start="27016" selection-end="27860" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/params.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="99" selection-start="2080" selection-end="2080" vertical-scroll-proportion="-20.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://G:/Latest Eventfish (10_11_2013)/protected/config/params.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="6" selection-start="1156" selection-end="1971" vertical-scroll-proportion="-21.423077">
               <folding />
             </state>
           </provider>
@@ -393,22 +373,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/models/User/UserRole.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/protected/models/Users.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/signUp.php" />
-        <option value="$PROJECT_DIR$/css/local.css" />
+        <option value="$USER_HOME$/Desktop/facebook_connect/protected/models/User.php" />
+        <option value="$PROJECT_DIR$/protected/models/User.php" />
+        <option value="$PROJECT_DIR$/protected/models/_base/BaseUsers.php" />
         <option value="$PROJECT_DIR$/css/popup.css" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/components/Common.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/facebook/views/logout.php" />
+        <option value="$USER_HOME$/Desktop/facebook_connect/protected/widgets/facebook/views/login.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/facebook/Facebook.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/signUp.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/pages/admin.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/Newsletter_060.htm" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/leftnav.php" />
+        <option value="$PROJECT_DIR$/protected/config/params.php" />
         <option value="$PROJECT_DIR$/css/eventfish.css" />
-        <option value="$PROJECT_DIR$/../eh/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/../eh/protected/models/Deals.php" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/eventPlanner/step2.php" />
+        <option value="G:/Latest Eventfish (10_11_2013)/db/latest/eventfish.sql" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/amazonProducts/admin.php" />
       </list>
     </option>
   </component>
@@ -417,6 +397,8 @@
     <option name="servers">
       <server host="127.0.0.1" name="eventfish" />
       <server host="localhost" name="localhost" />
+      <server host="local.eventfish.com" name="local.eventfish.com" />
+      <server host="local.test.com" name="local.test.com" />
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php">
@@ -608,7 +590,143 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amazonProducts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,8 +739,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.tabs" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yii" />
+    <property name="options.lastSelected" value="editor.preferences.folding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -684,6 +802,11 @@
         <serverdata />
       </server>
     </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\data\Ampps\www\eventfish\protected\widgets\facebook\views" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.eventfish">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -763,7 +886,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -771,8 +894,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5724234" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26962677" sideWeight="0.67270195" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35654595" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18597169" sideWeight="0.64444447" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.42618385" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -780,7 +903,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -845,152 +968,128 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://D:/wamp/www/oneup/login.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="13" />
+      <option name="time" value="52" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/tsd/tsd/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/../yii/framework/web/widgets/CWidget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="59" selection-start="3700" selection-end="3700" vertical-scroll-proportion="-16.346153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="132" selection-end="136" vertical-scroll-proportion="0.0">
+        <state line="242" column="0" selection-start="7914" selection-end="7914" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseUsers.php">
+    <entry file="file://$PROJECT_DIR$/../yii/framework/web/CBaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="8630" vertical-scroll-proportion="0.0">
+        <state line="174" column="0" selection-start="6265" selection-end="6265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/views/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/signUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/local.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="5" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/popup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="19" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="106" selection-start="6774" selection-end="6785" vertical-scroll-proportion="0.0">
+        <state line="55" column="10" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="18" selection-start="7777" selection-end="7777" vertical-scroll-proportion="0.0">
+        <state line="72" column="39" selection-start="3173" selection-end="3173" vertical-scroll-proportion="-13.730769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/Facebook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="25" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.0">
+        <state line="92" column="32" selection-start="3859" selection-end="3859" vertical-scroll-proportion="-17.653847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/pages/admin.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="129" selection-end="203" vertical-scroll-proportion="0.0">
+        <state line="85" column="424" selection-start="3715" selection-end="3731" vertical-scroll-proportion="-6.5384617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Users.php">
+    <entry file="file://G:/Latest Eventfish (10_11_2013)/protected/config/params.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="64" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-8.576923">
+        <state line="59" column="6" selection-start="1156" selection-end="1971" vertical-scroll-proportion="-21.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="99" selection-start="2080" selection-end="2080" vertical-scroll-proportion="-20.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Latest Eventfish (10_11_2013)/css/_eventfish.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Latest Eventfish (10_11_2013)/css/eventfish.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="395" column="0" selection-start="27016" selection-end="27860" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/eventfish.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="17" selection-start="6145" selection-end="6145" vertical-scroll-proportion="0.0">
+        <state line="1609" column="18" selection-start="30982" selection-end="30982" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../eh/protected/models/Deals.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="12" selection-start="7736" selection-end="7736" vertical-scroll-proportion="-16.26923">
-          <folding>
-            <element signature="n#getTotalDeals#0;n#Deals#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../eh/protected/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="39.23077">
-          <folding>
-            <element signature="n#actions#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionError#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionLogin#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionHome#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionIndex#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionLogout#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionCustomerSignUp#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionVenueSignUp#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionTest#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionSearch#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionRetrievePassword#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionConfirmAccount#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionContacts#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionProfileInformation#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionUploadPhoto#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionInterests#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionBasicInformation#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionUploadLogo#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionUploadCoverPhoto#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionSignupComplete#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionStatesList#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionSubcategory#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionFacebooklogin#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionFacebooklogout#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionPage#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionCms#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionContactus#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionDepositeAmount#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionGotIdea#0;n#IndexController#0;n#!!top" expanded="true" />
-            <element signature="n#actionGotIdeaCount#0;n#IndexController#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../eh/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="1329" selection-end="1370" vertical-scroll-proportion="-14.384615">
+        <state line="53" column="54" selection-start="1645" selection-end="1656" vertical-scroll-proportion="-11.115385">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="885" selection-end="885" vertical-scroll-proportion="0.46608946">
+        <state line="77" column="123" selection-start="3703" selection-end="3703" vertical-scroll-proportion="-21.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Latest Eventfish (10_11_2013)/db/latest/eventfish.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="757" column="0" selection-start="43259" selection-end="43740" vertical-scroll-proportion="-15.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/amazonProducts/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="35" selection-start="520" selection-end="520" vertical-scroll-proportion="0.4170274">
           <folding />
         </state>
       </provider>

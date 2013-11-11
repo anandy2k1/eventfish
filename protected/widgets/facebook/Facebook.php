@@ -13,7 +13,7 @@ class Facebook extends CWidget{
     public $userSession;
     public $facebookButtonTitle = "Facebook Connect";
     public $fbLoginButtonId     = "fb_login_button_id";
-    public $logoutButtonId      = "your_logout_button_id";
+    public $logoutButtonId      = "logout";
     public $facebookLoginUrl    = "facebook/login";
     public $facebookPermissions = "email,user_likes";
     
@@ -36,6 +36,7 @@ class Facebook extends CWidget{
     private function renderJavascript()
     {
 $script=<<<EOL
+
         window.fbAsyncInit = function() {
             FB.init({   appId: '{$this->appId}', 
                         status: {$this->status}, 
@@ -55,18 +56,20 @@ $script=<<<EOL
                                                 $.ajax({
                                                     type : 'get',
                                                     url  : '{$this->facebookLoginUrl}',
-                                                    data : ( { 
+                                                    data : ( {
                                                         name     :   user.first_name, 
                                                         surname  :   user.last_name,
                                                         username :   user.username,
-                                                        id       :   user.userID, 
-                                                        email    :   user.email, 
+                                                        id       :   user.userID,
+                                                        email    :   user.email,
+                                                        picture  :   user.picture,
                                                         session  :   "{$this->userSession}" 
                                                     } ),
                                                     dataType : 'json',
                                                     success : function( data ){
                                                         if( data.error == 0){
-                                                            window.location.href = data.redirect;
+                                                            parent.jQuery.colorbox.close();
+                                                           top.location.href  = data.redirect;
                                                         }else{
                                                             alert( data.error );
                                                             FB.logout();
@@ -91,8 +94,7 @@ $script=<<<EOL
                 }
             }
         };
-        
-        
+
         (function(d){var e,id = "fb-root";if( d.getElementById(id) == null ){e = d.createElement("div");e.id=id;d.body.appendChild(e);}}(document));
         (function(d){var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];if (d.getElementById(id)) {return;} js = d.createElement('script'); js.id = id; js.async = true; js.src = "//connect.facebook.net/en_US/all.js"; ref.parentNode.insertBefore(js, ref); }(document));
 EOL;

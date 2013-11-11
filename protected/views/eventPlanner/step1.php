@@ -73,22 +73,22 @@
             </div><!-- row -->
             <div class="row">
                 <h1><?php echo $form->labelEx($model, 'ethnicity'); ?></h1>
-                <?php echo $form->dropDownList($model, 'ethnicity', array('prompt' => 'Choose Ethnicity')); ?>
+                <?php echo $form->dropDownList($model, 'ethnicity', Yii::app()->params['displayEthnicity']); ?>
             </div><!-- row -->
             <div class="row">
                 <h1><?php echo $form->labelEx($model, 'income'); ?></h1>
-                <?php echo $form->dropDownList($model, 'income', array('prompt' => 'Income Level')); ?>
+                <?php echo $form->dropDownList($model, 'income', Yii::app()->params['displayIncomeLevel']); ?>
             </div><!-- row -->
             <div class="row">
                 <h1><?php echo $form->labelEx($model, 'matial_status'); ?></h1>
-                <?php echo $form->dropDownList($model, 'matial_status', array('prompt' => 'Choose Status')); ?>
+                <?php echo $form->dropDownList($model, 'matial_status', Yii::app()->params['displayMaritalStatus']); ?>
             </div><!-- row -->
             <div style="clear:both;">
 
-            <?php
-            echo GxHtml::submitButton('Next', array('class' => 'general-btn'));
-            $this->endWidget();
-            ?>
+                <?php
+                echo GxHtml::submitButton('Next', array('class' => 'general-btn'));
+                $this->endWidget();
+                ?>
+            </div>
         </div>
     </div>
-</div>

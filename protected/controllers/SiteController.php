@@ -106,9 +106,44 @@ class SiteController extends Controller {
     /**
      * Displays the login page
      */
+
+    public function actionFacebooklogin() {
+        Yii::import('ext.facebook.*');
+        $ui = new FacebookUserIdentity(Yii::app()->params['FACEBOOK_APPID'], Yii::app()->params['FACEBOOK_SECRET']);
+		if ($ui->authenticate()) {
+            $user=Yii::app()->user;
+            $user->login($ui);
+            $this->redirect($user->returnUrl);
+        } else {
+            throw new CHttpException(401, $ui->error);
+        }
+	}
+
     public function actionLogin() {
         $this->layout = '..//layouts/popup';
         $model = new LoginForm;
+       /* $facebook = new Facebook(array(
+            'appId'  => Yii::app()->params['FACEBOOK_APPID'],
+            'secret' => Yii::app()->params['FACEBOOK_SECRET'],
+            'cookie' => true,
+            'domain'=>'local.eventfish.com'
+        ));
+        $user = $facebook->getUser();
+        p($user);exit;
+        if ($user)
+        {
+            try
+            {
+                // Proceed knowing you have a logged in user who's authenticated.
+                $user_profile = $facebook->api('/me');
+            }
+            catch (FacebookApiException $e)
+            {
+                error_log($e);
+                $user = null;
+            }
+        }*/
+
 
         // if it is ajax validation request
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {

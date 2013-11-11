@@ -1,6 +1,7 @@
 <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/local.css"/>
 <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/popup.css"/>
 
+
 <div class="form vendorform">
     <?php
     $form = $this->beginWidget('GxActiveForm', array(
@@ -12,6 +13,30 @@
             'validateOnType'=>false,
         ),
     ));
+   /* require_once Yii::getPathOfAlias('webroot')."/protected/extensions/facebook/lib/facebook.php";
+    // Create our Application instance (replace this with your appId and secret).
+    $facebook = new Facebook(array(
+        'appId'  => Yii::app()->params['FACEBOOK_APPID'],
+        'secret' => Yii::app()->params['FACEBOOK_SECRET'],
+    ));
+    // Login or logout url will be needed depending on current user state.
+    $user = $facebook->getUser();
+    if ($user)
+    {
+        try
+        {
+            // Proceed knowing you have a logged in user who's authenticated.
+            $user_profile = $facebook->api('/me');
+        }
+        catch (FacebookApiException $e)
+        {
+            error_log($e);
+            $user = null;
+        }
+    }
+    $facebook_Url  = $facebook->getLoginUrl( array(	'req_perms' => 'email','login'=>'facebook'));
+//    $facebook_Url  = $facebook->getLoginUrl( array(	'req_perms' => 'email','login'=>'facebook'));
+    $params['facebook'] = $facebook_Url;*/
     ?>
     <div class="center-align">
         <span class="heading">Pick your account type</span><br/>
@@ -24,7 +49,11 @@
         <?php echo $form->error($model, 'user_type2'); ?>
     </div>
     <!-- row -->
-    <div class="facebook"></div>
+    <div class="facebook" >
+        <?php //echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl.'/images/facebook.png'),$params['facebook'],array("target"=>"_top"));?>
+        <?php
+        $this->widget('application.widgets.facebook.Facebook',array('appId'=>Yii::app()->params['FACEBOOK_APPID'])); ?>
+    </div>
     <div style="text-align: center;color:#545454;padding:13px 0;font-size: 20px;" onclick="toggleEmailsignup();">or sign up with you <span style="color:#5481a4;cursor: pointer;">email address </span></div>
     <div class="emailsignup" id="emailsignup">
         <table class="signup-table">
@@ -77,5 +106,6 @@
         {
             jQuery('#emailsignup').toggle('slow')
         }
+
     </script>
 </div><!-- form -->

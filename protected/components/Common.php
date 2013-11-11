@@ -141,7 +141,8 @@ class Common {
         //$ssCloseScript .= "<script type='text/javascript'>parent.jQuery.colorbox.close(); parent.window.location.reload(true);</script>";
         $ssCloseScript .= "<script type='text/javascript'>parent.jQuery.colorbox.close(); parent.window.location.href = '" . $ssRedirectUrl . "';</script>";
 
-        echo $ssCloseScript;exit;
+        echo $ssCloseScript;
+        exit;
         //return $ssCloseScript;
     }
 

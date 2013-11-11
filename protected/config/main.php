@@ -48,6 +48,9 @@ return array(
             'loginUrl' => array('/admin/login'),
             'fullname' => '',
         ),
+        'session' => array(
+            'autoStart'=>true,
+        ),
         'phpThumb' => array(
             'class' => 'ext.EPhpThumb.EPhpThumb',
             'options' => array()

@@ -33,7 +33,7 @@ class User extends CActiveRecord
     public static function prepareUserForAuthorisation( $username )
     {
 
-        if( strpos($username, "@") ) 
+        if( strpos($username, "@") )
         {
             $user = self::model()->notDeleted()->find( 'LOWER(e_mail)=?', array($username) );
         } 
@@ -41,7 +41,7 @@ class User extends CActiveRecord
         {
             $user = self::model()->notDeleted()->find( 'LOWER(username)=?', array($username) );
         }
-        
+
         if($user instanceof user)
         {
             return $user;

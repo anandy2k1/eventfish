@@ -45,10 +45,13 @@ class Category extends BaseCategory {
      * for get all active categories
      * return  object
      */
-    public static function getAllActiveCategories() {
+    public static function getAllActiveCategories($ssType='') {
         $oCriteria = new CDbCriteria;
         $oCriteria->alias = 'c';
         $oCriteria->condition = "c.status = 1";
+        if($ssType != ''){
+            $oCriteria->addCondition("category_type = '$ssType'");
+        }
         $omResultSet = self::model()->findAll($oCriteria);
 
         return $omResultSet;

@@ -7,6 +7,8 @@ $this->pageTitle = Yii::app()->name . ' - Login';
 $this->breadcrumbs = array(
     'Login',
 );
+
+
 ?>
 <link type="text/css" rel="stylesheet" href="/eventfish/css/local.css"/>
 <link type="text/css" rel="stylesheet" href="/eventfish/css/popup.css"/>

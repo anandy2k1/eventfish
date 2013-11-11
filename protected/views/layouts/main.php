@@ -39,6 +39,35 @@
 <div class="outer-div">
     <!--header panel starts -->
     <header>
+        <?php
+/*        require_once Yii::getPathOfAlias('webroot')."/protected/extensions/facebook/lib/facebook.php";
+        // Create our Application instance (replace this with your appId and secret).
+        $facebook = new Facebook(array(
+            'appId'  => Yii::app()->params['FACEBOOK_APPID'],
+            'secret' => Yii::app()->params['FACEBOOK_SECRET']
+        ));
+        // Login or logout url will be needed depending on current user state.
+        $user = $facebook->getUser();
+        if ($user)
+        {
+            try
+            {
+                // Proceed knowing you have a logged in user who's authenticated.
+                $user_profile = $facebook->api('/me');
+            }
+            catch (FacebookApiException $e)
+            {
+                error_log($e);
+                $user = null;
+            }
+        }
+
+        $facebook_Url  = $facebook->getLoginUrl( array(	'req_perms' => 'email','login'=>'facebook','redirect_uri'=>'http://localhost/eventfish/index.php/site/login'));
+        $params['facebook'] = $facebook_Url;*/
+        ?>
+        <!--<div class="facebook">
+            <?php /*// echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl.'/images/facebook.png'),$params['facebook']); */?>
+        </div>-->
         <div class="container">
             <h1 class="logo">
                 <?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . "/images/logo.png", "EventFish", array('width' => '266', 'height' => '83')), array('site/index'), array('title' => 'Home')); ?>
@@ -48,9 +77,12 @@
                 <?php
                 if (Yii::app()->user->isGuest):
                     echo CHtml::htmlButton('<span><span>Sign Up</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/signUp") . '", "500","600");return false;', 'class' => 'ajax general-btn-1'));
-                    echo CHtml::htmlButton('<span><span>Log In</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/login") . '","500","600");return false;', 'class' => 'ajax general-btn')); else:
+                    echo CHtml::htmlButton('<span><span>Log In</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/login") . '","500","600");return false;', 'class' => 'ajax general-btn'));
+                else:
                     echo 'Hello, ' . Yii::app()->user->name . '&nbsp';
-                    echo CHtml::link('<span><span>Logout</span></span>', array('site/logout'), array('class' => 'general-btn'));
+
+
+                    echo CHtml::link('<span><span onclick="FB.logout();">Logout</span></span>', array('site/logout'), array('class' => 'general-btn'));
                 endif;
                 ?>
             </div>

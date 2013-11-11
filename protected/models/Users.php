@@ -5,7 +5,6 @@ Yii::import('application.models._base.BaseUsers');
 class Users extends BaseUsers
 {
     public $retype_password;
-    private $_identity;
     public static function model($className = __CLASS__)
     {
         return parent::model($className);
@@ -14,41 +13,10 @@ class Users extends BaseUsers
     public function rules()
     {
         return array(
-            array('first_name,last_name,email,role_id,password,retype_password', 'required'),
+            array('first_name,last_name,email', 'required'),
             array('email', 'email'),
-            array('email', 'unique', 'message' => 'Email already exists!'),
-            //array('password', 'compare', 'compareAttribute'=>'retype_password'),
-        );
-    }
-
-    /**
-     * Authenticates the password.
-     * This is the 'authenticate' validator as declared in rules().
-     */
-//    public function authenticate($attribute, $params)
-//    {
-//        if (!$this->hasErrors()) {
-//            $this->_identity = new UserIdentity($this->username, $this->password);
-//            if (!$this->_identity->authenticate())
-//                $this->addError('password', 'Incorrect username or password.');
-//        }
-//    }
-
-    /**
-     * Logs in the user using the given username and password in the model.
-     * @return boolean whether login is successful
-     */
-    public function login($smPassword)
-    {
-        if ($this->_identity === null) {
-            $this->_identity = new UserIdentity($this->email, $smPassword);
-            $this->_identity->authenticate();
-        }
-        if ($this->_identity->errorCode === UserIdentity::ERROR_NONE) {
-            Yii::app()->user->login($this->_identity, 0);
-            return true;
-        } else
-            return false;
+            array('facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, address_1, address_2, city, state_id, country_id, zip, phone, phone_type, date_of_birth, gender, ethnicity, income, matial_status, user_type, user_type2, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'safe'),
+         );
     }
 
     public function search()
@@ -65,7 +33,7 @@ class Users extends BaseUsers
         $criteria->compare('country_id', $this->country_id);
         $criteria->compare('matial_status', $this->matial_status, true);
         $criteria->compare('user_type', $this->user_type);
-        /*$criteria->compare('user_type2', $this->user_type2, true);*/
+        $criteria->compare('user_type2', $this->user_type2, true);
         $criteria->compare('start_time', $this->start_time, true);
         $criteria->compare('end_time', $this->end_time, true);
         $criteria->compare('available_days', $this->available_days, true);
