@@ -1,41 +1,42 @@
 <?php
 /**
  * class Facebook
- * @author Igor Ivanović 
+ * @author Igor Ivanović
  */
-class Facebook extends CWidget{
+class Facebook extends CWidget
+{
 
     public $appId;
     public $status = true;
     public $cookie = true;
-    public $xfbml  = true;
-    public $oauth  = true;
+    public $xfbml = true;
+    public $oauth = true;
     public $userSession;
     public $facebookButtonTitle = "Facebook Connect";
-    public $fbLoginButtonId     = "fb_login_button_id";
-    public $logoutButtonId      = "logout";
-    public $facebookLoginUrl    = "facebook/login";
+    public $fbLoginButtonId = "fb_login_button_id";
+    public $logoutButtonId = "logout";
+    public $facebookLoginUrl = "facebook/login";
     public $facebookPermissions = "email,user_likes";
-    
-	
+
+
     /**
-    * Run Widget
-    */
+     * Run Widget
+     */
     public function run()
     {
-        $this->facebookLoginUrl     = Yii::app()->createAbsoluteUrl($this->facebookLoginUrl);
-        $this->userSession          = Yii::app()->session->sessionID;
+        $this->facebookLoginUrl = Yii::app()->createAbsoluteUrl($this->facebookLoginUrl);
+        $this->userSession = Yii::app()->session->sessionID;
         $this->renderJavascript();
         $this->render('login');
     }
-    
-    
+
+
     /**
-    * Render necessary facebook  javascript
-    */
+     * Render necessary facebook  javascript
+     */
     private function renderJavascript()
     {
-$script=<<<EOL
+        $script = <<<EOL
 
         window.fbAsyncInit = function() {
             FB.init({   appId: '{$this->appId}', 
@@ -55,7 +56,7 @@ $script=<<<EOL
                                             FB.api('/me', function(user) {
                                                 $.ajax({
                                                     type : 'get',
-                                                    url  : '{$this->facebookLoginUrl}',
+                                                    url  : '{$this->facebookLoginUrl}' +'?type=' + getParam(),
                                                     data : ( {
                                                         name     :   user.first_name, 
                                                         surname  :   user.last_name,
@@ -97,8 +98,19 @@ $script=<<<EOL
 
         (function(d){var e,id = "fb-root";if( d.getElementById(id) == null ){e = d.createElement("div");e.id=id;d.body.appendChild(e);}}(document));
         (function(d){var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];if (d.getElementById(id)) {return;} js = d.createElement('script'); js.id = id; js.async = true; js.src = "//connect.facebook.net/en_US/all.js"; ref.parentNode.insertBefore(js, ref); }(document));
+        function getParam()
+        {
+            var rates = document.getElementsByName('Users[role_id]');
+var rate_value;
+for(var i = 0; i < rates.length; i++){
+    if(rates[i].checked){
+        rate_value = rates[i].value;
+    }
+}
+return rate_value;
+        }
 EOL;
 
-        Yii::app()->clientScript->registerScript('facebook-connect',$script,  CClientScript::POS_END );
+        Yii::app()->clientScript->registerScript('facebook-connect', $script, CClientScript::POS_END);
     }
 }

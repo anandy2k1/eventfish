@@ -29,12 +29,13 @@
  * @property integer $country_id
  * @property string $zip
  * @property string $phone
- * @property string $phone_type
+ * @property string $mobile
+ * @property string $office_phone
  * @property string $date_of_birth
  * @property string $gender
  * @property string $ethnicity
  * @property string $income
- * @property string $matial_status
+ * @property string $marital_status
  * @property string $user_type
  * @property string $short_description
  * @property string $start_time
@@ -44,6 +45,7 @@
  * @property string $last_login_at
  * @property string $created_at
  * @property string $updated_at
+ * @property string $facebook_picture
  *
  * @property MstPages[] $mstPages
  * @property MstPages[] $mstPages1
@@ -78,12 +80,12 @@ abstract class BaseUsers extends GxActiveRecord {
 		return array(
 			array('parent_id, is_fblogin, state_id, country_id, status', 'numerical', 'integerOnly'=>true),
 			array('role_id', 'length', 'max'=>10),
-			array('email, password, facebook_id, ssn_number, routing_number, account_number, bank_name, first_name, last_name, city, zip, phone, phone_type, ethnicity, income, matial_status, available_days', 'length', 'max'=>255),
+			array('email, password, facebook_id, ssn_number, routing_number, account_number, bank_name, first_name, last_name, city, zip, phone, mobile, office_phone, ethnicity, income, marital_status, available_days', 'length', 'max'=>255),
 			array('gender', 'length', 'max'=>6),
 			array('user_type', 'length', 'max'=>9),
-			array('address_1, address_2, date_of_birth, short_description, start_time, end_time, last_login_at, created_at, updated_at', 'safe'),
-			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, phone_type, date_of_birth, gender, ethnicity, income, matial_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, phone_type, date_of_birth, gender, ethnicity, income, matial_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at,facebook_picture', 'safe', 'on'=>'search'),
+			array('address_1, address_2, date_of_birth, short_description, start_time, end_time, last_login_at, created_at, updated_at, facebook_picture', 'safe'),
+			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at, facebook_picture', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at, facebook_picture', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -129,12 +131,13 @@ abstract class BaseUsers extends GxActiveRecord {
 			'country_id' => null,
 			'zip' => Yii::t('app', 'Zip'),
 			'phone' => Yii::t('app', 'Phone'),
-			'phone_type' => Yii::t('app', 'Phone Type'),
+			'mobile' => Yii::t('app', 'Mobile'),
+			'office_phone' => Yii::t('app', 'Office Phone'),
 			'date_of_birth' => Yii::t('app', 'Date Of Birth'),
 			'gender' => Yii::t('app', 'Gender'),
 			'ethnicity' => Yii::t('app', 'Ethnicity'),
 			'income' => Yii::t('app', 'Income'),
-			'matial_status' => Yii::t('app', 'Matial Status'),
+			'marital_status' => Yii::t('app', 'Marital Status'),
 			'user_type' => Yii::t('app', 'User Type'),
 			'short_description' => Yii::t('app', 'Short Description'),
 			'start_time' => Yii::t('app', 'Start Time'),
@@ -144,6 +147,7 @@ abstract class BaseUsers extends GxActiveRecord {
 			'last_login_at' => Yii::t('app', 'Last Login At'),
 			'created_at' => Yii::t('app', 'Created At'),
 			'updated_at' => Yii::t('app', 'Updated At'),
+			'facebook_picture' => Yii::t('app', 'Facebook Picture'),
 			'mstPages' => null,
 			'mstPages1' => null,
 			'userCategories' => null,
@@ -180,12 +184,13 @@ abstract class BaseUsers extends GxActiveRecord {
 		$criteria->compare('country_id', $this->country_id);
 		$criteria->compare('zip', $this->zip, true);
 		$criteria->compare('phone', $this->phone, true);
-		$criteria->compare('phone_type', $this->phone_type, true);
+		$criteria->compare('mobile', $this->mobile, true);
+		$criteria->compare('office_phone', $this->office_phone, true);
 		$criteria->compare('date_of_birth', $this->date_of_birth, true);
 		$criteria->compare('gender', $this->gender, true);
 		$criteria->compare('ethnicity', $this->ethnicity, true);
 		$criteria->compare('income', $this->income, true);
-		$criteria->compare('matial_status', $this->matial_status, true);
+		$criteria->compare('marital_status', $this->marital_status, true);
 		$criteria->compare('user_type', $this->user_type, true);
 		$criteria->compare('short_description', $this->short_description, true);
 		$criteria->compare('start_time', $this->start_time, true);
@@ -195,6 +200,7 @@ abstract class BaseUsers extends GxActiveRecord {
 		$criteria->compare('last_login_at', $this->last_login_at, true);
 		$criteria->compare('created_at', $this->created_at, true);
 		$criteria->compare('updated_at', $this->updated_at, true);
+		$criteria->compare('facebook_picture', $this->facebook_picture, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

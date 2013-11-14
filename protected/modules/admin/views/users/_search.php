@@ -136,8 +136,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'matial_status'); ?>
-		<?php echo $form->textField($model, 'matial_status', array('maxlength' => 255)); ?>
+		<?php echo $form->label($model, 'marital_status'); ?>
+		<?php echo $form->textField($model, 'marital_status', array('maxlength' => 255)); ?>
 	</div>
 
 	<div class="row">

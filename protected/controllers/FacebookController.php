@@ -42,6 +42,7 @@ class FacebookController extends Controller
                     $user->facebook_id = $username;
                     $user->password = "";
                     $user->is_fblogin = 1;
+                    $user->role_id = $_GET['type'];
                     $user->password = md5($username);
                     $user->facebook_picture = "http://graph.facebook.com/" . $username . "/picture?type=large";
                     $user->insert();

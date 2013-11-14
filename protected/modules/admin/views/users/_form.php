@@ -144,9 +144,9 @@
 		<?php echo $form->error($model,'income'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'matial_status'); ?>
-		<?php echo $form->textField($model, 'matial_status', array('maxlength' => 255)); ?>
-		<?php echo $form->error($model,'matial_status'); ?>
+		<?php echo $form->labelEx($model,'marital_status'); ?>
+		<?php echo $form->textField($model, 'marital_status', array('maxlength' => 255)); ?>
+		<?php echo $form->error($model,'marital_status'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'user_type'); ?>

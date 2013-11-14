@@ -106,6 +106,7 @@ select.select {
     -moz-border-radius: 5px;
     border-radius: 5px;
     padding: 4px 10px;
+    width: 75px;
 }
 
 input.success {
@@ -176,7 +177,6 @@ button.general-btn span {
     white-space: nowrap;
 }
 
-
 button.general-btn span span {
     background: url("../images/btn.png") no-repeat scroll right 0 rgba(0, 0, 0, 0);
     border: 0 none;
@@ -187,11 +187,21 @@ button.general-btn span span {
     padding: 12px 23px 18px 16px;
 }
 
-button.general-btn-1 {
+/*button.general-btn-1 {
     background: none repeat scroll 0 0 transparent;
     border: 0 none;
     cursor: pointer;
     margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: auto;
+}*/
+
+button.general-btn-1 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    margin: 10px 19px 0 0;
     overflow: hidden;
     padding: 0;
     width: auto;
@@ -216,7 +226,7 @@ button.general-btn-1 span span {
     font-size: 20px;
     font-weight: normal;
     height: auto;
-    padding: 13px 22px 15px 1px;
+    padding: 13px 22px 15px 5px;
 }
 
 button.samll-btn {
@@ -1010,7 +1020,7 @@ footer .icon-bar .right {
 }
 
 .event-form .f-right ul.location li .state {
-    width: 80px;
+    width: 90px;
     float: left;
     margin-right: 5px;
 }
@@ -1063,6 +1073,14 @@ footer .icon-bar .right {
     background: url(../images/proses-line.png) no-repeat scroll center 42px;
 }
 
+.eventplanner-steps .confirm-dashboard ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    text-align: center;
+    width: 235px;
+}
+
 .confirm-dashboard ul li {
     display: inline-block;
     list-style-type: none;
@@ -1080,7 +1098,7 @@ footer .icon-bar .right {
     color: #FFFFFF;
     font-size: 30px;
     font-weight: bold;
-    padding: 24px 0;
+    padding: 27px 0;
     text-shadow: 1px 1px #000000;
 }
 
@@ -1089,7 +1107,7 @@ footer .icon-bar .right {
     color: #FFFFFF;
     font-size: 30px;
     font-weight: bold;
-    padding: 24px 0;
+    padding: 27px 0;
     text-shadow: 1px 1px #000000;
 }
 
@@ -1131,7 +1149,7 @@ footer .icon-bar .right {
     float: left;
     margin-bottom: 5px;
     padding: 0 42px;
-    width: 350px;
+    width: 370px;
 }
 
 .general-form li label {
@@ -1166,13 +1184,13 @@ footer .icon-bar .right {
 }
 
 .general-form li.phone input {
-    width: 60px;
+    width: 190px;
     float: left;
     margin-right: 3px;
 }
 
 .general-form li.phone select {
-    width: 60px;
+    width: 100px;
     margin-right: 3px;
     float: left;
 }
@@ -1398,8 +1416,8 @@ footer .icon-bar .right {
 }
 
 .create-profile {
-    margin: 30px auto;
-    width: 515px;
+    margin: 0px auto;
+    width: 575px;
 }
 
 .create-profile .tabContent {
@@ -1588,6 +1606,7 @@ footer .icon-bar .right {
     font-family: "Trebuchet MS";
     background: #f1f1f1;
     border: none;
+    margin-top: 5px;
     border-top: none;
     padding: 8px 10px;
     font-weight: bold;
@@ -1612,15 +1631,278 @@ footer .icon-bar .right {
 
 /**/
 /***************  Added by prakash 11-11-2013  ******************/
-.categoreis .block { display:block; float:left; margin:7px 6px 0px 0px; min-height:81px; padding-top:0px; text-align:center; color:#fff; box-shadow:inset 0 1px 0 #DCDCDC; border:2px solid #DCDCDC; border-radius:10px; width:108px; z-index:1; position:relative;}
-.categoreis .block span { display:block; height:112px;}
-.categoreis .block font { line-height:15px; font-size:18px; color:#fff; text-shadow:-1px -1px 0px #ba1759;}
-.categoreis .last { margin-right:0px;}
-.clear { clear:both;}
+.categoreis .block {
+    display: block;
+    float: left;
+    margin: 7px 6px 0px 0px;
+    min-height: 81px;
+    padding-top: 0px;
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 0 1px 0 #DCDCDC;
+    border: 2px solid #DCDCDC;
+    border-radius: 10px;
+    width: 106px;
+    z-index: 1;
+    position: relative;
+}
 
-.my_wishlist .block { display: block; float:left; margin:7px 6px 0px 0px; text-align:center;}
-.my_wishlist .inlineBox {background: #DCDCDC; box-shadow:inset 0 1px 0 #DCDCDC; border:2px solid #DCDCDC; border-radius:10px; text-align: center;}
+.categoreis .block span {
+    display: block;
+    height: 112px;
+}
+
+.categoreis .block font {
+    line-height: 15px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: -1px -1px 0px #ba1759;
+}
+
+.categoreis .last {
+    margin-right: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.my_wishlist {
+    margin-top: 20px;
+}
+
+.my_wishlist .block {
+    display: block;
+    float: left;
+    margin: 7px 6px 0px 0px;
+    text-align: center;
+    width: 106px;
+}
+
+.my_wishlist .inlineBox {
+    background: none repeat scroll 0 0 #E6E6E6;
+    border: 2px solid #7B7B7B;
+    box-shadow: inset 0 1px 0 #DCDCDC;
+    padding:5px 3px 5px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.personal-details {
+    background: none repeat scroll 0 0 #E6E6E6;
+    border: 2px solid #7B7B7B;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 #DCDCDC inset;
+    display: block;
+    margin: 7px 6px 0 0;
+    text-align: center;
+}
+.personal-details table td strong
+{
+    color:#545454;
+}
+
+.personal-details table td
+{
+    color:#7E7E7E;
+    padding:3px 0 3px 10px;
+}
+.personal-details a,
+.my_wishlist a
+{
+    color:#457dae;
+    margin-right:10px;
+}
+
 /*.my_wishlist .last { margin-right:0px;}*/
 
-/*********************************/
-/**/
+/**********************************************************/
+/*            Event Planner Category Select Page          */
+/**********************************************************/
+
+
+.text {
+    color: #545454;
+    font-size: 16px;
+    padding: 5px;
+}
+.categoreis .first
+{
+    clear:both;
+}
+
+/**********************************************************/
+/*         Event Planner Category Select Page End         */
+/**********************************************************/
+
+
+
+/**********************************************************/
+/*              Event Planner Profile steps               */
+/**********************************************************/
+
+/* RADIO BUTON*/
+.cb-enable, .cb-disable, .cb-enable span, .cb-disable span {
+    background: url("../images/switch.gif") repeat-x;
+    display: block;
+    float: left;
+}
+
+.cb-enable span, .cb-disable span {
+    line-height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+.cb-enable span {
+    background-position: left -91px;
+    padding: 0 10px;
+}
+
+.cb-disable span {
+    background-position: right -180px;
+    padding: 0 10px;
+}
+
+.cb-disable.selected {
+    background-position: 0 -60px;
+}
+
+.cb-disable.selected span {
+    background-position: right -240px;
+    color: #fff;
+}
+
+.cb-enable.selected {
+    background-position: 0 -60px;
+}
+
+.cb-enable.selected span {
+    background-position: left -150px;
+    color: #fff;
+}
+
+.switch label {
+    cursor: pointer;
+}
+
+.switch input {
+    display: none;
+}
+
+input.hasDatepicker {
+    border: 1px solid #76C03A;
+}
+
+input.hasDatepicker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.height-0
+{
+    height:0px;
+}
+hr{
+    border-top:1px solid #b6b6b6;
+    margin: 5px;
+}
+.person_details,
+.my_wishlist
+{
+    border-top: 1px solid #B6B6B6;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.person_details h3,
+.my_wishlist h3
+{
+    color:#555555;
+}
+
+.planevent_btn button.general-btn-1 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    margin: 10px 0px 0 0;
+    overflow: hidden;
+    padding: 0;
+    width: auto;
+}
+
+.planevent_btn button.general-btn-1 span {
+    background: url("../images/btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 52px;
+    padding: 0 0 0 14px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 0 5px 5px 0;
+}
+
+.planevent_btn button.general-btn-1 span span {
+    background: url("../images/btn.png") no-repeat scroll right 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    height: auto;
+    padding: 13px 22px 15px 5px;
+}
+
+
+.gotoaccount_btn button.general-btn-1 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    margin: 10px 0px 0 0;
+    overflow: hidden;
+    padding: 0;
+    width: auto;
+}
+
+.gotoaccount_btn button.general-btn-1 span {
+    background: url("../images/greent-btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 52px;
+    padding: 0 0 0 13px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 0 5px 5px 0;
+}
+
+.gotoaccount_btn button.general-btn-1 span span {
+    background: url("../images/greent-btn.png") no-repeat scroll right 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    height: auto;
+    padding: 13px 22px 15px 5px;
+}
+.planevent_btn
+{
+float:right;
+}
+.gotoaccount_btn
+{
+    float: right;
+    margin-left: 0;
+    margin-right: -3px;
+}
+
+
+
+
+/****************************************************/
+/*          Event Planner Profile Steps End*/
+/****************************************************/

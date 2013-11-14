@@ -77,8 +77,8 @@
 	<?php echo GxHtml::encode($data->getAttributeLabel('income')); ?>:
 	<?php echo GxHtml::encode($data->income); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('matial_status')); ?>:
-	<?php echo GxHtml::encode($data->matial_status); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('marital_status')); ?>:
+	<?php echo GxHtml::encode($data->marital_status); ?>
 	<br />
 	<?php echo GxHtml::encode($data->getAttributeLabel('user_type')); ?>:
 	<?php echo GxHtml::encode($data->user_type); ?>

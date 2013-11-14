@@ -56,7 +56,7 @@ array(
 'gender',
 'ethnicity',
 'income',
-'matial_status',
+'marital_status',
 'user_type:boolean',
 'user_type2',
 'short_description',

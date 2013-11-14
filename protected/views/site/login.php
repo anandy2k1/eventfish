@@ -10,8 +10,8 @@ $this->breadcrumbs = array(
 
 
 ?>
-<link type="text/css" rel="stylesheet" href="/eventfish/css/local.css"/>
-<link type="text/css" rel="stylesheet" href="/eventfish/css/popup.css"/>
+<link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/local.css"/>
+<link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/popup.css"/>
 
 <div class="vendorform ">
     <div class="center-align">

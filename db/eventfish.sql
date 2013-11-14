@@ -545,7 +545,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `gender` enum('Male','Female') NOT NULL DEFAULT 'Male',
   `ethnicity` varchar(255) DEFAULT NULL,
   `income` varchar(255) DEFAULT NULL,
-  `matial_status` varchar(255) DEFAULT NULL,
+  `marital_status` varchar(255) DEFAULT NULL,
   `user_type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1-Admin,2-EventPlanner,3-Vendor',
   `user_type2` enum('INDIVDUAL','COMPANY') NOT NULL DEFAULT 'INDIVDUAL',
   `short_description` text,
@@ -567,7 +567,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `parent_id`, `role_id`, `email`, `password`, `facebook_id`, `is_fblogin`, `ssn_number`, `routing_number`, `account_number`, `bank_name`, `first_name`, `last_name`, `address_1`, `address_2`, `city`, `state_id`, `country_id`, `zip`, `phone`, `phone_type`, `date_of_birth`, `gender`, `ethnicity`, `income`, `matial_status`, `user_type`, `user_type2`, `short_description`, `start_time`, `end_time`, `available_days`, `status`, `last_login_at`, `created_at`, `updated_at`) VALUES
+INSERT INTO `users` (`id`, `parent_id`, `role_id`, `email`, `password`, `facebook_id`, `is_fblogin`, `ssn_number`, `routing_number`, `account_number`, `bank_name`, `first_name`, `last_name`, `address_1`, `address_2`, `city`, `state_id`, `country_id`, `zip`, `phone`, `phone_type`, `date_of_birth`, `gender`, `ethnicity`, `income`, `marital_status`, `user_type`, `user_type2`, `short_description`, `start_time`, `end_time`, `available_days`, `status`, `last_login_at`, `created_at`, `updated_at`) VALUES
 (1, 0, 1, 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', NULL, 0, NULL, NULL, NULL, NULL, 'Administrator', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Male', NULL, NULL, NULL, 1, 'INDIVDUAL', NULL, NULL, NULL, NULL, 1, NULL, '2013-10-22 00:00:00', '2013-10-22 00:00:00'),
 (2, 0, 2, 'prakash@gmail.com', '21232f297a57a5a743894a0e4a801fc3', NULL, 0, NULL, NULL, NULL, NULL, 'Prakash', 'Panchal', NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 'Male', NULL, NULL, NULL, 2, 'INDIVDUAL', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL),
 (3, 0, 3, 'anand@gmail.com', '21232f297a57a5a743894a0e4a801fc3', NULL, 0, '85565SDF654565', 'SDF56SDF5', '5564955336', 'Corporate Bank', 'Anand', 'Panchal', 'Test Address 1', 'Test Address 2', 'Modesto', 2, 1, '95397', '555-555-5225', 'Office', NULL, 'Male', NULL, NULL, NULL, 1, 'COMPANY', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL);
