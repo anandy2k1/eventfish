@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="51228d4a-46ba-4165-8a89-b4f231aa4d3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" afterPath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FacebookController.php" afterPath="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/eventfish.iml" afterPath="$PROJECT_DIR$/.idea/eventfish.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/eventPlanner/step2.php" afterPath="$PROJECT_DIR$/protected/views/eventPlanner/step2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventfish.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384512725491" ignored="false" />
+    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384525452675" ignored="false" />
     <file path="/SiteController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383916375516" ignored="false" />
     <file path="/a.dummy" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384436426606" ignored="false" />
     <file path="/leftnavbeta.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383125688143" ignored="false" />
@@ -68,7 +68,7 @@
       <file leaf-file-name="EventPlannerController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="10" selection-start="734" selection-end="734" vertical-scroll-proportion="0.3707094">
+            <state line="70" column="0" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.44155845">
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="50" selection-start="671" selection-end="671" vertical-scroll-proportion="-0.65384614">
+            <state line="18" column="50" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="aws-config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/amazon/config/aws-config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="510" selection-end="510" vertical-scroll-proportion="-6.0">
+            <state line="18" column="13" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="A2Base.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/amazon/components/A2Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="1" selection-start="3032" selection-end="3032" vertical-scroll-proportion="-31.846153">
+            <state line="110" column="1" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -451,14 +451,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="209" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="209" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="213" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="213" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="209" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="884" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="888" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="884" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="208" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="202" />
@@ -547,14 +547,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="9c71fdbe-41e6-434f-a4f5-cff5c577529c" server_name="Shop">
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="9c71fdbe-41e6-434f-a4f5-cff5c577529c" server_name="Shop">
       <method />
     </configuration>
     <configuration default="false" name="eventfish" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="eventfish" start_url="/eventfish">
@@ -613,17 +613,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5724234" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1962677" sideWeight="0.64444447" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1988417" sideWeight="0.67083335" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35531628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.42618385" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -679,7 +680,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -712,58 +713,42 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="37" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="80" column="37" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="45" selection-start="4549" selection-end="4549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="139" column="45" selection-start="4549" selection-end="4549" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/eventfish.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="569" column="332" selection-start="34957" selection-end="34957" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="569" column="332" selection-start="34957" selection-end="34957" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="5" selection-start="4745" selection-end="6711" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="161" column="5" selection-start="4745" selection-end="6711" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="88" selection-start="8001" selection-end="8001" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="170" column="88" selection-start="8001" selection-end="8001" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/vendor/step1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="105" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="105" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="-12.423077">
-          <folding />
-        </state>
+        <state line="20" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="-12.423077" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step3.php">
@@ -775,9 +760,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/AmazonExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="816" selection-end="816" vertical-scroll-proportion="-20.26923">
-          <folding />
-        </state>
+        <state line="31" column="28" selection-start="816" selection-end="816" vertical-scroll-proportion="-20.26923" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/amazon/components/A2S3.php">
@@ -794,28 +777,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/amazon/config/aws-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="510" selection-end="510" vertical-scroll-proportion="-6.0">
+        <state line="18" column="13" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/amazon/components/A2Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="1" selection-start="3032" selection-end="3032" vertical-scroll-proportion="-31.846153">
+        <state line="110" column="1" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="50" selection-start="671" selection-end="671" vertical-scroll-proportion="-0.65384614">
+        <state line="18" column="50" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="10" selection-start="734" selection-end="734" vertical-scroll-proportion="0.3707094">
+        <state line="70" column="0" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.44155845">
           <folding />
         </state>
       </provider>

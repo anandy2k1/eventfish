@@ -7262,3 +7262,14 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/index.php/eventPlanner/step1
 ---
+2013/11/15 14:20:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('img')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('img')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('vendor/img/help...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/vendor/img/help.png
+HTTP_REFERER=http://127.0.0.1/eventfish/index.php/vendor/step1
+---

@@ -14,6 +14,16 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/protected/components/amazon/lib/aws.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/protected/components/amazon/lib/aws.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

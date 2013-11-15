@@ -84,6 +84,7 @@ class EventPlannerController extends Controller {
     }
 
     public function actionStep3() {
+
         $oModel = Users::model()->findByPk(Yii::app()->user->id);
         $this->render('step3', array(
             'model' => $oModel            
