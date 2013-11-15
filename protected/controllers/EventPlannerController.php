@@ -25,6 +25,14 @@ class EventPlannerController extends Controller {
     }
 
     public function actionStep1() {
+
+
+       // $s3 = new A2S3();
+        //$s3 = new A2CloudFront();
+        //$response = $s3->listBuckets();
+        //print_r($response);exit;
+
+
         $oModel = Users::model()->findByPk(Yii::app()->user->id);
 
         if (Yii::app()->getRequest()->getIsPostRequest()) {

@@ -7121,3 +7121,144 @@ Stack trace:
 REQUEST_URI=/index.php/eventPlanner/step1
 HTTP_REFERER=http://local.eventfish.com/index.php/eventPlanner/step3
 ---
+2013/11/15 11:16:01 [error] [php] include(A2S3.php): failed to open stream: No such file or directory (D:\data\Ampps\www\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(30): spl_autoload_call()
+#1 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionStep1()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#7 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#10 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/index.php/eventPlanner/step1
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (30)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/15 11:17:39 [error] [exception.CException] exception 'CException' with message 'No service is registered as AKIAIFUGDA7IXQWEOQHA' in D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Base.php:105
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(31): A2Base->__call('listBuckets', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(31): A2S3->listBuckets()
+#2 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionStep1()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('step1')
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/st...')
+#13 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/eventPlanner/step1
+HTTP_REFERER=http://local.eventfish.com/index.php/site/login
+---
+2013/11/15 11:24:47 [error] [exception.CException] exception 'CException' with message 'No service is registered as AKIAIFUGDA7IXQWEOQHA' in D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Base.php:105
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2Base->__call('listBuckets', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2S3->listBuckets()
+#2 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionStep1()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('step1')
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/st...')
+#13 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/eventPlanner/step1
+HTTP_REFERER=http://local.eventfish.com/index.php/site/login
+---
+2013/11/15 11:54:18 [error] [exception.CException] exception 'CException' with message 'No service is registered as AKIAIFUGDA7IXQWEOQHA' in D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Base.php:105
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2Base->__call('listBuckets', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2S3->listBuckets()
+#2 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionStep1()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('step1')
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/st...')
+#13 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/eventPlanner/step1
+---
+2013/11/15 12:00:29 [error] [exception.CException] exception 'CException' with message 'No service is registered as AKIAIFUGDA7IXQWEOQHA' in D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Base.php:105
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2Base->__call('listBuckets', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2S3->listBuckets()
+#2 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionStep1()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('step1')
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/st...')
+#13 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/eventPlanner/step1
+---
+2013/11/15 12:05:07 [error] [exception.CException] exception 'CException' with message 'No service is registered as AKIAIFUGDA7IXQWEOQHA' in D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Base.php:105
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2Base->__call('listBuckets', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2S3->listBuckets()
+#2 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionStep1()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('step1')
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/st...')
+#13 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/eventPlanner/step1
+---
+2013/11/15 12:07:40 [error] [exception.CException] exception 'CException' with message 'No service is registered as AKIAIFUGDA7IXQWEOQHA' in D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Base.php:105
+Stack trace:
+#0 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2Base->__call('listBuckets', Array)
+#1 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(32): A2S3->listBuckets()
+#2 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionStep1()
+#3 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('step1')
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/st...')
+#13 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/eventPlanner/step1
+---

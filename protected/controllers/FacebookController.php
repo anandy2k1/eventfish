@@ -18,6 +18,7 @@ class FacebookController extends Controller
      */
     public function actionLogin($id = null, $name = null, $surname = null, $username = null, $email = null, $picture = null, $session = null)
     {
+
         if (!Yii::app()->request->isAjaxRequest) {
             echo json_encode(array('error' => 'this is not ajax request'));
             die();
