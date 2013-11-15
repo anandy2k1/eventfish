@@ -68,17 +68,17 @@
             history.go(-1);
             return false;
         }
-    });    
+    });
     $(".categorylink").click(function() {
         if (!$("#imgCat" + this.id).hasClass("selectedImage")) {
             $("#imgCat" + this.id).addClass("selectedImage");
-            $("#imgCat" + this.id).attr('src', '<?php Yii::app()->params['site_url'].Yii::app()->baseUrl; ?>/images/my-wish-select.png');
+            $("#imgCat" + this.id).attr('src', '<?php echo Yii::app()->params['site_url'].Yii::app()->baseUrl; ?>/images/my-wish-select.png');
             $("#categoryid" + this.id).attr('checked', 'checked');
         }
         else {
             $("#imgCat" + this.id).removeClass("selectedImage");
-            $("#imgCat" + this.id).attr('src', '<?php Yii::app()->params['site_url'].Yii::app()->baseUrl; ?>/images/my-wish.png');
+            $("#imgCat" + this.id).attr('src', '<?php echo  Yii::app()->params['site_url'].Yii::app()->baseUrl; ?>/images/my-wish.png');
             $("#categoryid" + this.id).attr('checked', false);
         }
     });
-</script>
+</script> 
