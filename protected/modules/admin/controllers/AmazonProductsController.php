@@ -69,6 +69,20 @@ class AmazonProductsController extends AdminCoreController {
     }
 
     public function actionImportProduct() {
+
+        $oAmazon = new AmazonProductAPI();
+
+        try
+        {
+            $amResponse = $oAmazon->searchProducts("eventfish-20","Accesories", "KEYWORD");
+        }
+        catch(Exception $e)
+        {
+            echo $e->getMessage();exit;
+        }
+        p($amResponse);
+
+
         $oModel = new ImportProductForm();
 
         if (Yii::app()->getRequest()->getIsPostRequest()) {

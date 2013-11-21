@@ -143,7 +143,7 @@ class AdminModule extends CWebModule {
             //$admin = Yii::app()->admin->getState('admin');
             $ssName = ($model->last_name != "") ? $model->first_name.' '.$model->last_name : $model->first_name;
             $ssName = ($ssName == "") ? $model->username : $ssName;
-            $ssName = ($model->user_type == Yii::app()->params['user_type']['studio']) ? $model->studio_name : $ssName;
+            
             return 'Welcome ' . ucwords($ssName);
         } else {
             return false;

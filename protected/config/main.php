@@ -16,7 +16,6 @@ return array(
         'application.models.*',
         'application.models.User.*',
         'application.components.*',
-        'application.components.amazon.components.*',
         'ext.giix-components.*', // giix components
         'application.modules.rights.*',        
         'application.modules.rights.components.*', // Correct paths if necessary.
