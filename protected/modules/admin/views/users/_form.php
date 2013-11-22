@@ -153,11 +153,7 @@
 		<?php echo $form->checkBox($model, 'user_type'); ?>
 		<?php echo $form->error($model,'user_type'); ?>
 		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'user_type2'); ?>
-		<?php echo $form->textField($model, 'user_type2', array('maxlength' => 9)); ?>
-		<?php echo $form->error($model,'user_type2'); ?>
-		</div><!-- row -->
+
 		<div class="row">
 		<?php echo $form->labelEx($model,'short_description'); ?>
 		<?php echo $form->textArea($model, 'short_description'); ?>

@@ -39,7 +39,7 @@
     </div><!-- row -->
     <div class="row">
         <h1><?php echo $form->labelEx($model, 'status'); ?></h1>
-        <?php echo $form->checkBox($model, 'status'); ?>
+        <?php echo $form->dropDownList($model, 'status',array(0=>"InActive", 1=>"Active")); ?>
         <?php echo $form->error($model, 'status'); ?>
     </div><!-- row -->
 

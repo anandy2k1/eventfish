@@ -83,8 +83,7 @@
 	<?php echo GxHtml::encode($data->getAttributeLabel('user_type')); ?>:
 	<?php echo GxHtml::encode($data->user_type); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('user_type2')); ?>:
-	<?php echo GxHtml::encode($data->user_type2); ?>
+
 	<br />
 	<?php echo GxHtml::encode($data->getAttributeLabel('short_description')); ?>:
 	<?php echo GxHtml::encode($data->short_description); ?>

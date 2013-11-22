@@ -39,7 +39,8 @@
 
     <div class = "ws_shadow"></div>
     <div class = "btn_watch_vidoe" style = "position: absolute; right: 20px; z-index: 9999; bottom: 25px;">
-        <?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . "/images/watch_video.png"), "#") ?>
+
+        <?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl . "/images/watch_video.png"),'javascript:void(0)',array('onclick' => 'js:openColorBox("https://www.youtube.com/embed/Jf1fRu9YgfE", "560","315");return false;', 'class' => 'ajax general-btn-1')); ?>
     </div>
 </div>
 

@@ -31,13 +31,21 @@ $this->widget('zii.widgets.grid.CGridView', array(
         'category_name',        
         array(
             'name' => 'status',
-            'value' => '($data->status === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
-            'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+            'value' => '($data->status == 0) ? Yii::t(\'app\', \'InActive\') : Yii::t(\'app\', \'Active\')',
+            'filter' => array('0' => Yii::t('app', 'InActive'), '1' => Yii::t('app', 'Active')),
         ),
         array(
             'template' => '{update}{delete}',
             'class' => 'CButtonColumn',
             'header' => Yii::t('app', 'Actions'),
+            /*'buttons'=>array(
+                'update'=>array(
+                    'imageUrl'=>Yii::app()->baseUrl.'/images/edit.png',
+                ),
+                'delete'=>array(
+                    'imageUrl'=>Yii::app()->baseUrl.'/images/delete.png',
+                ),
+            ),*/
             'deleteConfirmation' => "Are you sure want to delete this category?"            
         )
     ),

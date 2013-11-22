@@ -108,6 +108,10 @@ select.select {
     padding: 4px 10px;
     width: 75px;
 }
+select.select option
+{
+    padding-left:13px;
+}
 
 input.success {
     border: 1px solid #76c03a;

@@ -63,7 +63,10 @@ class FacebookController extends Controller
                 if ($identity->errorCode === UserIdentity::ERROR_NONE) {
                     Yii::app()->user->login($identity, NULL);
                     //common::closeColorBox($this->createUrl('vendor/index'));
-                    echo json_encode(array('error' => 0, 'redirect' => $this->createUrl('/vendor/step1')));
+                    if ($_GET['type'] == 2)
+                    echo json_encode(array('error' => 0, 'redirect' => $this->createUrl('/eventplanner/step1')));
+                    else
+                        echo json_encode(array('error' => 0, 'redirect' => $this->createUrl('/vendor/step1')));
                 } else {
                     echo json_encode(array('error' => 'user not logged in'));
                     die();

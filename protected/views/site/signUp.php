@@ -44,9 +44,8 @@
     </div>
 
     <div class="row usertype-radio">
-        <!--<h1><?php /*echo $form->labelEx($model, 'user_type2'); */?></h1>-->
         <?php echo $form->radioButtonList($model, 'role_id', $amRoles); ?>
-        <?php echo $form->error($model, 'user_type2'); ?>
+        <?php echo $form->error($model, 'role_id'); ?>
     </div>
     <!-- row -->
     <div class="facebook" >

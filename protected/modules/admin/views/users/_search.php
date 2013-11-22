@@ -145,10 +145,7 @@
 		<?php echo $form->dropDownList($model, 'user_type', array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')), array('prompt' => Yii::t('app', 'All'))); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model, 'user_type2'); ?>
-		<?php echo $form->textField($model, 'user_type2', array('maxlength' => 9)); ?>
-	</div>
+
 
 	<div class="row">
 		<?php echo $form->label($model, 'short_description'); ?>

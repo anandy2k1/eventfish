@@ -2,51 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51228d4a-46ba-4165-8a89-b4f231aa4d3f" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2AutoScaling.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Base.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2CloudFront.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2CloudWatch.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2DataPipeline.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2DynamoDb.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Ec2.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2ElasticBeanstalk.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2ElasticTranscoder.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Glacier.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Iam.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2OpsWorks.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Rds.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Redshift.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Route53.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2S3.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Ses.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2SimpleDb.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Sns.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Sqs.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Sts.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\components\A2Swf.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\config\aws-config.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\data\Ampps\www\eventfish\protected\components\amazon\lib\aws.phar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" afterPath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/AmazonProductsController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/AmazonProductsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" afterPath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/video.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/_base/BaseUsers.php" afterPath="$PROJECT_DIR$/protected/models/_base/BaseUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Category.php" afterPath="$PROJECT_DIR$/protected/models/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FacebookController.php" afterPath="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Users.php" afterPath="$PROJECT_DIR$/protected/models/Users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/_form.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/category/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/users/_form.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/users/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/users/_search.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/users/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/users/_view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/users/_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/category/admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/eventfish.css" afterPath="$PROJECT_DIR$/css/eventfish.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/eventfish.iml" afterPath="$PROJECT_DIR$/.idea/eventfish.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/params.php" afterPath="$PROJECT_DIR$/protected/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/signUp.php" afterPath="$PROJECT_DIR$/protected/views/site/signUp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/users/view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/users/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventfish.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385029299184" ignored="false" />
+    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385122185848" ignored="false" />
     <file path="/SiteController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383916375516" ignored="false" />
-    <file path="/a.dummy" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385032177665" ignored="false" />
+    <file path="/a.dummy" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385126762533" ignored="false" />
     <file path="/leftnavbeta.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383125688143" ignored="false" />
     <file path="/category.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383126531079" ignored="false" />
     <file path="/custom.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384415492655" ignored="false" />
     <file path="/admin_login.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383135953769" ignored="false" />
-    <file path="/eventfish.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384434653323" ignored="false" />
+    <file path="/eventfish.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385122912713" ignored="false" />
     <file path="/Common.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383139199624" ignored="false" />
     <file path="/main.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384002131288" ignored="false" />
     <file path="/signUp.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383997910739" ignored="false" />
@@ -77,6 +62,9 @@
     <file path="/EventPlannerController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384514505725" ignored="false" />
     <file path="/AmazonProductsController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385046117840" ignored="false" />
     <file path="/AmazonProductAPI.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385046330794" ignored="false" />
+    <file path="/_form.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385127060801" ignored="false" />
+    <file path="/Category.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385127360437" ignored="false" />
+    <file path="/admin.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385127940348" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +83,269 @@
     <favorites_list name="eventfish" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="params.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/params.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="41" selection-start="1475" selection-end="1475" vertical-scroll-proportion="-9.653846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventfish.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/eventfish.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="112" column="22" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseUserRules.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/User/_base/BaseUserRules.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseUsers.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseUsers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="28" selection-start="2778" selection-end="2787" vertical-scroll-proportion="-2.745098">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="252" selection-start="647" selection-end="647" vertical-scroll-proportion="-5.6923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="155" column="0" selection-start="6388" selection-end="6388" vertical-scroll-proportion="-5.3846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_search.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="147" column="0" selection-start="4848" selection-end="4848" vertical-scroll-proportion="-5.3846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_view.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="0" selection-start="3560" selection-end="3560" vertical-scroll-proportion="-6.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="20" selection-start="2021" selection-end="2021" vertical-scroll-proportion="-6.0384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signUp.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/signUp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="36" selection-start="1759" selection-end="1759" vertical-scroll-proportion="-4.730769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.461538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/category/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="87" selection-start="1939" selection-end="1939" vertical-scroll-proportion="-11.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/category/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="18" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.48034933">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="33" selection-start="3693" selection-end="3693" vertical-scroll-proportion="-29.923077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseCategory.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseCategory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="4" selection-start="2482" selection-end="3170" vertical-scroll-proportion="-4.0384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="59" selection-start="2527" selection-end="2527" vertical-scroll-proportion="4.4615383">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VendorController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/VendorController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="14" selection-start="1495" selection-end="1495" vertical-scroll-proportion="-10.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GxController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/giix-components/GxController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="158" column="14" selection-start="5635" selection-end="5635" vertical-scroll-proportion="-0.15384616">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="46" selection-start="277" selection-end="277" vertical-scroll-proportion="-3.9230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/video.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="214" selection-end="330" vertical-scroll-proportion="-2.6153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="227" selection-start="3493" selection-end="3700" vertical-scroll-proportion="8.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="201" selection-start="2006" selection-end="2047" vertical-scroll-proportion="-13.076923">
+              <folding>
+                <marker date="1385126598882" expanded="true" signature="2484:3143" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="2541:3143" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="2554:3143" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="2800:3143" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="2846:3143" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="3285:3379" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="3752:4414" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="3811:4414" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="3824:4414" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="4071:4414" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="4117:4414" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="4556:4650" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="5012:5351" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="5225:5351" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="5259:5351" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="6559:9045" placeholder="..." />
+                <marker date="1385126598882" expanded="true" signature="6589:6730" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="1" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventPlannerController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="14" selection-start="2954" selection-end="2954" vertical-scroll-proportion="-10.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YiiBase.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/YiiBase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="434" column="0" selection-start="15403" selection-end="15403" vertical-scroll-proportion="-5.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CActiveForm.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/web/widgets/CActiveForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="839" column="0" selection-start="35640" selection-end="35640" vertical-scroll-proportion="-5.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CModel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../yii/framework/base/CModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="0" selection-start="6165" selection-end="6165" vertical-scroll-proportion="-5.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -113,22 +363,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/eventPlanner/step1.php" />
-        <option value="$PROJECT_DIR$/protected/models/Users.php" />
-        <option value="$PROJECT_DIR$/protected/views/eventPlanner/step3.php" />
-        <option value="$PROJECT_DIR$/protected/views/eventPlanner/temp.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
-        <option value="$PROJECT_DIR$/protected/components/amazon/config/aws-config.php" />
-        <option value="$PROJECT_DIR$/../aws/samples/sampleSettings.php" />
-        <option value="$PROJECT_DIR$/../aws/samples/sampleItemLookup.php" />
+        <option value="$PROJECT_DIR$/protected/config/params.php" />
         <option value="$PROJECT_DIR$/css/eventfish.css" />
-        <option value="$PROJECT_DIR$/../aws/Exeu-Amazon-ECS-PHP-Library-1867eaa/samples/sampleSettings.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
-        <option value="$PROJECT_DIR$/protected/components/AmazonApi.php" />
+        <option value="$PROJECT_DIR$/protected/models/_base/BaseUsers.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/AmazonProductsController.php" />
-        <option value="$PROJECT_DIR$/protected/components/AmazonProductAPI.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/video.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/models/Users.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/users/_form.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/users/_search.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/users/_view.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/users/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/signUp.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/category/_form.php" />
+        <option value="$PROJECT_DIR$/protected/models/Category.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/category/admin.php" />
       </list>
     </option>
   </component>
@@ -284,7 +534,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -379,6 +628,88 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -397,62 +728,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="209" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="209" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="213" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="209" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="888" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="884" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="888" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="208" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="202" />
@@ -527,6 +823,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\data\Ampps\www\eventfish\protected\views\site" />
       <recent name="D:\data\Ampps\www\eventfish\protected\widgets\facebook\views" />
     </key>
   </component>
@@ -541,14 +838,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="9c71fdbe-41e6-434f-a4f5-cff5c577529c" server_name="Shop">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="9c71fdbe-41e6-434f-a4f5-cff5c577529c" server_name="Shop">
       <method />
     </configuration>
     <configuration default="false" name="eventfish" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="eventfish" start_url="/eventfish">
@@ -613,25 +910,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5724234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35416666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.42618385" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2039897" sideWeight="0.6722222" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2039897" sideWeight="0.6736111" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -707,94 +1004,136 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="60" />
+      <option name="time" value="64" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/vendor/step1.php">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="105" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="-12.423077" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="-0.65384614" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/AmazonExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="816" selection-end="816" vertical-scroll-proportion="-20.26923" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../yii/framework/base/CApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="688" column="19" selection-start="23161" selection-end="23161" vertical-scroll-proportion="-0.047058824">
+        <state line="22" column="1" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../aws/Exeu-Amazon-ECS-PHP-Library-1867eaa/samples/sampleSettings.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="49" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1487965">
+        <state line="42" column="201" selection-start="2006" selection-end="2047" vertical-scroll-proportion="-13.076923">
+          <folding>
+            <marker date="1385126598882" expanded="true" signature="2484:3143" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="2541:3143" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="2554:3143" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="2800:3143" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="2846:3143" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="3285:3379" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="3752:4414" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="3811:4414" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="3824:4414" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="4071:4414" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="4117:4414" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="4556:4650" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="5012:5351" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="5225:5351" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="5259:5351" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="6559:9045" placeholder="..." />
+            <marker date="1385126598882" expanded="true" signature="6589:6730" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="59" selection-start="2527" selection-end="2527" vertical-scroll-proportion="4.4615383">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/eventfish.css">
+    <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1720" column="23" selection-start="33072" selection-end="33072" vertical-scroll-proportion="0.21037464">
+        <state line="84" column="28" selection-start="2778" selection-end="2787" vertical-scroll-proportion="-2.745098">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/runtime/application.log">
+    <entry file="file://$PROJECT_DIR$/db/eventfish.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7396" column="10" selection-start="628450" selection-end="628450" vertical-scroll-proportion="0.25354108">
+        <state line="569" column="363" selection-start="34988" selection-end="34988" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/AdminModule.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="617" selection-end="617" vertical-scroll-proportion="0.26984128">
+        <state line="17" column="252" selection-start="647" selection-end="647" vertical-scroll-proportion="-5.6923075">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="614" selection-end="1432" vertical-scroll-proportion="0.2943723">
+        <state line="155" column="0" selection-start="6388" selection-end="6388" vertical-scroll-proportion="-5.3846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="619" selection-end="620" vertical-scroll-proportion="0.23665224">
+        <state line="147" column="0" selection-start="4848" selection-end="4848" vertical-scroll-proportion="-5.3846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/AmazonProductAPI.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="20" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.35642135">
+        <state line="85" column="0" selection-start="3560" selection-end="3560" vertical-scroll-proportion="-6.1923075">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/AmazonProductsController.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/users/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="21" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.36796537">
+        <state line="59" column="20" selection-start="2021" selection-end="2021" vertical-scroll-proportion="-6.0384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/signUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="36" selection-start="1759" selection-end="1759" vertical-scroll-proportion="-4.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/category/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="87" selection-start="1939" selection-end="1939" vertical-scroll-proportion="-11.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/_base/BaseCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="4" selection-start="2482" selection-end="3170" vertical-scroll-proportion="-4.0384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="33" selection-start="3693" selection-end="3693" vertical-scroll-proportion="-29.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/category/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="18" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.48034933">
           <folding />
         </state>
       </provider>

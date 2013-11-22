@@ -78,5 +78,24 @@ class Category extends BaseCategory {
         $this->updated_at = new CDbExpression('NOW()');
         return parent::beforeSave();
     }
+    public function search() {
+        $criteria = new CDbCriteria;
+
+        $criteria->compare('id', $this->id);
+        $criteria->compare('parent_id', $this->parent_id);
+        $criteria->compare('category_name', $this->category_name, true);
+        $criteria->compare('category_image', $this->category_image, true);
+        $criteria->compare('category_type', $this->category_type, true);
+        $criteria->compare('category_description', $this->category_description, true);
+        $criteria->compare('status', $this->status);
+        $criteria->compare('created_at', $this->created_at, true);
+        $criteria->compare('updated_at', $this->updated_at, true);
+
+        $criteria->order='id DESC';
+
+        return new CActiveDataProvider($this, array(
+            'criteria' => $criteria,
+        ));
+    }
 
 }

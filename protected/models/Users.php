@@ -13,10 +13,12 @@ class Users extends BaseUsers
     public function rules()
     {
         return array(
-            array('first_name,last_name,email', 'required'),
+            array('first_name,last_name,email,password', 'required'),
             array('email', 'email'),
-            array('facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, user_type2, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'safe'),
-         );
+            array('facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'safe'),
+            array('email', 'unique', 'className' => 'User', 'attributeName' => 'email', 'message'=>'This Email is already in use'),
+            array('password', 'compare', 'compareAttribute' => 'retype_password' , 'message'=>'Please enter the same password twice'),
+        );
     }
 
     public function attributeLabels() {
@@ -85,7 +87,6 @@ class Users extends BaseUsers
         $criteria->compare('country_id', $this->country_id);
         $criteria->compare('marital_status', $this->marital_status, true);
         $criteria->compare('user_type', $this->user_type);
-        $criteria->compare('user_type2', $this->user_type2, true);
         $criteria->compare('start_time', $this->start_time, true);
         $criteria->compare('end_time', $this->end_time, true);
         $criteria->compare('available_days', $this->available_days, true);

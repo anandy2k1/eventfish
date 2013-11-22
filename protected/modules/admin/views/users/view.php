@@ -58,7 +58,6 @@ array(
 'income',
 'marital_status',
 'user_type:boolean',
-'user_type2',
 'short_description',
 'start_time',
 'end_time',
