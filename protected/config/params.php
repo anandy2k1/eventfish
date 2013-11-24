@@ -54,11 +54,20 @@ return array(
         'Married' => 'Married',
         'Divorce' => 'Divorce'
     ),
+    'REDIRECT_PAGE' => array(
+        'HOME' => '0',
+        'STEEP1' => '1',
+        'STEEP2' => '2',
+        'STEEP3' => '3',
+    ),
 
-    'adminEmail'=>'anandy2k1@gmail.com',
-    'FACEBOOK_APPID'  => '222474297933675', // '222260334571937',
+    'adminEmail' => 'anandy2k1@gmail.com',
+    'FACEBOOK_APPID' => '222474297933675', // '222260334571937',
     'FACEBOOK_SECRET' => 'e34c58d546621e6f2689c676b26543f1', // 'f1d07d229e54735c1107905898fcb861',
-
-
+    'category_thumb_width' => '137',
+    'category_thumb_height' => '97',
+    'slider_thumb_width' => '75',
+    'slider_thumb_height' => '75',
+    'event_thumb_width' => '300',
+    'event_thumb_height' => '400',
 );
-

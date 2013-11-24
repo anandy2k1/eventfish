@@ -33,11 +33,11 @@
                         </tr>
                         <tr>
                             <td align="right"><strong>Address:</strong></td>
-                            <td align="left"><?php echo $model->address_1 .", " .$model->address_2 ; ?></td>
+                            <td align="left"><?php echo $model->address_1 . ", " . $model->address_2; ?></td>
                         </tr>
                         <tr>
                             <td align="right"><strong>City, State, Zip:</strong></td>
-                            <td align="left"><?php echo $model->city . ", ".$model->state . ", " . $model->zip; ?></td>
+                            <td align="left"><?php echo $model->city . ", " . $model->state . ", " . $model->zip; ?></td>
                         </tr>
                         <tr>
                             <td align="right"><strong>Home Phone:</strong></td>
@@ -106,14 +106,12 @@
                 </div>
             </div>
             <div class="clear">&nbsp;</div>
-            <div class="buttons">                
+            <div class="buttons">
                 <div class="gotoaccount_btn">
-                    <?php //echo CHtml::link('Go to Account','#');?>
-                    <?php echo GxHtml::htmlButton('<span><span>Go to Account</span></span>', array('class' => 'general-btn-1','type'=>'submit'));?>
+                    <?php echo CHtml::link('Go to Account',  array('eventPlanner/index'), array('class' => 'button_green')); ?>
                 </div>
                 <div  class="planevent_btn">
-                    <?php //echo CHtml::link('Plan an Event','#');?>
-                    <?php echo GxHtml::htmlButton('<span><span>Plan an Event</span></span>', array('class' => 'general-btn-1','type'=>'submit'));?>
+                    <?php echo CHtml::link('Plan an Event', array('eventPlanner/planEventGeneralAdd'), array('class' => 'button_orange margin_right')); ?>
                 </div>
             </div>
         </div>

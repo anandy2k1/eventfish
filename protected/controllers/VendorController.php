@@ -1,17 +1,20 @@
 <?php
 
-class VendorController extends Controller {
+class VendorController extends Controller
+{
 
     /**
      * @return array action filters
      */
-    public function filters() {
+    public function filters()
+    {
         return array(
             'accessControl', // perform access control for CRUD operations
         );
     }
 
-    public function accessRules() {
+    public function accessRules()
+    {
         return array(
             array('allow',
                 'actions' => array('*'),
@@ -20,11 +23,17 @@ class VendorController extends Controller {
             array('allow',
                 'actions' => array('error'),
                 'users' => array('*'),
-            )            
+            )
         );
     }
 
-    public function actionStep1() {
+    public function actionIndex()
+    {
+        $this->render('index');
+    }
+
+    public function actionStep1()
+    {
         $oModel = Users::model()->findByPk(Yii::app()->user->id);
 
         if (Yii::app()->getRequest()->getIsPostRequest()) {
@@ -50,7 +59,8 @@ class VendorController extends Controller {
      * Performs the AJAX validation.
      * @param CModel the model to be validated
      */
-    protected function performAjaxValidation($model, $ssFormName) {
+    protected function performAjaxValidation($model, $ssFormName)
+    {
         if (isset($_POST['ajax']) && $_POST['ajax'] === $ssFormName) {
             echo CActiveForm::validate($model);
             Yii::app()->end();

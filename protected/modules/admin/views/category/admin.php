@@ -38,14 +38,17 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'template' => '{update}{delete}',
             'class' => 'CButtonColumn',
             'header' => Yii::t('app', 'Actions'),
-            /*'buttons'=>array(
-                'update'=>array(
-                    'imageUrl'=>Yii::app()->baseUrl.'/images/edit.png',
-                ),
-                'delete'=>array(
-                    'imageUrl'=>Yii::app()->baseUrl.'/images/delete.png',
-                ),
-            ),*/
+//            'buttons'=>array(
+//                'update'=>array(
+//                    'imageUrl'=>Yii::app()->baseUrl.'/images/edit.png',
+//                    'options'=>array(
+//                        'class'=>'imagebutton',
+//                    ),
+//                ),
+//                'delete'=>array(
+//                    'imageUrl'=>Yii::app()->baseUrl.'/images/delete.png',
+//                ),
+//            ),
             'deleteConfirmation' => "Are you sure want to delete this category?"            
         )
     ),

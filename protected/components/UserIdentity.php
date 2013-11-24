@@ -33,7 +33,7 @@ class UserIdentity extends CUserIdentity {
                 Yii::app()->admin->setId($this->_id);
 
                 $usersData = $users->attributes;
-                Yii::app()->admin->setState('user', $usersData);
+                Yii::app()->admin->setState('admin', $usersData);
             }
         }
         return !$this->errorCode;

@@ -64,10 +64,16 @@ return array(
             'urlFormat' => 'path',
             /*'showScriptName' => false,*/
             'rules' => array(
-                // backend routing rules //
+                // admin routing rules //
                 'admin' => 'admin/index/index',
                 // frontend routing rules //
                 'home' => 'site/index',
+                'event/home' => 'eventPlanner/index',
+                'event/general/add' => 'eventPlanner/PlanEventGeneralAdd',
+                'event/general/edit/<id:\w+>' => 'eventPlanner/planEventGeneralEdit',
+                'event/accesories/add/<id:\w+>' => 'eventPlanner/planEventAccessoriesAdd',
+                'event/accesories/add/<id:\w+>/<acce_id:\w+>' => 'eventPlanner/planEventAccessoriesEdit',
+
                 'page/<id:\w+>' => 'site/cms',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
@@ -92,7 +98,7 @@ return array(
         ),
         // uncomment the following to use a MySQL database
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=eventfish_1',
+            'connectionString' => 'mysql:host=localhost;dbname=eventfish',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => 'mysql',

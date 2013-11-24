@@ -3,18 +3,20 @@
 /**
  * This is the Common model class for declared general functions/methods.
  */
-class Common {
+class Common
+{
 
     /**
      * function: objectToArray()
-     * For Convert Object To Array 
+     * For Convert Object To Array
      * @param $object
      * @return array $amConverted
      */
-    public static function objectToArray($object) {
+    public static function objectToArray($object)
+    {
         $amConverted = array();
         foreach ($object as $member => $data) {
-            $amConverted[$member] = (array) $data;
+            $amConverted[$member] = (array)$data;
         }
         return $amConverted;
     }
@@ -25,7 +27,8 @@ class Common {
      * @param $input
      * @return string decoded data
      */
-    public static function base64UrlDecode($input) {
+    public static function base64UrlDecode($input)
+    {
         return base64_decode(strtr($input, '-_', '+/'));
     }
 
@@ -41,10 +44,11 @@ class Common {
      *
      * return boolean
      */
-    public static function commonUpdateField($ssTableName, $ssFieldName, $smFieldValue, $ssCompareField, $smCompareValue) {
+    public static function commonUpdateField($ssTableName, $ssFieldName, $smFieldValue, $ssCompareField, $smCompareValue)
+    {
         Yii::app()->db->createCommand()
-                ->update($ssTableName, array($ssFieldName => $smFieldValue,
-                        ), $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
+            ->update($ssTableName, array($ssFieldName => $smFieldValue,
+            ), $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
 
         return true;
     }
@@ -59,9 +63,10 @@ class Common {
      *
      * return boolean
      */
-    public static function commonDeleteRecord($ssTableName, $ssCompareField, $smCompareValue) {
+    public static function commonDeleteRecord($ssTableName, $ssCompareField, $smCompareValue)
+    {
         Yii::app()->db->createCommand()
-                ->delete($ssTableName, $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
+            ->delete($ssTableName, $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
 
         return true;
     }
@@ -69,10 +74,11 @@ class Common {
     /**
      * function: generateToken()
      * For generate random token
-     * @param integer $snLength 
+     * @param integer $snLength
      * @return array $smCode
      */
-    public static function generateToken($snLength) {
+    public static function generateToken($snLength)
+    {
         $smCode = "";
         $smData = "AbcDE123IJKLMN67QRSTUVWXYZaBCdefghijklmn123opq45rs67tuv89wxyz0FGH45OP89";
         for ($snI = 0; $snI < $snLength; $snI++)
@@ -84,10 +90,11 @@ class Common {
     /**
      * function: createImageURL()
      * For generate random number
-     * @param integer $snLength 
+     * @param integer $snLength
      * @return array $smCode
      */
-    public static function createImageURL($ssImageName) {
+    public static function createImageURL($ssImageName)
+    {
         $ssProfileImageURL = Yii::app()->params['image_upload_url'] . Yii::app()->request->baseUrl . '/uploads/' . $ssImageName;
         return $ssProfileImageURL;
     }
@@ -96,9 +103,10 @@ class Common {
      * Function replaceMailContent  Replace  Dynamic Mail Content
      * @param $omContent = object of old content
      * @param $asDynamicContent = array of dynamic content
-     * return $ssBodyContent = string of replaced old content 
+     * return $ssBodyContent = string of replaced old content
      */
-    static public function replaceMailContent($ssBodyContent, $asDynamicContent) {
+    static public function replaceMailContent($ssBodyContent, $asDynamicContent)
+    {
         if (trim($ssBodyContent) != '') {
             foreach ($asDynamicContent as $key => $value)
                 $ssBodyContent = str_replace($key, $value, $ssBodyContent);
@@ -112,11 +120,12 @@ class Common {
      * function: sendMail()
      * For send apple push notification.
      * @param string $ssToEmail
-     * @param string $asFromEmail 
+     * @param string $asFromEmail
      * @param string $ssSubject
      * @param string $ssBody
      */
-    public static function sendMail($ssToEmail, $asFromEmail, $ssSubject, $ssBody) {
+    public static function sendMail($ssToEmail, $asFromEmail, $ssSubject, $ssBody)
+    {
         $omMessage = new YiiMailMessage;
 
         $omMessage->setTo($ssToEmail);
@@ -134,8 +143,9 @@ class Common {
      * For close color box popup window.
      * @param string $ssCloseScript
      */
-    public static function closeColorBox($ssRedirectUrl) {        
-        $ssRedirectUrl = Yii::app()->params['site_url'].$ssRedirectUrl;
+    public static function closeColorBox($ssRedirectUrl)
+    {
+        $ssRedirectUrl = Yii::app()->params['site_url'] . $ssRedirectUrl;
         $ssCloseScript = "<script src='" . Yii::app()->request->baseUrl . "/js/jquery.js'></script>";
         $ssCloseScript .= "<script src='" . Yii::app()->request->baseUrl . "/js/colorbox/jquery.colorbox.js'></script>";
         //$ssCloseScript .= "<script type='text/javascript'>parent.jQuery.colorbox.close(); parent.window.location.reload(true);</script>";
@@ -147,21 +157,23 @@ class Common {
     }
 
     /**
-     * function: getListCountry()        
+     * function: getListCountry()
      * @param none
      * @return array.
      */
-    public static function getListCountry() {
+    public static function getListCountry()
+    {
         $model = CountryMaster::model()->findAll();
         return CHtml::listData($model, 'id', 'country');
     }
 
     /**
-     * function: getSliderImage()        
+     * function: getSliderImage()
      * @param string $ssImage
      * @return image.
      */
-    public static function getSliderImage($ssImage) {
+    public static function getSliderImage($ssImage)
+    {
 
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/slider_images/';
         $amImageInfo = pathinfo($ssImage);
@@ -174,11 +186,12 @@ class Common {
     }
 
     /**
-     * function: getCategoryImage()        
+     * function: getCategoryImage()
      * @param string $ssImage
      * @return image.
      */
-    public static function getCategoryImage($ssImage) {
+    public static function getCategoryImage($ssImage)
+    {
         //return CHtml::image(Yii::app()->baseUrl . '/uploads/category_images/' . $ssImage, "", array('width' => '75px', 'height' => '75px'));
 
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/category_images/';
@@ -192,7 +205,8 @@ class Common {
         }
     }
 
-    public static function getCategoryImageUrl($ssImage) {
+    public static function getCategoryImageUrl($ssImage)
+    {
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/category_images/';
         $amImageInfo = pathinfo($ssImage);
         $ssImageName = $ssOrigPath . $amImageInfo['basename'];
@@ -203,14 +217,16 @@ class Common {
         }
     }
 
+
     /**
-     * function: removeOldImage()        
-     * @param string $ssName 
-     * @param string $ssOrigPath 
-     * @param string $ssThumbPath 
+     * function: removeOldImage()
+     * @param string $ssName
+     * @param string $ssOrigPath
+     * @param string $ssThumbPath
      * For remove image.
      */
-    public static function removeOldImage($ssName, $ssOrigPath, $ssThumbPath = '') {
+    public static function removeOldImage($ssName, $ssOrigPath, $ssThumbPath = '')
+    {
 
         $amImageInfo = pathinfo($ssName);
         $ssImageName = $ssOrigPath . $amImageInfo['basename'];
@@ -222,6 +238,39 @@ class Common {
             if ($ssName != "" && file_exists($ssThumbPhotoPath))
                 unlink($ssThumbPhotoPath);
         }
+    }
+
+    public static function getEventImage($ssImage)
+    {
+        $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/event_images/';
+        $amImageInfo = pathinfo($ssImage);
+        $ssImageName = $ssOrigPath . $amImageInfo['basename'];
+        if ($ssImage != "" && file_exists($ssImageName)) {
+            return Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/uploads/event_images/thumb/' . $ssImage;
+        } else {
+            return Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/no-img.jpg';
+        }
+    }
+
+    public static function eventRedirectPage($oUser)
+    {
+        $ssUrl = ($oUser->redirect_page == 0) ? Yii::app()->createUrl('eventPlanner/index') : (($oUser->redirect_page == 1) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('eventPlanner/step2'));
+        return $ssUrl;
+    }
+
+    public static function vendorRedirectPage($oUser)
+    {
+        $ssUrl = '';
+        if ($oUser->redirect_page == 0) {
+            $ssUrl = Yii::app()->createUrl('vendor/index');
+        } elseif ($oUser->redirect_page == 1) {
+            $ssUrl = Yii::app()->createUrl('vendor/step1');
+        } elseif ($oUser->redirect_page == 2) {
+            $ssUrl = Yii::app()->createUrl('vendor/step2');
+        } else {
+            $ssUrl = Yii::app()->createUrl('vendor/step3');
+        }
+        return $ssUrl;
     }
 
 }

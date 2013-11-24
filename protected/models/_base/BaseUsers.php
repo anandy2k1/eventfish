@@ -41,6 +41,7 @@
  * @property string $start_time
  * @property string $end_time
  * @property string $available_days
+ * @property integer $redirect_page
  * @property integer $status
  * @property string $last_login_at
  * @property string $created_at
@@ -78,14 +79,14 @@ abstract class BaseUsers extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('parent_id, is_fblogin, state_id, country_id, status', 'numerical', 'integerOnly'=>true),
+			array('parent_id, is_fblogin, state_id, country_id, redirect_page, status', 'numerical', 'integerOnly'=>true),
 			array('role_id', 'length', 'max'=>10),
 			array('email, password, facebook_id, ssn_number, routing_number, account_number, bank_name, first_name, last_name, city, zip, phone, mobile, office_phone, ethnicity, income, marital_status, available_days', 'length', 'max'=>255),
 			array('gender', 'length', 'max'=>6),
 			array('user_type', 'length', 'max'=>9),
 			array('address_1, address_2, date_of_birth, short_description, start_time, end_time, last_login_at, created_at, updated_at, facebook_picture', 'safe'),
-			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at, facebook_picture', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at, facebook_picture', 'safe', 'on'=>'search'),
+			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, redirect_page, status, last_login_at, created_at, updated_at, facebook_picture', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, redirect_page, status, last_login_at, created_at, updated_at, facebook_picture', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -143,6 +144,7 @@ abstract class BaseUsers extends GxActiveRecord {
 			'start_time' => Yii::t('app', 'Start Time'),
 			'end_time' => Yii::t('app', 'End Time'),
 			'available_days' => Yii::t('app', 'Available Days'),
+			'redirect_page' => Yii::t('app', 'Redirect Page'),
 			'status' => Yii::t('app', 'Status'),
 			'last_login_at' => Yii::t('app', 'Last Login At'),
 			'created_at' => Yii::t('app', 'Created At'),
@@ -196,6 +198,7 @@ abstract class BaseUsers extends GxActiveRecord {
 		$criteria->compare('start_time', $this->start_time, true);
 		$criteria->compare('end_time', $this->end_time, true);
 		$criteria->compare('available_days', $this->available_days, true);
+		$criteria->compare('redirect_page', $this->redirect_page);
 		$criteria->compare('status', $this->status);
 		$criteria->compare('last_login_at', $this->last_login_at, true);
 		$criteria->compare('created_at', $this->created_at, true);

@@ -1,11 +1,13 @@
 <?php
 
-class SiteController extends Controller {
+class SiteController extends Controller
+{
 
     /**
      * Declares class-based actions.
      */
-    public function actions() {
+    public function actions()
+    {
         return array(
             // captcha action renders the CAPTCHA image displayed on the contact page
             'captcha' => array(
@@ -24,7 +26,8 @@ class SiteController extends Controller {
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
      */
-    public function actionIndex() {
+    public function actionIndex()
+    {
         // FOR GET ALL CATEGORIES //
         $omEventVendorCategories = Category::getAllActiveCategories();
 
@@ -40,7 +43,8 @@ class SiteController extends Controller {
     /**
      * This is the action to handle external exceptions.
      */
-    public function actionError() {
+    public function actionError()
+    {
         if ($error = Yii::app()->errorHandler->error) {
             if (Yii::app()->request->isAjaxRequest)
                 echo $error['message'];
@@ -52,7 +56,8 @@ class SiteController extends Controller {
     /**
      * Displays the contact page
      */
-    public function actionContact() {
+    public function actionContact()
+    {
         $model = new ContactForm;
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
@@ -60,9 +65,9 @@ class SiteController extends Controller {
                 $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
                 $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
                 $headers = "From: $name <{$model->email}>\r\n" .
-                        "Reply-To: {$model->email}\r\n" .
-                        "MIME-Version: 1.0\r\n" .
-                        "Content-Type: text/plain; charset=UTF-8";
+                    "Reply-To: {$model->email}\r\n" .
+                    "MIME-Version: 1.0\r\n" .
+                    "Content-Type: text/plain; charset=UTF-8";
 
                 mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
                 Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
@@ -72,7 +77,8 @@ class SiteController extends Controller {
         $this->render('contact', array('model' => $model));
     }
 
-    public function actionSignUp() {
+    public function actionSignUp()
+    {
         $this->layout = false;
         $model = new Users();
         $snEventPlannerRollId = UserRole::getRoleIdAsPerType('event_planner');
@@ -89,8 +95,13 @@ class SiteController extends Controller {
 
                 $model->save();
                 $model->login($smPassword);
-                $amUserData = Yii::app()->admin->getState('user');
-                $ssUrl = ($amUserData['role_id'] == $snEventPlannerRollId) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('vendor/step1');
+                $amUserData = Yii::app()->admin->getState('admin');
+                $ssUrl = '';
+                if ($amUserData['role_id'] == $snEventPlannerRollId) {
+                    $ssUrl = Common::eventRedirectPage($model);
+                } else {
+                    $ssUrl = Common::vendorRedirectPage($model);
+                }
 
                 Common::closeColorBox($ssUrl);
                 //$this->redirect(array('admin'));
@@ -107,44 +118,23 @@ class SiteController extends Controller {
      * Displays the login page
      */
 
-    public function actionFacebooklogin() {
+    public function actionFacebooklogin()
+    {
         Yii::import('ext.facebook.*');
         $ui = new FacebookUserIdentity(Yii::app()->params['FACEBOOK_APPID'], Yii::app()->params['FACEBOOK_SECRET']);
-		if ($ui->authenticate()) {
-            $user=Yii::app()->user;
+        if ($ui->authenticate()) {
+            $user = Yii::app()->user;
             $user->login($ui);
             $this->redirect($user->returnUrl);
         } else {
             throw new CHttpException(401, $ui->error);
         }
-	}
+    }
 
-    public function actionLogin() {
+    public function actionLogin()
+    {
         $this->layout = '..//layouts/popup';
         $model = new LoginForm;
-       /* $facebook = new Facebook(array(
-            'appId'  => Yii::app()->params['FACEBOOK_APPID'],
-            'secret' => Yii::app()->params['FACEBOOK_SECRET'],
-            'cookie' => true,
-            'domain'=>'local.eventfish.com'
-        ));
-        $user = $facebook->getUser();
-        p($user);exit;
-        if ($user)
-        {
-            try
-            {
-                // Proceed knowing you have a logged in user who's authenticated.
-                $user_profile = $facebook->api('/me');
-            }
-            catch (FacebookApiException $e)
-            {
-                error_log($e);
-                $user = null;
-            }
-        }*/
-
-
         // if it is ajax validation request
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
             echo CActiveForm::validate($model);
@@ -155,9 +145,15 @@ class SiteController extends Controller {
         if (isset($_POST['LoginForm'])) {
             $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to the previous page if valid
-            if ($model->validate() && $model->login()) {                
-                $amUserData = Yii::app()->admin->getState('user');
-                $ssUrl = ($amUserData['role_id'] == UserRole::getRoleIdAsPerType('event_planner')) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('vendor/step1');
+            if ($model->validate() && $model->login()) {
+                $amUserData = Yii::app()->admin->getState('admin');
+                $ssUrl = '';
+                $oUser = Users::model()->findByPk($amUserData['id']);
+                if ($amUserData['role_id'] == UserRole::getRoleIdAsPerType('event_planner')) {
+                    $ssUrl = Common::eventRedirectPage($oUser);
+                } else {
+                    $ssUrl = Common::vendorRedirectPage($oUser);
+                }
                 Common::closeColorBox($ssUrl);
             }
         }
@@ -169,12 +165,14 @@ class SiteController extends Controller {
     /**
      * Logs out the current user and redirect to homepage.
      */
-    public function actionLogout() {
+    public function actionLogout()
+    {
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
     }
 
-    public function actionCms() {
+    public function actionCms()
+    {
         if (isset($_REQUEST['id'])) {
             $keyUrl = trim($_REQUEST['id']);
             $pageModel = Pages::model()->find('id = :key OR custom_url_key = :key', array(':key' => $keyUrl));
@@ -195,9 +193,9 @@ class SiteController extends Controller {
      * Performs the AJAX validation.
      * @param CModel the model to be validated
      */
-    protected function performAjaxValidation($model) {
-        if (isset($_POST['ajax']) && $_POST['ajax'] === 'sign-up-form')
-        {
+    protected function performAjaxValidation($model)
+    {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'sign-up-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }

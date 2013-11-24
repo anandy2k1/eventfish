@@ -112,11 +112,6 @@ a {
 	background-color:#EFF4FA;
 	text-decoration:none;
 }*/
-div.flash-error, div.flash-notice, div.flash-success {
-    padding: .8em;
-    margin-bottom: 1em;
-    border: 2px solid #ddd;
-}
 
 div.flash-error {
     background: #FBE3E4;
@@ -1001,3 +996,5 @@ ul.filed_list li.full_width  textarea {
 .loginpage .content  .login_box .buttons {
     margin-left: 150px !important;
 }
+
+.button-column img {width:25px; padding: 0px 2px;}
