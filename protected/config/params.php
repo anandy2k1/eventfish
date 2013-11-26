@@ -56,9 +56,9 @@ return array(
     ),
     'REDIRECT_PAGE' => array(
         'HOME' => '0',
-        'STEEP1' => '1',
-        'STEEP2' => '2',
-        'STEEP3' => '3',
+        'STEP1' => '1',
+        'STEP2' => '2',
+        'STEP3' => '3',
     ),
 
     'adminEmail' => 'anandy2k1@gmail.com',

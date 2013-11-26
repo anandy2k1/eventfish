@@ -90,6 +90,7 @@ class SiteController extends Controller
         if (isset($_POST['Users'])) {
             $smPassword = $_POST['Users']['password'];
             $_POST['Users']['password'] = md5($smPassword);
+            $_POST['Users']['retype_password'] = md5($_POST['Users']['retype_password']);
             $model->setAttributes($_POST['Users']);
             if ($model->validate()) {
 
