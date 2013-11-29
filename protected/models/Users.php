@@ -20,7 +20,7 @@ class Users extends BaseUsers
             array('retype_password', 'safe'),
             array('facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, status, last_login_at, created_at, updated_at', 'safe'),
             array('email', 'unique', 'className' => 'Users', 'attributeName' => 'email', 'message'=>'This Email is already in use'),
-            array('password', 'compare', 'compareAttribute' => 'retype_password' , 'message'=>'Please enter the same password twice')            
+            array('password', 'compare', 'compareAttribute' => 'retype_password' , 'message'=>'Please enter the same password twice'),
         );
     }
 

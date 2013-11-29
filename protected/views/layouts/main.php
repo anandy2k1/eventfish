@@ -95,7 +95,7 @@
                         <?php echo CHtml::link('How it Works', '#', array('title' => 'How it Works')); ?>
                     </li>
                     <li>
-                        <?php echo CHtml::link('Plan an Event', '#', array('title' => 'Plan an Event')); ?>
+                        <?php echo CHtml::link('Plan an Event', Yii::app()->baseUrl.'/index.php/eventPlanner/planEventGeneralAdd', array('title' => 'Plan an Event')); ?>
                     </li>
                     <li>
                         <?php echo CHtml::link('Become a Vendor', '#', array('title' => 'Become a Vendor')); ?>

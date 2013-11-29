@@ -789,7 +789,7 @@ footer .icon-bar .right {
     float: left;
     width: 318px;
     float: left;
-    padding-left: 20px;
+    padding-left: 9px;
     margin-top: 30px;
 }
 
@@ -915,9 +915,9 @@ footer .icon-bar .right {
 
 .event-form .slider-range {
     clear: both;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     padding-top: 25px;
-    width: 75%;
+    width: 95%;
 }
 
 .event-form .f-right > h1 {
@@ -2381,3 +2381,20 @@ div.flash-success a {
 /****************************************************/
 /*          Event Planner Profile Steps End*/
 /****************************************************/
+
+#plan-event-general-form select.select
+{
+    padding: 4px 5px;
+}
+#plan-event-general-form #Event_zip
+{
+    width: 72px;
+}
+.event-cat .details
+{
+    text-align: center;
+}
+#plan-event-general-form #Event_event_image
+{
+    margin-left: 30px;
+}

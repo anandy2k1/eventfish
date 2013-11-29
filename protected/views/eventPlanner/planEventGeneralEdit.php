@@ -7,6 +7,26 @@
 
         // Initialise noUiSlider
         $('.noUiSlider').noUiSlider({
+            range: [0, 24], start: [parseInt('<?php echo $model->start_time;?>').toString().replace(/\b(\d{1})\b/g, '0$1'), parseInt('<?php echo $model->end_time;?>').toString().replace(/\b(\d{1})\b/g, '0$1')],
+            step: 1, slide: function () {
+                var values = $(this).val();
+                $('#Event_start_time').val(values[0]);
+                $('#Event_end_time').val(values[1]);
+                $('#fromtime').text(parseInt(values[0]).toString().replace(/\b(\d{1})\b/g, '0$1'));
+                $('#totime').text(parseInt(values[1]).toString().replace(/\b(\d{1})\b/g, '0$1'));
+                /*$(this).next('span').text(
+                 values[0] + "  TO  " + values[1]
+
+                 );*/
+            }
+        });
+
+    });
+    // Wait until the document is ready
+   /* $(function () {
+
+        // Initialise noUiSlider
+        $('.noUiSlider').noUiSlider({
             range: [0, 24], start: [<?php echo $model->start_time;?>, <?php echo $model->end_time;?>],
             step: 1, slide: function () {
                 var values = $(this).val();
@@ -19,7 +39,7 @@
             }
         });
 
-    });
+    });*/
 
 
 </script>
@@ -38,8 +58,10 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
 
             <div class="details">
                 <?php
-                echo CHtml::image(Common::getEventImage($model->event_image), '', array('width' => '75px', 'height' => '75px'));
-                echo $model->event_title;
+                echo CHtml::image(Common::getEventImage($model->event_image), '', array('width' => '120px', 'height' => '100px'));
+                ?>
+                <?php
+                echo "<div class='clear' style='height:1px;'>&nbsp;</div>" .$model->event_title;
                 ?>
 
             </div>
@@ -96,7 +118,7 @@ $form = $this->beginWidget('GxActiveForm', array(
     <div class="title">
         <span>1</span>
 
-        <h1><strong>General:</strong> Add your Event Details </h1>
+        <h1><strong>General:</strong> Add Your Event Details </h1>
     </div>
     <div class="row">
         <div class="f-left">
@@ -107,8 +129,13 @@ $form = $this->beginWidget('GxActiveForm', array(
                 <div class="add-photos-button">
                     <span class="button-add">
                         <?php
-                        echo CHtml::image(Common::getEventImage($model->event_image), '', array('width' => '240px', 'height' => '175px'));
-                        echo $form->fileField($model, 'event_image'); ?>
+                        echo CHtml::image(Common::getEventImage($model->event_image), '', array('style' => 'width:100%;',  'id' => 'profile-photo'));
+                        ?>
+                        <!--<div class="tabimage" style="background: url('<?php /*echo Common::getEventImage($model->event_image)*/?>');width:240px;height:175px;">
+
+                        </div>-->
+                        <?php
+                        echo $form->fileField($model, 'event_image',array('onchange' => 'readURL(this,"profile-photo")')); ?>
                     </span>
                     <label>Someone Birthday</label>
                 </div>
@@ -169,13 +196,35 @@ $form = $this->beginWidget('GxActiveForm', array(
                 </div>
             </div>
             <div class="slider-range">
+                <table class="timeslidertable">
+                    <tr>
+                        <td width="4%">
+                            <span id="fromtime">
+
+                                <script>
+                                    document.write(  parseInt('<?php echo $model->start_time;?>').toString().replace(/\b(\d{1})\b/g, '0$1'));
+                                </script>
+                            </span>
+                        </td>
+                        <td width="80%">
+                            <div  id="slider_time" class="noUiSlider"></div>
+                        </td>
+                        <td width="10%" style="padding-left:12px; ">
+                            <span id="totime">
+                                <script>
+                                    document.write(  parseInt('<?php echo $model->end_time;?>').toString().replace(/\b(\d{1})\b/g, '0$1'));
+                                </script>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
                 <?php //echo CHtml::image(Yii::app()->baseUrl . "/images/slider-range.png"); ?>
-                <div id="slider_time" class="noUiSlider"></div>
+                <!--<div id="slider_time" class="noUiSlider"></div>-->
 
                 <span></span>
                 <?php
-                echo $form->hiddenField($model, 'start_time', array('value' => '1'));
-                echo $form->hiddenField($model, 'end_time', array('value' => '24'));
+                echo $form->hiddenField($model, 'start_time', array('value' => $model->start_time));
+                echo $form->hiddenField($model, 'end_time', array('value' => $model->end_time));
                 ?>
             </div>
         </div>
@@ -205,13 +254,13 @@ $form = $this->beginWidget('GxActiveForm', array(
                                 ));
                                 if ($model->person_gender == "Female") {
                                     ?>
-                                    <label for="Event_gender_1" class="cb-enable selected"><span>Female</span></label>
-                                    <label for="Event_gender_0" class="cb-disable"><span>Male</span></label>
+                                    <label for="Event_person_gender_1" class="cb-enable selected"><span>Female</span></label>
+                                    <label for="Event_person_gender_0" class="cb-disable"><span>Male</span></label>
                                 <?php
                                 } else {
                                     ?>
-                                    <label for="Event_gender_0" class="cb-enable selected"><span>Male</span></label>
-                                    <label for="Event_gender_1" class="cb-disable"><span>Female</span></label>
+                                    <label for="Event_person_gender_0" class="cb-enable selected"><span>Male</span></label>
+                                    <label for="Event_person_gender_1" class="cb-disable"><span>Female</span></label>
                                 <?php
                                 }
                                 ?>
@@ -222,7 +271,7 @@ $form = $this->beginWidget('GxActiveForm', array(
             <ul class="location">
                 <li class="chk-box">
                     <?php echo CHtml::checkBox('use_my_address', $bChecked) ?>
-                    <span>Use my address.</span></li>
+                    <span>Use my address</span></li>
                 <li>
                     <?php echo $form->labelEx($model, 'address_1'); ?>
                     <span>
@@ -292,11 +341,12 @@ $form = $this->beginWidget('GxActiveForm', array(
 
         $("input[type=checkbox]").change(function () {
             if ($(this).is(':checked')) {
-                $('#Event_address_1').val('<?php echo $amUserData['address_1']; ?>');
-                $('#Event_address_2').val('<?php echo $amUserData['address_2']; ?>');
-                $('#Event_city').val('<?php echo $amUserData['city']; ?>');
-                $('#Event_zip').val('<?php echo $amUserData['zip']; ?>');
-                $('#Event_state_id').val('<?php echo $amUserData['state_id'] ?>');
+                $('#Event_address_1').val('<?php echo $amUserData->address_1; ?>');
+                $('#Event_address_2').val('<?php echo $amUserData->address_2; ?>');
+                $('#Event_city').val('<?php echo $amUserData->city; ?>');
+                $('#Event_zip').val('<?php echo $amUserData->zip; ?>');
+                $('#Event_state_id').val('<?php echo $amUserData->state_id ?>');
+
             } else {
                 $('#Event_address_1').val('');
                 $('#Event_address_2').val('');
@@ -307,4 +357,17 @@ $form = $this->beginWidget('GxActiveForm', array(
             }
         });
     });
+
+    function readURL(input,imgId) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#' + imgId)
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 </script>

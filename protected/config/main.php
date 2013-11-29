@@ -72,7 +72,7 @@ return array(
                 'event/general/add' => 'eventPlanner/PlanEventGeneralAdd',
                 'event/general/edit/<id:\w+>' => 'eventPlanner/planEventGeneralEdit',
                 'event/accesories/add/<id:\w+>' => 'eventPlanner/planEventAccessoriesAdd',
-                'event/accesories/add/<id:\w+>/<acce_id:\w+>' => 'eventPlanner/planEventAccessoriesEdit',
+                'event/accesories/edit/<id:\w+>/<acce_id:\w+>' => 'eventPlanner/planEventAccessoriesEdit',
 
                 'page/<id:\w+>' => 'site/cms',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',

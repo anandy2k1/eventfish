@@ -123,3 +123,15 @@
 		-webkit-transition: left 0.3s, top 0.3s;
 		transition: left 0.3s, top 0.3s;
 	}
+
+.noUiSlider
+{
+    width:100%;
+}
+table.timeslidertable
+{
+    width:100%;
+}
+table.timeslidertable td{
+    padding:0px;
+}

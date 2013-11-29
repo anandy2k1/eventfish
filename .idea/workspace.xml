@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/css/jquery.nouislider.css" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="51228d4a-46ba-4165-8a89-b4f231aa4d3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/eventPlanner/index.php" afterPath="$PROJECT_DIR$/protected/views/eventPlanner/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/params.php" afterPath="$PROJECT_DIR$/protected/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/AmazonProductAPI.php" afterPath="$PROJECT_DIR$/protected/components/AmazonProductAPI.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/_base/BaseEvent.php" afterPath="$PROJECT_DIR$/protected/models/_base/BaseEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Event.php" afterPath="$PROJECT_DIR$/protected/models/Event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" afterPath="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FacebookController.php" afterPath="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Users.php" afterPath="$PROJECT_DIR$/protected/models/Users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/eventfish.css" afterPath="$PROJECT_DIR$/css/eventfish.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jquery.nouislider.css" afterPath="$PROJECT_DIR$/css/jquery.nouislider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/login.php" afterPath="$PROJECT_DIR$/protected/views/site/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralAdd.php" afterPath="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralAdd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php" afterPath="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/signUp.php" afterPath="$PROJECT_DIR$/protected/views/site/signUp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/update.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/category/update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventfish.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385385256243" ignored="false" />
+    <file path="/Dummy.txt" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385545398931" ignored="false" />
     <file path="/SiteController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385287698401" ignored="false" />
-    <file path="/a.dummy" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385126762533" ignored="false" />
+    <file path="/a.dummy" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385548671012" ignored="false" />
     <file path="/leftnavbeta.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383125688143" ignored="false" />
     <file path="/category.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383126531079" ignored="false" />
     <file path="/custom.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384415492655" ignored="false" />
     <file path="/admin_login.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383135953769" ignored="false" />
-    <file path="/eventfish.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385292715426" ignored="false" />
+    <file path="/eventfish.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385447830392" ignored="false" />
     <file path="/Common.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385287403664" ignored="false" />
-    <file path="/main.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385291613450" ignored="false" />
-    <file path="/signUp.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383997910739" ignored="false" />
+    <file path="/main.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385448357966" ignored="false" />
+    <file path="/signUp.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385443930966" ignored="false" />
     <file path="/local.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383380572042" ignored="false" />
     <file path="/popup.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383995924013" ignored="false" />
     <file path="/colorbox.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383202753107" ignored="false" />
-    <file path="/fragment.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384845449293" ignored="false" />
+    <file path="/fragment.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385453294573" ignored="false" />
     <file path="/login.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384001361028" ignored="false" />
     <file path="/newsletter.html" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383292167307" ignored="false" />
     <file path="/newsletter.htm" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1383295261172" ignored="false" />
@@ -44,9 +60,9 @@
     <file path="/BaseUsers.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384427349251" ignored="false" />
     <file path="/step3.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384436678690" ignored="false" />
     <file path="/temp.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1384501760972" ignored="false" />
-    <file path="/EventPlannerController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385291861342" ignored="false" />
+    <file path="/EventPlannerController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385554291880" ignored="false" />
     <file path="/AmazonProductsController.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385046117840" ignored="false" />
-    <file path="/AmazonProductAPI.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385131387688" ignored="false" />
+    <file path="/AmazonProductAPI.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385545417808" ignored="false" />
     <file path="/_form.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385129328565" ignored="false" />
     <file path="/Category.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385127360437" ignored="false" />
     <file path="/admin.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385284582410" ignored="false" />
@@ -54,10 +70,11 @@
     <file path="/planEventGeneral.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385280642584" ignored="false" />
     <file path="/planEventAccssories.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385280916367" ignored="false" />
     <file path="/Event.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385281309103" ignored="false" />
-    <file path="/planEventGeneralEdit.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385292952051" ignored="false" />
-    <file path="/planEventGeneralAdd.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385290521144" ignored="false" />
-    <file path="$PROJECT_DIR$/protected/models/_base/BaseEvent.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385291232456" ignored="false" />
-    <file path="/jquery.nouislider.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385292868187" ignored="false" />
+    <file path="/planEventGeneralEdit.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385550944722" ignored="false" />
+    <file path="/planEventGeneralAdd.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385550102268" ignored="false" />
+    <file path="/jquery.nouislider.css" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385445480405" ignored="false" />
+    <file path="/csv.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385459834859" ignored="false" />
+    <file path="$PROJECT_DIR$/../tsky/config/config.php" changelist="51228d4a-46ba-4165-8a89-b4f231aa4d3f" time="1385461220587" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,64 +94,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VendorController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/VendorController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="20" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="planEventGeneralAdd.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralAdd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="0" selection-start="6677" selection-end="6677" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="planEventGeneralEdit.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="0" selection-start="6982" selection-end="6982" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.nouislider.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jquery.nouislider.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="23" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventfish.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/eventfish.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="943" column="1" selection-start="17799" selection-end="17799" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="28" selection-start="904" selection-end="1027" vertical-scroll-proportion="1.3076923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="0" selection-start="5617" selection-end="5617" vertical-scroll-proportion="0.22286542">
+            <state line="217" column="69" selection-start="9855" selection-end="9855" vertical-scroll-proportion="-5.901961">
               <folding />
             </state>
           </provider>
@@ -143,25 +106,25 @@
       <file leaf-file-name="step1.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="199" column="11" selection-start="8880" selection-end="8880" vertical-scroll-proportion="-58.307693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planEventAccessoriesAdd.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventAccessoriesAdd.php">
+      <file leaf-file-name="planEventGeneralEdit.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="22" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+            <state line="226" column="93" selection-start="9604" selection-end="9604" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <file leaf-file-name="AmazonProductAPI.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/AmazonProductAPI.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="85" selection-start="2866" selection-end="2877" vertical-scroll-proportion="0.0">
+            <state line="260" column="14" selection-start="10026" selection-end="10026" vertical-scroll-proportion="-9.653846">
               <folding />
             </state>
           </provider>
@@ -170,7 +133,79 @@
       <file leaf-file-name="EventPlannerController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="220" column="49" selection-start="8763" selection-end="8763" vertical-scroll-proportion="0.0">
+            <state line="51" column="26" selection-start="1275" selection-end="1275" vertical-scroll-proportion="-14.576923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventPlannerController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-4/EventPlannerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="42" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.31890333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Common.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/Common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="256" column="122" selection-start="8760" selection-end="8786" vertical-scroll-proportion="-10.346154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../tsky/contest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="-5.230769">
+              <folding>
+                <marker date="1379483148000" expanded="true" signature="559:4627" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="602:3428" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="625:3420" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="725:1462" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="969:1446" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1009:1061" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1104:1320" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1129:1298" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1187:1272" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1363:1425" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1510:3344" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1556:1728" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1618:1709" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1833:2033" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="1933:2010" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="2127:2245" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="2331:2411" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="2574:2703" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="2809:2859" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="2950:3062" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="3104:3329" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="3162:3310" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="3460:4618" placeholder="..." />
+                <marker date="1379483148000" expanded="true" signature="3636:3871" placeholder="{...}" />
+                <marker date="1379483148000" expanded="true" signature="3907:4499" placeholder="{...}" />
+                <marker date="1379483148000" expanded="true" signature="4527:4608" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="157" column="46" selection-start="5462" selection-end="5493" vertical-scroll-proportion="-7.8431373">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacebookController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="5" selection-start="3042" selection-end="3042" vertical-scroll-proportion="-20.26923">
               <folding />
             </state>
           </provider>
@@ -194,22 +229,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/controllers/VendorController.php" />
-        <option value="$PROJECT_DIR$/protected/config/params.php" />
-        <option value="$PROJECT_DIR$/protected/views/eventPlanner/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/vendor/index.php" />
-        <option value="$PROJECT_DIR$/protected/components/Common.php" />
-        <option value="$PROJECT_DIR$/protected/views/eventPlanner/step3.php" />
-        <option value="$PROJECT_DIR$/../time/index.html" />
-        <option value="$PROJECT_DIR$/protected/models/Event.php" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
-        <option value="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php" />
-        <option value="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralAdd.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/css/jquery.nouislider.css" />
         <option value="$PROJECT_DIR$/css/eventfish.css" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/category/update.php" />
+        <option value="$PROJECT_DIR$/protected/models/Users.php" />
+        <option value="$PROJECT_DIR$/protected/models/Event.php" />
+        <option value="$PROJECT_DIR$/csv.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-4/.htaccess" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-4/php.ini" />
+        <option value="$PROJECT_DIR$/protected/components/AmazonProductAPI.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+        <option value="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralAdd.php" />
+        <option value="$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/EventPlannerController.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-4/EventPlannerController.php" />
       </list>
     </option>
   </component>
@@ -434,6 +469,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="eventPlanner" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -452,39 +509,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,21 +695,21 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5724234" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2117117" sideWeight="0.6736111" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35416666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.42618385" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37361112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.42618385" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21685971" sideWeight="0.6263889" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -761,108 +786,133 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="64" />
+      <option name="time" value="80" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/models/Event.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="41" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-19.615385" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/category/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="37" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.5325615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="999" column="46" selection-start="16972" selection-end="16972" vertical-scroll-proportion="0.8551136" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="0" selection-start="8664" selection-end="8664" vertical-scroll-proportion="0.32300884">
-          <folding />
-        </state>
+        <state line="37" column="71" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.16037735" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/signUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="388" selection-end="536" vertical-scroll-proportion="0.025073746" />
+        <state line="59" column="20" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.5037594" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Event.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="48" selection-start="1285" selection-end="1316" vertical-scroll-proportion="0.0" />
+        <state line="39" column="40" selection-start="2032" selection-end="2032" vertical-scroll-proportion="1.0400944" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="85" selection-start="2866" selection-end="2877" vertical-scroll-proportion="0.0">
+        <state line="22" column="134" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.43867925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="95" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.4009434" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/AmazonProductAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="260" column="14" selection-start="10026" selection-end="10026" vertical-scroll-proportion="-9.653846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="49" selection-start="8763" selection-end="8763" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventAccessoriesAdd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="0" selection-start="6982" selection-end="6982" vertical-scroll-proportion="0.0">
+        <state line="78" column="5" selection-start="3042" selection-end="3042" vertical-scroll-proportion="-20.26923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralAdd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="0" selection-start="6677" selection-end="6677" vertical-scroll-proportion="0.0">
+        <state line="217" column="69" selection-start="9855" selection-end="9855" vertical-scroll-proportion="-5.901961">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.nouislider.css">
+    <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/planEventGeneralEdit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="23" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
+        <state line="226" column="93" selection-start="9604" selection-end="9604" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/eventfish.css">
+    <entry file="file://$PROJECT_DIR$/../tsky/contest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="943" column="1" selection-start="17799" selection-end="17799" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="904" selection-end="1027" vertical-scroll-proportion="1.3076923">
-          <folding />
+        <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="-5.230769">
+          <folding>
+            <marker date="1379483148000" expanded="true" signature="559:4627" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="602:3428" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="625:3420" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="725:1462" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="969:1446" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1009:1061" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1104:1320" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1129:1298" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1187:1272" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1363:1425" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1510:3344" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1556:1728" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1618:1709" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1833:2033" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="1933:2010" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="2127:2245" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="2331:2411" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="2574:2703" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="2809:2859" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="2950:3062" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="3104:3329" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="3162:3310" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="3460:4618" placeholder="..." />
+            <marker date="1379483148000" expanded="true" signature="3636:3871" placeholder="{...}" />
+            <marker date="1379483148000" expanded="true" signature="3907:4499" placeholder="{...}" />
+            <marker date="1379483148000" expanded="true" signature="4527:4608" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="5617" selection-end="5617" vertical-scroll-proportion="0.22286542">
+        <state line="157" column="46" selection-start="5462" selection-end="5493" vertical-scroll-proportion="-7.8431373">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="256" column="122" selection-start="8760" selection-end="8786" vertical-scroll-proportion="-10.346154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/eventPlanner/step1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="11" selection-start="8880" selection-end="8880" vertical-scroll-proportion="-58.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/EventPlannerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="26" selection-start="1275" selection-end="1275" vertical-scroll-proportion="-14.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-4/EventPlannerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="42" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.31890333">
           <folding />
         </state>
       </provider>

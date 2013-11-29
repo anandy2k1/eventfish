@@ -12,7 +12,7 @@
  * @property integer $id
  * @property string $event_title
  * @property string $event_image
- * @property integer $person_age
+ * @property string $person_age
  * @property string $person_gender
  * @property string $address_1
  * @property string $address_2
@@ -46,8 +46,8 @@ abstract class BaseEvent extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('person_age, state_id, start_time, end_time', 'numerical', 'integerOnly'=>true),
-			array('event_title, event_image, city, zip', 'length', 'max'=>255),
+			array('state_id, start_time, end_time', 'numerical', 'integerOnly'=>true),
+			array('event_title, event_image, person_age, city, zip', 'length', 'max'=>255),
 			array('person_gender', 'length', 'max'=>6),
 			array('address_1, address_2, additional_info, start_date, end_date', 'safe'),
 			array('event_title, event_image, person_age, person_gender, address_1, address_2, city, state_id, zip, additional_info, start_date, end_date, start_time, end_time', 'default', 'setOnEmpty' => true, 'value' => null),
@@ -91,7 +91,7 @@ abstract class BaseEvent extends GxActiveRecord {
 		$criteria->compare('id', $this->id);
 		$criteria->compare('event_title', $this->event_title, true);
 		$criteria->compare('event_image', $this->event_image, true);
-		$criteria->compare('person_age', $this->person_age);
+		$criteria->compare('person_age', $this->person_age, true);
 		$criteria->compare('person_gender', $this->person_gender, true);
 		$criteria->compare('address_1', $this->address_1, true);
 		$criteria->compare('address_2', $this->address_2, true);

@@ -64,7 +64,7 @@ class FacebookController extends Controller
                     Yii::app()->user->login($identity, NULL);
                     //common::closeColorBox($this->createUrl('vendor/index'));
                     if ($_GET['type'] == 2)
-                    echo json_encode(array('error' => 0, 'redirect' => $this->createUrl('/eventplanner/step1')));
+                    echo json_encode(array('error' => 0, 'redirect' => $this->createUrl('/eventPlanner/step1')));
                     else
                         echo json_encode(array('error' => 0, 'redirect' => $this->createUrl('/vendor/step1')));
                 } else {

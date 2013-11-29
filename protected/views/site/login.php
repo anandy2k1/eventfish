@@ -35,7 +35,7 @@ $this->breadcrumbs = array(
         <table class="signup-table">
             <tr>
                 <td>
-                    <?php echo $form->labelEx($model, 'username'); ?><br/>
+                    <?php echo $form->labelEx($model, 'username (email) *'); ?><br/>
                     <?php echo $form->textField($model, 'username', array('class' => 'input success')); ?>
                     <?php echo $form->error($model, 'username'); ?>
                 </td>

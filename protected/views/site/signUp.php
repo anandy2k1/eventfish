@@ -53,7 +53,7 @@
         <?php
         $this->widget('application.widgets.facebook.Facebook',array('appId'=>Yii::app()->params['FACEBOOK_APPID'])); ?>
     </div>
-    <div style="text-align: center;color:#545454;padding:13px 0;font-size: 20px;" onclick="toggleEmailsignup();">or sign up with you <span style="color:#5481a4;cursor: pointer;">email address </span></div>
+    <div style="text-align: center;color:#545454;padding:13px 0;font-size: 20px;" onclick="toggleEmailsignup();">or sign up with your <span style="color:#5481a4;cursor: pointer;">email address </span></div>
     <div class="emailsignup" id="emailsignup">
         <table class="signup-table">
             <tr>

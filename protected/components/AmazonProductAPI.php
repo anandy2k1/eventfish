@@ -258,7 +258,7 @@
 
             /* create request */
             $request = "http://".$host.$uri."?".$canonicalized_query."&Signature=".$signature;
-
+            //echo $request;exit;
             /* I prefer using CURL */
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL,$request);

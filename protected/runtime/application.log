@@ -9138,3 +9138,341 @@ in D:\data\Ampps\www\eventfish\index.php (22)
 2013/11/24 06:20:07 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
 in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
 in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 00:14:52 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (200)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (88)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 00:14:57 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (200)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (88)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 00:15:01 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (200)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (88)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 00:20:46 [error] [php] Undefined variable: amUserData (D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php:153)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#1 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#7 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventGeneralAdd
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (153)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 00:29:59 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 00:30:10 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 00:30:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "planEventAccssories".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('planEventAccsso...')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('planEventAccsso...')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/pl...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventAccssories/3
+HTTP_REFERER=http://localhost/eventfish/index.php/eventPlanner/planEventGeneralAdd
+---
+2013/11/26 00:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "planEventAccessories".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('planEventAccess...')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('planEventAccess...')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/pl...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventAccessories/3
+---
+2013/11/26 00:44:56 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (D:\data\Ampps\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 D:\data\Ampps\www\yii\framework\web\helpers\CHtml.php(413): tag()
+#2 D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php(102): image()
+#3 D:\data\Ampps\www\yii\framework\web\CBaseController.php(127): require()
+#4 D:\data\Ampps\www\yii\framework\web\CBaseController.php(96): EventPlannerController->renderInternal()
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(870): EventPlannerController->renderFile()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(783): EventPlannerController->renderPartial()
+#7 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(155): EventPlannerController->render()
+#8 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionPlanEventGeneralAdd()
+#9 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#11 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#13 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#14 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#17 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#18 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#19 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventGeneralAdd
+in D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php (102)
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (155)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:21:33 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:21:39 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "planEventAccssories".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('planEventAccsso...')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('planEventAccsso...')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/pl...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventAccssories/4
+HTTP_REFERER=http://localhost/eventfish/index.php/eventPlanner/planEventGeneralAdd
+---
+2013/11/26 01:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "planEventAccssoriesAdd".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('planEventAccsso...')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('planEventAccsso...')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/pl...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventAccssoriesAdd/4
+---
+2013/11/26 01:26:06 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:34:36 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:37:22 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:37:34 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:47:19 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:47:23 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:47:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "planEventAccessories".' in D:\data\Ampps\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(271): CController->missingAction('planEventAccess...')
+#1 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): CController->run('planEventAccess...')
+#2 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('eventPlanner/pl...')
+#3 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventAccessories/5
+HTTP_REFERER=http://localhost/eventfish/index.php/eventPlanner/planEventGeneralAdd
+---
+2013/11/26 01:47:43 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:47:47 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 01:56:46 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:06:47 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:07:13 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:08:08 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:08:32 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:09:00 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:09:07 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:09:16 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:09:21 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 02:12:18 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (170)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 03:07:22 [error] [php] Undefined index: address_1 (D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php:297)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(870): EventPlannerController->renderFile()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(783): EventPlannerController->renderPartial()
+#2 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(157): EventPlannerController->render()
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionPlanEventGeneralAdd()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#6 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#9 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#13 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventGeneralAdd
+in D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php (297)
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (157)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 03:09:42 [error] [php] Undefined index: address_1 (D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php:297)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(870): EventPlannerController->renderFile()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(783): EventPlannerController->renderPartial()
+#2 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(157): EventPlannerController->render()
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionPlanEventGeneralAdd()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#6 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#9 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#13 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventGeneralAdd
+in D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php (297)
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (157)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 03:10:48 [error] [php] Undefined index: address_1 (D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php:297)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(870): EventPlannerController->renderFile()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(783): EventPlannerController->renderPartial()
+#2 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(158): EventPlannerController->render()
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionPlanEventGeneralAdd()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#6 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#9 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#13 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventGeneralAdd
+in D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php (297)
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (158)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 03:12:26 [error] [php] Trying to get property of non-object (D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php:156)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#1 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#4 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#7 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#8 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventGeneralAdd
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (156)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 03:18:44 [warning] [application] Failed to set unsafe attribute "role_id" of "Users".
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (200)
+in D:\data\Ampps\www\eventfish\protected\controllers\SiteController.php (88)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 03:57:58 [error] [php] Trying to get property of non-object (D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php:299)
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CController.php(870): EventPlannerController->renderFile()
+#1 D:\data\Ampps\www\yii\framework\web\CController.php(783): EventPlannerController->renderPartial()
+#2 D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php(157): EventPlannerController->render()
+#3 D:\data\Ampps\www\yii\framework\web\actions\CInlineAction.php(50): EventPlannerController->actionPlanEventGeneralAdd()
+#4 D:\data\Ampps\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(134): EventPlannerController->runAction()
+#6 D:\data\Ampps\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\data\Ampps\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\data\Ampps\www\yii\framework\web\filters\CInlineFilter.php(59): EventPlannerController->filterAccessControl()
+#9 D:\data\Ampps\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\data\Ampps\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\data\Ampps\www\yii\framework\web\CController.php(266): EventPlannerController->runActionWithFilters()
+#12 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(283): EventPlannerController->run()
+#13 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\data\Ampps\www\eventfish\index.php(22): CWebApplication->run()
+REQUEST_URI=/eventfish/index.php/eventPlanner/planEventGeneralAdd
+in D:\data\Ampps\www\eventfish\protected\views\eventPlanner\planEventGeneralAdd.php (299)
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (157)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 04:01:55 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 04:02:12 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 04:02:19 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 04:02:28 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/26 04:07:19 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 05:47:26 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 05:50:29 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:08:50 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:10:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "giix".' in D:\data\Ampps\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\data\Ampps\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('giix')
+#1 D:\data\Ampps\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\data\Ampps\www\eventfish\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/eventfish/index.php/giix
+---
+2013/11/27 06:11:22 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:11:30 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (115)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:11:54 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:12:11 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:12:34 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:12:58 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:16:10 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
+2013/11/27 06:16:23 [warning] [application] Failed to set unsafe attribute "event_image" of "Event".
+in D:\data\Ampps\www\eventfish\protected\controllers\EventPlannerController.php (172)
+in D:\data\Ampps\www\eventfish\index.php (22)
