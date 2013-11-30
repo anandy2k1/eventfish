@@ -70,4 +70,12 @@ return array(
     'slider_thumb_height' => '75',
     'event_thumb_width' => '300',
     'event_thumb_height' => '400',
+    'vendor_profile_width' => '110',
+    'vendor_profile_heigh' => '103',
+    'categoryParentId' => array(
+        'food' => 12,
+        'entertainment' => 13,
+        'rental' => 14,
+        'transportation' => 15
+    )
 );

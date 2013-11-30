@@ -324,5 +324,6 @@ $form = $this->beginWidget('GxActiveForm', array(
             reader.readAsDataURL(input.files[0]);
         }
     }
+   //w readURL(document.getElementById('event_image'),"profile-photo");
 
 </script>

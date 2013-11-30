@@ -31,7 +31,7 @@ class Event extends BaseEvent {
             array('start_time, end_time, address_1, address_2, additional_info, start_date, end_date', 'safe'),
             array('event_title, event_image, person_age, person_gender, address_1, address_2, city, state_id, zip, additional_info, start_date, end_date', 'default', 'setOnEmpty' => true, 'value' => null),
             array('id, event_title, event_image, person_age, person_gender, address_1, address_2, city, state_id, zip, additional_info, start_date, end_date', 'safe', 'on' => 'search'),
-            array('end_date','compare','compareAttribute'=>'start_date','operator'=>'>=', 'allowEmpty'=>false , 'message'=>'{attribute} must be greater or equal to "{compareValue}".'),
+            array('end_date','compare','compareAttribute'=>'start_date','operator'=>'>=', 'allowEmpty'=>false ),
         );
     }
 

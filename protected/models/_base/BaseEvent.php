@@ -7,9 +7,10 @@
  * property or method in class "Event".
  *
  * Columns in table "event" available as properties of the model,
- * and there are no model relations.
+ * followed by relations of table "event" available as properties of the model.
  *
  * @property integer $id
+ * @property integer $user_id
  * @property string $event_title
  * @property string $event_image
  * @property string $person_age
@@ -25,6 +26,7 @@
  * @property integer $start_time
  * @property integer $end_time
  *
+ * @property Users $user
  */
 abstract class BaseEvent extends GxActiveRecord {
 
@@ -46,17 +48,18 @@ abstract class BaseEvent extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('state_id, start_time, end_time', 'numerical', 'integerOnly'=>true),
+			array('user_id, state_id, start_time, end_time', 'numerical', 'integerOnly'=>true),
 			array('event_title, event_image, person_age, city, zip', 'length', 'max'=>255),
 			array('person_gender', 'length', 'max'=>6),
 			array('address_1, address_2, additional_info, start_date, end_date', 'safe'),
-			array('event_title, event_image, person_age, person_gender, address_1, address_2, city, state_id, zip, additional_info, start_date, end_date, start_time, end_time', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, event_title, event_image, person_age, person_gender, address_1, address_2, city, state_id, zip, additional_info, start_date, end_date, start_time, end_time', 'safe', 'on'=>'search'),
+			array('user_id, event_title, event_image, person_age, person_gender, address_1, address_2, city, state_id, zip, additional_info, start_date, end_date, start_time, end_time', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, user_id, event_title, event_image, person_age, person_gender, address_1, address_2, city, state_id, zip, additional_info, start_date, end_date, start_time, end_time', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
+			'user' => array(self::BELONGS_TO, 'Users', 'user_id'),
 		);
 	}
 
@@ -68,6 +71,7 @@ abstract class BaseEvent extends GxActiveRecord {
 	public function attributeLabels() {
 		return array(
 			'id' => Yii::t('app', 'ID'),
+			'user_id' => null,
 			'event_title' => Yii::t('app', 'Event Title'),
 			'event_image' => Yii::t('app', 'Event Image'),
 			'person_age' => Yii::t('app', 'Person Age'),
@@ -82,6 +86,7 @@ abstract class BaseEvent extends GxActiveRecord {
 			'end_date' => Yii::t('app', 'End Date'),
 			'start_time' => Yii::t('app', 'Start Time'),
 			'end_time' => Yii::t('app', 'End Time'),
+			'user' => null,
 		);
 	}
 
@@ -89,6 +94,7 @@ abstract class BaseEvent extends GxActiveRecord {
 		$criteria = new CDbCriteria;
 
 		$criteria->compare('id', $this->id);
+		$criteria->compare('user_id', $this->user_id);
 		$criteria->compare('event_title', $this->event_title, true);
 		$criteria->compare('event_image', $this->event_image, true);
 		$criteria->compare('person_age', $this->person_age, true);

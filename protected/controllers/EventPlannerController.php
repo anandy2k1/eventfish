@@ -41,8 +41,7 @@ class EventPlannerController extends Controller
         $ssUrl = '';
         $oUser = Users::model()->findByPk($amUserData['id']);
         if ($amUserData['role_id'] == UserRole::getRoleIdAsPerType('event_planner')) {
-            if ($oUser->redirect_page != 1)
-            {
+            if ($oUser->redirect_page != 1) {
                 $ssUrl = Common::eventRedirectPage($oUser);
                 $this->redirect($ssUrl);
             }
@@ -124,6 +123,7 @@ class EventPlannerController extends Controller
             $amPostData['start_time'] = $amStartTime[0];
             $amEndTime = explode('.', $amPostData['end_time']);
             $amPostData['end_time'] = $amEndTime[0];
+            $oModel->user_id = Yii::app()->admin->id;
             $oModel->setAttributes($amPostData);
             if ($oModel->validate()) {
                 $oFile = CUploadedFile::getInstanceByName('Event[event_image]');
@@ -160,7 +160,7 @@ class EventPlannerController extends Controller
 
 
         //$amUserData = Yii::app()->admin->getState('admin');
-        $amUserData =  Users::model()->findByPK(Yii::app()->admin->id);
+        $amUserData = Users::model()->findByPK(Yii::app()->admin->id);
         $this->render('planEventGeneralAdd', array(
             'model' => $oModel,
             'amStates' => $amStates,
@@ -208,7 +208,7 @@ class EventPlannerController extends Controller
                 }
                 $oModel->save();
                 Yii::app()->user->setFlash('success', "Event general details has been successfully saved.");
-                $this->redirect(Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oModel->id)));
+                $this->redirect(Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd', array('id' => $oModel->id)));
             }
         }
         // FOR GET STATUS DATA AS PER COUNTRY ID //
@@ -219,7 +219,7 @@ class EventPlannerController extends Controller
         $amStates = CHtml::listData($omStates, 'id', 'state_abbv');
 
         //$amUserData = Yii::app()->admin->getState('admin');
-        $amUserData =  Users::model()->findByPK(Yii::app()->admin->id);
+        $amUserData = Users::model()->findByPK(Yii::app()->admin->id);
         $this->render('planEventGeneralEdit', array(
             'model' => $oModel,
             'amStates' => $amStates,

@@ -5,326 +5,220 @@
                 <ul>
                     <li class="current first">
                         <p class="icon">1</p>
+
                         <h3>Account Details </h3>
                     </li>
-                    <li class="disable ">
+                    <li class="disable">
                         <p class="icon">2</p>
+
                         <h3>Create your Profile</h3>
                     </li>
                     <li class="disable">
                         <p class="icon">3</p>
+
                         <h3> Service Area</h3>
                     </li>
                     <li class="disable last">
                         <p class="icon">4</p>
+
                         <h3>Review</h3>
                     </li>
-
                 </ul>
             </div>
+            <?php
+            $form = $this->beginWidget('GxActiveForm', array(
+                'id' => 'event-step1-form',
+                'enableAjaxValidation' => false
+            ));
+            ?>
             <div class="account-details">
                 <div class="general-form">
                     <ul>
-                        <li class="checkbox"><input type="checkbox" /><span>Individual</span> <input type="checkbox" /><span>Company</span>
+                        <li class="checkbox">
+                            <?php echo $form->radioButtonList($model, 'user_type', array('INDIVDUAL' => 'Individual', 'COMPANY' => 'Company'), array('separator' => "", 'style' => 'float:left;')); ?>
                         </li>
-                        <li><label>Address Line 1</label>
-                            <span><input class="input  success" /></span>
+                        <li>
+                            <label><?php echo $form->labelEx($model, 'address_1'); ?></label>
+                            <span><?php echo $form->textField($model, 'address_1', array('class' => 'input')); ?></span>
                         </li>
-                        <li><label>Address Line 2</label>
-                            <span><input class="input  success" /></span>
+                        <li>
+                            <label><?php echo $form->labelEx($model, 'address_2'); ?></label>
+                            <span><?php echo $form->textField($model, 'address_2', array('class' => 'input  ')); ?></span>
                         </li>
-
                         <li>
                             <div class="city">
-                                <label>City</label>
-                                <span>
-                                    <input type="text" class="input  success">
-                                </span></div>
+                                <label><?php echo $form->labelEx($model, 'city'); ?></label>
+                                <span><?php echo $form->textField($model, 'city', array('class' => 'input  ')); ?></span>
+                            </div>
                             <div class="state">
-                                <label>State</label>
-                                <span>
-                                    <select class="select">
-                                        <option>State</option>
-                                        <option>State</option>
-                                        <option>State</option>
-                                    </select>
-                                </span></div>
+                                <label><?php echo $form->labelEx($model, 'state_id'); ?></label>
+                                <span><?php echo $form->dropDownList($model, 'state_id', $amStates, array('class' => 'select')); ?></span>
+                            </div>
                             <div class="zipcode">
-                                <label>Zip</label>
-                                <span>
-                                    <input type="text" class="input error-msg">
-                                </span></div>
+                                <label><?php echo $form->labelEx($model, 'zip'); ?></label>
+                                <span><?php echo $form->textField($model, 'zip', array('class' => 'zipcode input ')); ?></span>
+                            </div>
                         </li>
+                        <li class="phone">
+                            <label><?php echo $form->labelEx($model, 'phone'); ?></label>
+                            <span><?php echo $form->textField($model, 'phone', array("class" => "input ")); ?></span>
+                        </li>
+                        <li class="phone">
+                            <label><?php echo $form->labelEx($model, 'mobile'); ?></label>
+                            <span><?php echo $form->textField($model, 'mobile', array("class" => "input ")); ?></span>
+                        </li>
+                        <li class="phone">
+                            <label><?php echo $form->labelEx($model, 'office_phone'); ?></label>
+                            <span><?php echo $form->textField($model, 'office_phone', array("class" => "input ")); ?></span>
+                        </li>
+                        <li>
+                            <label><?php echo $form->labelEx($model, 'date_of_birth'); ?></label>
+                            <span>
+                                <?php
+                                $form->widget('zii.widgets.jui.CJuiDatePicker', array(
+                                    'model' => $model,
+                                    'attribute' => 'date_of_birth',
+                                    'value' => $model->date_of_birth,
+                                    'options' => array(
+                                        'showButtonPanel' => true,
+                                        'changeYear' => true,
+                                        'changeMonth' => true,
+                                        'dateFormat' => 'yy-mm-dd'
+                                    )
+                                ));
+                                ?>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="col">
+                                <?php echo $form->labelEx($model, 'gender'); ?>
 
-                        <li class="phone"><label>Phone</label>
-                            <span><input class="input error-msg" /> <input class="input" /> <input class="input" /> <select class="select"><option>Home</option><option>NY</option></select> <button class="add-more">&nbsp;</button> </span>
-                        </li>
-                        <li>
-                            <label>Date of Birth</label>
-                            <span><select class="select month">
-                                    <option>Month</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select> <select class="select day">
-                                    <option>Day</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select> <select class="select day">
-                                    <option>Year</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select></span>
-                        </li>
-                        <li>
-                            <div class="col">
-                                <label>Gender</label>
-                                <span>
-                                    <input type="button" value="Male" class="male">
-                                    <input type="button" value="Female" class="female">
-                                </span>
+                                <p class="field switch">
+                                    <?php
+                                    echo $form->radioButtonList($model, 'gender', array('Male' => 'Male', 'Female' => 'Female'), array(
+                                        'labelOptions' => array('style' => 'display:inline;display:none;'), // add this code
+                                        'separator' => '',
+                                    ));
+                                    if ($model->gender == "Female") {
+                                        ?>
+                                        <label for="Users_gender_1" class="cb-enable selected"><span>Female</span></label>
+                                        <label for="Users_gender_0" class="cb-disable"><span>Male</span></label>
+                                    <?php
+                                    } else {
+                                        ?>
+                                        <label for="Users_gender_0" class="cb-enable selected"><span>Male</span></label>
+                                        <label for="Users_gender_1" class="cb-disable"><span>Female</span></label>
+                                    <?php
+                                    }
+                                    ?>
+                                </p>
                             </div>
                             <div class="col">
-                                <label>Ethnicity</label>
-                                <span>
-                                    <select class="select">
-                                        <option>Ethnicity</option>
-                                        <option>Ethnicity 1</option>
-                                        <option>Ethnicity 2</option>
-                                    </select>
-                                </span>
+                                <label><?php echo $form->labelEx($model, 'ethnicity'); ?></label>
+                                <span><?php echo $form->dropDownList($model, 'ethnicity', Yii::app()->params['displayEthnicity'], array("class" => "select")); ?></span>
                             </div>
                         </li>
                         <li>
                             <div class="col">
-                                <label>Income</label>
-                                <span>
-                                    <select class="select success">
-                                        <option>Income Level</option>
-                                        <option>Income Level 1</option>
-                                        <option>Income Level 2</option>
-                                    </select>
-                                </span>
+                                <label><?php echo $form->labelEx($model, 'income'); ?></label>
+                                <span><?php echo $form->dropDownList($model, 'income', Yii::app()->params['displayIncomeLevel'], array("class" => "select")); ?></span>
                             </div>
                             <div class="col">
-                                <label>Martial Status</label>
-                                <span>
-                                    <select class="select">
-                                        <option>Martial Status</option>
-                                        <option>Martial Status 1</option>
-                                        <option>Martial Status 2</option>
-                                    </select>
-                                </span>
+                                <label><?php echo $form->labelEx($model, 'marital_status'); ?></label>
+                                <span><?php echo $form->dropDownList($model, 'marital_status', Yii::app()->params['displayMaritalStatus'], array("class" => "select")); ?></span>
                             </div>
                         </li>
 
                         <li class="search">
                             <label>What kind of services will you be providing?</label>
-                            <span><input class="input" /><button class="samll-btn"><span><span>Search</span></span></button></span>
+                            <span>
+                                <?php
+                                echo CHtml::textField('search_by', '', array('class' => 'input'));
+                                echo CHtml::button('Search', array('class' => 'button_orange', 'onclick' => "filterCategory('" . Yii::app()->createUrl("vendor/RenderCategoryTab") . "','a&search_by=asian','div_tab');"));
+                                ?>
+
+                            </span>
                         </li>
 
                     </ul>
                 </div>
                 <div class="idTabs">
-                    <ul class="tabContainer">
-                        <li class="first"><a href="#one" class="selected">Food & Catering</a></li>
-                        <li><a href="#tow">Accesories & Rentals </a></li>
-                        <li><a href="#three">Accesories & Rentals </a></li>
-                        <li class="last"><a href="#four">Accesories & Rentals </a></li>
-
-
-                    </ul>
-                    <div class="tabContent" id="one">
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul class="last">
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                    </div>
-                    <div class="tabContent" id="tow">
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul class="last">
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                    </div>
-                    <div class="tabContent" id="three">
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul class="last">
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                    </div>
-                    <div class="tabContent" id="four">
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
-                        <ul class="last">
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                            <li class="odd">American</li>
-                            <li>Asian</li>
-                        </ul>
+                    <div id="div_tab">
+                        <?php
+                        //$this->renderPartial('renderCategoryTab', array('ssSearchBy' => ''));
+                        $this->widget('zii.widgets.jui.CJuiTabs', array(
+                            'tabs' => array(
+                                'Food & Catering' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['food'], 'search_by' => $ssSearchBy))),
+                                'Accesories & Rentals' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['entertainment'], 'search_by' => $ssSearchBy))),
+                                'Entertainment & Staff' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['rental'], 'search_by' => $ssSearchBy))),
+                                'Transportation' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['transportation'], 'search_by' => $ssSearchBy)))
+                            ),
+                            'id' => 'MyTab-Menu',
+                            'htmlOptions' => array('style' => 'float:left;padding-botton:5px;')
+                        ));
+                        ?>
                     </div>
                 </div>
 
                 <div class="general-form">
                     <ul>
-                        <li><label>SSN <img src="img/help.png" /></label><span><input style="width:50px; margin-right:10px; float:left;" type="text" class="input" /> <input  style="width:30px;  margin-right:10px; float:left;" type="text" class="input" /><input  style="width:40px;  margin-right:10px; float:left;" type="text" class="input" />	 </span></li>	
                         <li>
-                            <label>Bank Name</label>
-                            <span><input type="text" class="input" /></span>
-                        </li>	
+                            <label><?php echo $form->labelEx($model, 'ssn_number') . CHtml::image(Yii::app()->baseUrl . '/images/help.png') ?></label>
+                            <span><?php echo $form->textField($model, 'ssn_number', array("class" => "input")); ?></span>
+                        </li>
+                        <li>
+                            <label><?php echo $form->labelEx($model, 'bank_name'); ?></label>
+                            <span><?php echo $form->textField($model, 'bank_name', array("class" => "input")); ?></span>
+                        </li>
                         <li>
                             <div class="col">
-                                <label>Bank Name</label>
-                                <span><input style="width:140px;" type="text" class="input" /></span>
+                                <label><?php echo $form->labelEx($model, 'routing_number'); ?></label>
+                                <span><?php echo $form->textField($model, 'routing_number', array("class" => "input", 'style' => 'width:140px')); ?></span>
                             </div>
                             <div class="col">
-                                <label>Account Number</label>
-                                <span><input style="width:140px;" type="text" class="input" /></span>	
+                                <label><?php echo $form->labelEx($model, 'account_number'); ?></label>
+                                <span><?php echo $form->textField($model, 'account_number', array("class" => "input", 'style' => 'width:140px')); ?></span>
                             </div>
                         </li>
 
-                        <li class="a-right"><button class="general-btn-1"><span><span>Next</span></span></button></li>	
+                        <li class="a-right">
+                            <?php echo GxHtml::htmlButton('<span><span>Next</span></span>', array('class' => 'button_green', 'type' => 'submit')); ?>
+                        </li>
                     </ul>
-                </div>	
+                </div>
             </div>
+            <?php $this->endWidget(); ?>
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".cb-enable").click(function () {
+            var parent = $(this).parents('.switch');
+            $('.cb-disable', parent).removeClass('selected');
+            $(this).addClass('selected');
+            $('.checkbox', parent).attr('checked', true);
+        });
+        $(".cb-disable").click(function () {
+            var parent = $(this).parents('.switch');
+            $('.cb-enable', parent).removeClass('selected');
+            $(this).addClass('selected');
+            $('.checkbox', parent).attr('checked', false);
+        });
+    });
+    function filterCategory(requestPage, arg, divId) {
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById(divId).innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", requestPage + "?q=" + arg, true);
+        xmlhttp.send();
+    }
+</script>

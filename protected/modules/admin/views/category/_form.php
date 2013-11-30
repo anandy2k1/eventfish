@@ -23,6 +23,11 @@
         <?php echo $form->error($model, 'category_type'); ?>
     </div><!-- row -->
     <div class="row">
+        <h1><?php echo $form->labelEx($model, 'parent_id'); ?></h1>
+        <?php echo $form->dropDownList($model, 'parent_id', Category::getAllActiveCategories('VENDOR', true, true), array('prompt' => 'Select')); ?>
+        <?php echo $form->error($model, 'parent_id'); ?>
+    </div><!-- row -->
+    <div class="row">
         <h1><?php echo $form->labelEx($model, 'category_name'); ?></h1>
         <?php echo $form->textField($model, 'category_name', array('maxlength' => 255)); ?>
         <?php echo $form->error($model, 'category_name'); ?>
@@ -39,7 +44,7 @@
     </div><!-- row -->
     <div class="row">
         <h1><?php echo $form->labelEx($model, 'status'); ?></h1>
-        <?php echo $form->dropDownList($model, 'status',array(0=>"InActive", 1=>"Active")); ?>
+        <?php echo $form->dropDownList($model, 'status', array(0 => "InActive", 1 => "Active")); ?>
         <?php echo $form->error($model, 'status'); ?>
     </div><!-- row -->
 

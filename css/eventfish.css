@@ -789,7 +789,7 @@ footer .icon-bar .right {
     float: left;
     width: 318px;
     float: left;
-    padding-left: 9px;
+    padding-left: 20px;
     margin-top: 30px;
 }
 
@@ -1417,7 +1417,7 @@ footer .icon-bar .right {
 }
 
 .create-profile .idTabs {
-    width: 515px;
+    width: 575px;
     float: left;
 }
 

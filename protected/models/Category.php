@@ -45,12 +45,32 @@ class Category extends BaseCategory {
      * for get all active categories
      * return  object
      */
-    public static function getAllActiveCategories($ssType='') {
+    public static function getAllActiveCategories($ssType = '', $bIsArray = false, $bOnlyParent = false) {
         $oCriteria = new CDbCriteria;
         $oCriteria->alias = 'c';
         $oCriteria->condition = "c.status = 1";
-        if($ssType != ''){
+        if ($ssType != '') {
             $oCriteria->addCondition("category_type = '$ssType'");
+        }
+        if ($bOnlyParent) {
+            $oCriteria->addCondition("parent_id = 0");
+        }
+        $omResultSet = self::model()->findAll($oCriteria);
+
+        return ($bIsArray) ? CHtml::listData($omResultSet, 'id', 'category_name') : $omResultSet;
+    }
+
+    /** function getRenderCategories()
+     * for get all active categories
+     * return  object
+     */
+    public static function getRenderCategories($snParentId, $ssSearchBy = '') {
+        $oCriteria = new CDbCriteria;
+        $oCriteria->alias = 'c';
+        $oCriteria->condition = "c.status = 1 AND category_type = 'VENDOR' AND parent_id = $snParentId";
+
+        if ($ssSearchBy != '') {
+            $oCriteria->addCondition("category_name LIKE '%$ssSearchBy%'");
         }
         $omResultSet = self::model()->findAll($oCriteria);
 
@@ -64,7 +84,7 @@ class Category extends BaseCategory {
         $oCriteria->limit = Yii::app()->params['home_category_limit'];
         $oCriteria->params = array(':ssType' => $ssType);
         $omResultSet = self::model()->findAll($oCriteria);
-        
+
         return $omResultSet;
     }
 
@@ -78,6 +98,7 @@ class Category extends BaseCategory {
         $this->updated_at = new CDbExpression('NOW()');
         return parent::beforeSave();
     }
+
     public function search() {
         $criteria = new CDbCriteria;
 
@@ -91,7 +112,7 @@ class Category extends BaseCategory {
         $criteria->compare('created_at', $this->created_at, true);
         $criteria->compare('updated_at', $this->updated_at, true);
 
-        $criteria->order='id DESC';
+        $criteria->order = 'id DESC';
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
