@@ -253,12 +253,12 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 .accident_details .label_title  { width:105px; display:inline-block; font-size:12px;font-weight:bold;vertical-align: top;}
 .accident_details .label_title_db  { width:105px; display:inline-block;font-size:12px;font-weight:bold;vertical-align: top; }
 .accident_details .label_title_db_n  { width:75px; display:inline-block;font-size:12px;font-weight:bold; }
-.accident_details .label_value { width:250px; display:inline-block; font-size;12px; background-color:#F9F5CA; padding:5px;border:1px;  }
+.accident_details .label_value { width:250px; display:inline-block; font-size:12px; background-color:#F9F5CA; padding:5px;border:1px;  }
 .accident_details .row {margin-bottom: 10px; overflow:hidden;}
-.accident_details .label_value_db {display: inline-block;width:auto; margin-left:10px; text-align:left; font-size;12px; background-color:#F9F5CA; padding:5px;border:1px; min-width: 160px; max-width: 57%; word-wrap: break-word;}
-.accident_details .label_value_db_n { width:700px; display:inline-block; font-size;12px; background-color:#F9F5CA; padding:5px;border:1px; }
-.accident_details .label_value_db_e { width:300px; display:inline-block; font-size;12px; background-color:#F9F5CA; padding:5px;border:1px; }
-.accident_details .label_value_db_y { width:500px; display:inline-block; font-size;12px; background-color:#F9F5CA; padding:5px;border:1px; }
+.accident_details .label_value_db {display: inline-block;width:auto; margin-left:10px; text-align:left; font-size:12px; background-color:#F9F5CA; padding:5px;border:1px; min-width: 160px; max-width: 57%; word-wrap: break-word;}
+.accident_details .label_value_db_n { width:700px; display:inline-block; font-size:12px; background-color:#F9F5CA; padding:5px;border:1px; }
+.accident_details .label_value_db_e { width:300px; display:inline-block; font-size:12px; background-color:#F9F5CA; padding:5px;border:1px; }
+.accident_details .label_value_db_y { width:500px; display:inline-block; font-size:12px; background-color:#F9F5CA; padding:5px;border:1px; }
 .h2 {
     font-size: 1.6em;
     margin-bottom: 0.75em;

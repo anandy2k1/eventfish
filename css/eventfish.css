@@ -2398,3 +2398,24 @@ div.flash-success a {
 {
     margin-left: 30px;
 }
+
+/*********** Checkbox icon design start **************/
+
+.days { clear:both; overflow:hidden;}
+.days a { cursor:pointer; display:block; width:20px; height:20px; margin-right:5px; float:left; background-position:0px 0px; background-repeat:no-repeat; font-size:0px; text-indent:-999;}
+.days .s_check { background:url(../images/s_check.png);}
+.days .m_check { background:url(../images/m_check.png);}
+.days .t_check { background:url(../images/t_check.png);}
+.days .w_check { background:url(../images/w_check.png);}
+.days .f_check { background:url(../images/f_check.png);}
+.days a.active { background-position:0 -20px;}
+
+.days .days_span {margin-left: 10px;}
+
+/*********** Checkbox icon design end ****************/
+
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    padding: 5px !important;
+    text-decoration: none;
+}

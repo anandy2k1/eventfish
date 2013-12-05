@@ -133,8 +133,8 @@
                             <label>What kind of services will you be providing?</label>
                             <span>
                                 <?php
-                                echo CHtml::textField('search_by', '', array('class' => 'input'));
-                                echo CHtml::button('Search', array('class' => 'button_orange', 'onclick' => "filterCategory('" . Yii::app()->createUrl("vendor/RenderCategoryTab") . "','a&search_by=asian','div_tab');"));
+                                echo CHtml::textField('search_by', '', array('class' => 'input', 'ID' => 'search', 'style'=>'width:385px;', 'value'=>'', 'placeholder'=>'Search'));
+                                //echo CHtml::button('Search', array('class' => 'button_orange'));
                                 ?>
 
                             </span>
@@ -142,24 +142,44 @@
 
                     </ul>
                 </div>
+                <div class="tables">
+
                 <div class="idTabs">
                     <div id="div_tab">
+                        <!--<label for="search">
+                            <strong>Enter keyword to search </strong>
+                        </label>
+                        <input type="text" id="search"/>
+                        <label>e.g. bar, parking, tv</label>-->
                         <?php
-                        //$this->renderPartial('renderCategoryTab', array('ssSearchBy' => ''));
+
+                        $oCategories1 = Category::getRenderCategories(Yii::app()->params['categoryParentId']['food'],"");
+                        $oCategories2 = Category::getRenderCategories(Yii::app()->params['categoryParentId']['rental'], "");
+                        $oCategories3 = Category::getRenderCategories(Yii::app()->params['categoryParentId']['entertainment'], "");
+                        $oCategories4 = Category::getRenderCategories(Yii::app()->params['categoryParentId']['transportation'], "");
                         $this->widget('zii.widgets.jui.CJuiTabs', array(
                             'tabs' => array(
-                                'Food & Catering' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['food'], 'search_by' => $ssSearchBy))),
-                                'Accesories & Rentals' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['entertainment'], 'search_by' => $ssSearchBy))),
-                                'Entertainment & Staff' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['rental'], 'search_by' => $ssSearchBy))),
-                                'Transportation' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['transportation'], 'search_by' => $ssSearchBy)))
+                               /* 'Food & Catering' => array(  'ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['food'], 'search_by' => $ssSearchBy)),'id'=>'tab1content'),
+                                'Accesories & Rentals' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['entertainment'], 'search_by' => $ssSearchBy)),'id'=>'tab2content'),
+                                'Entertainment & Staff' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['rental'], 'search_by' => $ssSearchBy)),'id'=>'tab3content'),
+                                'Transportation' => array('ajax' => $this->createUrl('vendor/getRenderCategories', array('parent_id' => Yii::app()->params['categoryParentId']['transportation'], 'search_by' => $ssSearchBy)),'id'=>'tab4content'),*/
+                                'Food & Catering' => array('content'=>$this->renderPartial('getRenderCategories',array('model'=>$oCategories1),TRUE)),
+                                'Accesories & Rentals' => array('content'=>$this->renderPartial('getRenderCategories',array('model'=>$oCategories2),TRUE)),
+                                'Entertainment & Staff' => array('content'=>$this->renderPartial('getRenderCategories',array('model'=>$oCategories3),TRUE)),
+                                'Transportation' => array('content'=>$this->renderPartial('getRenderCategories',array('model'=>$oCategories4),TRUE)),
                             ),
                             'id' => 'MyTab-Menu',
+                            'options'=>array(
+                                'collapsible'=>true,
+                                /*'select'=>"js:function(){ $('#tab1content').html('Loading...');$('#tab2content').html('Loading...');$('#tab3content').html('Loading...');$('#tab4content').html('Loading...'); $('#search').val('');}",*/
+                            ),
+
                             'htmlOptions' => array('style' => 'float:left;padding-botton:5px;')
                         ));
                         ?>
                     </div>
                 </div>
-
+                </div>
                 <div class="general-form">
                     <ul>
                         <li>
@@ -221,4 +241,54 @@
         xmlhttp.open("GET", requestPage + "?q=" + arg, true);
         xmlhttp.send();
     }
+
+    $(document).ready(function()
+    {
+        $('#search').keyup(function()
+        {
+            searchTable($(this).val());
+        });
+    });
+
+
+
+    function searchTable(inputVal)
+    {
+//        var table = $('#tblData');
+        var table = $('.target');
+        table.find('tr').each(function(index, row)
+        {
+            var allCells = $(row).find('td');
+            if(allCells.length > 0)
+            {
+                var found = false;
+                allCells.each(function(index, td)
+                {
+                    var regExp = new RegExp(inputVal, 'i');
+                    if(regExp.test($(td).text()))
+                    {
+                        found = true;
+                        $(td).show();
+                        //return false;
+                    }
+                    else
+                    {
+                        $(td).hide();
+                    }
+                });
+                /*if(found == true)
+                {
+                    $(row).show();
+                }
+                else
+                {
+                    $(row).hide();
+                }*/
+            }
+        });
+    }
+
+
+
+
 </script>

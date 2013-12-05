@@ -38,16 +38,18 @@
  * @property string $marital_status
  * @property string $user_type
  * @property string $short_description
- * @property string $start_time
- * @property string $end_time
+ * @property integer $start_time
+ * @property integer $end_time
  * @property string $available_days
  * @property integer $redirect_page
  * @property integer $status
  * @property string $last_login_at
  * @property string $created_at
  * @property string $updated_at
+ * @property integer $use_fb_picture
  * @property string $facebook_picture
  *
+ * @property Event[] $events
  * @property MstPages[] $mstPages
  * @property MstPages[] $mstPages1
  * @property UserCategories[] $userCategories
@@ -55,6 +57,7 @@
  * @property UserComments[] $userComments1
  * @property UserPhotos[] $userPhotoses
  * @property UserTop5Questions[] $userTop5Questions
+ * @property UserVideos[] $userVideoses
  * @property UserRole $role
  * @property StateMaster $state
  * @property CountryMaster $country
@@ -79,19 +82,20 @@ abstract class BaseUsers extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('parent_id, is_fblogin, state_id, country_id, redirect_page, status', 'numerical', 'integerOnly'=>true),
+			array('parent_id, is_fblogin, state_id, country_id, start_time, end_time, redirect_page, status, use_fb_picture', 'numerical', 'integerOnly'=>true),
 			array('role_id', 'length', 'max'=>10),
 			array('email, password, facebook_id, ssn_number, routing_number, account_number, bank_name, first_name, last_name, city, zip, phone, mobile, office_phone, ethnicity, income, marital_status, available_days', 'length', 'max'=>255),
 			array('gender', 'length', 'max'=>6),
 			array('user_type', 'length', 'max'=>9),
-			array('address_1, address_2, date_of_birth, short_description, start_time, end_time, last_login_at, created_at, updated_at, facebook_picture', 'safe'),
-			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, redirect_page, status, last_login_at, created_at, updated_at, facebook_picture', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, redirect_page, status, last_login_at, created_at, updated_at, facebook_picture', 'safe', 'on'=>'search'),
+			array('address_1, address_2, date_of_birth, short_description, last_login_at, created_at, updated_at, facebook_picture', 'safe'),
+			array('parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, redirect_page, status, last_login_at, created_at, updated_at, use_fb_picture, facebook_picture', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, parent_id, role_id, email, password, facebook_id, is_fblogin, ssn_number, routing_number, account_number, bank_name, first_name, last_name, address_1, address_2, city, state_id, country_id, zip, phone, mobile, office_phone, date_of_birth, gender, ethnicity, income, marital_status, user_type, short_description, start_time, end_time, available_days, redirect_page, status, last_login_at, created_at, updated_at, use_fb_picture, facebook_picture', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
+			'events' => array(self::HAS_MANY, 'Event', 'user_id'),
 			'mstPages' => array(self::HAS_MANY, 'MstPages', 'created_user_id'),
 			'mstPages1' => array(self::HAS_MANY, 'MstPages', 'updated_user_id'),
 			'userCategories' => array(self::HAS_MANY, 'UserCategories', 'user_id'),
@@ -99,6 +103,7 @@ abstract class BaseUsers extends GxActiveRecord {
 			'userComments1' => array(self::HAS_MANY, 'UserComments', 'vendor_id'),
 			'userPhotoses' => array(self::HAS_MANY, 'UserPhotos', 'user_id'),
 			'userTop5Questions' => array(self::HAS_MANY, 'UserTop5Questions', 'vendor_id'),
+			'userVideoses' => array(self::HAS_MANY, 'UserVideos', 'user_id'),
 			'role' => array(self::BELONGS_TO, 'UserRole', 'role_id'),
 			'state' => array(self::BELONGS_TO, 'StateMaster', 'state_id'),
 			'country' => array(self::BELONGS_TO, 'CountryMaster', 'country_id'),
@@ -149,7 +154,9 @@ abstract class BaseUsers extends GxActiveRecord {
 			'last_login_at' => Yii::t('app', 'Last Login At'),
 			'created_at' => Yii::t('app', 'Created At'),
 			'updated_at' => Yii::t('app', 'Updated At'),
+			'use_fb_picture' => Yii::t('app', 'Use Fb Picture'),
 			'facebook_picture' => Yii::t('app', 'Facebook Picture'),
+			'events' => null,
 			'mstPages' => null,
 			'mstPages1' => null,
 			'userCategories' => null,
@@ -157,6 +164,7 @@ abstract class BaseUsers extends GxActiveRecord {
 			'userComments1' => null,
 			'userPhotoses' => null,
 			'userTop5Questions' => null,
+			'userVideoses' => null,
 			'role' => null,
 			'state' => null,
 			'country' => null,
@@ -195,14 +203,15 @@ abstract class BaseUsers extends GxActiveRecord {
 		$criteria->compare('marital_status', $this->marital_status, true);
 		$criteria->compare('user_type', $this->user_type, true);
 		$criteria->compare('short_description', $this->short_description, true);
-		$criteria->compare('start_time', $this->start_time, true);
-		$criteria->compare('end_time', $this->end_time, true);
+		$criteria->compare('start_time', $this->start_time);
+		$criteria->compare('end_time', $this->end_time);
 		$criteria->compare('available_days', $this->available_days, true);
 		$criteria->compare('redirect_page', $this->redirect_page);
 		$criteria->compare('status', $this->status);
 		$criteria->compare('last_login_at', $this->last_login_at, true);
 		$criteria->compare('created_at', $this->created_at, true);
 		$criteria->compare('updated_at', $this->updated_at, true);
+		$criteria->compare('use_fb_picture', $this->use_fb_picture);
 		$criteria->compare('facebook_picture', $this->facebook_picture, true);
 
 		return new CActiveDataProvider($this, array(

@@ -69,7 +69,10 @@ class VendorController extends GxController
         $oModel = Users::model()->findByPk(Yii::app()->user->id);
         if (Yii::app()->getRequest()->getIsPostRequest()) {
             $amPostData = $_POST['Users'];
-            $oModel->setAttributes($amPostData);
+            if (isset($amPostData['available_days'])) {
+                $amPostData['available_days'] = implode(",", $amPostData['available_days']);
+            }
+            $oModel->setAttributes($amPostData);            
             $oModel->save(false);
 
             // FOR SAVE VENDOR PHOTOS //
