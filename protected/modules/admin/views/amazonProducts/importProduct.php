@@ -13,6 +13,7 @@ $this->menu = array(
     $form = $this->beginWidget('GxActiveForm', array(
         'id' => 'amazon-products-form',
         'enableAjaxValidation' => false,
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
     ));
     ?>
 
@@ -22,9 +23,9 @@ $this->menu = array(
 
     <?php echo $form->errorSummary($model); ?>
     <div class="row">
-        <?php echo $form->labelEx($model, 'search_type'); ?>
-        <?php echo $form->textField($model, 'search_type'); ?>
-        <?php echo $form->error($model, 'search_type'); ?>
+        <?php echo $form->labelEx($model, 'csvfile'); ?>
+        <?php echo $form->fileField($model, 'csvfile'); ?>
+        <?php echo $form->error($model, 'csvfile'); ?>
     </div><!-- row -->
     <div class="row">
         <?php echo $form->labelEx($model, 'category_ids'); ?>

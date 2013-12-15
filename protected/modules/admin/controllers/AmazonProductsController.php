@@ -1,17 +1,20 @@
 <?php
 
-class AmazonProductsController extends AdminCoreController {
+class AmazonProductsController extends AdminCoreController
+{
 
     /**
      * @return array action filters
      */
-    public function filters() {
+    public function filters()
+    {
         return array(
             'accessControl', // perform access control for CRUD operations
         );
     }
 
-    public function actionCreate() {
+    public function actionCreate()
+    {
         $model = new AmazonProducts;
 
         if (isset($_POST['AmazonProducts'])) {
@@ -28,7 +31,8 @@ class AmazonProductsController extends AdminCoreController {
         $this->render('create', array('model' => $model));
     }
 
-    public function actionUpdate($id) {
+    public function actionUpdate($id)
+    {
         $model = $this->loadModel($id, 'AmazonProducts');
 
 
@@ -45,21 +49,21 @@ class AmazonProductsController extends AdminCoreController {
         ));
     }
 
-    public function actionDelete($id) {
+    public function actionDelete($id)
+    {
         if (Yii::app()->getRequest()->getIsPostRequest()) {
             $this->loadModel($id, 'AmazonProducts')->delete();
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest())
                 $this->redirect(array('admin'));
-        }
-        else
+        } else
             throw new CHttpException(400, Yii::t('app', 'Your request is invalid.'));
     }
 
-    public function actionAdmin() {
+    public function actionAdmin()
+    {
         $model = new AmazonProducts('search');
         $model->unsetAttributes();
-
         if (isset($_GET['AmazonProducts']))
             $model->setAttributes($_GET['AmazonProducts']);
 
@@ -68,28 +72,97 @@ class AmazonProductsController extends AdminCoreController {
         ));
     }
 
-    public function actionImportProduct() {
-
+    public function actionImportProduct()
+    {
+        /*
         $oAmazon = new AmazonProductAPI();
-
-        try
-        {
-            $amResponse = $oAmazon->searchProducts("eventfish-20","Accesories", "KEYWORD");
+        try {
+            $amResponse = $oAmazon->searchProducts("eventfish-20", "Accesories", "KEYWORD");
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            exit;
         }
-        catch(Exception $e)
-        {
-            echo $e->getMessage();exit;
+        foreach ($amResponse->Items->Item as $item) {
+            echo $item->ASIN . "<br/>";
+            p($item,0);
+
         }
-        p($amResponse);
-
-
+        exit;*/
         $oModel = new ImportProductForm();
 
         if (Yii::app()->getRequest()->getIsPostRequest()) {
             $amPostData = $_POST['ImportProductForm'];
             $oModel->setAttributes($amPostData);
+            $oModel->csvfile = $amPostData['csvfile'];
             if ($oModel->validate()) {
-                p($_POST);
+
+                // EXTRACT ASIN NUMBER FROM CSV //
+                $oCSVData = CUploadedFile::getInstancesByName('ImportProductForm[csvfile]');
+                if($oCSVData){
+                    $oHandleFile = fopen($oCSVData[0]->tempName, "r");
+                    $snRow = 1;
+                    $amCsvAsinNumbers = array();
+                    while (($omData = fgetcsv($oHandleFile, 1000, ",")) !== FALSE) {
+                        if ($snRow > 1) {
+                            $amCsvAsinNumbers[] = $omData[0];
+                        }
+                        $snRow++;
+                    }
+                    $oAmazon = new AmazonProductAPI();
+                    try {
+                        $amResponse = $oAmazon->searchProducts("eventfish-20", "Accesories", "KEYWORD");
+                    } catch (Exception $e) {
+                        echo $e->getMessage();
+                        exit;
+                    }
+                    foreach ($amResponse->Items->Item as $omItem) {
+
+                        if(in_array($omItem->ASIN,$amCsvAsinNumbers)){
+
+                            // IF ASIN NUMBER AND PRODUCT ALREADY EXISTS UPDATE PRODUCT ATTRIBUTES //
+                            $oCheckProductIsExists = AmazonProducts::model()->findByAttributes(array('amazon_asin_number' => $omItem->ASIN));
+                            if($oCheckProductIsExists){
+                                $oCheckProductIsExists->amazon_asin_number = $omItem->ASIN;
+                                $oCheckProductIsExists->amazon_product_id = $omItem->ItemAttributes->UPC;
+                                $oCheckProductIsExists->product_name = $omItem->ItemAttributes->Title;
+                                $oCheckProductIsExists->product_image = $omItem->MediumImage->URL;
+                                //$oCheckProductIsExists->product_description = $omItem->DetailPageURL;
+                                $oCheckProductIsExists->publisher= $omItem->ItemAttributes->Publisher;
+                                $oCheckProductIsExists->product_price = $omItem->OfferSummary->LowestNewPrice->FormattedPrice;
+                                $oCheckProductIsExists->amazon_product_detail_page_url = $omItem->DetailPageURL;
+                                $oCheckProductIsExists->reviews = $omItem->CustomerReviews->IFrameURL;
+                                $oCheckProductIsExists->save(false);
+
+
+
+                            }else{ // IF ASIN NUMBER AND PRODUCT DOES NOT EXISTS INSERT PRODUCT ATTRIBUTES //
+                                $oAmzonProduct = new AmazonProducts();
+                                $oAmzonProduct->amazon_asin_number = $omItem->ASIN;
+                                $oAmzonProduct->amazon_product_id = $omItem->ItemAttributes->UPC;
+                                $oAmzonProduct->product_name = $omItem->ItemAttributes->Title;
+                                $oAmzonProduct->product_image = $omItem->MediumImage->URL;
+                                //$oAmzonProduct->product_description = $omItem->DetailPageURL;
+                                $oAmzonProduct->publisher= $omItem->ItemAttributes->Publisher;
+                                $oAmzonProduct->product_price = $omItem->OfferSummary->LowestNewPrice->FormattedPrice;
+                                $oAmzonProduct->amazon_product_detail_page_url = $omItem->DetailPageURL;
+                                $oAmzonProduct->reviews = $omItem->CustomerReviews->IFrameURL;
+                                $oAmzonProduct->save(false);
+
+                                // FOR ASSIGN PRODUCT INTO CATEGORY //
+                                if(isset($amPostData['category_ids'])){
+                                    foreach($amPostData['category_ids'] as $snCategoryId){
+                                        $oModel = new AmazonProductsCategories();
+                                        $oModel->product_id = $oAmzonProduct->id;
+                                        $oModel->category_id = $snCategoryId;
+                                        $oModel->save(false);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Yii::app()->user->setFlash('success', "Products has been successfully uploaded / updated.");
+                    $this->redirect(array('admin'));
+                }
             }
         }
         // FOR GET ALL CATEGORIES //

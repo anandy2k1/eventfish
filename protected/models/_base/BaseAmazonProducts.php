@@ -7,17 +7,22 @@
  * property or method in class "AmazonProducts".
  *
  * Columns in table "amazon_products" available as properties of the model,
- * and there are no model relations.
+ * followed by relations of table "amazon_products" available as properties of the model.
  *
  * @property string $id
+ * @property string $amazon_asin_number
  * @property string $amazon_product_id
  * @property string $product_name
  * @property string $product_image
  * @property string $product_description
+ * @property string $product_price
+ * @property string $amazon_product_detail_page_url
+ * @property string $publisher
  * @property string $reviews
  * @property string $created_at
  * @property string $updated_at
  *
+ * @property AmazonProductsCategories[] $amazonProductsCategories
  */
 abstract class BaseAmazonProducts extends GxActiveRecord {
 
@@ -39,16 +44,17 @@ abstract class BaseAmazonProducts extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('amazon_product_id, product_name, product_image', 'length', 'max'=>255),
+			array('amazon_asin_number, amazon_product_id, product_name, product_image, product_price, publisher', 'length', 'max'=>255),
 			array('reviews', 'length', 'max'=>10),
-			array('product_description, created_at, updated_at', 'safe'),
-			array('amazon_product_id, product_name, product_image, product_description, reviews, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, amazon_product_id, product_name, product_image, product_description, reviews, created_at, updated_at', 'safe', 'on'=>'search'),
+			array('product_description, amazon_product_detail_page_url, created_at, updated_at', 'safe'),
+			array('amazon_asin_number, amazon_product_id, product_name, product_image, product_description, product_price, amazon_product_detail_page_url, publisher, reviews, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, amazon_asin_number, amazon_product_id, product_name, product_image, product_description, product_price, amazon_product_detail_page_url, publisher, reviews, created_at, updated_at', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
+			'amazonProductsCategories' => array(self::HAS_MANY, 'AmazonProductsCategories', 'product_id'),
 		);
 	}
 
@@ -60,13 +66,18 @@ abstract class BaseAmazonProducts extends GxActiveRecord {
 	public function attributeLabels() {
 		return array(
 			'id' => Yii::t('app', 'ID'),
+			'amazon_asin_number' => Yii::t('app', 'Amazon Asin Number'),
 			'amazon_product_id' => Yii::t('app', 'Amazon Product'),
 			'product_name' => Yii::t('app', 'Product Name'),
 			'product_image' => Yii::t('app', 'Product Image'),
 			'product_description' => Yii::t('app', 'Product Description'),
+			'product_price' => Yii::t('app', 'Product Price'),
+			'amazon_product_detail_page_url' => Yii::t('app', 'Amazon Product Detail Page Url'),
+			'publisher' => Yii::t('app', 'Publisher'),
 			'reviews' => Yii::t('app', 'Reviews'),
 			'created_at' => Yii::t('app', 'Created At'),
 			'updated_at' => Yii::t('app', 'Updated At'),
+			'amazonProductsCategories' => null,
 		);
 	}
 
@@ -74,10 +85,14 @@ abstract class BaseAmazonProducts extends GxActiveRecord {
 		$criteria = new CDbCriteria;
 
 		$criteria->compare('id', $this->id, true);
+		$criteria->compare('amazon_asin_number', $this->amazon_asin_number, true);
 		$criteria->compare('amazon_product_id', $this->amazon_product_id, true);
 		$criteria->compare('product_name', $this->product_name, true);
 		$criteria->compare('product_image', $this->product_image, true);
 		$criteria->compare('product_description', $this->product_description, true);
+		$criteria->compare('product_price', $this->product_price, true);
+		$criteria->compare('amazon_product_detail_page_url', $this->amazon_product_detail_page_url, true);
+		$criteria->compare('publisher', $this->publisher, true);
 		$criteria->compare('reviews', $this->reviews, true);
 		$criteria->compare('created_at', $this->created_at, true);
 		$criteria->compare('updated_at', $this->updated_at, true);
