@@ -34,7 +34,7 @@
             <div class="account-details">
                 <div class="general-form">
                     <ul>
-                        <li class="checkbox">
+                        <li class="checkbox raditlist">
                             <?php echo $form->radioButtonList($model, 'user_type', array('INDIVDUAL' => 'Individual', 'COMPANY' => 'Company'), array('separator' => "", 'style' => 'float:left;')); ?>
                         </li>
                         <li>
@@ -183,7 +183,7 @@
                 <div class="general-form">
                     <ul>
                         <li>
-                            <label><?php echo $form->labelEx($model, 'ssn_number') . CHtml::image(Yii::app()->baseUrl . '/images/help.png') ?></label>
+                            <label><?php echo $form->labelEx($model, 'ssn_number') . CHtml::image(Yii::app()->baseUrl . '/images/help.png','i',array("style"=>"float:right;")) ?></label>
                             <span><?php echo $form->textField($model, 'ssn_number', array("class" => "input")); ?></span>
                         </li>
                         <li>

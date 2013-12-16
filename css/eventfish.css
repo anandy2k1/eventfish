@@ -646,7 +646,7 @@ footer .icon-bar .right {
 }
 
 .f-left img {
-    width: 80%;
+    width: 100%;
 }
 
 .home-event-block .tabContent li .f-right {
@@ -1159,7 +1159,7 @@ footer .icon-bar .right {
 }
 
 .general-form li label {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     color: #545454;
     display: block;
@@ -1474,6 +1474,7 @@ footer .icon-bar .right {
 .create-profile .tabContent .f-left {
     width: 125px;
     padding: 10px;
+    padding-top: 20px;
 }
 
 .create-profile .tabContainer li a {
@@ -1499,13 +1500,13 @@ footer .icon-bar .right {
 
 .create-profile .f-right .general-form li.checkbox span {
     color: #545454;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .create-profile .f-right textarea.textarea {
-    width: 314px;
-    height: 100px;
+    width: 327px;
+    height: 79px;
 }
 
 .create-profile .f-right {
@@ -1526,8 +1527,9 @@ footer .icon-bar .right {
 .create-profile .up-video-block .add-qus label {
     color: #545454;
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .create-profile .up-video-block .add-qus label em {
@@ -2401,16 +2403,7 @@ div.flash-success a {
 
 /*********** Checkbox icon design start **************/
 
-.days { clear:both; overflow:hidden;}
-.days a { cursor:pointer; display:block; width:20px; height:20px; margin-right:5px; float:left; background-position:0px 0px; background-repeat:no-repeat; font-size:0px; text-indent:-999;}
-.days .s_check { background:url(../images/s_check.png);}
-.days .m_check { background:url(../images/m_check.png);}
-.days .t_check { background:url(../images/t_check.png);}
-.days .w_check { background:url(../images/w_check.png);}
-.days .f_check { background:url(../images/f_check.png);}
-.days a.active { background-position:0 -20px;}
 
-.days .days_span {margin-left: 10px;}
 
 /*********** Checkbox icon design end ****************/
 
@@ -2419,3 +2412,99 @@ div.flash-success a {
     padding: 5px !important;
     text-decoration: none;
 }
+.raditlist span input
+{
+    margin-top:7px;
+    margin-right: 8px;
+}
+.raditlist span label
+{
+    float: left;
+    margin-right: 10px;
+}
+.add-qus #questions
+{
+    margin-bottom : 5px;
+    border-color: #303030;
+}
+
+.add-qus .add-more
+{
+    margin-top: 3px;
+}
+.days input[type='checkbox']
+{
+    display: none;
+}
+#categoryids label
+{
+    font-size: 14px;
+}
+
+.tabContent .uploaded-img
+{
+    margin-top: 10px;
+}
+/*      WEEK BOX        */
+
+.weekbox
+{
+    border:1px solid #b8baba;
+
+    padding:0px 0px 10px 0px;
+    background: #f1f4f6;
+    font-family: "trebuchet ms";
+}
+.weekbox .timeslidertable
+{
+    margin-top: 20px;
+}
+.days .days_span a
+{
+    border-right:1px solid white;
+    color:grey;
+}
+.days {
+    clear: both;
+    overflow: hidden;
+    background: #f1f1f1;
+    border-bottom: 1px solid #b8baba;
+
+}
+.days .days_span a.active
+{
+    border-right:1px solid #b8baba;;
+    background: #ef8503;
+    color:#fff;
+}
+.days { clear:both; overflow:hidden;}
+
+.days a {
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    float: left;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    text-indent: -999;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding: 6px 4px 3px 6px;
+}
+.no-border
+{
+    border:none !important;
+    width: 41px;
+
+}
+/*.days a { cursor:pointer; display:block; width:20px; height:20px; margin-right:5px; float:left; background-position:0px 0px; background-repeat:no-repeat; font-size:10px; text-indent:-999;}*/
+/*.days .s_check { background:url(../images/s_check.png);}
+.days .m_check { background:url(../images/m_check.png);}
+.days .t_check { background:url(../images/t_check.png);}
+.days .w_check { background:url(../images/w_check.png);}
+.days .f_check { background:url(../images/f_check.png);}
+.days a.active { background-position:0 -20px;}*/
+
+.days .days_span {margin-left: 10px;}
+/*                      */

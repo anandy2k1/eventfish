@@ -267,11 +267,25 @@ class Common {
 
     public static function getVendorLastPhoto($omUserPhotos) {
         if (!empty($omUserPhotos)) {
+            $smPhoto = Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/up-photos.png';
             foreach($omUserPhotos as $omUserPhoto){
-                return Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/uploads/user_images/'.$omUserPhoto->photo_url;
+                $smPhoto = Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/uploads/user_images/'.$omUserPhoto->photo_url;
             }
+            return $smPhoto;
         } else {
             return Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/up-photos.png';
+        }
+    }
+
+    public static function getVendorLastVideoImage($omUserVideos) {
+        if (!empty($omUserVideos)) {
+            $snVideoImage = Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/video.png';
+            foreach($omUserVideos as $omUserVideo){
+                $snVideoImage = $omUserVideo->video_image;
+            }
+            return $snVideoImage;
+        } else {
+            return Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/video.png';
         }
     }
 

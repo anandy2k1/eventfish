@@ -34,7 +34,7 @@ class Users extends BaseUsers
             'password' => Yii::t('app', 'Password'),
             'facebook_id' => Yii::t('app', 'Facebook'),
             'is_fblogin' => Yii::t('app', 'Is Fblogin'),
-            'ssn_number' => Yii::t('app', 'Ssn Number'),
+            'ssn_number' => Yii::t('app', 'SSN Number'),
             'routing_number' => Yii::t('app', 'Routing Number'),
             'account_number' => Yii::t('app', 'Account Number'),
             'bank_name' => Yii::t('app', 'Bank Name'),

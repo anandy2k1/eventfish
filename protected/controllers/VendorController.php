@@ -72,7 +72,7 @@ class VendorController extends GxController
             if (isset($amPostData['available_days'])) {
                 $amPostData['available_days'] = implode(",", $amPostData['available_days']);
             }
-            $oModel->setAttributes($amPostData);            
+            $oModel->setAttributes($amPostData);
             $oModel->save(false);
 
             // FOR SAVE VENDOR PHOTOS //
@@ -121,11 +121,33 @@ class VendorController extends GxController
         ));
     }
 
-    public function actionRenderCategoryTab(){
+    public function actionAddVideo()
+    {
         $this->layout = false;
-        $ssSearchBy = Yii::app()->getRequest()->getParam('search_by','');
+        $oModel = new UserVideos();
 
+        if (Yii::app()->getRequest()->getIsPostRequest()) {
+            $amPostData = $_POST['UserVideos'];
+            $oModel->setAttributes($amPostData);
+            $oModel->user_id = Yii::app()->admin->id;
+            if ($oModel->validate()) {
+                $amVideoUrl = explode('/',$oModel->video_url);
+                $snLength = count($amVideoUrl) - 1;
+                $oModel->video_image = "http://img.youtube.com/vi/".$amVideoUrl[$snLength]."/1.jpg";
+                $oModel->save(false);
+                Common::closeColorBox(Yii::app()->createUrl('vendor/step2'));
+            }
 
+        }
+        $this->render('addVideo', array(
+            'model' => $oModel
+        ));
+    }
+
+    public function actionRenderCategoryTab()
+    {
+        $this->layout = false;
+        $ssSearchBy = Yii::app()->getRequest()->getParam('search_by', '');
 
 
         $this->render('renderCategoryTab', array(
