@@ -52,3 +52,31 @@ function ajaxRequest(ssActionUrl, ssData, ssUpdatedDivId, ssLoaderDivId)
     });
     return true;
 }
+function ajaxCall(requestPage,arg,divId,cssClass,hgt)
+{
+    document.getElementById(divId).innerHTML = "";
+    //document.getElementById(divId).style.width = "16px";
+    document.getElementById(divId).style.height = hgt;
+    document.getElementById(divId).className = cssClass;
+
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            document.getElementById(divId).className = " ";
+            document.getElementById(divId).style.width = "auto";
+            document.getElementById(divId).style.height = "auto";
+            document.getElementById(divId).innerHTML=xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET", requestPage  + "?q="+arg,true);
+    xmlhttp.send();
+}

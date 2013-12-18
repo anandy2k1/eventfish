@@ -54,8 +54,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
         ),
         array(
             'class' => 'CButtonColumn',
-            /*'template' => '{update}{delete}',*/
-            'template' => '{delete}',
+            'template' => '{update}{delete}',
+            /*'template' => '{delete}',*/
             'header' => Yii::t('app', 'Actions'),
             'deleteConfirmation' => "Are you sure want to delete this product?",
             'htmlOptions' => array('style' => 'width:5%;text-align:center;')

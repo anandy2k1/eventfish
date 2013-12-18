@@ -288,6 +288,57 @@ class Common {
             return Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/video.png';
         }
     }
-
+    public static function textTruncate($source_text, $word_count)
+    {
+        $word_count++;
+        $long_enough = TRUE;
+        if ((trim($source_text) != "") && ($word_count > 0))
+        {
+            $split_text = explode(" ", $source_text, $word_count);
+            if (sizeof($split_text) < $word_count)
+            {
+                $long_enough = FALSE;
+            }
+            else
+            {
+                array_pop($split_text);
+                $source_text = implode(" ", $split_text);
+            }
+        }
+        return $long_enough;
+    }
+    public static function trim($string, $charCount, $endString = '...')
+    {
+        if(strlen($string)<$charCount)
+            return $string;
+        if(preg_match('/\W/',$string[$charCount]))
+        {
+            $trimedString = substr($string,0,$charCount);
+            if(preg_match('/\W/',$trimedString[strlen($trimedString)-1]))
+            {
+                $trimedString = substr($string,0,strlen($trimedString)-1);
+            }
+            $trimedString .= $endString;
+        }
+        else
+        {
+            $str = substr($string,0,$charCount);
+            for($i = strlen($str)-1; $i>=0; $i--)
+            {
+                if(preg_match('/\W/',$str[$i]))
+                {
+                    $position = $i;
+                    break;
+                }
+            }
+            $trimedString = substr($str,0,$position);
+            if(preg_match('/\W/',$trimedString[strlen($trimedString)-1]))
+            {
+                $trimedString = substr($string,0,strlen($trimedString)-1);
+            }
+            $trimedString .= $endString;
+        }
+        return $trimedString;
+    }
 }
 

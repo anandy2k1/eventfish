@@ -230,11 +230,80 @@ class EventPlannerController extends Controller
 
     public function actionPlanEventAccessoriesAdd()
     {
-        $this->render('planEventAccessoriesAdd');
+        $model = new AmazonProducts();
+        $model->unsetAttributes();
+       /* if (isset($_GET['pageSize'])) {
+            Yii::app()->user->setState('pageSize',(int)$_GET['pageSize']);
+            unset($_GET['pageSize']);
+        }*/
+        if (isset($_GET['AmazonProducts']))
+            $model->setAttributes($_GET['AmazonProducts']);
+        $oCriteria = new CDbCriteria();
+        $oCriteria->condition = " 1=1 ";
+        $oProducts = $model->model()->findAll($oCriteria);
+
+
+
+        $criteria=new CDbCriteria();
+        $count=AmazonProducts::model()->count($criteria);
+        $pages=new CPagination($count);
+
+        // results per page
+        $pages->pageSize=3;
+        if (isset($_GET['pagesize']))
+        {
+            $pages->pageSize=$_GET['pagesize'];
+        }
+        $pageNumber = 1;
+        if (isset($_GET['page']))
+        {
+            $pageNumber = $_GET['page'];
+        }
+        $totalPages = floor((float) $count / (float) $pages->pageSize);
+
+        $pages->applyLimit($criteria);
+        $model=AmazonProducts::model()->findAll($criteria);
+
+       /* $this->render('index', array(
+            'models' => $models,
+
+        ));*/
+
+
+        if (isset($_GET['ajaxcall']))
+        {
+            $this->layout = false;
+            $this->render('ajaxEventAccessoriesFetch',
+                array(
+                    'model' => $model,
+                    /*'oProducts' => $oProducts,*/
+                    'pages' => $pages,
+                    'totalPages' => $totalPages,
+                    'pageNumber'=>$pageNumber,
+                    'pagesize' => $pages->pageSize,
+                )
+            );
+        }
+        else
+        {
+            $this->render('planEventAccessoriesAdd',
+                array(
+                    'model' => $model,
+                    /*'oProducts' => $oProducts,*/
+                    'pages' => $pages,
+                    'totalPages' => $totalPages,
+                    'pageNumber'=>$pageNumber,
+                    'pagesize' => $pages->pageSize,
+                )
+            );
+        }
+
+
     }
 
     public function actionPlanEventAccessoriesEdit($id, $acce_id)
     {
+
         $this->render('planEventAccessoriesEdit');
     }
 

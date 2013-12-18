@@ -11,6 +11,8 @@
     <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.same.height.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js"></script>
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <?php
