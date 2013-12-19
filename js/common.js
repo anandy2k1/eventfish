@@ -106,13 +106,42 @@ function tabToggle(tabId,cnt)
     {
         if (tabId == i)
         {
-            $('#tab'+i).show();
+     //       $('#tab'+i).show();
             $('#tabHead'+i).addClass('active');
         }
         else
         {
-            $('#tab'+i).hide();
+       //     $('#tab'+i).hide();
             $('#tabHead'+i).removeClass('active');
         }
     }
+}
+function searchTable(inputVal) {
+//        var table = $('#tblData');
+    var table = $('.target');
+    table.find('tr').each(function (index, row) {
+        var allCells = $(row).find('td');
+        if (allCells.length > 0) {
+            var found = false;
+            allCells.each(function (index, td) {
+                var regExp = new RegExp(inputVal, 'i');
+                if (regExp.test($(td).text())) {
+                    found = true;
+                    $(td).show();
+                    //return false;
+                }
+                else {
+                    $(td).hide();
+                }
+            });
+            /*if(found == true)
+             {
+             $(row).show();
+             }
+             else
+             {
+             $(row).hide();
+             }*/
+        }
+    });
 }

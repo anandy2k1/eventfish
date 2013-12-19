@@ -5,6 +5,7 @@ return array(
     'title' => 'EventFish',
     'adminEmail' => 'info@eventfish.com',
     'postsPerPage' => 10,
+    'productPerPage' => 5,
     'copyrightInfo' => 'Copyright &copy; 2009 by EventFish.',
     'site_url' => 'http://' . $_SERVER['SERVER_NAME'], // LOCAL  
     'site_name' => 'Event-Fish',
@@ -76,6 +77,10 @@ return array(
         'food' => 12,
         'entertainment' => 13,
         'rental' => 14,
-        'transportation' => 15
+        'transportation' => 15,
+        'partyAccessories' => 42,
+        'equipmentRentals' => 43,
+        'costumes' => 44,
+        'cloths' => 45
     )
 );

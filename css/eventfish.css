@@ -2289,8 +2289,8 @@ div.flash-success a {
     margin: 0;
     padding: 0;
 }
-.tab-menu ul li:hover
-{
+
+.tab-menu ul li:hover {
     color: #fff;
     background: #666;
 
@@ -2304,24 +2304,24 @@ div.flash-success a {
     float: left;
     border-right: 1px solid #fff;
 }
-.tab-menu ul li
-{
+
+.tab-menu ul li {
     cursor: pointer;
 }
-.tab-menu ul li.last
-{
+
+.tab-menu ul li.last {
     border-radius: 0 0 5px 0;
     -moz-border-radius: 0 0 5px 0px;
     -webkit-border-radius: 0 0 5px 0px;
-    border:none;
-    width:147px;
+    border: none;
+    width: 147px;
 }
-#tab1,#tab2,#tab3,#tab4
-{
-    clear:both;
+
+#tab1, #tab2, #tab3, #tab4 {
+    clear: both;
 }
-.tab-menu ul li.first
-{
+
+.tab-menu ul li.first {
     border-radius: 0 0 0 5px;
     -moz-border-radius: 0 0 0px 5px;
     -webkit-border-radius: 0 0 0px 5px;
@@ -2341,7 +2341,7 @@ div.flash-success a {
 
 .tab-menu ul li.active {
     background: #666;
-    color:#fff;
+    color: #fff;
 }
 
 .tab-content-bg {
@@ -2488,11 +2488,19 @@ div.flash-success a {
 
 .lef-arro img {
     float: left;
+    margin-top: 7px;
+    cursor: pointer;
 }
 
 .rit-arro a {
     float: left;
     margin: 6px 0px 0 0px;
+
+}
+
+.rit-arro img {
+    margin-top: 7px;
+    cursor: pointer;
 }
 
 .pagin-bg {
@@ -3071,10 +3079,19 @@ div.flash-success a {
     padding: 4px 10px;
     margin: 0 0 0 80px;
     width: 133px;
-    height: 27px;
+    height: 29px;
     float: left;
     border: 1px solid #000;
     border-radius: 5px
+
+}
+
+.acce_add_sel_2 {
+    margin-left: 0;
+    margin-top: 0px;
+    width: 58px;
+    height: 29px;
+
 }
 
 .table-contnt-bg input {
@@ -3099,10 +3116,10 @@ div.flash-success a {
     float: left;
 }
 
-.round-button:hover
-{
+.round-button:hover {
     background: #64c531;
 }
+
 .round-button {
     background: #6E6E6E;
     border-radius: 15px;
@@ -3112,7 +3129,7 @@ div.flash-success a {
     height: 25px;
     float: left;
     margin-top: 6px;
-    color:#fff;
+    color: #fff;
     text-align: center;
     cursor: pointer;
 }
@@ -3177,8 +3194,9 @@ div.flash-success a {
     line-height: 16px;
     padding: 8px 10px;
 }
-#tab2,#tab3,#tab4
-{
+
+#tab2, #tab3, #tab4 {
     display: none;
 }
+
 /*                      */

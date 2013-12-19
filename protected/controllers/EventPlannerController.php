@@ -232,29 +232,30 @@ class EventPlannerController extends Controller
     {
         $model = new AmazonProducts();
         $model->unsetAttributes();
-        /* if (isset($_GET['pageSize'])) {
-             Yii::app()->user->setState('pageSize',(int)$_GET['pageSize']);
-             unset($_GET['pageSize']);
-         }*/
+
         if (isset($_GET['AmazonProducts']))
             $model->setAttributes($_GET['AmazonProducts']);
-        /*$oCriteria = new CDbCriteria();
-        $oCriteria->condition = " 1=1 ";
-        $oProducts = $model->model()->findAll($oCriteria);*/
+
+        $catId = Yii::app()->params['categoryParentId']['partyAccessories'];
+        if (isset($_GET['catId'])) {
+           $catId =$_GET['catId'];
+        }
 
 
-        /*******************TAB 1******************/
+        $oCriteria = new CDbCriteria();
+        $oCriteria->alias = 'amp';
+        $oCriteria->join = "INNER JOIN amazon_products_categories amc ON amp.id = amc.product_id";
+        $oCriteria->condition = 'amc.category_id= :snCategoryId';
+        $oCriteria->params = array(':snCategoryId' => $catId);
+        //$omResults = AmazonProducts::model()->findAll($oCriteria);
 
-        $criteria = new CDbCriteria(array(
-            'condition' => 'amazonProductsCategories.category_id=42',
-            'with' => 'amazonProductsCategories',
-            'together' => true,
 
-        ));
-        $count = AmazonProducts::model()->count($criteria);
+
+
+        $count = AmazonProducts::model()->count($oCriteria);
         $pages = new CPagination($count);
         // results per page
-        $pages->pageSize = 5;
+        $pages->pageSize = Yii::app()->params['productPerPage'];
         if (isset($_GET['pagesize'])) {
             $pages->pageSize = $_GET['pagesize'];
         }
@@ -262,12 +263,12 @@ class EventPlannerController extends Controller
         if (isset($_GET['page'])) {
             $pageNumber = $_GET['page'];
         }
-        $totalPages = floor((float)$count / (float)$pages->pageSize);
+        $totalPages = ceil((float)($count / $pages->pageSize));
 
-        $pages->applyLimit($criteria);
-        $model = AmazonProducts::model()->findAll($criteria);
+        $pages->applyLimit($oCriteria);
+        $model = AmazonProducts::model()->findAll($oCriteria);
 
-        /**************************************************/
+
 
         if (isset($_GET['ajaxcall'])) {
             $this->layout = false;
@@ -278,6 +279,7 @@ class EventPlannerController extends Controller
                     'totalPages' => $totalPages,
                     'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
+                    'catId' => $catId,
 
 
                 )
@@ -290,7 +292,7 @@ class EventPlannerController extends Controller
                     'totalPages' => $totalPages,
                     'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
-
+                    'catId' => $catId,
 
                 )
             );
