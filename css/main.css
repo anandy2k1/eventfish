@@ -113,10 +113,17 @@ a {
 	text-decoration:none;
 }*/
 
+div.flash-error, div.flash-notice, div.flash-success {
+    padding: 10px;
+    width: 99%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
 div.flash-error {
-    background: #FBE3E4;
-    color: #8a1f11;
-    border-color: #FBC2C4;
+    background: darksalmon;
+    color: #fff;
+    border-color: red;
 }
 
 div.flash-notice {
@@ -998,3 +1005,23 @@ ul.filed_list li.full_width  textarea {
 }
 
 .button-column img {width:25px; padding: 0px 2px;}
+
+.import-product-form-table
+{
+    border:solid 1px #ccc;
+    border-collapse: collapse;
+    clear: both;
+    width:75%;
+}
+.import-product-form-table td,
+.import-product-form-table th{
+    border:solid 1px #ccc;
+    border-collapse:collapse;
+    text-align: left !important;
+    padding: 10px !important;
+}
+.import-product-form-table td input[type='submit']
+{
+    float: right;
+    margin-right: 89px;
+}

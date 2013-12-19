@@ -2289,13 +2289,42 @@ div.flash-success a {
     margin: 0;
     padding: 0;
 }
+.tab-menu ul li:hover
+{
+    color: #fff;
+    background: #666;
+
+}
 
 .tab-menu ul li {
     margin: 0;
     padding: 5px 28px;
     list-style: none;
+    font-size: 26px;
     float: left;
     border-right: 1px solid #fff;
+}
+.tab-menu ul li
+{
+    cursor: pointer;
+}
+.tab-menu ul li.last
+{
+    border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0px;
+    -webkit-border-radius: 0 0 5px 0px;
+    border:none;
+    width:147px;
+}
+#tab1,#tab2,#tab3,#tab4
+{
+    clear:both;
+}
+.tab-menu ul li.first
+{
+    border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0px 5px;
+    -webkit-border-radius: 0 0 0px 5px;
 }
 
 .tab-menu ul li a {
@@ -2306,15 +2335,13 @@ div.flash-success a {
     font-weight: bold;
 }
 
-.tab-menu ul li.activ a {
+.tab-menu ul li.active a {
     color: #fff;
 }
 
-.tab-menu ul li.activ {
+.tab-menu ul li.active {
     background: #666;
-    border-radius: 0 0 0 5px;
-    -moz-border-radius: 0 0 0px 5px;
-    -webkit-border-radius: 0 0 0px 5px;
+    color:#fff;
 }
 
 .tab-content-bg {
@@ -2328,6 +2355,7 @@ div.flash-success a {
     padding: 0;
     float: left;
     margin-left: 8px;
+    min-height: 470px;
 }
 
 .cat-menu-bg {
@@ -3049,4 +3077,108 @@ div.flash-success a {
     border-radius: 5px
 }
 
+.table-contnt-bg input {
+    background: #767676;
+    color: #fff;
+    width: 30px;
+    height: 27px;
+    text-align: center;
+    margin: 4px 5px 0px 5px;
+    border: 1px solid #7c8079;
+    float: left;
+}
+
+.table-contnt-bg input:focus {
+    background: #64c531;
+    color: #fff;
+    width: 30px;
+    height: 27px;
+    text-align: center;
+    margin: 4px 5px 0px 5px;
+    border: 1px solid #7c8079;
+    float: left;
+}
+
+.round-button:hover
+{
+    background: #64c531;
+}
+.round-button {
+    background: #6E6E6E;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 6px;
+    color:#fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*                      */
+
+/*      Tooltip         */
+.tooltipster-light {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background: #ededed;
+    color: #666666;
+}
+
+.tooltipster-light .tooltipster-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+}
+
+.tooltipster-noir {
+    border-radius: 0px;
+    border: 3px solid #2c2c2c;
+    background: #fff;
+    color: #2c2c2c;
+}
+
+.tooltipster-noir .tooltipster-content {
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+}
+
+.tooltipster-punk {
+    border-radius: 5px;
+    /*border-bottom: 3px solid #f71169;*/
+    border-bottom: 3px solid #77c03a;
+    /*background: #2a2a2a;*/
+    background: #ec761e;
+    color: #fff;
+}
+
+.tooltipster-punk .tooltipster-content {
+    font-family: 'Courier', monospace;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+}
+
+.tooltipster-shadow {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.3);
+    color: #2c2c2c;
+}
+
+.tooltipster-shadow .tooltipster-content {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+}
+#tab2,#tab3,#tab4
+{
+    display: none;
+}
 /*                      */

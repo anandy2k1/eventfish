@@ -80,3 +80,39 @@ function ajaxCall(requestPage,arg,divId,cssClass,hgt)
     xmlhttp.open("GET", requestPage  + "?q="+arg,true);
     xmlhttp.send();
 }
+function plus(objId)
+{
+    var obj = document.getElementById(objId);
+    obj.focus();
+    if (obj.value == "")
+        obj.value = 1;
+    else
+        obj.value = parseInt(obj.value )+ 1;
+
+}
+function minus(objId)
+{
+    var obj = document.getElementById(objId);
+    obj.focus();
+    if (obj.value == 0)
+        obj.value = 0;
+    else if (obj.value > 0)
+        obj.value = parseInt(obj.value ) - 1;
+}
+function tabToggle(tabId,cnt)
+{
+    var i;
+    for(i=1;i<=cnt;i++)
+    {
+        if (tabId == i)
+        {
+            $('#tab'+i).show();
+            $('#tabHead'+i).addClass('active');
+        }
+        else
+        {
+            $('#tab'+i).hide();
+            $('#tabHead'+i).removeClass('active');
+        }
+    }
+}

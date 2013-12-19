@@ -232,68 +232,66 @@ class EventPlannerController extends Controller
     {
         $model = new AmazonProducts();
         $model->unsetAttributes();
-       /* if (isset($_GET['pageSize'])) {
-            Yii::app()->user->setState('pageSize',(int)$_GET['pageSize']);
-            unset($_GET['pageSize']);
-        }*/
+        /* if (isset($_GET['pageSize'])) {
+             Yii::app()->user->setState('pageSize',(int)$_GET['pageSize']);
+             unset($_GET['pageSize']);
+         }*/
         if (isset($_GET['AmazonProducts']))
             $model->setAttributes($_GET['AmazonProducts']);
-        $oCriteria = new CDbCriteria();
+        /*$oCriteria = new CDbCriteria();
         $oCriteria->condition = " 1=1 ";
-        $oProducts = $model->model()->findAll($oCriteria);
+        $oProducts = $model->model()->findAll($oCriteria);*/
 
 
+        /*******************TAB 1******************/
 
-        $criteria=new CDbCriteria();
-        $count=AmazonProducts::model()->count($criteria);
-        $pages=new CPagination($count);
+        $criteria = new CDbCriteria(array(
+            'condition' => 'amazonProductsCategories.category_id=42',
+            'with' => 'amazonProductsCategories',
+            'together' => true,
 
+        ));
+        $count = AmazonProducts::model()->count($criteria);
+        $pages = new CPagination($count);
         // results per page
-        $pages->pageSize=3;
-        if (isset($_GET['pagesize']))
-        {
-            $pages->pageSize=$_GET['pagesize'];
+        $pages->pageSize = 5;
+        if (isset($_GET['pagesize'])) {
+            $pages->pageSize = $_GET['pagesize'];
         }
         $pageNumber = 1;
-        if (isset($_GET['page']))
-        {
+        if (isset($_GET['page'])) {
             $pageNumber = $_GET['page'];
         }
-        $totalPages = floor((float) $count / (float) $pages->pageSize);
+        $totalPages = floor((float)$count / (float)$pages->pageSize);
 
         $pages->applyLimit($criteria);
-        $model=AmazonProducts::model()->findAll($criteria);
+        $model = AmazonProducts::model()->findAll($criteria);
 
-       /* $this->render('index', array(
-            'models' => $models,
+        /**************************************************/
 
-        ));*/
-
-
-        if (isset($_GET['ajaxcall']))
-        {
+        if (isset($_GET['ajaxcall'])) {
             $this->layout = false;
             $this->render('ajaxEventAccessoriesFetch',
                 array(
                     'model' => $model,
-                    /*'oProducts' => $oProducts,*/
                     'pages' => $pages,
                     'totalPages' => $totalPages,
-                    'pageNumber'=>$pageNumber,
+                    'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
+
+
                 )
             );
-        }
-        else
-        {
+        } else {
             $this->render('planEventAccessoriesAdd',
                 array(
                     'model' => $model,
-                    /*'oProducts' => $oProducts,*/
                     'pages' => $pages,
                     'totalPages' => $totalPages,
-                    'pageNumber'=>$pageNumber,
+                    'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
+
+
                 )
             );
         }

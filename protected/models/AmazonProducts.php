@@ -18,7 +18,11 @@ class AmazonProducts extends BaseAmazonProducts {
         $this->updated_at = new CDbExpression('NOW()');
         return parent::beforeSave();
     }
-
+    public function relations() {
+        return array(
+            'amazonProductsCategories' => array(self::HAS_MANY, 'AmazonProductsCategories', 'product_id'),
+        );
+    }
     public function search() {
         $criteria = new CDbCriteria;
 
