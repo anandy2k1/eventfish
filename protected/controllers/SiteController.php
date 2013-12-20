@@ -96,7 +96,7 @@ class SiteController extends Controller
 
                 $model->save();
                 $model->login($smPassword);
-                $amUserData = Yii::app()->admin->getState('admin');
+                $amUserData = Yii::app()->user->getState('admin');
                 $ssUrl = '';
                 if ($amUserData['role_id'] == $snEventPlannerRollId) {
                     $ssUrl = Common::eventRedirectPage($model);
@@ -147,7 +147,7 @@ class SiteController extends Controller
             $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to the previous page if valid
             if ($model->validate() && $model->login()) {
-                $amUserData = Yii::app()->admin->getState('admin');
+                $amUserData = Yii::app()->user->getState('admin');
                 $ssUrl = '';
                 $oUser = Users::model()->findByPk($amUserData['id']);
                 if ($amUserData['role_id'] == UserRole::getRoleIdAsPerType('event_planner')) {

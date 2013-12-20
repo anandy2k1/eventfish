@@ -101,7 +101,7 @@ class VendorController extends GxController
 
             // FOR SAVE VENDOR TOP 5 QUESTIONS //
             if (isset($_POST['questions'][0]) && $_POST['questions'][0] != "") {
-                UserTop5Questions::model()->deleteAll('vendor_id = ' . Yii::app()->admin->id);
+                UserTop5Questions::model()->deleteAll('vendor_id = ' . Yii::app()->user->id);
                 foreach ($_POST['questions'] as $ssQuestion) {
                     if ($ssQuestion != "") {
                         // SAVE IMAGE INFO INTO DB //
@@ -129,7 +129,7 @@ class VendorController extends GxController
         if (Yii::app()->getRequest()->getIsPostRequest()) {
             $amPostData = $_POST['UserVideos'];
             $oModel->setAttributes($amPostData);
-            $oModel->user_id = Yii::app()->admin->id;
+            $oModel->user_id = Yii::app()->user->id;
             if ($oModel->validate()) {
                 $amVideoUrl = explode('/',$oModel->video_url);
                 $snLength = count($amVideoUrl) - 1;

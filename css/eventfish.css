@@ -646,7 +646,7 @@ footer .icon-bar .right {
 }
 
 .f-left img {
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .home-event-block .tabContent li .f-right {
@@ -3200,3 +3200,256 @@ div.flash-success a {
 }
 
 /*                      */
+
+
+/******* plan event account css start (event home) ******/
+.lef-content-bg{
+    background:#ebedf0;
+    border:1px solid #e2e2e2;
+    height:720px;
+    width:482px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow:0px 0px 5px #eeefef;
+    -moz-box-shadow:0px 0px 5px #eeefef;
+    -webkit-box-shadow:0px 0px 5px #eeefef;
+}
+.rit-content-bg{
+    background:#ebedf0;
+    border:1px solid #e2e2e2;
+    min-height:580px;
+    width:460px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow:0px 0px 5px #eeefef;
+    -moz-box-shadow:0px 0px 5px #eeefef;
+    -webkit-box-shadow:0px 0px 5px #eeefef;
+}
+.rit-bottom-content-bg{
+    background:#ebedf0;
+    border:1px solid #e2e2e2;
+    width:460px;
+    margin:15px 0 0 0;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow:0px 0px 5px #eeefef;
+    -moz-box-shadow:0px 0px 5px #eeefef;
+    -webkit-box-shadow:0px 0px 5px #eeefef;
+}
+.content-title{
+    background:#efefef;
+    border-bottom:1px solid #e2e2e2;
+    padding:10px 8px;
+    box-shadow:1px 2px 3px #e7eaec;
+    -moz-box-shadow:1px 2px 3px #e7eaec;
+    -webkit-box-shadow:1px 2px 3px #e7eaec;
+}
+.main-lef-wrap{
+    width:480px;
+    height:655px;
+    margin:0 auto;
+    padding:0;
+    overflow-y:scroll;
+}
+.lef-content-wrap{
+    width:446px;
+    margin:0 auto;
+    padding:10px 0;
+}
+.lef-content-data-1{
+    background:#fefefe;
+    border:1px solid #bababa;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    min-height:210px;
+}
+.lef-data-img{
+    float:left;
+    margin:4px 0 0 3px;
+}
+.lef-data-title{
+    margin:10px 0 0 8px;
+    float:left;
+}
+.lef-data-middle-bg{
+    background:#f2f2f2;
+    border-top:1px solid #bdbdbd;
+    border-bottom:1px solid #bdbdbd;
+    float:left;
+    min-width:255px;
+    margin:6px 0 8px 0;
+    padding:5px 0 5px 13px;
+}
+.date-content{
+
+}
+.date-content img{
+    float:left;
+    margin:0 5px 0 0;
+    /*width:0% !important;*/
+}
+.watch-content{
+    margin:8px 0 0 0;
+}
+.watch-content img{
+    float:left;
+    margin:0 5px 0 0;
+}
+.b-day-bash{
+    margin:10px 0;
+}
+.b-day-bash ul{
+    margin:0;
+    padding:0;
+}
+.b-day-bash ul li{
+    float:left;
+    margin:0;
+    padding:0 1px 0 0;
+    list-style:none;
+}
+.b-day-bash li:last-child{
+    padding-right:0;
+}
+.btn-bg{
+    float:left;
+    margin:0px 0px 10px 3px;
+}
+.btn-bg ul{
+
+}
+.btn-bg ul li{
+    float:left;
+    padding:0 3px 0 0;
+    list-style:none;
+}
+.user-cont{
+    margin:10px 0 0 0;
+}
+.user-img{
+    margin:0 2px 0 4px;
+}
+.user-amount{
+    margin:0 0px 0 2px;
+}
+.user-amount h5{
+    font-size:18px;
+    color:#467eaf;
+}
+.next-event-cont{
+    margin:20px 0;
+    float:left;
+}
+.next-event-img{
+
+}
+.next-event-title{
+    margin:18px 0 0 15px;
+}
+.main-rit-wrap{
+    width:440px;
+    margin:0 auto;
+    padding:10px 0;
+}
+.select-event{
+
+}
+.select-event-type{
+    background:#fff;
+    padding:4px 10px;
+    margin:0 0 0 0px;
+    width:210px;
+    height:28px;
+    float:left;
+    border:1px solid #000;
+    box-shadow:1px 1px 3px #333;
+    border-radius:5px;
+}
+.bgt-event{
+    margin:26px 0 0 0;
+    padding:0;
+}
+.bgt-event ul{
+    margin:0;
+    padding:0;
+}
+.bgt-event ul li{
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0 5px 0 0;
+}
+.bgt-tex-box{
+    margin:0;
+}
+.bgt-text-area{
+    width:390px;
+    max-width:390px;
+    height:295px;
+    min-height:295px;
+    margin:10px 0 0 0;
+    background:#fff;
+    border:1px solid #999;
+    padding:10px 15px;
+    box-shadow: inset 1px 1px 4px #CCC;
+}
+.marg-in{
+    margin:10px 16px 10px 0;
+}
+.cler-btn{
+    margin:0 10px 0 0;
+}
+.nxt-btn{
+
+}
+.CSSTableGenerator {
+    margin:0px;
+    padding:0px;
+    width:100%;
+}.CSSTableGenerator table{
+     border-collapse: collapse;
+     border-spacing: 0;
+     width:100%;
+     height:100%;
+     margin:0px;
+     padding:0px;
+ }
+.CSSTableGenerator tr:nth-child(odd){ background-color:#f1f1f1; }
+.CSSTableGenerator tr:nth-child(even){ background-color:#ffffff; }
+.CSSTableGenerator td{
+    border-right:1px solid #b8b8b8;
+    border-width:0px 1px 1px 0px;
+    text-align:left;
+    padding:15px;
+    font-size:16px;
+    font-weight:normal;
+    color:#000000;
+}.CSSTableGenerator tr:last-child td{
+     border-width:0px 1px 0px 0px;
+ }.CSSTableGenerator tr td:last-child{
+      border-width:0px 0px 1px 0px;
+  }.CSSTableGenerator tr:last-child td:last-child{
+       border-width:0px 0px 0px 0px;
+   }
+.CSSTableGenerator tr:first-child td{
+    background-color:#f1f1f1;
+    border:1px solid #b8b8b8;
+    text-align:left;
+    border-width:0px 0px 1px 1px;
+    font-size:18px;
+    font-weight:normal;
+    color:#5b5b5b;
+}
+
+.CSSTableGenerator tr:first-child td:first-child{
+    border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+    border-width:0px 0px 1px 1px;
+}
+
+/******* plan evevt account css end ********/

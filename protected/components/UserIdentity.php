@@ -30,10 +30,10 @@ class UserIdentity extends CUserIdentity {
                 $this->email = $users->email;
                 $this->username = $users->first_name;
                 $this->errorCode = self::ERROR_NONE;
-                Yii::app()->admin->setId($this->_id);
+                Yii::app()->user->setId($this->_id);
 
                 $usersData = $users->attributes;
-                Yii::app()->admin->setState('admin', $usersData);
+                Yii::app()->user->setState('admin', $usersData);
             }
         }
         return !$this->errorCode;

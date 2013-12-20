@@ -48,7 +48,7 @@ class IndexController extends AdminCoreController {
      * Logs out the current user and redirect to homepage.
      */
     public function actionLogout() {
-        Yii::app()->user->logout();
+        Yii::app()->admin->logout();
         $this->redirect('index/login');
     }
 

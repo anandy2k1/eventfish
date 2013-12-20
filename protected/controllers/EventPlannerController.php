@@ -27,9 +27,12 @@ class EventPlannerController extends Controller
         );
     }
 
-    public function actionIndex()
-    {
-        $this->render('index');
+    public function actionIndex() {
+        $omEvents = Event::getUserEvents(Yii::app()->user->id);
+
+        $this->render('index', array(
+            'omEvents' => $omEvents
+        ));
     }
 
     public function actionStep1()
@@ -37,7 +40,7 @@ class EventPlannerController extends Controller
         $oModel = Users::model()->findByPk(Yii::app()->user->id);
 
 
-        $amUserData = Yii::app()->admin->getState('admin');
+        $amUserData = Yii::app()->user->getState('admin');
         $ssUrl = '';
         $oUser = Users::model()->findByPk($amUserData['id']);
         if ($amUserData['role_id'] == UserRole::getRoleIdAsPerType('event_planner')) {
@@ -88,7 +91,7 @@ class EventPlannerController extends Controller
         // FOR GET USER SELECTED CATEGORIES //
         $oCriteria = new CDbCriteria();
         $oCriteria->condition = "user_id = :userID";
-        $oCriteria->params = array(':userID' => Yii::app()->admin->id);
+        $oCriteria->params = array(':userID' => Yii::app()->user->id);
         $omCategories = UserCategories::model()->findAll($oCriteria);
         $amEventCategories = CHtml::listData($omCategories, 'category_id', 'category_id');
 
@@ -123,7 +126,7 @@ class EventPlannerController extends Controller
             $amPostData['start_time'] = $amStartTime[0];
             $amEndTime = explode('.', $amPostData['end_time']);
             $amPostData['end_time'] = $amEndTime[0];
-            $oModel->user_id = Yii::app()->admin->id;
+            $oModel->user_id = Yii::app()->user->id;
             $oModel->setAttributes($amPostData);
             if ($oModel->validate()) {
                 $oFile = CUploadedFile::getInstanceByName('Event[event_image]');
@@ -160,7 +163,7 @@ class EventPlannerController extends Controller
 
 
         //$amUserData = Yii::app()->admin->getState('admin');
-        $amUserData = Users::model()->findByPK(Yii::app()->admin->id);
+        $amUserData = Users::model()->findByPK(Yii::app()->user->id);
         $this->render('planEventGeneralAdd', array(
             'model' => $oModel,
             'amStates' => $amStates,
@@ -219,7 +222,7 @@ class EventPlannerController extends Controller
         $amStates = CHtml::listData($omStates, 'id', 'state_abbv');
 
         //$amUserData = Yii::app()->admin->getState('admin');
-        $amUserData = Users::model()->findByPK(Yii::app()->admin->id);
+        $amUserData = Users::model()->findByPK(Yii::app()->user->id);
         $this->render('planEventGeneralEdit', array(
             'model' => $oModel,
             'amStates' => $amStates,

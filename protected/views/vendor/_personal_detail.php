@@ -3,12 +3,12 @@
 <script>
 
     // Wait until the document is ready
-    $(function () {
+    $(function() {
 
         // Initialise noUiSlider
         $('.noUiSlider').noUiSlider({
             range: [0, 24], start: [0, 24],
-            step: 1, slide: function () {
+            step: 1, slide: function() {
                 var values = $(this).val();
                 $('#Users_start_time').val(values[0]);
                 $('#Users_end_time').val(values[1]);
@@ -16,7 +16,7 @@
                 $('#totime').text(parseInt(values[1]).toString().replace(/\b(\d{1})\b/g, '0$1'));
                 /*$(this).next('span').text(
                  values[0] + "  TO  " + values[1]
-
+                 
                  );*/
             }
         });
@@ -30,103 +30,104 @@ $form = $this->beginWidget('GxActiveForm', array(
     'id' => 'plan-event-general-form',
     'enableAjaxValidation' => false,
     'htmlOptions' => array('enctype' => 'multipart/form-data'),
-));
+        ));
 //echo $form->errorSummary($model);
 ?>
 <div id="one" class="tabContent">
-<div class="up-img-block">
-    <div class="f-left">
-        <div class="up-photos">
-            <div class="upload-container"> <span>
+    <div class="up-img-block">
+        <div class="f-left">
+            <div class="up-photos">
+                <div class="upload-container"> <span>
                         <?php
                         if (count($model->userPhotoses) < 3):
                             echo $form->fileField($model, 'vendor_image', array('class' => 'image-upload'));
                         endif;
                         ?>
                     </span></div>
-            <div class="add-photos-button">
+                <div class="add-photos-button">
                     <span class="button-add">
                         <?php
-                        echo CHtml::image(Common::getVendorLastPhoto($model->userPhotoses));
+                        echo CHtml::image(Common::getVendorLastPhoto($model->userPhotoses), '', array('id' => 'id_user_img', 'style' => 'width:100% !important;'));
                         ?>
                     </span>
+                </div>
             </div>
-        </div>
-        <ul class="uploaded-img">
-            <?php
-            if ($model->userPhotoses):
-                $snTotalImages = count($model->userPhotoses);
-                foreach ($model->userPhotoses as $omUserPhotos):
-                    ?>
-                    <li>
-                        <?php echo CHtml::image(Common::getVendorImage($omUserPhotos->photo_url), '', array('style' => "width:37px !important;height:30px;")); ?>
-                        <!--<li><img src="<?php //echo Yii::app()->baseUrl;        ?>/images/default-img.png"></li>-->
-                    </li>
+            <ul class="uploaded-img">
                 <?php
-                endforeach;
-            else:
-                ?>
-                <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/default-img.png"></li>
-                <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/default-img.png"></li>
-                <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/default-img.png"></li>
-            <?php endif; ?>
-        </ul>
-    </div>
-    <div class="f-right">
-        <ul class="general-form">
-            <li class="checkbox">
-                <?php echo $form->checkBox($model, 'use_fb_picture'); ?> <span>Use your Facebook Photo</span>
-            </li>
-            <li>
-                <label><?php echo $form->labelEx($model, 'short_description'); ?></label>
+                if ($model->userPhotoses):
+                    $snTotalImages = count($model->userPhotoses);
+                    foreach ($model->userPhotoses as $omUserPhotos):
+                        ?>
+                        <li>
+                            <?php echo CHtml::image(Common::getVendorImage($omUserPhotos->photo_url), '', array('class' => 'vendor_images', 'style' => "width:37px !important;height:30px;")); ?>
+                            <!--<li><img src="<?php //echo Yii::app()->baseUrl;               ?>/images/default-img.png"></li>-->
+                        </li>
+                        <?php
+                    endforeach;
+                else:
+                    ?>
+                    <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/default-img.png"></li>
+                    <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/default-img.png"></li>
+                    <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/default-img.png"></li>
+                <?php endif; ?>
+            </ul>
+        </div>
+        <div class="f-right">
+            <ul class="general-form">
+                <li class="checkbox">
+                    <?php echo $form->checkBox($model, 'use_fb_picture'); ?> <span>Use your Facebook Photo</span>
+                </li>
+                <li>
+                    <label><?php echo $form->labelEx($model, 'short_description'); ?></label>
                     <span>
                         <?php echo $form->textArea($model, 'short_description', array('class' => 'textarea')); ?>
                     </span>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="up-video-block">
-    <div class="f-left">
-        <div class="up-photos">
-            <!--                <div class="upload-container" onclick="alert(12);"></div>-->
-            <div class="add-photos-button">
+    <div class="up-video-block">
+        <div class="f-left">
+            <div class="up-photos">
+                <!--                <div class="upload-container" onclick="alert(12);"></div>-->
+                <div class="add-photos-button">
                     <span class="button-add">
                         <?php
                         if (count($model->userVideoses) < 3):
-                            echo CHtml::image(Common::getVendorLastVideoImage($model->userVideoses), 'Video Image', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("vendor/addVideo") . '","500","600");return false;', 'class' => 'ajax', 'style' => 'cursor:pointer;'));
+                            echo CHtml::image(Common::getVendorLastVideoImage($model->userVideoses), 'Video Image', array('id' => 'id_video_img', 'onclick' => 'js:openColorBox("' . Yii::app()->createUrl("vendor/addVideo") . '","500","600");return false;', 'class' => 'ajax', 'style' => 'cursor:pointer;'));
                         else:
-                            echo CHtml::image(Common::getVendorLastVideoImage($model->userVideoses));
-                        endif;?>
+                            echo CHtml::image(Common::getVendorLastVideoImage($model->userVideoses), '', array('id' => 'id_video_img'));
+                        endif;
+                        ?>
                     </span>
+                </div>
             </div>
-        </div>
-        <ul class="uploaded-img">
-            <?php
-            if ($model->userVideoses):
-                $snTotalImages = count($model->userVideoses);
-                foreach ($model->userVideoses as $omUserVideos):
-                    ?>
-                    <li>
-                        <?php echo CHtml::image($omUserVideos->video_image, '', array('style' => "width:37px !important;height:30px;")); ?>
-                    </li>
+            <ul class="uploaded-img">
                 <?php
-                endforeach;
-            else:
-                ?>
-                <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/vedio-1.png"></li>
-                <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/vedio-1.png"></li>
-                <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/vedio-1.png"></li>
-            <?php endif; ?>
-        </ul>
-    </div>
-    <div class="f-right">
-        <ul class="general-form">
-            <li><label>What days are you available?</label></li>
-            <li>
-                <div class="weekbox">
-                    <div class="days">
-                        <!--<img src="<?php //echo Yii::app()->baseUrl;        ?>/images/proses-bg.png">-->
+                if ($model->userVideoses):
+                    $snTotalImages = count($model->userVideoses);
+                    foreach ($model->userVideoses as $omUserVideos):
+                        ?>
+                        <li>
+                            <?php echo CHtml::image($omUserVideos->video_image, '', array('class' => 'vendor_video_images', 'style' => "width:37px !important;height:30px;")); ?>
+                        </li>
+                        <?php
+                    endforeach;
+                else:
+                    ?>
+                    <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/vedio-1.png"></li>
+                    <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/vedio-1.png"></li>
+                    <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/vedio-1.png"></li>
+                <?php endif; ?>
+            </ul>
+        </div>
+        <div class="f-right">
+            <ul class="general-form">
+                <li><label>What days are you available?</label></li>
+                <li>
+                    <div class="weekbox">
+                        <div class="days">
+                            <!--<img src="<?php //echo Yii::app()->baseUrl;               ?>/images/proses-bg.png">-->
 
                             <span class="days_span"><a href="javascript:void(0);" class="daylink s_check <?php echo @strstr($model->available_days, '0') ? 'active' : ''; ?>">Sun<input type="checkbox"
                                                                                                                                                                                         id="daycheck0"
@@ -164,89 +165,95 @@ $form = $this->beginWidget('GxActiveForm', array(
                                         class="styled"
                                         name="Users[available_days][]" <?php echo @strstr($model->available_days, '6') ? 'checked="checked"' : ''; ?>
                                         value="6"/></a></span>
+                        </div>
+
+                        <table class="timeslidertable">
+                            <tr>
+                                <td width="10%" align="center">
+                                    <span id="fromtime">00</span>
+                                </td>
+                                <td width="65%">
+                                    <div id="slider_time" class="noUiSlider"></div>
+                                </td>
+                                <td width="15%" style="padding-left:12px; " align="center">
+                                    <span id="totime">24</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <?php
+                        echo $form->hiddenField($model, 'start_time', array('value' => '1'));
+                        echo $form->hiddenField($model, 'end_time', array('value' => '24'));
+                        ?>
                     </div>
+                </li>
+                <li>
 
-                    <table class="timeslidertable">
-                        <tr>
-                            <td width="10%" align="center">
-                                <span id="fromtime">00</span>
-                            </td>
-                            <td width="65%">
-                                <div id="slider_time" class="noUiSlider"></div>
-                            </td>
-                            <td width="15%" style="padding-left:12px; " align="center">
-                                <span id="totime">24</span>
-                            </td>
-                        </tr>
-                    </table>
-                    <?php
-                    echo $form->hiddenField($model, 'start_time', array('value' => '1'));
-                    echo $form->hiddenField($model, 'end_time', array('value' => '24'));
+                </li>
+            </ul>
+        </div>
+        <div class="add-qus">
+            <label>Top 5 Question Asked: <em>Vendor Title</em></label>
+            <?php
+            if ($model->userTop5Questions):
+                $snTotalQuestion = 5;
+                $snUserQuestionCount = count($model->userTop5Questions);
+                foreach ($model->userTop5Questions as $omTop5Questions):
+                    echo CHtml::textField('questions[]', $omTop5Questions->question, array('class' => "input"));
+                endforeach;
+                if ($snUserQuestionCount != $snTotalQuestion):
                     ?>
-                </div>
-            </li>
-            <li>
-
-            </li>
-        </ul>
-    </div>
-    <div class="add-qus">
-        <label>Top 5 Question Asked: <em>Vendor Title</em></label>
-        <?php
-        if ($model->userTop5Questions):
-            $snTotalQuestion = 5;
-            $snUserQuestionCount = count($model->userTop5Questions);
-            foreach ($model->userTop5Questions as $omTop5Questions):
-                echo CHtml::textField('questions[]', $omTop5Questions->question, array('class' => "input"));
-            endforeach;
-            if ($snUserQuestionCount != $snTotalQuestion):
-                ?>
-                <span>
+                    <span>
                         <span class="copy">
                             <?php echo CHtml::textField('questions[]', '', array('class' => "input")); ?>
                             <a id="copylink" href="#" rel=".copy" class="add-more">&nbsp;</a>
                         </span>
+                        <?php
+                        $this->widget('ext.jqrelcopy.JQRelcopy', array(
+                            'id' => 'copylink',
+                            //'removeText' => 'remove', //uncomment to add remove link
+                            'options' => array(
+                                'limit' => $snTotalQuestion - $snUserQuestionCount,
+                            )
+                        ));
+                        ?>
+                    </span>
+                    <?php
+                endif;
+            else:
+                ?>
+                <span>
+                    <span class="copy">
+                        <?php echo CHtml::textField('questions[]', '', array('class' => "input")); ?>
+                        <a id="copylink" href="#" rel=".copy" class="add-more">&nbsp;</a>
+                    </span>
                     <?php
                     $this->widget('ext.jqrelcopy.JQRelcopy', array(
                         'id' => 'copylink',
                         //'removeText' => 'remove', //uncomment to add remove link
                         'options' => array(
-                            'limit' => $snTotalQuestion - $snUserQuestionCount,
+                            'limit' => 5,
                         )
                     ));
                     ?>
-                    </span>
-            <?php
-            endif;
-        else:
-            ?>
-            <span>
-                    <span class="copy">
-                        <?php echo CHtml::textField('questions[]', '', array('class' => "input")); ?>
-                        <a id="copylink" href="#" rel=".copy" class="add-more">&nbsp;</a>
-                    </span>
-                <?php
-                $this->widget('ext.jqrelcopy.JQRelcopy', array(
-                    'id' => 'copylink',
-                    //'removeText' => 'remove', //uncomment to add remove link
-                    'options' => array(
-                        'limit' => 5,
-                    )
-                ));
-                ?>
                 </span>
-        <?php endif; ?>
+            <?php endif; ?>
+        </div>
+        <div class="clear"></div>
+        <div class="submit a-right">
+            <?php echo GxHtml::htmlButton('<span><span>Next</span></span>', array('class' => 'button_green', 'type' => 'submit'));
+            ?>
+        </div>
     </div>
-    <div class="clear"></div>
-    <div class="submit a-right">
-        <?php echo GxHtml::htmlButton('<span><span>Next</span></span>', array('class' => 'button_green', 'type' => 'submit'));
-        ?>
-    </div>
-</div>
 </div>
 <?php $this->endWidget(); ?>
 <script>
-    $(".daylink").click(function () {
+    $('.vendor_images').click(function() {
+        $("#id_user_img").attr('src', this.src);
+    });
+    $('.vendor_video_images').click(function() {
+        $("#id_video_img").attr('src', this.src);
+    });
+    $(".daylink").click(function() {
         if (!$(this).hasClass("active")) {
             $(this).addClass("active");
             var snCheckboxId = $(this).children('input').attr('id');
