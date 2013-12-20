@@ -1,1 +1,1 @@
-Vendor Home
+<?php echo CHtml::image(Yii::app()->baseUrl.'/images/Vendor_Home.jpg','',array('style' => 'margin-left:-37px;margin-top:-40px;'));?>

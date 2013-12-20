@@ -8,37 +8,47 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
     <ul>
         <li class="complete">
             <h1>
-                <img src="<?php echo Yii::app()->baseUrl; ?>/images/fish-icon.png" alt="" class="margin_right"/>
+                <img src="<?php echo Yii::app()->baseUrl; ?>/images/fish-icon.png" alt=""
+                     class="margin_right"/><?php echo CHtml::link('General', Yii::app()->createUrl('eventPlanner/planEventGeneralEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+            </h1>
+
+            <div class="details">
                 <?php
-                $ssUrl = (isset($_REQUEST['id'])) ? array('eventPlanner/planEventGeneralEdit', 'id' => $_REQUEST['id']) : array('eventPlanner/planEventGeneral');
-                echo CHtml::link('General', $ssUrl, array('style' => 'color:#fff;'));
+                echo CHtml::image(Common::getEventImage($oEventModel->event_image), '', array('width' => '120px', 'height' => '100px'));
                 ?>
+                <?php
+                echo "<div class='clear' style='height:1px;'>&nbsp;</div>" . $oEventModel->event_title;
+                ?>
+
+            </div>
+        </li>
+        <li class="complete">
+            <h1><img src="<?php echo Yii::app()->baseUrl; ?>/images/food-icon.png" alt="" class="margin_right"/>Food
             </h1>
 
             <div class="details"></div>
         </li>
-        <li class="complete">
-            <h1><img src="<?php echo Yii::app()->baseUrl; ?>/images/food-icon.png" alt="" class="margin_right"/>Food</h1>
-
-            <div class="details"></div>
-        </li>
         <li class="active">
-            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories & Rentals</h1>
+            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories
+                & Rentals</h1>
 
             <div class="details"></div>
         </li>
         <li>
-            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/entertai-icon.png" alt=""/>Entertainers & Personnel</h1>
+            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/entertai-icon.png" alt=""/>Entertainers
+                & Personnel</h1>
 
             <div class="details"></div>
         </li>
         <li>
-            <h1><img src="<?php echo Yii::app()->baseUrl; ?>/images/trans-icon.png" alt="" class="margin_right"/>Transport</h1>
+            <h1><img src="<?php echo Yii::app()->baseUrl; ?>/images/trans-icon.png" alt="" class="margin_right"/>Transport
+            </h1>
 
             <div class="details"></div>
         </li>
         <li class="last">
-            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/gift-icon.png" alt=""/>Invitations & Gifts</h1>
+            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/gift-icon.png" alt=""/>Invitations
+                & Gifts</h1>
 
             <div class="details"></div>
         </li>
@@ -61,10 +71,10 @@ $form = $this->beginWidget('GxActiveForm', array(
     </div>
     <div class="tab-menu">
         <ul>
-            <li id="tabHead1" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['partyAccessories']?>');tabToggle(1,4);" class="active first">Party Accessories</li>
-            <li id="tabHead2" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['equipmentRentals']?>');tabToggle(2,4);">Equipment Rentals</li>
-            <li id="tabHead3" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['costumes']?>');tabToggle(3,4);">Costumes</li>
-            <li id="tabHead4" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['cloths']?>');tabToggle(4,4);" class="last" >Clothes</li>
+            <li id="tabHead1" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['partyAccessories'] ?>');tabToggle(1,4);" class="active first">Party Accessories</li>
+            <li id="tabHead2" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['equipmentRentals'] ?>');tabToggle(2,4);">Equipment Rentals</li>
+            <li id="tabHead3" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['costumes'] ?>');tabToggle(3,4);">Costumes</li>
+            <li id="tabHead4" onclick="callpagecategory('<?php echo Yii::app()->params['categoryParentId']['cloths'] ?>');tabToggle(4,4);" class="last">Clothes</li>
         </ul>
     </div>
     <div style="clear:both">&nbsp;</div>
@@ -94,7 +104,7 @@ $form = $this->beginWidget('GxActiveForm', array(
             <div style="clear:both">&nbsp;</div>
             <div class="serch-contnt">
                 <div class="serch-box">
-                    <input type="hidden" id="catId" value="42" />
+                    <input type="hidden" id="catId" value="42"/>
                     <input type="text" placeholder="Search" class="search-bg" id="search" onkeyup="searchTable(this.value);"/>
 
                     <select class="acce_add_sel" onchange="callpage();" name="pagesize" id="pagesize">
@@ -122,14 +132,15 @@ $form = $this->beginWidget('GxActiveForm', array(
 
                             )) ?>
                         </div>
-                        <span title="Prev" class="lef-arro"><img onclick="callpreviouspage('<?php echo $pageNumber?>','<?php echo $totalPages?>');" src="<?php echo Yii::app()->baseUrl; ?>/images/lef-arrow.png" alt=""/></span>
+                        <span title="Prev" class="lef-arro"><img onclick="callpreviouspage('<?php echo $pageNumber ?>','<?php echo $totalPages ?>');"
+                                                                 src="<?php echo Yii::app()->baseUrl; ?>/images/lef-arrow.png" alt=""/></span>
 
 
                         <p>Page</p>
 
                         <!--<input type="text" onclick="this.value=''" id="SearchText" value="<?php /*echo $pageNumber*/?>" class="pagin-bg"  />-->
 
-                        <select  class="acce_add_sel acce_add_sel_2" onchange="callpage();" name="SearchText" id="SearchText">
+                        <select class="acce_add_sel acce_add_sel_2" onchange="callpage();" name="SearchText" id="SearchText">
                             <?php
                             //$optionAry = array(1=>3,2=>5,3=>10,4=>15,5=>20);
                             for ($i = 1; $i <= $totalPages; $i++) {
@@ -147,9 +158,8 @@ $form = $this->beginWidget('GxActiveForm', array(
                         <p>of <?php echo $totalPages ?></p>
 
 
-
-                            <span title="Next" class="rit-arro"><img onclick="callnextpage('<?php echo $pageNumber?>','<?php echo $totalPages?>');" src="<?php echo Yii::app()->baseUrl; ?>/images/rit-arrow.png" alt=""/></span>
-
+                        <span title="Next" class="rit-arro"><img onclick="callnextpage('<?php echo $pageNumber ?>','<?php echo $totalPages ?>');"
+                                                                 src="<?php echo Yii::app()->baseUrl; ?>/images/rit-arrow.png" alt=""/></span>
 
 
                     </div>
@@ -216,11 +226,12 @@ $form = $this->beginWidget('GxActiveForm', array(
                                 </div>
                                 <div class="row-6">
                                     <div id="<?php ?>">
-                                        <div style="" class="round-button" onclick="minus('num_<?php echo $oProduct->amazon_asin_number?>');">
+                                        <div style="" class="round-button" onclick="minus('num_<?php echo $oProduct->amazon_asin_number ?>');">
                                             -
                                         </div>
-                                        <input type="text" name="num" id="num_<?php echo $oProduct->amazon_asin_number?>" size="1" value="" style=""/>
-                                        <div style="" class="round-button" onclick="plus('num_<?php echo $oProduct->amazon_asin_number?>');">
+                                        <input type="text" name="num" id="num_<?php echo $oProduct->amazon_asin_number ?>" size="1" value="" style=""/>
+
+                                        <div style="" class="round-button" onclick="plus('num_<?php echo $oProduct->amazon_asin_number ?>');">
                                             +
                                         </div>
                                     </div>
@@ -262,21 +273,21 @@ $form = $this->beginWidget('GxActiveForm', array(
     function callpagecategory(catId) {
         var f;
         f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd')?>';
-        ajaxCall(f, 'a&' + 'page=' + document.getElementById('SearchText').value + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes&catId='+catId, 'equalize', 'ac_loading_paging', '300px');
+        ajaxCall(f, 'a&' + 'page=' + document.getElementById('SearchText').value + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes&catId=' + catId, 'equalize', 'ac_loading_paging', '300px');
 
     }
-    function callnextpage(pageNumber,totalPage) {
+    function callnextpage(pageNumber, totalPage) {
         if (pageNumber == totalPage)
             return false;
         var f;
         f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd')?>';
-        ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value)+1) + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
+        ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value) + 1) + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
-    function callpreviouspage(pageNumber,totalPage) {
-        if (pageNumber== 1)
+    function callpreviouspage(pageNumber, totalPage) {
+        if (pageNumber == 1)
             return false;
         var f;
         f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd')?>';
-        ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value)-1) + '&pagesize=' + ((document.getElementById('pagesize').value)) + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
+        ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value) - 1) + '&pagesize=' + ((document.getElementById('pagesize').value)) + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
 </script>

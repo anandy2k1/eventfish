@@ -42,30 +42,30 @@
     <!--header panel starts -->
     <header>
         <?php
-/*        require_once Yii::getPathOfAlias('webroot')."/protected/extensions/facebook/lib/facebook.php";
-        // Create our Application instance (replace this with your appId and secret).
-        $facebook = new Facebook(array(
-            'appId'  => Yii::app()->params['FACEBOOK_APPID'],
-            'secret' => Yii::app()->params['FACEBOOK_SECRET']
-        ));
-        // Login or logout url will be needed depending on current user state.
-        $user = $facebook->getUser();
-        if ($user)
-        {
-            try
-            {
-                // Proceed knowing you have a logged in user who's authenticated.
-                $user_profile = $facebook->api('/me');
-            }
-            catch (FacebookApiException $e)
-            {
-                error_log($e);
-                $user = null;
-            }
-        }
+        /*        require_once Yii::getPathOfAlias('webroot')."/protected/extensions/facebook/lib/facebook.php";
+                // Create our Application instance (replace this with your appId and secret).
+                $facebook = new Facebook(array(
+                    'appId'  => Yii::app()->params['FACEBOOK_APPID'],
+                    'secret' => Yii::app()->params['FACEBOOK_SECRET']
+                ));
+                // Login or logout url will be needed depending on current user state.
+                $user = $facebook->getUser();
+                if ($user)
+                {
+                    try
+                    {
+                        // Proceed knowing you have a logged in user who's authenticated.
+                        $user_profile = $facebook->api('/me');
+                    }
+                    catch (FacebookApiException $e)
+                    {
+                        error_log($e);
+                        $user = null;
+                    }
+                }
 
-        $facebook_Url  = $facebook->getLoginUrl( array(	'req_perms' => 'email','login'=>'facebook','redirect_uri'=>'http://localhost/eventfish/index.php/site/login'));
-        $params['facebook'] = $facebook_Url;*/
+                $facebook_Url  = $facebook->getLoginUrl( array(	'req_perms' => 'email','login'=>'facebook','redirect_uri'=>'http://localhost/eventfish/index.php/site/login'));
+                $params['facebook'] = $facebook_Url;*/
         ?>
         <!--<div class="facebook">
             <?php /*// echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl.'/images/facebook.png'),$params['facebook']); */?>
@@ -82,36 +82,38 @@
                     echo CHtml::htmlButton('<span><span>Log In</span></span>', array('onclick' => 'js:openColorBox("' . Yii::app()->createUrl("site/login") . '","500","600");return false;', 'class' => 'ajax general-btn'));
                 else:
                     echo 'Hello, ' . Yii::app()->user->name . '&nbsp';
-
-
                     echo CHtml::link('<span><span onclick="FB.logout();">Logout</span></span>', array('site/logout'), array('class' => 'general-btn'));
                 endif;
                 ?>
             </div>
             <nav>
                 <ul>
-                    <li class="first">
-                        <?php echo CHtml::link('Home', array('site/index'), array('title' => 'Home')); ?>
-                    </li>
-                    <li>
-                        <?php echo CHtml::link('How it Works', '#', array('title' => 'How it Works')); ?>
-                    </li>
-                    <li>
-                        <?php echo CHtml::link('Plan an Event', Yii::app()->baseUrl.'/index.php/eventPlanner/planEventGeneralAdd', array('title' => 'Plan an Event')); ?>
-                    </li>
-                    <li>
-                        <?php echo CHtml::link('Become a Vendor', '#', array('title' => 'Become a Vendor')); ?>
-                    </li>
-                    <li>
-                        <?php echo CHtml::link('Find an Event', '#', array('title' => 'Find an Event')); ?>
-                    </li>
-                    <li>
-                        <?php echo CHtml::link('Planner', '#', array('title' => 'Planner')); ?>
-                    </li>
-                    <li class="last">
-                        <?php echo CHtml::link('View Demo', '#', array('title' => 'View Demo')); ?>
-                    </li>
+                    <?php
+                    if (Yii::app()->user->isGuest):
+                        $amMenuItem = Common::getUserMenusAsPerRole('guest');
+                        $snI = 1;
+                        foreach ($amMenuItem as $amItems) {
+                            $ssClass = ($snI == 1) ? 'first' : ((count($amMenuItem) == $snI) ? 'last' : '');
+                            echo '<li class="' . $ssClass . '">';
+                            echo CHtml::link($amItems['link_name'], $amItems['url'], array('title' => $amItems['title']));
+                            echo '</li>';
+                            $snI++;
+                        }
+                    else:
+                        $amUserData = Yii::app()->user->getState('admin');
+                        $ssRoleType = UserRole::getRoleNameAsPerId($amUserData['role_id']);
+                        $amMenuItem = Common::getUserMenusAsPerRole($ssRoleType);
+                        $snI = 1;
+                        foreach ($amMenuItem as $amItems) {
+                            $ssClass = ($snI == 1) ? 'first' : ((count($amMenuItem) == $snI) ? 'last' : '');
+                            echo '<li class="' . $ssClass . '">';
+                            echo CHtml::link($amItems['link_name'], $amItems['url'], array('title' => $amItems['title']));
+                            echo '</li>';
+                            $snI++;
+                        }
+                    endif;
 
+                    ?>
                 </ul>
             </nav>
         </div>
@@ -206,7 +208,8 @@
                     <a target="_blank" href="https://www.facebook.com/eventfish"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/footer-icon01.png" width="30" height="30"/></a>
                     <a target="_blank" href="https://twitter.com/eventfish"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/footer-icon02.png" width="30" height="30"/></a>
                     <a target="_blank" href="http://linkd.in/1gvcoQW"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/footer-icon03.png" width="30" height="30"/></a>
-                    <a target="_blank" href="http://www.youtube.com/channel/UCwzEDpI7GzzAF3Hz7btvPeA"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/footer-icon04.png" width="30" height="30"/></a>
+                    <a target="_blank" href="http://www.youtube.com/channel/UCwzEDpI7GzzAF3Hz7btvPeA"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/footer-icon04.png" width="30"
+                                                                                                           height="30"/></a>
                 </p>
             </div>
         </div>

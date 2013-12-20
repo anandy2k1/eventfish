@@ -231,8 +231,9 @@ class EventPlannerController extends Controller
         ));
     }
 
-    public function actionPlanEventAccessoriesAdd()
+    public function actionPlanEventAccessoriesAdd($id)
     {
+        $oEventModel = Event::model()->findByPk($id);
         $model = new AmazonProducts();
         $model->unsetAttributes();
 
@@ -296,7 +297,7 @@ class EventPlannerController extends Controller
                     'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
                     'catId' => $catId,
-
+                    'oEventModel' =>$oEventModel
                 )
             );
         }

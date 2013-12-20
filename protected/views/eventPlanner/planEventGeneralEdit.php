@@ -53,7 +53,7 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
     <ul>
         <li class="active">
             <h1>
-                <img src="<?php echo Yii::app()->baseUrl; ?>/images/fish-icon.png" alt="" class="margin_right"/><?php echo CHtml::link('General', array('eventPlanner/planEventGeneral'), array('style' => 'color:#fff;')); ?>
+                <img src="<?php echo Yii::app()->baseUrl; ?>/images/fish-icon.png" alt="" class="margin_right"/><?php echo CHtml::link('General', 'javascript:void(0);', array('style' => 'color:#fff;')); ?>
             </h1>
 
             <div class="details">

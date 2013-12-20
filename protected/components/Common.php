@@ -3,7 +3,8 @@
 /**
  * This is the Common model class for declared general functions/methods.
  */
-class Common {
+class Common
+{
 
     /**
      * function: objectToArray()
@@ -11,10 +12,11 @@ class Common {
      * @param $object
      * @return array $amConverted
      */
-    public static function objectToArray($object) {
+    public static function objectToArray($object)
+    {
         $amConverted = array();
         foreach ($object as $member => $data) {
-            $amConverted[$member] = (array) $data;
+            $amConverted[$member] = (array)$data;
         }
         return $amConverted;
     }
@@ -25,7 +27,8 @@ class Common {
      * @param $input
      * @return string decoded data
      */
-    public static function base64UrlDecode($input) {
+    public static function base64UrlDecode($input)
+    {
         return base64_decode(strtr($input, '-_', '+/'));
     }
 
@@ -41,10 +44,11 @@ class Common {
      *
      * return boolean
      */
-    public static function commonUpdateField($ssTableName, $ssFieldName, $smFieldValue, $ssCompareField, $smCompareValue) {
+    public static function commonUpdateField($ssTableName, $ssFieldName, $smFieldValue, $ssCompareField, $smCompareValue)
+    {
         Yii::app()->db->createCommand()
-                ->update($ssTableName, array($ssFieldName => $smFieldValue,
-                        ), $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
+            ->update($ssTableName, array($ssFieldName => $smFieldValue,
+                ), $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
 
         return true;
     }
@@ -59,9 +63,10 @@ class Common {
      *
      * return boolean
      */
-    public static function commonDeleteRecord($ssTableName, $ssCompareField, $smCompareValue) {
+    public static function commonDeleteRecord($ssTableName, $ssCompareField, $smCompareValue)
+    {
         Yii::app()->db->createCommand()
-                ->delete($ssTableName, $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
+            ->delete($ssTableName, $ssCompareField . '=:compare_value', array(':compare_value' => $smCompareValue));
 
         return true;
     }
@@ -72,7 +77,8 @@ class Common {
      * @param integer $snLength
      * @return array $smCode
      */
-    public static function generateToken($snLength) {
+    public static function generateToken($snLength)
+    {
         $smCode = "";
         $smData = "AbcDE123IJKLMN67QRSTUVWXYZaBCdefghijklmn123opq45rs67tuv89wxyz0FGH45OP89";
         for ($snI = 0; $snI < $snLength; $snI++)
@@ -87,7 +93,8 @@ class Common {
      * @param integer $snLength
      * @return array $smCode
      */
-    public static function createImageURL($ssImageName) {
+    public static function createImageURL($ssImageName)
+    {
         $ssProfileImageURL = Yii::app()->params['image_upload_url'] . Yii::app()->request->baseUrl . '/uploads/' . $ssImageName;
         return $ssProfileImageURL;
     }
@@ -98,7 +105,8 @@ class Common {
      * @param $asDynamicContent = array of dynamic content
      * return $ssBodyContent = string of replaced old content
      */
-    static public function replaceMailContent($ssBodyContent, $asDynamicContent) {
+    static public function replaceMailContent($ssBodyContent, $asDynamicContent)
+    {
         if (trim($ssBodyContent) != '') {
             foreach ($asDynamicContent as $key => $value)
                 $ssBodyContent = str_replace($key, $value, $ssBodyContent);
@@ -116,7 +124,8 @@ class Common {
      * @param string $ssSubject
      * @param string $ssBody
      */
-    public static function sendMail($ssToEmail, $asFromEmail, $ssSubject, $ssBody) {
+    public static function sendMail($ssToEmail, $asFromEmail, $ssSubject, $ssBody)
+    {
         $omMessage = new YiiMailMessage;
 
         $omMessage->setTo($ssToEmail);
@@ -134,7 +143,8 @@ class Common {
      * For close color box popup window.
      * @param string $ssCloseScript
      */
-    public static function closeColorBox($ssRedirectUrl) {
+    public static function closeColorBox($ssRedirectUrl)
+    {
         $ssRedirectUrl = Yii::app()->params['site_url'] . $ssRedirectUrl;
         $ssCloseScript = "<script src='" . Yii::app()->request->baseUrl . "/js/jquery.js'></script>";
         $ssCloseScript .= "<script src='" . Yii::app()->request->baseUrl . "/js/colorbox/jquery.colorbox.js'></script>";
@@ -151,7 +161,8 @@ class Common {
      * @param none
      * @return array.
      */
-    public static function getListCountry() {
+    public static function getListCountry()
+    {
         $model = CountryMaster::model()->findAll();
         return CHtml::listData($model, 'id', 'country');
     }
@@ -161,7 +172,8 @@ class Common {
      * @param string $ssImage
      * @return image.
      */
-    public static function getSliderImage($ssImage) {
+    public static function getSliderImage($ssImage)
+    {
 
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/slider_images/';
         $amImageInfo = pathinfo($ssImage);
@@ -178,7 +190,8 @@ class Common {
      * @param string $ssImage
      * @return image.
      */
-    public static function getCategoryImage($ssImage) {
+    public static function getCategoryImage($ssImage)
+    {
         //return CHtml::image(Yii::app()->baseUrl . '/uploads/category_images/' . $ssImage, "", array('width' => '75px', 'height' => '75px'));
 
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/category_images/';
@@ -192,7 +205,8 @@ class Common {
         }
     }
 
-    public static function getCategoryImageUrl($ssImage) {
+    public static function getCategoryImageUrl($ssImage)
+    {
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/category_images/';
         $amImageInfo = pathinfo($ssImage);
         $ssImageName = $ssOrigPath . $amImageInfo['basename'];
@@ -210,7 +224,8 @@ class Common {
      * @param string $ssThumbPath
      * For remove image.
      */
-    public static function removeOldImage($ssName, $ssOrigPath, $ssThumbPath = '') {
+    public static function removeOldImage($ssName, $ssOrigPath, $ssThumbPath = '')
+    {
 
         $amImageInfo = pathinfo($ssName);
         $ssImageName = $ssOrigPath . $amImageInfo['basename'];
@@ -224,7 +239,8 @@ class Common {
         }
     }
 
-    public static function getEventImage($ssImage) {
+    public static function getEventImage($ssImage)
+    {
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/event_images/';
         $amImageInfo = pathinfo($ssImage);
         $ssImageName = $ssOrigPath . $amImageInfo['basename'];
@@ -235,12 +251,14 @@ class Common {
         }
     }
 
-    public static function eventRedirectPage($oUser) {
+    public static function eventRedirectPage($oUser)
+    {
         $ssUrl = ($oUser->redirect_page == 0) ? Yii::app()->createUrl('eventPlanner/index') : (($oUser->redirect_page == 1) ? Yii::app()->createUrl('eventPlanner/step1') : Yii::app()->createUrl('eventPlanner/step2'));
         return $ssUrl;
     }
 
-    public static function vendorRedirectPage($oUser) {
+    public static function vendorRedirectPage($oUser)
+    {
         $ssUrl = '';
         if ($oUser->redirect_page == 0) {
             $ssUrl = Yii::app()->createUrl('vendor/index');
@@ -254,7 +272,8 @@ class Common {
         return $ssUrl;
     }
 
-    public static function getVendorImage($ssImage) {
+    public static function getVendorImage($ssImage)
+    {
         $ssOrigPath = Yii::getPathOfAlias('webroot') . '/uploads/user_images/';
         $amImageInfo = pathinfo($ssImage);
         $ssImageName = $ssOrigPath . $amImageInfo['basename'];
@@ -265,11 +284,12 @@ class Common {
         }
     }
 
-    public static function getVendorLastPhoto($omUserPhotos) {
+    public static function getVendorLastPhoto($omUserPhotos)
+    {
         if (!empty($omUserPhotos)) {
             $smPhoto = Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/up-photos.png';
-            foreach($omUserPhotos as $omUserPhoto){
-                $smPhoto = Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/uploads/user_images/'.$omUserPhoto->photo_url;
+            foreach ($omUserPhotos as $omUserPhoto) {
+                $smPhoto = Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/uploads/user_images/' . $omUserPhoto->photo_url;
             }
             return $smPhoto;
         } else {
@@ -277,10 +297,11 @@ class Common {
         }
     }
 
-    public static function getVendorLastVideoImage($omUserVideos) {
+    public static function getVendorLastVideoImage($omUserVideos)
+    {
         if (!empty($omUserVideos)) {
             $snVideoImage = Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/video.png';
-            foreach($omUserVideos as $omUserVideo){
+            foreach ($omUserVideos as $omUserVideo) {
                 $snVideoImage = $omUserVideo->video_image;
             }
             return $snVideoImage;
@@ -288,57 +309,159 @@ class Common {
             return Yii::app()->params['site_url'] . Yii::app()->baseUrl . '/images/video.png';
         }
     }
+
     public static function textTruncate($source_text, $word_count)
     {
         $word_count++;
         $long_enough = TRUE;
-        if ((trim($source_text) != "") && ($word_count > 0))
-        {
+        if ((trim($source_text) != "") && ($word_count > 0)) {
             $split_text = explode(" ", $source_text, $word_count);
-            if (sizeof($split_text) < $word_count)
-            {
+            if (sizeof($split_text) < $word_count) {
                 $long_enough = FALSE;
-            }
-            else
-            {
+            } else {
                 array_pop($split_text);
                 $source_text = implode(" ", $split_text);
             }
         }
         return $long_enough;
     }
+
     public static function trim($string, $charCount, $endString = '...')
     {
-        if(strlen($string)<$charCount)
+        if (strlen($string) < $charCount)
             return $string;
-        if(preg_match('/\W/',$string[$charCount]))
-        {
-            $trimedString = substr($string,0,$charCount);
-            if(preg_match('/\W/',$trimedString[strlen($trimedString)-1]))
-            {
-                $trimedString = substr($string,0,strlen($trimedString)-1);
+        if (preg_match('/\W/', $string[$charCount])) {
+            $trimedString = substr($string, 0, $charCount);
+            if (preg_match('/\W/', $trimedString[strlen($trimedString) - 1])) {
+                $trimedString = substr($string, 0, strlen($trimedString) - 1);
             }
             $trimedString .= $endString;
-        }
-        else
-        {
-            $str = substr($string,0,$charCount);
-            for($i = strlen($str)-1; $i>=0; $i--)
-            {
-                if(preg_match('/\W/',$str[$i]))
-                {
+        } else {
+            $str = substr($string, 0, $charCount);
+            for ($i = strlen($str) - 1; $i >= 0; $i--) {
+                if (preg_match('/\W/', $str[$i])) {
                     $position = $i;
                     break;
                 }
             }
-            $trimedString = substr($str,0,$position);
-            if(preg_match('/\W/',$trimedString[strlen($trimedString)-1]))
-            {
-                $trimedString = substr($string,0,strlen($trimedString)-1);
+            $trimedString = substr($str, 0, $position);
+            if (preg_match('/\W/', $trimedString[strlen($trimedString) - 1])) {
+                $trimedString = substr($string, 0, strlen($trimedString) - 1);
             }
             $trimedString .= $endString;
         }
         return $trimedString;
+    }
+
+    /**
+     * function: getUserMenusAsPerRole()
+     * @return array $amMenuItems
+     */
+    public static function getUserMenusAsPerRole($ssRoleType)
+    {
+        $amMenuItems = array();
+        switch ($ssRoleType) {
+            case 'event_planner':
+                $amMenuItems = array(
+                    '1' => array(
+                        'link_name' => 'Home',
+                        'url' => array('eventPlanner/index'),
+                        'title' => 'My Home'
+                    ),
+                    '2' => array(
+                        'link_name' => 'Past Events',
+                        'url' => '#',
+                        'title' => 'Past Events'
+                    ),
+                    '3' => array(
+                        'link_name' => 'Transaction History',
+                        'url' => '#',
+                        'title' => 'Transaction History'
+                    ),
+                    '4' => array(
+                        'link_name' => 'Become a Vendor',
+                        'url' => '#',
+                        'title' => 'Become a Vendor'
+                    ),
+                    '5' => array(
+                        'link_name' => 'My Account',
+                        'url' => '#',
+                        'title' => 'My Account'
+                    )
+                );
+                return $amMenuItems;
+                break;
+            case 'vendor':
+                $amMenuItems = array(
+                    '1' => array(
+                        'link_name' => 'Vendor Home',
+                        'url' => array('Vendor/index'),
+                        'title' => 'Vendor Home'
+                    ),
+                    '2' => array(
+                        'link_name' => 'Transaction History',
+                        'url' => '#',
+                        'title' => 'Transaction History'
+                    ),
+                    '3' => array(
+                        'link_name' => 'My Reviews',
+                        'url' => '#',
+                        'title' => 'My Reviews'
+                    ),
+                    '4' => array(
+                        'link_name' => 'Profile Analysis',
+                        'url' => '#',
+                        'title' => 'Profile Analysis'
+                    ),
+                    '5' => array(
+                        'link_name' => 'Featured Listing',
+                        'url' => '#',
+                        'title' => 'Featured Listing'
+                    ),
+                    '6' => array(
+                        'link_name' => 'My Account',
+                        'url' => '#',
+                        'title' => 'My Account'
+                    )
+                );
+                return $amMenuItems;
+                break;
+            default:
+                $amMenuItems = array(
+                    '1' => array(
+                        'link_name' => 'Home',
+                        'url' => array('site/index'),
+                        'title' => 'Home'
+                    ),
+                    '2' => array(
+                        'link_name' => 'How it Works',
+                        'url' => '#',
+                        'title' => 'How it Works'
+                    ),
+                    '3' => array(
+                        'link_name' => 'Plan an Event',
+                        'url' => '#',
+                        'title' => 'Plan an Event'
+                    ),
+                    '4' => array(
+                        'link_name' => 'Become a Vendor',
+                        'url' => '#',
+                        'title' => 'Become a Vendor'
+                    ),
+                    '5' => array(
+                        'link_name' => 'Find an Event Planner',
+                        'url' => '#',
+                        'title' => 'Find an Event Planner'
+                    ),
+                    '6' => array(
+                        'link_name' => 'View Demo',
+                        'url' => '#',
+                        'title' => 'View Demo'
+                    ),
+                );
+                return $amMenuItems;
+                break;
+        }
     }
 }
 
