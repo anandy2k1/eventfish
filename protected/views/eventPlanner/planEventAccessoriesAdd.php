@@ -267,12 +267,12 @@ $form = $this->beginWidget('GxActiveForm', array(
 <script type="text/javascript">
     function callpage() {
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd')?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + document.getElementById('SearchText').value + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
     function callpagecategory(catId) {
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd')?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + document.getElementById('SearchText').value + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes&catId=' + catId, 'equalize', 'ac_loading_paging', '300px');
 
     }
@@ -280,14 +280,14 @@ $form = $this->beginWidget('GxActiveForm', array(
         if (pageNumber == totalPage)
             return false;
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd')?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value) + 1) + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
     function callpreviouspage(pageNumber, totalPage) {
         if (pageNumber == 1)
             return false;
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd')?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value) - 1) + '&pagesize=' + ((document.getElementById('pagesize').value)) + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
 </script>

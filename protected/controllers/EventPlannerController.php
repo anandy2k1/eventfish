@@ -245,16 +245,11 @@ class EventPlannerController extends Controller
            $catId =$_GET['catId'];
         }
 
-
         $oCriteria = new CDbCriteria();
         $oCriteria->alias = 'amp';
         $oCriteria->join = "INNER JOIN amazon_products_categories amc ON amp.id = amc.product_id";
         $oCriteria->condition = 'amc.category_id= :snCategoryId';
         $oCriteria->params = array(':snCategoryId' => $catId);
-        //$omResults = AmazonProducts::model()->findAll($oCriteria);
-
-
-
 
         $count = AmazonProducts::model()->count($oCriteria);
         $pages = new CPagination($count);
@@ -272,8 +267,6 @@ class EventPlannerController extends Controller
         $pages->applyLimit($oCriteria);
         $model = AmazonProducts::model()->findAll($oCriteria);
 
-
-
         if (isset($_GET['ajaxcall'])) {
             $this->layout = false;
             $this->render('ajaxEventAccessoriesFetch',
@@ -284,8 +277,7 @@ class EventPlannerController extends Controller
                     'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
                     'catId' => $catId,
-
-
+                    'oEventModel' =>$oEventModel
                 )
             );
         } else {
@@ -301,8 +293,6 @@ class EventPlannerController extends Controller
                 )
             );
         }
-
-
     }
 
     public function actionPlanEventAccessoriesEdit($id, $acce_id)
