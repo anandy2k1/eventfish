@@ -63,8 +63,10 @@ return array(
     ),
 
     'adminEmail' => 'anandy2k1@gmail.com',
-    'FACEBOOK_APPID' => '222474297933675', // '222260334571937',
-    'FACEBOOK_SECRET' => 'e34c58d546621e6f2689c676b26543f1', // 'f1d07d229e54735c1107905898fcb861',
+    /*'FACEBOOK_APPID' => '222474297933675', // '222260334571937',
+    'FACEBOOK_SECRET' => 'e34c58d546621e6f2689c676b26543f1', // 'f1d07d229e54735c1107905898fcb861',*/
+    'FACEBOOK_APPID' => '564260773652299', // '222260334571937',
+    'FACEBOOK_SECRET' => '9aa718ebde8e728fdb205ca1575b4efe', // 'f1d07d229e54735c1107905898fcb861',
     'category_thumb_width' => '137',
     'category_thumb_height' => '97',
     'slider_thumb_width' => '75',

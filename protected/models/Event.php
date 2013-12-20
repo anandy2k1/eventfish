@@ -2,13 +2,16 @@
 
 Yii::import('application.models._base.BaseEvent');
 
-class Event extends BaseEvent {
+class Event extends BaseEvent
+{
 
-    public static function model($className = __CLASS__) {
+    public static function model($className = __CLASS__)
+    {
         return parent::model($className);
     }
 
-    public function rules() {
+    public function rules()
+    {
         return array(
             array('event_title, start_date, end_date, address_1, city, state_id, zip', 'required'),
             array('event_image', 'file',
@@ -35,7 +38,8 @@ class Event extends BaseEvent {
         );
     }
 
-    public function attributeLabels() {
+    public function attributeLabels()
+    {
         return array(
             'id' => Yii::t('app', 'ID'),
             'event_title' => Yii::t('app', 'Event Title'),
@@ -54,14 +58,29 @@ class Event extends BaseEvent {
         );
     }
 
-    public static function getUserEvents($snUserId) {
+    public static function getUserEvents($snUserId)
+    {
         $oCriteria = new CDbCriteria;
         $oCriteria->alias = 'e';
         $oCriteria->condition = "e.start_date >= DATE_FORMAT(NOW(),'%Y-%m-%d') AND e.user_id = :userID";
         $oCriteria->params = array(':userID' => $snUserId);
         $omResultSet = self::model()->findAll($oCriteria);
-        
+
         return $omResultSet;
+    }
+
+    public static function getUserPastEvents($snUserId, $amSearchTerms = array(), $bIsCriteria = false)
+    {
+        $oCriteria = new CDbCriteria;
+        $oCriteria->alias = 'e';
+        $oCriteria->condition = "e.start_date < DATE_FORMAT(NOW(),'%Y-%m-%d') AND e.user_id = :userID";
+        $oCriteria->params = array(':userID' => $snUserId);
+
+        if(count($amSearchTerms)){
+
+        }
+
+        return ($bIsCriteria) ? $oCriteria : self::model()->findAll($oCriteria);
     }
 
 }

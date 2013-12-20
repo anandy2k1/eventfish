@@ -69,10 +69,14 @@ return array(
                 // frontend routing rules //
                 'home' => 'site/index',
                 'event/home' => 'eventPlanner/index',
-                'event/general/add' => 'eventPlanner/PlanEventGeneralAdd',
+                'event/add' => 'eventPlanner/planEventGeneralAdd',
                 'event/general/edit/<id:\w+>' => 'eventPlanner/planEventGeneralEdit',
                 'event/accesories/add/<id:\w+>' => 'eventPlanner/planEventAccessoriesAdd',
-                'event/accesories/edit/<id:\w+>/<acce_id:\w+>' => 'eventPlanner/planEventAccessoriesEdit',
+                'event/accesories/edit/<id:\w+>' => 'eventPlanner/planEventAccessoriesEdit',
+                'event/invitation/event-details/<id:\w+>' => 'eventPlanner/sendEventInvitation',
+                'event/invitation/my-friends/<id:\w+>' => 'eventPlanner/sendEventInvitationStep2',
+                'event/invitation/review/<id:\w+>' => 'eventPlanner/sendEventInvitationStep3',
+
 
                 'page/<id:\w+>' => 'site/cms',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',

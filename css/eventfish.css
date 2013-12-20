@@ -3201,255 +3201,688 @@ div.flash-success a {
 
 /*                      */
 
-
 /******* plan event account css start (event home) ******/
-.lef-content-bg{
-    background:#ebedf0;
-    border:1px solid #e2e2e2;
-    height:720px;
-    width:482px;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    box-shadow:0px 0px 5px #eeefef;
-    -moz-box-shadow:0px 0px 5px #eeefef;
-    -webkit-box-shadow:0px 0px 5px #eeefef;
+.lef-content-bg {
+    background: #ebedf0;
+    border: 1px solid #e2e2e2;
+    height: 720px;
+    width: 482px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 5px #eeefef;
+    -moz-box-shadow: 0px 0px 5px #eeefef;
+    -webkit-box-shadow: 0px 0px 5px #eeefef;
 }
-.rit-content-bg{
-    background:#ebedf0;
-    border:1px solid #e2e2e2;
-    min-height:580px;
-    width:460px;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    box-shadow:0px 0px 5px #eeefef;
-    -moz-box-shadow:0px 0px 5px #eeefef;
-    -webkit-box-shadow:0px 0px 5px #eeefef;
+
+.rit-content-bg {
+    background: #ebedf0;
+    border: 1px solid #e2e2e2;
+    min-height: 580px;
+    width: 460px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 5px #eeefef;
+    -moz-box-shadow: 0px 0px 5px #eeefef;
+    -webkit-box-shadow: 0px 0px 5px #eeefef;
 }
-.rit-bottom-content-bg{
-    background:#ebedf0;
-    border:1px solid #e2e2e2;
-    width:460px;
-    margin:15px 0 0 0;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    box-shadow:0px 0px 5px #eeefef;
-    -moz-box-shadow:0px 0px 5px #eeefef;
-    -webkit-box-shadow:0px 0px 5px #eeefef;
+
+.rit-bottom-content-bg {
+    background: #ebedf0;
+    border: 1px solid #e2e2e2;
+    width: 460px;
+    margin: 15px 0 0 0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 5px #eeefef;
+    -moz-box-shadow: 0px 0px 5px #eeefef;
+    -webkit-box-shadow: 0px 0px 5px #eeefef;
 }
-.content-title{
-    background:#efefef;
-    border-bottom:1px solid #e2e2e2;
-    padding:10px 8px;
-    box-shadow:1px 2px 3px #e7eaec;
-    -moz-box-shadow:1px 2px 3px #e7eaec;
-    -webkit-box-shadow:1px 2px 3px #e7eaec;
+
+.content-title {
+    background: #efefef;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 8px;
+    box-shadow: 1px 2px 3px #e7eaec;
+    -moz-box-shadow: 1px 2px 3px #e7eaec;
+    -webkit-box-shadow: 1px 2px 3px #e7eaec;
 }
-.main-lef-wrap{
-    width:480px;
-    height:655px;
-    margin:0 auto;
-    padding:0;
-    overflow-y:scroll;
+
+.main-lef-wrap {
+    width: 480px;
+    height: 655px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-y: scroll;
 }
-.lef-content-wrap{
-    width:446px;
-    margin:0 auto;
-    padding:10px 0;
+
+.lef-content-wrap {
+    width: 446px;
+    margin: 0 auto;
+    padding: 10px 0;
 }
-.lef-content-data-1{
-    background:#fefefe;
-    border:1px solid #bababa;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    min-height:210px;
+
+.lef-content-data-1 {
+    background: #fefefe;
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    min-height: 210px;
 }
-.lef-data-img{
-    float:left;
-    margin:4px 0 0 3px;
+
+.lef-data-img {
+    float: left;
+    margin: 4px 0 0 3px;
 }
-.lef-data-title{
-    margin:10px 0 0 8px;
-    float:left;
+
+.lef-data-title {
+    margin: 10px 0 0 8px;
+    float: left;
 }
-.lef-data-middle-bg{
-    background:#f2f2f2;
-    border-top:1px solid #bdbdbd;
-    border-bottom:1px solid #bdbdbd;
-    float:left;
-    min-width:255px;
-    margin:6px 0 8px 0;
-    padding:5px 0 5px 13px;
+
+.lef-data-middle-bg {
+    background: #f2f2f2;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    float: left;
+    min-width: 255px;
+    margin: 6px 0 8px 0;
+    padding: 5px 0 5px 13px;
 }
-.date-content{
+
+.date-content {
 
 }
-.date-content img{
-    float:left;
-    margin:0 5px 0 0;
+
+.date-content img {
+    float: left;
+    margin: 0 5px 0 0;
     /*width:0% !important;*/
 }
-.watch-content{
-    margin:8px 0 0 0;
+
+.watch-content {
+    margin: 8px 0 0 0;
 }
-.watch-content img{
-    float:left;
-    margin:0 5px 0 0;
+
+.watch-content img {
+    float: left;
+    margin: 0 5px 0 0;
 }
-.b-day-bash{
-    margin:10px 0;
+
+.b-day-bash {
+    margin: 10px 0;
 }
-.b-day-bash ul{
-    margin:0;
-    padding:0;
+
+.b-day-bash ul {
+    margin: 0;
+    padding: 0;
 }
-.b-day-bash ul li{
-    float:left;
-    margin:0;
-    padding:0 1px 0 0;
-    list-style:none;
+
+.b-day-bash ul li {
+    float: left;
+    margin: 0;
+    padding: 0 1px 0 0;
+    list-style: none;
 }
-.b-day-bash li:last-child{
-    padding-right:0;
+
+.b-day-bash li:last-child {
+    padding-right: 0;
 }
-.btn-bg{
-    float:left;
-    margin:0px 0px 10px 3px;
+
+.btn-bg {
+    float: left;
+    margin: 0px 0px 10px 3px;
 }
-.btn-bg ul{
+
+.btn-bg ul {
 
 }
-.btn-bg ul li{
-    float:left;
-    padding:0 3px 0 0;
-    list-style:none;
+
+.btn-bg ul li {
+    float: left;
+    padding: 0 3px 0 0;
+    list-style: none;
 }
-.user-cont{
-    margin:10px 0 0 0;
+
+.user-cont {
+    margin: 10px 0 0 0;
 }
-.user-img{
-    margin:0 2px 0 4px;
+
+.user-img {
+    margin: 0 2px 0 4px;
 }
-.user-amount{
-    margin:0 0px 0 2px;
+
+.user-amount {
+    margin: 0 0px 0 2px;
 }
-.user-amount h5{
-    font-size:18px;
-    color:#467eaf;
+
+.user-amount h5 {
+    font-size: 18px;
+    color: #467eaf;
 }
-.next-event-cont{
-    margin:20px 0;
-    float:left;
+
+.next-event-cont {
+    margin: 20px 0;
+    float: left;
 }
-.next-event-img{
+
+.next-event-img {
 
 }
-.next-event-title{
-    margin:18px 0 0 15px;
+
+.next-event-title {
+    margin: 18px 0 0 15px;
 }
-.main-rit-wrap{
-    width:440px;
-    margin:0 auto;
-    padding:10px 0;
+
+.main-rit-wrap {
+    width: 440px;
+    margin: 0 auto;
+    padding: 10px 0;
 }
-.select-event{
+
+.select-event {
 
 }
-.select-event-type{
-    background:#fff;
-    padding:4px 10px;
-    margin:0 0 0 0px;
-    width:210px;
-    height:28px;
-    float:left;
-    border:1px solid #000;
-    box-shadow:1px 1px 3px #333;
-    border-radius:5px;
+
+.select-event-type {
+    background: #fff;
+    padding: 4px 10px;
+    margin: 0 0 0 0px;
+    width: 210px;
+    height: 28px;
+    float: left;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 3px #333;
+    border-radius: 5px;
 }
-.bgt-event{
-    margin:26px 0 0 0;
-    padding:0;
+
+.bgt-event {
+    margin: 26px 0 0 0;
+    padding: 0;
 }
-.bgt-event ul{
-    margin:0;
-    padding:0;
+
+.bgt-event ul {
+    margin: 0;
+    padding: 0;
 }
-.bgt-event ul li{
-    float:left;
-    list-style:none;
-    margin:0;
-    padding:0 5px 0 0;
+
+.bgt-event ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0 5px 0 0;
 }
-.bgt-tex-box{
-    margin:0;
+
+.bgt-tex-box {
+    margin: 0;
 }
-.bgt-text-area{
-    width:390px;
-    max-width:390px;
-    height:295px;
-    min-height:295px;
-    margin:10px 0 0 0;
-    background:#fff;
-    border:1px solid #999;
-    padding:10px 15px;
+
+.bgt-text-area {
+    width: 390px;
+    max-width: 390px;
+    height: 295px;
+    min-height: 295px;
+    margin: 10px 0 0 0;
+    background: #fff;
+    border: 1px solid #999;
+    padding: 10px 15px;
     box-shadow: inset 1px 1px 4px #CCC;
 }
-.marg-in{
-    margin:10px 16px 10px 0;
+
+.marg-in {
+    margin: 10px 16px 10px 0;
 }
-.cler-btn{
-    margin:0 10px 0 0;
+
+.cler-btn {
+    margin: 0 10px 0 0;
 }
-.nxt-btn{
+
+.nxt-btn {
 
 }
+
 .CSSTableGenerator {
-    margin:0px;
-    padding:0px;
-    width:100%;
-}.CSSTableGenerator table{
-     border-collapse: collapse;
-     border-spacing: 0;
-     width:100%;
-     height:100%;
-     margin:0px;
-     padding:0px;
- }
-.CSSTableGenerator tr:nth-child(odd){ background-color:#f1f1f1; }
-.CSSTableGenerator tr:nth-child(even){ background-color:#ffffff; }
-.CSSTableGenerator td{
-    border-right:1px solid #b8b8b8;
-    border-width:0px 1px 1px 0px;
-    text-align:left;
-    padding:15px;
-    font-size:16px;
-    font-weight:normal;
-    color:#000000;
-}.CSSTableGenerator tr:last-child td{
-     border-width:0px 1px 0px 0px;
- }.CSSTableGenerator tr td:last-child{
-      border-width:0px 0px 1px 0px;
-  }.CSSTableGenerator tr:last-child td:last-child{
-       border-width:0px 0px 0px 0px;
-   }
-.CSSTableGenerator tr:first-child td{
-    background-color:#f1f1f1;
-    border:1px solid #b8b8b8;
-    text-align:left;
-    border-width:0px 0px 1px 1px;
-    font-size:18px;
-    font-weight:normal;
-    color:#5b5b5b;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 }
 
-.CSSTableGenerator tr:first-child td:first-child{
-    border-width:0px 0px 1px 0px;
+.CSSTableGenerator table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
-.CSSTableGenerator tr:first-child td:last-child{
-    border-width:0px 0px 1px 1px;
+
+.CSSTableGenerator tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+.CSSTableGenerator tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.CSSTableGenerator td {
+    border-right: 1px solid #b8b8b8;
+    border-width: 0px 1px 1px 0px;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.CSSTableGenerator tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+
+.CSSTableGenerator tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.CSSTableGenerator tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.CSSTableGenerator tr:first-child td {
+    background-color: #f1f1f1;
+    border: 1px solid #b8b8b8;
+    text-align: left;
+    border-width: 0px 0px 1px 1px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #5b5b5b;
+}
+
+.CSSTableGenerator tr:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.CSSTableGenerator tr:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
 }
 
 /******* plan evevt account css end ********/
+
+/************ start send invitation steps **************/
+.event-send-invitation {
+    float: left;
+    margin: 0 60px 100px;
+    padding: 10px 30px;
+    width: 775px;
+    font-size: 12px;
+}
+
+.whitebg {
+    background: #fff;
+}
+
+.event-send-invitation-form {
+    float: left;
+    width: 900px;
+    box-shadow: 0 0 8px 1px #DDDDDD;
+}
+
+.event-send-invitation-form .title {
+    background: #F1F1F1;
+    border-bottom: 1px solid #E2E2E2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #585858;
+    font-size: 17px;
+    padding: 10px 5px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.event-send-invitation-form .title h1 {
+    font-weight: normal;
+}
+
+.event-send-invitation-form .title span {
+    background: url("../images/ribbon.png") no-repeat scroll 0 0;
+    float: left;
+    left: -19px;
+    padding: 12px 5px;
+    position: relative;
+    text-align: center;
+    top: -8px;
+    width: 60px;
+}
+
+.event-send-invitation-form .row {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.event-send-invitation-form .row > .f-left {
+    float: left;
+    width: 318px;
+    float: left;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.event-send-invitation-form .row > .f-right {
+    float: left;
+    width: 560px;
+    border-left: 1px solid #cfcfcf;
+}
+
+.event-send-invitation-form .up-photos {
+    width: 240px;
+    float: left;
+    background: #fff;
+    border: 1px solid #c6c7ca;
+    box-shadow: 0 1px 9px 0 #C6C7CA;
+    border: 1px solid #a2b6ca;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 40px;
+}
+
+.event-send-invitation-form .up-photos .upload-container {
+    position: relative;
+}
+
+.event-send-invitation-form .up-photos .image-upload {
+    cursor: pointer;
+    float: right;
+    font-size: 55px;
+    height: 175px;
+    opacity: 0;
+    position: absolute;
+    width: 240px;
+    z-index: 9999;
+}
+
+.event-send-invitation-form .add-photos-button label {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    color: #4d4d4d;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.event-send-invitation-form .chg-event {
+    width: 100%;
+    float: left;
+    margin: 30px 0 20px;
+}
+
+.event-send-invitation-form .chg-event a {
+    background: url("../images/blue-btn.png") no-repeat scroll 0 0;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 7px 16px;
+    width: 110px;
+}
+
+.event-send-invitation-form .chg-event {
+    float: left;
+    width: 100%;
+}
+
+.event-send-invitation-form .chg-event a {
+    background: url("../images/blue-btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 7px 16px;
+    width: 110px;
+}
+
+.event-send-invitation-form li {
+    list-style-type: none;
+}
+
+.event-send-invitation-form .time-block {
+    width: 100%;
+    float: left;
+    font-weight: normal;
+}
+
+.event-send-invitation-form .time-block h2 {
+    font-size: 20px;
+    color: #666666;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.event-send-invitation-form .time-block .col {
+    float: left;
+    width: 48%;
+    padding-right: 2%;
+}
+
+.event-send-invitation-form .time-block .col label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #545454;
+}
+
+.event-send-invitation-form .time-block .col input[type="text"] {
+    width: 100px;
+}
+
+.event-send-invitation-form .time-block .col span a {
+    background: url(../images/date-icon.png) no-repeat scroll;
+    width: 20px;
+    height: 21px;
+    float: right;
+    margin-right: 7px;
+    margin-top: 4px;
+}
+
+.event-send-invitation-form .slider-range {
+    clear: both;
+    /*margin-left: 20px;*/
+    padding-top: 25px;
+    width: 95%;
+}
+
+.event-send-invitation-form .f-right > h1 {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+}
+
+.event-send-invitation-form .f-right > h1 span {
+    background: url("../images/tab-bg.png") repeat scroll 0 0;
+    bottom: -12px;
+    left: 19px;
+    position: relative;
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+.event-send-invitation-form .f-right ul.location li.chk-box span {
+    font-size: 20px;
+    color: #3a3a3a;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.event-send-invitation-form .f-right ul {
+    float: left;
+    margin-left: 20px;
+}
+
+.event-send-invitation-form .f-right ul.info li {
+    float: left;
+    width: auto;
+    margin-right: 8px;
+}
+
+.event-send-invitation-form .f-right ul.info li input[type="text"] {
+    width: 270px;
+}
+
+.event-send-invitation-form .f-right ul.info li span .male {
+    background: #8d8d8d;
+    float: left;
+    color: #fff;
+    text-shadow: 1px 1px #000000;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 1px 10px;
+    border: 1px solid #757575;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+
+.event-send-invitation-form .f-right ul.info li span .female {
+    background: #8d8d8d;
+    float: left;
+    color: #fff;
+    text-shadow: 1px 1px #000000;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 1px 10px;
+    border: 1px solid #757575;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.event-send-invitation-form .f-right ul.location {
+    float: left;
+}
+
+.event-send-invitation-form .f-right ul.location li {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.event-send-invitation-form .f-right ul.location li input[type="text"] {
+    width: 385px;
+}
+
+.event-send-invitation-form .f-right ul.location li textarea {
+    width: 385px;
+    padding: 5px 10px;
+    border: 1px solid #b6b6b6;
+    height: 80px;
+}
+
+.event-send-invitation-form .f-right ul.location li .city {
+    width: 213px;
+    float: left;
+    margin-right: 5px;
+}
+
+.event-send-invitation-form .f-right ul.location li .city input {
+    width: 183px;
+}
+
+.event-send-invitation-form .f-right ul.location li .state {
+    width: 90px;
+    float: left;
+    margin-right: 5px;
+}
+
+.event-send-invitation-form .f-right ul.location li .state select {
+    width: 72px;
+}
+
+.event-send-invitation-form .f-right ul.location li .zipcode {
+    width: 100px;
+    float: left;
+    margin-right: 5px;
+}
+
+.event-send-invitation-form .f-right ul.location li .zipcode input {
+    width: 80px;
+}
+
+.event-send-invitation-form .f-right li label {
+    font-size: 18px;
+    color: #545454;
+    font-weight: bold;
+    display: block;
+}
+
+.event-send-invitation-form .submit {
+    float: left;
+    margin-top: 10px;
+    padding-right: 28px;
+    width: 95%;
+}
+
+.event-invite-friends {
+    text-align: center;
+    font-size: 30px;
+    color: #585858;
+}
+
+/************ end send invitation steps **************/
+
+/************* Start Event Planner Past Events **************/
+
+.past-event-top .top_left {
+    float: left;
+    height: 100px;
+    width: 49%;
+    border: 1px solid;
+}
+
+.past-event-top .top_right {
+    float: right;
+    height: 100px;
+    width: 49%;
+    border: 1px solid;
+}
+
+.past-event-listing .lef-content-bg {
+    background: #ebedf0;
+    border: 1px solid #e2e2e2;
+    min-height: 520px;
+    width: 100%;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 5px #eeefef;
+    -moz-box-shadow: 0px 0px 5px #eeefef;
+    -webkit-box-shadow: 0px 0px 5px #eeefef;
+    overflow-y: auto;
+}
+
+/*.past-event-listing .lef-content-bg {*/
+    /*width: 446px;*/
+    /*margin: 0 auto;*/
+    /*padding: 10px 0;*/
+/*}*/
+
+.past-event-listing .main-lef-wrap {
+    width: inherit;
+    height: inherit;
+    margin: 0 0;
+    padding: 0;
+}
+
+/************* End Event Planner Past Events **************/

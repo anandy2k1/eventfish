@@ -216,7 +216,10 @@ echo CHtml::hiddenField('id', $oEventModel->id);
                                         <div style="" class="round-button" onclick="minus('num_<?php echo $oProduct->amazon_asin_number ?>');">
                                             -
                                         </div>
-                                        <input type="text" name="qty[<?php echo $oProduct->id ?>]" id="num_<?php echo $oProduct->amazon_asin_number ?>" size="1" value="" style=""/>
+                                        <?php
+                                        $snQty = (in_array($oProduct->id,$anProducts)) ? $anProductsQty[$oProduct->id] : "";
+                                        ?>
+                                        <input type="text" name="qty[<?php echo $oProduct->id ?>]" id="num_<?php echo $oProduct->amazon_asin_number ?>" size="1" value="<?php echo $snQty;?>" style=""/>
 
                                         <div style="" class="round-button" onclick="plus('num_<?php echo $oProduct->amazon_asin_number ?>');">
                                             +

@@ -370,7 +370,7 @@ class Common
                     ),
                     '2' => array(
                         'link_name' => 'Past Events',
-                        'url' => '#',
+                        'url' => array('eventPlanner/pastEvents'),
                         'title' => 'Past Events'
                     ),
                     '3' => array(
