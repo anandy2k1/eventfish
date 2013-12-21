@@ -3512,7 +3512,7 @@ div.flash-success a {
 /************ start send invitation steps **************/
 .event-send-invitation {
     float: left;
-    margin: 0 60px 100px;
+    margin: 0 60px 0px;
     padding: 10px 30px;
     width: 775px;
     font-size: 12px;
@@ -3525,7 +3525,6 @@ div.flash-success a {
 .event-send-invitation-form {
     float: left;
     width: 900px;
-    box-shadow: 0 0 8px 1px #DDDDDD;
 }
 
 .event-send-invitation-form .title {
@@ -3838,6 +3837,12 @@ div.flash-success a {
     text-align: center;
     font-size: 30px;
     color: #585858;
+}
+.image-file
+{
+    position: absolute;
+    margin-top: -45px;
+    z-index: -1;
 }
 
 /************ end send invitation steps **************/

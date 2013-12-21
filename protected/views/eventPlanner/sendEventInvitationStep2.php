@@ -1,3 +1,20 @@
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script>
+    FB.init({
+        appId: '<?php echo Yii::app()->params['FACEBOOK_APPID']?>',
+        cookie: true,
+        status: true,
+        xfbml: true
+    });
+
+    function FacebookInviteFriends() {
+        FB.ui({
+            method: 'apprequests',
+            message: 'Your Message diaolog'
+        });
+    }
+</script>
+
 <?php
 foreach (Yii::app()->user->getFlashes() as $key => $message) {
     echo '<div class="flash-' . $key . '">' . $message . "</div>\n";
@@ -24,13 +41,21 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
 
                 <div class="details"></div>
             </li>
-            <li class="complete">
-                <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png"
-                                          alt=""/><?php echo CHtml::link('Accessories& Rentals', Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+            <li <?php echo ($oEventAccessories) ? 'class="complete"' : ''; ?>>
+                <h1 class="two-line">
+                    <?php if ($oEventAccessories): ?>
+                        <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>
+                        <?php echo CHtml::link('Accessories & Rentals', Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+                    <?php else: ?>
+                        <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories & Rentals
+                    <?php endif; ?>
                 </h1>
 
                 <div class="details">
-                    Accessories added
+                    <?php if ($oEventAccessories):
+                        echo CHtml::image(Yii::app()->baseUrl . "/images/accessories.png", '', array('width' => '120px', 'height' => '100px', 'style' => 'margin-top:5px;'));
+                        echo "<div class='clear' style='height:1px;'>&nbsp;</div> Birthday Suppy Pack";
+                    endif; ?>
                 </div>
             </li>
             <li>
@@ -123,15 +148,10 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
                         <div class="event-invite-friends">
                             Invite Your Friends
                         </div>
-                        <div class="facebook" >
-                            <div id="fb_login_button_id">Facebook Connect</div>
-                            <?php // echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl.'/images/facebook.png'),$params['facebook'],array("target"=>"_top"));?>
-                            <?php
-                            //$this->widget('application.widgets.facebook.Facebook',array('appId'=>Yii::app()->params['FACEBOOK_APPID'],'facebookLoginUrl'=>'eventPlanner/inviteFriends')); ?>
+                        <div style="text-align: center;width:100%;margin-top: 25px;">
+                            <div id="fb-root"></div>
+                            <?php echo CHtml::link(CHtml::image(Yii::app()->baseUrl . "/images/invitefriends.png"), 'javascript:void(0);', array('onclick' => 'FacebookInviteFriends();')); ?>
                         </div>
-                        <!--<div class="facebook">
-                            <?php  $this->widget('application.widgets.facebook.Facebook', array('appId' => Yii::app()->params['FACEBOOK_APPID'], 'type' => 'invitation', 'facebookLoginUrl' => Yii::app()->createAbsoluteUrl('eventPlanner/sendEventInvitationStep3', array('id' => $oEventModel->id)))); ?>
-                        </div>-->
                         <div class="clear"></div>
                         <div class="submit a-right">
                             <?php echo CHtml::submitButton(Yii::t('app', 'Next'), array('class' => 'button_green')); ?>

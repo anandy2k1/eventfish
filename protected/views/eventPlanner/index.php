@@ -13,7 +13,7 @@
                                 <div class="lef-data-img">                                    
                                     <?php echo CHtml::image(Common::getEventImage($omEvent->event_image),'', array('width' => '169px', 'height' => '200px'));?>
                                 </div>
-                                <div class="lef-data-title"><h3><?php echo $omEvent->event_title; ?></h3></div>
+                                <div class="lef-data-title"><h3><?php echo CHtml::link($omEvent->event_title,array('eventPlanner/planEventGeneralEdit','id' => $omEvent->id)); ?></h3></div>
                                 <div class="lef-data-middle-bg">
                                     <div class="date-content">
                                         <?php echo CHtml::image(Yii::app()->baseUrl . "/images/date-icon.png"); ?>

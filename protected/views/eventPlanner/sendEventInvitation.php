@@ -44,13 +44,20 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
 
             <div class="details"></div>
         </li>
-        <li class="complete">
-            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png"
-                                      alt=""/><?php echo CHtml::link('Accessories& Rentals', Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+        <li <?php echo ($oEventAccessories) ? 'class="complete"' : ''; ?>>
+            <h1 class="two-line">
+                <?php if ($oEventAccessories): ?>
+                    <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>
+                    <?php echo CHtml::link('Accessories & Rentals', Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+                <?php else: ?>
+                    <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories & Rentals
+                <?php endif; ?>
             </h1>
-
             <div class="details">
-                Accessories added
+                <?php if ($oEventAccessories):
+                    echo CHtml::image(Yii::app()->baseUrl."/images/accessories.png", '', array('width' => '120px', 'height' => '100px', 'style' => 'margin-top:5px;'));
+                    echo "<div class='clear' style='height:1px;'>&nbsp;</div> Birthday Suppy Pack";
+                endif; ?>
             </div>
         </li>
         <li class="complete">
@@ -131,6 +138,9 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
 </div>
 <div style="clear:both;">&nbsp;</div>
 
+
+
+</div>
 <div class="event-general-content">
 <?php
 $form = $this->beginWidget('GxActiveForm', array(
@@ -148,10 +158,10 @@ echo CHtml::hiddenField('id', $oEventModel->id);
                 <div class="add-photos-button">
                     <span class="button-add">
                         <?php
-                        echo CHtml::image(Common::getEventImage($oEventModel->event_image), '', array('style' => 'width:100%;', 'id' => 'profile-photo'));
+                        echo CHtml::image(Common::getEventImage($oEventModel->event_image), '', array('onclick'=>'$("#Event_event_image").click();', 'style' => 'cursor:pointer; width:100%;', 'id' => 'profile-photo'));
                         ?>
                         <?php
-                        echo $form->fileField($oEventModel, 'event_image', array('onchange' => 'readURL(this,"profile-photo")')); ?>
+                        echo $form->fileField($oEventModel, 'event_image', array('onchange' => 'readURL(this,"profile-photo")','class'=>'image-file')); ?>
                     </span>
                     <label>Someone Birthday</label>
                 </div>
@@ -332,15 +342,13 @@ echo CHtml::hiddenField('id', $oEventModel->id);
                 </li>
             </ul>
             <div class="submit a-right">
-                <?php echo CHtml::link(Yii::t('app', 'Back'), 'javascript:void(0);', array('class' => 'button_orange')); ?>
+                <?php //echo CHtml::link(Yii::t('app', 'Back'), 'javascript:void(0);', array('class' => 'button_orange')); ?>
                 <?php echo CHtml::submitButton(Yii::t('app', 'Save and Continue'), array('class' => 'button_green')); ?>
             </div>
         </div>
     </div>
 </div>
 <?php $this->endWidget(); ?>
-</div>
-
 </div>
 </div>
 

@@ -71,13 +71,16 @@ class Event extends BaseEvent
 
     public static function getUserPastEvents($snUserId, $amSearchTerms = array(), $bIsCriteria = false)
     {
-        $oCriteria = new CDbCriteria;
+                $oCriteria = new CDbCriteria;
         $oCriteria->alias = 'e';
-        $oCriteria->condition = "e.start_date < DATE_FORMAT(NOW(),'%Y-%m-%d') AND e.user_id = :userID";
-        $oCriteria->params = array(':userID' => $snUserId);
 
-        if(count($amSearchTerms)){
 
+        if(count($amSearchTerms) >0 ){
+
+        }
+        else{
+            $oCriteria->condition = "e.start_date < DATE_FORMAT(NOW(),'%Y-%m-%d') AND e.user_id = :userID";
+            $oCriteria->params = array(':userID' => $snUserId);
         }
 
         return ($bIsCriteria) ? $oCriteria : self::model()->findAll($oCriteria);

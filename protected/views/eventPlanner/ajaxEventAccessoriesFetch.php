@@ -1,10 +1,10 @@
 <div style="clear:both">&nbsp;</div>
 <div class="serch-contnt">
     <div class="serch-box">
-
+        <input type="hidden" id="catId" value="42"/>
         <input type="text" placeholder="Search" class="search-bg" id="search" onkeyup="searchTable(this.value);"/>
-        <select onchange="callpagecategory('<?php echo $catId?>');" name="pagesize" id="pagesize"
-                style="background:#fff; padding:4px 10px; margin:0 0 0 80px; width:133px; height:27px; float:left; border:1px solid #000; border-radius:5px">
+
+        <select class="acce_add_sel" onchange="callpage();" name="pagesize" id="pagesize">
             <?php
             $optionAry = array(1 => 3, 2 => 5, 3 => 10, 4 => 15, 5 => 20);
             foreach ($optionAry as $key => $val) {
@@ -19,7 +19,7 @@
             ?>
         </select>
 
-        <div class="pagination" style="margin-right: 10px;">
+        <div class="pagination">
             <div style="display: none;">
 
 
@@ -29,13 +29,15 @@
 
                 )) ?>
             </div>
-            <span title="Prev" class="lef-arro"><img onclick="callpreviouspage('<?php echo $pageNumber?>','<?php echo $totalPages?>');" src="<?php echo Yii::app()->baseUrl; ?>/images/lef-arrow.png" alt=""/></span>
+                        <span title="Prev" class="lef-arro"><img onclick="callpreviouspage('<?php echo $pageNumber ?>','<?php echo $totalPages ?>');"
+                                                                 src="<?php echo Yii::app()->baseUrl; ?>/images/lef-arrow.png" alt=""/></span>
 
 
             <p>Page</p>
 
-            <!--<input onclick="this.value=''" type="text" id="SearchText" value="<?php /*echo $pageNumber */?>" class="pagin-bg"/>-->
-            <select style="margin-left: 0;margin-top: 2px;width:58px;" class="acce_add_sel" onchange="callpagecategory('<?php echo $catId?>');" name="SearchText" id="SearchText">
+            <!--<input type="text" onclick="this.value=''" id="SearchText" value="<?php /*echo $pageNumber*/?>" class="pagin-bg"  />-->
+
+            <select class="acce_add_sel acce_add_sel_2" onchange="callpage();" name="SearchText" id="SearchText">
                 <?php
                 //$optionAry = array(1=>3,2=>5,3=>10,4=>15,5=>20);
                 for ($i = 1; $i <= $totalPages; $i++) {
@@ -50,24 +52,23 @@
                 ?>
             </select>
 
-
             <p>of <?php echo $totalPages ?></p>
-            <span title="Next" class="rit-arro"><img onclick="callnextpage('<?php echo $pageNumber?>','<?php echo $totalPages?>');" src="<?php echo Yii::app()->baseUrl; ?>/images/rit-arrow.png" alt=""/></span>
+
+                        <span title="Next" class="rit-arro"><img onclick="callnextpage('<?php echo $pageNumber ?>','<?php echo $totalPages ?>');"
+                                                                 src="<?php echo Yii::app()->baseUrl; ?>/images/rit-arrow.png" alt=""/></span>
+
         </div>
 
 
     </div>
 </div>
 <div style="clear:both">&nbsp;</div>
-<div class="table-title-bg" style="width: 100%">
+
+<div class="table-title-bg" style="width:100%;">
     <div class="col-1">
         <p>Lighting</p>
         <span class="up-dwon-arro"><a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/images/up-down-arrow.png" alt=""/></a></span>
     </div>
-    <!--<div class="col-1">
-                    <p>Description</p>
-                    <span class="up-dwon-arro"><a href="#"><img src="<?php /*echo Yii::app()->baseUrl; */?>/images/up-down-arrow.png" alt="" /></a></span>
-                </div>-->
     <div class="col-2">
         <p>Seller</p>
         <span class="up-dwon-arro"><a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/images/up-down-arrow.png" alt=""/></a></span>
@@ -79,11 +80,12 @@
     <div class="col-4">
         <p>Pricing</p>
     </div>
-    <div class="col-5">
+    <div class="col-5" >
         <p>Add to Net</p>
     </div>
 
 </div>
+
 <?php
 foreach ($model as $oProduct) {
     ?>
@@ -113,13 +115,18 @@ foreach ($model as $oProduct) {
                     <div class="row-5">
                         <p><?php echo $oProduct->product_price ?></p>
                     </div>
-                    <div class="row-6" style="border-right:none;width:98px;">
+                    <div class="row-6" style="width:98px; border-right:none;">
                         <div id="<?php ?>">
-                            <div style="" class="round-button" onclick="minus('num_<?php echo $oProduct->amazon_asin_number?>');">
+                            <div style="" class="round-button" onclick="minus('num_<?php echo $oProduct->amazon_asin_number ?>');">
                                 -
                             </div>
-                            <input type="text" name="num" id="num_<?php echo $oProduct->amazon_asin_number?>" size="1" value="" style=""/>
-                            <div style="" class="round-button" onclick="plus('num_<?php echo $oProduct->amazon_asin_number?>');">
+                            <?php
+                            $snQty = (in_array($oProduct->id, $anProducts)) ? $anProductsQty[$oProduct->id] : "";
+                            ?>
+                            <input type="text" name="qty[<?php echo $oProduct->id ?>]" id="num_<?php echo $oProduct->amazon_asin_number ?>" size="1" value="<?php echo $snQty; ?>"
+                                   style=""/>
+
+                            <div style="" class="round-button" onclick="plus('num_<?php echo $oProduct->amazon_asin_number ?>');">
                                 +
                             </div>
                         </div>

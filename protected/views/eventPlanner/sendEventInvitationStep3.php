@@ -24,13 +24,20 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
 
                 <div class="details"></div>
             </li>
-            <li class="complete">
-                <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png"
-                                          alt=""/><?php echo CHtml::link('Accessories& Rentals', Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+            <li <?php echo ($oEventAccessories) ? 'class="complete"' : ''; ?>>
+                <h1 class="two-line">
+                    <?php if ($oEventAccessories): ?>
+                        <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>
+                        <?php echo CHtml::link('Accessories & Rentals', Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+                    <?php else: ?>
+                        <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories & Rentals
+                    <?php endif; ?>
                 </h1>
-
                 <div class="details">
-                    Accessories added
+                    <?php if ($oEventAccessories):
+                        echo CHtml::image(Yii::app()->baseUrl."/images/accessories.png", '', array('width' => '120px', 'height' => '100px', 'style' => 'margin-top:5px;'));
+                        echo "<div class='clear' style='height:1px;'>&nbsp;</div> Birthday Suppy Pack";
+                    endif; ?>
                 </div>
             </li>
             <li>

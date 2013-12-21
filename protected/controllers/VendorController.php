@@ -42,6 +42,7 @@ class VendorController extends GxController
             $amPostData = $_POST['Users'];
 
             $oModel->setAttributes($amPostData);
+            $oModel->redirect_page = Yii::app()->params['REDIRECT_PAGE']['STEP2'];
             $oModel->save(false);
 
             $anCategoryIds = isset($_POST['categoryids']) ? $_POST['categoryids'] : array();
@@ -73,6 +74,7 @@ class VendorController extends GxController
                 $amPostData['available_days'] = implode(",", $amPostData['available_days']);
             }
             $oModel->setAttributes($amPostData);
+            $oModel->redirect_page = Yii::app()->params['REDIRECT_PAGE']['STEP3'];
             $oModel->save(false);
 
             // FOR SAVE VENDOR PHOTOS //
@@ -84,7 +86,7 @@ class VendorController extends GxController
                 $ssSaveImageFile = $ssUploadPath . '/' . $ssNewName;
                 $oFile->saveAs($ssSaveImageFile);
 
-                // GENERATE THUMBNAIL FOR DISPLY INTO FRONT SIDE //
+                // GENERATE THUMBNAIL FOR DISPLAY INTO FRONT SIDE //
                 $oThumb = Yii::app()->phpThumb->create($ssSaveImageFile);
                 $ssImgThumbWidth = Yii::app()->params['vendor_profile_width'];
                 $ssImgThumbHeight = Yii::app()->params['vendor_profile_heigh'];
@@ -114,9 +116,31 @@ class VendorController extends GxController
             }
 
             Yii::app()->user->setFlash('success', "Vendor personal details has been successfully saved.");
-            $this->redirect(array('vendor/step2'));
+            $this->redirect(array('vendor/step3'));
         }
         $this->render('step2', array(
+            'model' => $oModel
+        ));
+    }
+
+    public function actionStep3()
+    {
+        $oModel = Users::model()->findByPk(Yii::app()->user->id);
+        if (Yii::app()->getRequest()->getIsPostRequest()) {
+            $oModel->redirect_page = Yii::app()->params['REDIRECT_PAGE']['HOME'];
+            $oModel->save(false);
+            Yii::app()->user->setFlash('success', "Vendor service details has been successfully saved.");
+            $this->redirect(array('vendor/step4'));
+        }
+        $this->render('step3', array(
+            'model' => $oModel
+        ));
+    }
+
+    public function actionStep4()
+    {
+        $oModel = Users::model()->findByPk(Yii::app()->user->id);
+        $this->render('step4', array(
             'model' => $oModel
         ));
     }
@@ -131,9 +155,9 @@ class VendorController extends GxController
             $oModel->setAttributes($amPostData);
             $oModel->user_id = Yii::app()->user->id;
             if ($oModel->validate()) {
-                $amVideoUrl = explode('/',$oModel->video_url);
+                $amVideoUrl = explode('/', $oModel->video_url);
                 $snLength = count($amVideoUrl) - 1;
-                $oModel->video_image = "http://img.youtube.com/vi/".$amVideoUrl[$snLength]."/1.jpg";
+                $oModel->video_image = "http://img.youtube.com/vi/" . $amVideoUrl[$snLength] . "/1.jpg";
                 $oModel->save(false);
                 Common::closeColorBox(Yii::app()->createUrl('vendor/step2'));
             }

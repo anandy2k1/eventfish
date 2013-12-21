@@ -39,9 +39,9 @@ class EventPlannerController extends Controller
     public function actionStep1()
     {
         $oModel = Users::model()->findByPk(Yii::app()->user->id);
-
-
         $amUserData = Yii::app()->user->getState('admin');
+
+        /* Commented on 21 Dec 2013
         $ssUrl = '';
         $oUser = Users::model()->findByPk($amUserData['id']);
         if ($amUserData['role_id'] == UserRole::getRoleIdAsPerType('event_planner')) {
@@ -49,7 +49,7 @@ class EventPlannerController extends Controller
                 $ssUrl = Common::eventRedirectPage($oUser);
                 $this->redirect($ssUrl);
             }
-        }
+        }*/
 
         if (Yii::app()->getRequest()->getIsPostRequest()) {
             $amPostData = $_POST['Users'];
@@ -105,7 +105,6 @@ class EventPlannerController extends Controller
 
     public function actionStep3()
     {
-
         $oModel = Users::model()->findByPk(Yii::app()->user->id);
         $this->render('step3', array(
             'model' => $oModel
@@ -385,6 +384,9 @@ class EventPlannerController extends Controller
         $anProducts = CHtml::listData($omEventProducts, 'amazon_product_id', 'amazon_product_id');
         $anProductsQty = CHtml::listData($omEventProducts, 'amazon_product_id', 'qty');
 
+        // FOR CHECK EVENT ACCESSORIES ARE EXISTS OR NOT //
+        $oEventAccessories = EventAccessories::model()->findByAttributes(array('event_id' => $oEventModel->id));
+
         if (isset($_GET['ajaxcall'])) {
             $this->layout = false;
             $this->render('ajaxEventAccessoriesFetch',
@@ -397,7 +399,8 @@ class EventPlannerController extends Controller
                     'catId' => $catId,
                     'oEventModel' => $oEventModel,
                     'anProducts' => $anProducts,
-                    'anProductsQty' => $anProductsQty
+                    'anProductsQty' => $anProductsQty,
+                    'oEventAccessories' => $oEventAccessories
                 )
             );
         } else {
@@ -411,7 +414,8 @@ class EventPlannerController extends Controller
                     'catId' => $catId,
                     'oEventModel' => $oEventModel,
                     'anProducts' => $anProducts,
-                    'anProductsQty' => $anProductsQty
+                    'anProductsQty' => $anProductsQty,
+                    'oEventAccessories' => $oEventAccessories
                 )
             );
         }
@@ -470,11 +474,16 @@ class EventPlannerController extends Controller
 
         // FOR GET USER INFO //
         $amUserData = Users::model()->findByPK(Yii::app()->user->id);
+
+        // FOR CHECK EVENT ACCESSORIES ARE EXISTS OR NOT //
+        $oEventAccessories = EventAccessories::model()->findByAttributes(array('event_id' => $oEventModel->id));
+
         $this->render('sendEventInvitation', array(
             'oEventModel' => $oEventModel,
             'amStates' => $amStates,
             'amUserData' => $amUserData,
-            'bChecked' => $bChecked
+            'bChecked' => $bChecked,
+            'oEventAccessories' => $oEventAccessories
         ));
     }
 
@@ -482,8 +491,13 @@ class EventPlannerController extends Controller
     {
         // FOR GET EVENT DETAILS //
         $oEventModel = Event::model()->findByPk($id);
+
+        // FOR CHECK EVENT ACCESSORIES ARE EXISTS OR NOT //
+        $oEventAccessories = EventAccessories::model()->findByAttributes(array('event_id' => $oEventModel->id));
+
         $this->render('sendEventInvitationStep2', array(
-            'oEventModel' => $oEventModel
+            'oEventModel' => $oEventModel,
+            'oEventAccessories' => $oEventAccessories
         ));
     }
 
@@ -497,35 +511,14 @@ class EventPlannerController extends Controller
         }
 
         $oEventModel = Event::model()->findByPk($id);
+
+        // FOR CHECK EVENT ACCESSORIES ARE EXISTS OR NOT //
+        $oEventAccessories = EventAccessories::model()->findByAttributes(array('event_id' => $oEventModel->id));
+
         $this->render('sendEventInvitationStep3', array(
-            'oEventModel' => $oEventModel
+            'oEventModel' => $oEventModel,
+            'oEventAccessories' => $oEventAccessories
         ));
-    }
-    public function actionInviteFriends()
-    {
-        $friendsList = array('data' => array());
-        if (isset($_POST['userdata'])) {
-            Yii::app()->user->setState('amFbFriendsList', $_POST['userdata']);
-            echo json_encode(array('error' => 0, 'redirect' => $this->createUrl('/eventPlanner/getFriends')));
-            exit;
-        }
-
-        $this->render('inviteFriends',
-            array(
-                'friendsList' => $friendsList
-            )
-        );
-    }
-
-    public function actionGetFriends()
-    {
-
-        $friendsList = Yii::app()->user->getState('amFbFriendsList');
-        $this->render('inviteFriends',
-            array(
-                'friendsList' => $friendsList['data']
-            )
-        );
     }
     public function actionPastEvents()
     {

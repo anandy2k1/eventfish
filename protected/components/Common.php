@@ -385,7 +385,7 @@ class Common
                     ),
                     '5' => array(
                         'link_name' => 'My Account',
-                        'url' => '#',
+                        'url' => array('eventPlanner/step1'),
                         'title' => 'My Account'
                     )
                 );
@@ -420,7 +420,7 @@ class Common
                     ),
                     '6' => array(
                         'link_name' => 'My Account',
-                        'url' => '#',
+                        'url' => array('vendor/step1'),
                         'title' => 'My Account'
                     )
                 );

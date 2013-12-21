@@ -59,8 +59,12 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
                     <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories & Rentals
                 <?php endif; ?>
             </h1>
-
-            <div class="details"></div>
+            <div class="details">
+                <?php if ($oEventAccessories):
+                    echo CHtml::image(Yii::app()->baseUrl."/images/accessories.png", '', array('width' => '120px', 'height' => '100px', 'style' => 'margin-top:5px;'));
+                    echo "<div class='clear' style='height:1px;'>&nbsp;</div> Birthday Suppy Pack";
+                 endif; ?>
+            </div>
         </li>
         <li>
             <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/entertai-icon.png" alt=""/>Entertainers & Personnel</h1>

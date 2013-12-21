@@ -25,9 +25,21 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
             <div class="details"></div>
         </li>
         <li class="active">
-            <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories & Rentals</h1>
+            <h1 class="two-line">
+                <?php if ($oEventAccessories): ?>
+                    <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>
+                    <?php echo CHtml::link('Accessories & Rentals', Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit', array('id' => $oEventModel->id)), array('style' => 'color:#fff;')); ?>
+                <?php else: ?>
+                    <img src="<?php echo Yii::app()->baseUrl; ?>/images/acce-icon.png" alt=""/>Accessories & Rentals
+                <?php endif; ?>
+            </h1>
 
-            <div class="details"></div>
+            <div class="details">
+                <?php if ($oEventAccessories):
+                    echo CHtml::image(Yii::app()->baseUrl . "/images/accessories.png", '', array('width' => '120px', 'height' => '100px', 'style' => 'margin-top:5px;'));
+                    echo "<div class='clear' style='height:1px;'>&nbsp;</div> Birthday Suppy Pack";
+                endif; ?>
+            </div>
         </li>
         <li>
             <h1 class="two-line"><img src="<?php echo Yii::app()->baseUrl; ?>/images/entertai-icon.png" alt=""/>Entertainers & Personnel</h1>
@@ -217,9 +229,10 @@ echo CHtml::hiddenField('id', $oEventModel->id);
                                             -
                                         </div>
                                         <?php
-                                        $snQty = (in_array($oProduct->id,$anProducts)) ? $anProductsQty[$oProduct->id] : "";
+                                        $snQty = (in_array($oProduct->id, $anProducts)) ? $anProductsQty[$oProduct->id] : "";
                                         ?>
-                                        <input type="text" name="qty[<?php echo $oProduct->id ?>]" id="num_<?php echo $oProduct->amazon_asin_number ?>" size="1" value="<?php echo $snQty;?>" style=""/>
+                                        <input type="text" name="qty[<?php echo $oProduct->id ?>]" id="num_<?php echo $oProduct->amazon_asin_number ?>" size="1" value="<?php echo $snQty; ?>"
+                                               style=""/>
 
                                         <div style="" class="round-button" onclick="plus('num_<?php echo $oProduct->amazon_asin_number ?>');">
                                             +
@@ -257,12 +270,12 @@ echo CHtml::hiddenField('id', $oEventModel->id);
 <script type="text/javascript">
     function callpage() {
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + document.getElementById('SearchText').value + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
     function callpagecategory(catId) {
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + document.getElementById('SearchText').value + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes&catId=' + catId, 'equalize', 'ac_loading_paging', '300px');
 
     }
@@ -270,14 +283,14 @@ echo CHtml::hiddenField('id', $oEventModel->id);
         if (pageNumber == totalPage)
             return false;
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value) + 1) + '&pagesize=' + document.getElementById('pagesize').value + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
     function callpreviouspage(pageNumber, totalPage) {
         if (pageNumber == 1)
             return false;
         var f;
-        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesAdd',array('id' => $oEventModel->id))?>';
+        f = '<?php echo Yii::app()->createUrl('eventPlanner/planEventAccessoriesEdit',array('id' => $oEventModel->id))?>';
         ajaxCall(f, 'a&' + 'page=' + (parseInt(document.getElementById('SearchText').value) - 1) + '&pagesize=' + ((document.getElementById('pagesize').value)) + '&ajaxcall=yes', 'equalize', 'ac_loading_paging', '300px');
     }
 </script>

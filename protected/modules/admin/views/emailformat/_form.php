@@ -10,18 +10,18 @@
             ?>
             <div class="basic_nav_center">
                 <div class="info2">
-                    <h6><?php echo $form->labelEx($model, 'title'); ?>:</h6>
+                    <h3><?php echo $form->labelEx($model, 'title'); ?>:</h3>
                     <?php echo EmailFormat::model()->getEmailTitleLabel($model->title); ?>
                     <?php echo $form->hiddenField($model, 'title', array('value' => $model->title)); ?>
                     <?php echo $form->error($model, 'title'); ?>
                 </div>
                 <div class="info2">
-                    <h6><?php echo $form->labelEx($model, 'subject'); ?>:</h6>
+                    <h3><?php echo $form->labelEx($model, 'subject'); ?>:</h3>
                     <?php echo $form->textField($model, 'subject'); ?>
                     <?php echo $form->error($model, 'subject'); ?>
                 </div>
                 <div class="info2">
-                    <h6><?php echo $form->labelEx($model, 'body'); ?>:</h6>
+                    <h3><?php echo $form->labelEx($model, 'body'); ?>:</h3>
                     <?php
                     $this->widget('application.extensions.fckeditor.FCKEditorWidget', array(
                         "model" => $model,
@@ -34,12 +34,12 @@
                     <?php echo $form->error($model, 'body'); ?>
                 </div>
                 <div class="info2">
-                    <h6><?php echo $form->labelEx($model, 'last_updated'); ?>:</h6>
+                    <h3><?php echo $form->labelEx($model, 'last_updated'); ?>:</h3>
                     <?php echo Yii::app()->dateFormatter->formatDateTime(CDateTimeParser::parse($model->last_updated, 'yyyy-MM-dd H:i:s'), 'medium', null) ?>
                     <?php echo $form->error($model, 'last_updated'); ?>
                 </div>
                 <div class="info2">
-                    <h6><?php echo $form->labelEx($model, 'status'); ?>:</h6>
+                    <h3><?php echo $form->labelEx($model, 'status'); ?>:</h3>
                     <?php echo $form->dropDownList($model, 'status', array('1' => 'Active', '0' => 'Inactive')); ?>
                     <?php echo $form->error($model, 'status'); ?>
                 </div>
