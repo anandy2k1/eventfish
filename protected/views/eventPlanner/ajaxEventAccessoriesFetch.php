@@ -121,7 +121,14 @@ foreach ($model as $oProduct) {
                                 -
                             </div>
                             <?php
+                            if ($isEdit == "1")
+                            {
                             $snQty = (in_array($oProduct->id, $anProducts)) ? $anProductsQty[$oProduct->id] : "";
+                            }
+                            else
+                            {
+                                $snQty = 0;
+                            }
                             ?>
                             <input type="text" name="qty[<?php echo $oProduct->id ?>]" id="num_<?php echo $oProduct->amazon_asin_number ?>" size="1" value="<?php echo $snQty; ?>"
                                    style=""/>

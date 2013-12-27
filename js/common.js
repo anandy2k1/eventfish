@@ -99,6 +99,23 @@ function minus(objId)
     else if (obj.value > 0)
         obj.value = parseInt(obj.value ) - 1;
 }
+function functionTabToggle(tabId,cnt)
+{
+    var i;
+    for(i=1;i<=cnt;i++)
+    {
+        if (tabId == i)
+        {
+                   $('#tab'+i).show();
+            $('#tabHead'+i).addClass('active');
+        }
+        else
+        {
+                 $('#tab'+i).hide();
+            $('#tabHead'+i).removeClass('active');
+        }
+    }
+}
 function tabToggle(tabId,cnt)
 {
     var i;

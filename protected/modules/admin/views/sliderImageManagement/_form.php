@@ -36,6 +36,11 @@
         <?php echo $form->error($model, 'status'); ?>
     </div><!-- row -->
     <div class="row">
+        <h1><?php echo $form->labelEx($model, 'types'); ?></h1>
+        <?php echo $form->dropDownList($model, 'type', Yii::app()->params['defaultSliderType']); ?>
+        <?php echo $form->error($model, 'type'); ?>
+    </div><!-- row -->
+    <div class="row">
         <?php
         echo GxHtml::submitButton(Yii::t('app', 'Save'));
         $this->endWidget();

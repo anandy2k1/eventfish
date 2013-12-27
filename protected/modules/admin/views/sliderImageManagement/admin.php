@@ -32,6 +32,12 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'htmlOptions' => array('style' => 'width:60%;text-align:left;')
         ),
         array(
+            'name' => 'type',
+            'value' => 'Yii::app()->params["defaultSliderType"][$data->type]',
+            'filter' => false,
+            'htmlOptions' => array('style' => 'width:15%;text-align:center;')
+        ),
+        array(
             'name' => 'status',
             'value' => 'Yii::app()->params["defaultStatus"][$data->status]',
             'filter' => false,

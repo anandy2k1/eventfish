@@ -36,12 +36,12 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'value' => '($data->status === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
             'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
         ),
-//        array(
-//            'template' => '{update}{delete}',
-//            'class' => 'CButtonColumn',
-//            'header' => Yii::t('app', 'Actions'),
-//            'deleteConfirmation' => "Are you sure want to delete this document?"            
-//        )
+        array(
+            'template' => '{update}{delete}',
+            'class' => 'CButtonColumn',
+            'header' => Yii::t('app', 'Actions'),
+            'deleteConfirmation' => "Are you sure want to delete this document?"
+        )
     ),
 ));
 ?>

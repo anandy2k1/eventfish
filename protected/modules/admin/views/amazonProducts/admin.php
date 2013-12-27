@@ -53,6 +53,11 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'header' => Yii::t('app', 'Title')
         ),
         array(
+            'header' =>'category',
+            'type' => 'raw',
+            'value' => 'Common::getCategoryNames($data->id)',
+        ),
+        array(
             'class' => 'CButtonColumn',
             'template' => '{update}{delete}',
             /*'template' => '{delete}',*/

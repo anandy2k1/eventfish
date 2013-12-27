@@ -310,6 +310,24 @@ class Common
         }
     }
 
+
+    public static function getCategoryNames($pId)
+    {
+        $oCriteria = new CDbCriteria();
+        $oCriteria->alias = "c";
+        $oCriteria->join = " left join amazon_products_categories as p on c.id = p.category_id ";
+        $oCriteria->condition = " p.product_id = " . $pId;
+
+        $oCriteria->select = " p.*,c.* ";
+
+        $oCategories = Category::model()->findAll($oCriteria);
+        $str = array();
+        foreach($oCategories as $objCategory)
+        {
+            $str[] = $objCategory->category_name;
+        }
+        return implode(",",$str);
+    }
     public static function textTruncate($source_text, $word_count)
     {
         $word_count++;
@@ -326,6 +344,23 @@ class Common
         return $long_enough;
     }
 
+    public static function getSubCategoryCount($catId)
+    {
+        $oCriteria = new CDbCriteria();
+        $oCriteria->condition = ' parent_id = ' . $catId;
+        $oCategories = Category::model()->count($oCriteria);
+
+        return $oCategories;
+    }
+    public static function getSubCategories($catId,$type)
+    {
+        $oCriteria = new CDbCriteria();
+        $type = ($type == 'panner_div') ? "EVENT" : "VENDOR";
+        $oCriteria->condition = ' parent_id = ' . $catId . " and category_type = '" . $type . "' ";
+        $oCategories = Category::model()->findAll($oCriteria);
+
+        return $oCategories;
+    }
     public static function trim($string, $charCount, $endString = '...')
     {
         if (strlen($string) < $charCount)

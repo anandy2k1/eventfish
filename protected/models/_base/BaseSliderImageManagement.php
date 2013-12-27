@@ -13,6 +13,7 @@
  * @property string $caption
  * @property string $description
  * @property string $image_url
+ * @property integer $type
  * @property integer $status
  * @property string $created_at
  * @property string $updated_at
@@ -38,11 +39,11 @@ abstract class BaseSliderImageManagement extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('status', 'numerical', 'integerOnly'=>true),
+			array('type, status', 'numerical', 'integerOnly'=>true),
 			array('caption, image_url', 'length', 'max'=>255),
 			array('description, created_at, updated_at', 'safe'),
-			array('caption, description, image_url, status, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, caption, description, image_url, status, created_at, updated_at', 'safe', 'on'=>'search'),
+			array('caption, description, image_url, type, status, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, caption, description, image_url, type, status, created_at, updated_at', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,6 +63,7 @@ abstract class BaseSliderImageManagement extends GxActiveRecord {
 			'caption' => Yii::t('app', 'Caption'),
 			'description' => Yii::t('app', 'Description'),
 			'image_url' => Yii::t('app', 'Image Url'),
+			'type' => Yii::t('app', 'Type'),
 			'status' => Yii::t('app', 'Status'),
 			'created_at' => Yii::t('app', 'Created At'),
 			'updated_at' => Yii::t('app', 'Updated At'),
@@ -75,6 +77,7 @@ abstract class BaseSliderImageManagement extends GxActiveRecord {
 		$criteria->compare('caption', $this->caption, true);
 		$criteria->compare('description', $this->description, true);
 		$criteria->compare('image_url', $this->image_url, true);
+		$criteria->compare('type', $this->type);
 		$criteria->compare('status', $this->status);
 		$criteria->compare('created_at', $this->created_at, true);
 		$criteria->compare('updated_at', $this->updated_at, true);

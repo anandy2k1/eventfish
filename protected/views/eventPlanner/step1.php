@@ -25,7 +25,6 @@
         'enableAjaxValidation' => false
     ));
     ?>
-
     <div class="account-details">
         <div class="create-profile">
 

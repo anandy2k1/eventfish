@@ -20,6 +20,10 @@ return array(
     'category_image_thumb_width' => '137px',
     'category_image_thumb_height' => '97px',
     'home_category_limit' => 9,
+    'defaultSliderType' => array(
+        0 => 'Slider Image',
+        1 => 'Home Banner'
+    ),
     'defaultStatus' => array(
         '1' => 'Active',
         '0' => 'InActive',
@@ -84,5 +88,8 @@ return array(
         'equipmentRentals' => 43,
         'costumes' => 44,
         'cloths' => 45
-    )
+    ),
+
+    'event_image_path' =>  '/uploads/event_images/',
+    'event_image_thumb_path' => '/uploads/event_images/thumb/'
 );

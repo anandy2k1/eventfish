@@ -301,7 +301,8 @@ class EventPlannerController extends Controller
                     'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
                     'catId' => $catId,
-                    'oEventModel' => $oEventModel
+                    'oEventModel' => $oEventModel,
+                    'isEdit'=>'0'
                 )
             );
         } else {
@@ -313,7 +314,8 @@ class EventPlannerController extends Controller
                     'pageNumber' => $pageNumber,
                     'pagesize' => $pages->pageSize,
                     'catId' => $catId,
-                    'oEventModel' => $oEventModel
+                    'oEventModel' => $oEventModel,
+                    'isEdit'=>'0'
                 )
             );
         }
@@ -400,7 +402,8 @@ class EventPlannerController extends Controller
                     'oEventModel' => $oEventModel,
                     'anProducts' => $anProducts,
                     'anProductsQty' => $anProductsQty,
-                    'oEventAccessories' => $oEventAccessories
+                    'oEventAccessories' => $oEventAccessories,
+                    'isEdit'=>'1'
                 )
             );
         } else {
@@ -415,7 +418,8 @@ class EventPlannerController extends Controller
                     'oEventModel' => $oEventModel,
                     'anProducts' => $anProducts,
                     'anProductsQty' => $anProductsQty,
-                    'oEventAccessories' => $oEventAccessories
+                    'oEventAccessories' => $oEventAccessories,
+                    'isEdit'=>'1'
                 )
             );
         }
@@ -524,7 +528,7 @@ class EventPlannerController extends Controller
     {
         $amSearch = array();
         if (Yii::app()->getRequest()->getIsPostRequest()) {
-            p($_POST);
+          //  p($_POST);
         }
         $oCriteria = Event::getUserPastEvents(Yii::app()->user->id, $amSearch, true);
         $dataProvider = new CActiveDataProvider('Event', array(
@@ -532,6 +536,8 @@ class EventPlannerController extends Controller
                 'pagination' => array('pageSize' => 10)
             )
         );
+
+
         $this->render('pastEvents', array(
             'dataProvider' => $dataProvider,
         ));

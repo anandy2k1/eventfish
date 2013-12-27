@@ -29,15 +29,44 @@ class SiteController extends Controller
     public function actionIndex()
     {
         // FOR GET ALL CATEGORIES //
-        $omEventVendorCategories = Category::getAllActiveCategories();
+        $omEventVendorCategories = Category::getAllActiveCategories('',false,true);
+        $omCriteria = new CDbCriteria();
 
+
+        //$omCriteria->condition=" type = 0 ";
         // FOR GET SLIDER IMAGES //
         $omSliders = SliderImageManagement::getAllActiveSliders();
+        $omBanner = SliderImageManagement::getAllActiveSliders(1);
+
+        $omCriteria->condition=" start_date < now()  ";
+        $omPastEventList = Event::model()->findAll($omCriteria);
+
+        $omCriteria->condition=" end_date > now()  ";
+        $omFutureEventList = Event::model()->findAll($omCriteria);
 
         $this->render('index', array(
             'omEventVendorCategories' => $omEventVendorCategories,
-            'omSliders' => $omSliders
+            'omSliders' => $omSliders,
+            'omPastEventList'=>$omPastEventList,
+            'omFutureEventList'=>$omFutureEventList,
+            'omBanner' => $omBanner
         ));
+    }
+
+    public function actionAjaxChildCategories()
+    {
+        if (isset($_GET['catId']) && $_GET['catId'] != "")
+        {
+            $this->layout=false;
+            $omEventVendorCategories = Common::getSubCategories($_GET['catId'],$_GET['divId']);
+            $this->render('ajaxCategories', array(
+                'omEventVendorCategories' => $omEventVendorCategories
+            ));
+        }
+        else
+        {
+            echo "No Categories Found!!";
+        }
     }
 
     /**
@@ -92,6 +121,7 @@ class SiteController extends Controller
             $_POST['Users']['password'] = md5($smPassword);
             $_POST['Users']['retype_password'] = md5($_POST['Users']['retype_password']);
             $model->setAttributes($_POST['Users']);
+            $model->role_id = $_POST['Users']['role_id'];
             if ($model->validate()) {
 
                 $model->save();

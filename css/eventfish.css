@@ -14,7 +14,10 @@ body {
     background: url(../images/middle-bg.png) repeat 0 0;
     font-family: "Trebuchet MS";
 }
-
+.ac_loading
+{
+    background: url("../images/indicator.gif") no-repeat center center;
+}
 .hidden {
     display: block !important;
     border: 0 !important;
@@ -89,7 +92,10 @@ body {
 .no-bg {
     background: none !important;
 }
-
+.cursor-pointer
+{
+    cursor: pointer;
+}
 input.input {
     border: 1px solid #303030;
     background: #fff;
@@ -595,7 +601,14 @@ footer .icon-bar .right {
 
 .home-event-block .tabContainer li {
     list-style-type: none;
-    float: none !important;
+    cursor: pointer;
+    padding: 15px 0;
+    color: #FFFFFF;
+    float: left;
+    font-size: 25px;
+    width: 50%;
+    color: #000;
+    text-align: center;
 }
 
 .home-event-block .tabContainer li a {
@@ -608,15 +621,15 @@ footer .icon-bar .right {
     text-align: center;
 }
 
-.home-event-block .tabContainer li.left a {
+.home-event-block .tabContainer li.left  {
     border-top-left-radius: 5px;
 }
 
-.home-event-block .tabContainer li.right a {
+.home-event-block .tabContainer li.right  {
     border-top-right-radius: 5px;
 }
 
-.home-event-block .tabContainer li a.selected {
+.home-event-block .tabContainer > li.active {
     background: #F68702;
     color: #FFFFFF;
 }
@@ -651,7 +664,7 @@ footer .icon-bar .right {
 
 .home-event-block .tabContent li .f-right {
     float: right;
-    width: 63%;
+    width: 60%;
 }
 
 .home-event-block .tabContent li .f-right .social-media {

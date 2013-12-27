@@ -25,9 +25,9 @@ class SliderImageManagement extends BaseSliderImageManagement {
                 'allowEmpty' => true,
                 'on' => 'edit_mode'
             ),
-            array('description, created_at, updated_at', 'safe'),
+            array('description, created_at, updated_at,type', 'safe'),
             array('description, image_url, status, created_at, updated_at', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('id, description, image_url, status, created_at, updated_at', 'safe', 'on' => 'search'),
+            array('id, description,type, image_url, status, created_at, updated_at', 'safe', 'on' => 'search'),
         );
     }
 
@@ -35,10 +35,10 @@ class SliderImageManagement extends BaseSliderImageManagement {
      * for get all active slider images
      * return  object
      */
-    public static function getAllActiveSliders() {
+    public static function getAllActiveSliders($type=0) {
         $oCriteria = new CDbCriteria;
         $oCriteria->alias = 's';
-        $oCriteria->condition = "s.status = 1";
+        $oCriteria->condition = "s.status = 1 and s.type =   " . $type . " ";
         $omResultSet = self::model()->findAll($oCriteria);
 
         return $omResultSet;

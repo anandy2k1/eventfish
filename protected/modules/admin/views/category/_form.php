@@ -24,7 +24,7 @@
     </div><!-- row -->
     <div class="row">
         <h1><?php echo $form->labelEx($model, 'parent_id'); ?></h1>
-        <?php echo $form->dropDownList($model, 'parent_id', Category::getAllActiveCategories('VENDOR', true, true), array('prompt' => 'Select')); ?>
+        <?php echo $form->dropDownList($model, 'parent_id', Category::getAllActiveCategories('VENDOR', true), array('prompt' => 'Select')); ?>
         <?php echo $form->error($model, 'parent_id'); ?>
     </div><!-- row -->
     <div class="row">

@@ -26,7 +26,15 @@ class Category extends BaseCategory {
             array('id, parent_id, category_name, category_type, category_description, status, created_at, updated_at', 'safe', 'on' => 'search'),
         );
     }
-
+    /**
+     * Relation function
+    **/
+    public function relations() {
+        return array(
+            'userCategories' => array(self::HAS_MANY, 'UserCategories', 'category_id'),
+            'parent' => array(self::BELONGS_TO, 'Category', 'parent_id', 'condition' => 't.parent_id <> 0')
+        );
+    }
     /** function getCategoriesArray()
      * for get all active categories array
      * return  object
@@ -57,7 +65,38 @@ class Category extends BaseCategory {
         }
         $omResultSet = self::model()->findAll($oCriteria);
 
+
+
         return ($bIsArray) ? CHtml::listData($omResultSet, 'id', 'category_name') : $omResultSet;
+    }
+    /**
+     Function to get
+     */
+
+    public static function getAllChildActiveCategories($ssType = '', $bIsArray = false, $bOnlyParent = false) {
+        $oCriteria = new CDbCriteria;
+        if ($ssType != '') {
+            $oCriteria->addCondition("category_type = '$ssType'");
+        }
+        if ($bOnlyParent) {
+            $oCriteria->addCondition("parent_id = 0");
+        }
+        $omResultSet = self::model()->with('parent')->findAll($oCriteria);
+
+
+
+        return ($bIsArray) ? CHtml::listData($omResultSet, 'id', 'category_name','parent_id') : $omResultSet;
+    }
+    /**
+     Function to get category parent name and id
+    **/
+    public static function getCategoryParentDetails($oCatId)
+    {
+        $oCriteria = new CDbCriteria();
+        $oCriteria->condition = " id =  " . $oCatId . " ";
+        $omResultSet = self::model()->findAll($oCriteria);
+
+        return $omResultSet;
     }
 
     /** function getRenderCategories()

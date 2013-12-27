@@ -168,8 +168,8 @@ class AmazonProductsController extends AdminCoreController
             }
         }
         // FOR GET ALL CATEGORIES //
-        $omEventCategories = Category::getAllActiveCategories(Yii::app()->params['compareCategoryType']['event_planner']);
-        $amCategories = CHtml::listData($omEventCategories, 'id', 'category_name');
+        $omEventCategories = Category::getAllChildActiveCategories(Yii::app()->params['compareCategoryType']['event_planner']);
+        $amCategories = CHtml::listData($omEventCategories, 'id', 'category_name','parent.category_name');
         $this->render('importProduct', array(
             'model' => $oModel,
             'amCategories' => $amCategories
