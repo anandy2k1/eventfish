@@ -28,6 +28,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        //************************** START SENDING MAIL ********************************* //
+        // FOR GET WELCOME MAIL CONTENT FROM DB //
+        $omMailContent = EmailFormat::model()->findByAttributes(array('file_name' => 'WELCOME_EVENTFISH'));
+        // REPLACE SOME CONTENT TO PRINT //
+        $amReplaceParams = array(
+            '{USERNAME}' => 'prakash@gmail.com',
+            '{PASSWORD}' => '123123',
+        );
+        $ssSubject = $omMailContent->subject;
+        $ssBody = Common::replaceMailContent($omMailContent->body, $amReplaceParams);
+
+        // FOR GET PARENT INFO //
+        $omAdminInfo = Users::model()->findByPk(Yii::app()->params['admin_id']);
+
+        // FOR SEND MAIL //
+        //$bMailStatus = Common::sendMail('prakash@gmail.com', array($omAdminInfo->email => ucfirst($omAdminInfo->first_name . ' ' . $omAdminInfo->last_name)), $ssSubject, $ssBody);
+        //************************** END SENDING MAIL ********************************* //
+
         // FOR GET ALL CATEGORIES //
         $omEventVendorCategories = Category::getAllActiveCategories('',false,true);
         $omCriteria = new CDbCriteria();
@@ -127,6 +145,8 @@ class SiteController extends Controller
                 $model->save();
                 $model->login($smPassword);
                 $amUserData = Yii::app()->user->getState('admin');
+
+
                 $ssUrl = '';
                 if ($amUserData['role_id'] == $snEventPlannerRollId) {
                     $ssUrl = Common::eventRedirectPage($model);

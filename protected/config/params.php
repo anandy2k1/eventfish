@@ -6,6 +6,7 @@ return array(
     'adminEmail' => 'info@eventfish.com',
     'postsPerPage' => 10,
     'productPerPage' => 5,
+    'admin_id' => 1,
     'copyrightInfo' => 'Copyright &copy; 2009 by EventFish.',
     'site_url' => 'http://' . $_SERVER['SERVER_NAME'], // LOCAL  
     'site_name' => 'Event-Fish',
