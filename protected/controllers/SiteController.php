@@ -28,23 +28,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        //************************** START SENDING MAIL ********************************* //
-        // FOR GET WELCOME MAIL CONTENT FROM DB //
-        $omMailContent = EmailFormat::model()->findByAttributes(array('file_name' => 'WELCOME_EVENTFISH'));
-        // REPLACE SOME CONTENT TO PRINT //
-        $amReplaceParams = array(
-            '{USERNAME}' => 'prakash@gmail.com',
-            '{PASSWORD}' => '123123',
-        );
-        $ssSubject = $omMailContent->subject;
-        $ssBody = Common::replaceMailContent($omMailContent->body, $amReplaceParams);
 
-        // FOR GET PARENT INFO //
-        $omAdminInfo = Users::model()->findByPk(Yii::app()->params['admin_id']);
-
-        // FOR SEND MAIL //
-        //$bMailStatus = Common::sendMail('prakash@gmail.com', array($omAdminInfo->email => ucfirst($omAdminInfo->first_name . ' ' . $omAdminInfo->last_name)), $ssSubject, $ssBody);
-        //************************** END SENDING MAIL ********************************* //
 
         // FOR GET ALL CATEGORIES //
         $omEventVendorCategories = Category::getAllActiveCategories('',false,true);
@@ -137,6 +121,7 @@ class SiteController extends Controller
         if (isset($_POST['Users'])) {
             $smPassword = $_POST['Users']['password'];
             $_POST['Users']['password'] = md5($smPassword);
+
             $_POST['Users']['retype_password'] = md5($_POST['Users']['retype_password']);
             $model->setAttributes($_POST['Users']);
             $model->role_id = $_POST['Users']['role_id'];
@@ -146,6 +131,24 @@ class SiteController extends Controller
                 $model->login($smPassword);
                 $amUserData = Yii::app()->user->getState('admin');
 
+
+                //************************** START SENDING MAIL ********************************* //
+                // FOR GET WELCOME MAIL CONTENT FROM DB //
+                $omMailContent = EmailFormat::model()->findByAttributes(array('file_name' => 'WELCOME_EVENTFISH'));
+                // REPLACE SOME CONTENT TO PRINT //
+                $amReplaceParams = array(
+                    '{USERNAME}' => $model->email,
+                    '{PASSWORD}' => $smPassword,
+                );
+                $ssSubject = $omMailContent->subject;
+                $ssBody = Common::replaceMailContent($omMailContent->body, $amReplaceParams);
+
+                // FOR GET PARENT INFO //
+                $omAdminInfo = Users::model()->findByPk(Yii::app()->params['admin_id']);
+
+                // FOR SEND MAIL //
+                $bMailStatus = Common::sendMail($model->email, array($omAdminInfo->email => ucfirst($omAdminInfo->first_name . ' ' . $omAdminInfo->last_name)), $ssSubject, $ssBody);
+                //************************** END SENDING MAIL ********************************* //
 
                 $ssUrl = '';
                 if ($amUserData['role_id'] == $snEventPlannerRollId) {

@@ -4,6 +4,7 @@
 return array(
     'title' => 'EventFish',
     'adminEmail' => 'info@eventfish.com',
+    'mailFrom' => 'admin@eventfish.com',
     'postsPerPage' => 10,
     'productPerPage' => 5,
     'admin_id' => 1,

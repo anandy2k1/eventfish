@@ -87,15 +87,15 @@ return array(
         // YiiMail Settings //
         'mail' => array(
             'class' => 'application.extensions.yii-mail.YiiMail',
-            //'transportType' => 'php',
-            'transportType' => 'smtp', /// case sensitive!            
-            'transportOptions' => array(
+            'transportType' => 'php',
+            //'transportType' => 'smtp', /// case sensitive!
+            /*'transportOptions' => array(
                 'host' => 'smtp.gmail.com',
                 'username' => 'prakashp@bitwiseonline.com',
                 'password' => 'pjpjpj2013',
                 'port' => '26',
             //'encryption'=>'ssl',
-            ),
+            ),*/
             'viewPath' => 'application.views.mail',
             'logging' => true,
             'dryRun' => false,

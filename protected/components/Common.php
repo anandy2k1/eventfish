@@ -129,7 +129,7 @@ class Common
         $omMessage = new YiiMailMessage;
 
         $omMessage->setTo($ssToEmail);
-        $omMessage->setFrom($asFromEmail);
+        $omMessage->setFrom(Yii::app()->params['mailFrom']);
         $omMessage->setSubject($ssSubject);
         $omMessage->setBody($ssBody, 'text/html', 'utf-8');
 

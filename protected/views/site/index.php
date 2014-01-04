@@ -3,6 +3,11 @@
 </figure>-->
 <!-- Start WOWSlider.com BODY section -->
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/slider/engine1/style.css"/>
+<SCRIPT LANGUAGE="JavaScript">
+    var ip = '<!--#echo var="REMOTE_ADDR"-->';
+    document.write("Your IP address is" + ip);
+</script>
+
 <div id="wowslider-container1">
     <div class="ws_images ">
         <ul>
