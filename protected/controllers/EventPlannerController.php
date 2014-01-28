@@ -320,6 +320,76 @@ class EventPlannerController extends Controller
             );
         }
     }
+    public function actionAccessoriesProduct()
+    {
+        // FOR GET EVENT DETAILS //
+        $categoryId = $_GET['cid'];
+        $catId = $categoryId;
+        //$oEventModel = Event::model()->findByPk($id);
+
+        // FOR SAVE SELECTED AMAZON PRODUCT QTY INTO EVENT ACCESSORIES TABLE //
+        /*if (Yii::app()->getRequest()->getIsPostRequest()) {
+            $bIsRecordSave = false;
+            if (isset($_POST['qty'])) {
+                foreach ($_POST['qty'] as $snProductId => $snQty) {
+                    if ($snQty > 0) {
+                        $oModel = new EventAccessories();
+                        $oModel->event_id = $oEventModel->id;
+                        $oModel->amazon_product_id = $snProductId;
+                        $oModel->qty = $snQty;
+                        $oModel->save(false);
+                        $bIsRecordSave = true;
+                    }
+                }
+            }
+            // IF IS RECORD SAVE SUCCESSFULLY REDIRECT INTO INVITATION PAGE //
+            if ($bIsRecordSave) {
+                Yii::app()->user->setFlash('success', "Amazon product accessories has been successfully added.");
+                $this->redirect(Yii::app()->createUrl('eventPlanner/sendEventInvitation', array('id' => $oEventModel->id)));
+            }
+        }*/
+
+        /*$catId = Yii::app()->params['categoryParentId']['partyAccessories'];
+        if (isset($_GET['catId'])) {
+            $catId = $_GET['catId'];
+        }*/
+
+        // FOR FETCHING AMAZON PRODUCTS //
+        $oCriteria = new CDbCriteria();
+        $oCriteria->alias = 'amp';
+        $oCriteria->join = "INNER JOIN amazon_products_categories amc ON amp.id = amc.product_id";
+        $oCriteria->condition = 'amc.category_id= :snCategoryId';
+        $oCriteria->params = array(':snCategoryId' => $catId);
+
+        $count = AmazonProducts::model()->count($oCriteria);
+        $pages = new CPagination($count);
+        // results per page
+        $pages->pageSize = Yii::app()->params['productPerPage'];
+        if (isset($_GET['pagesize'])) {
+            $pages->pageSize = $_GET['pagesize'];
+        }
+        $pageNumber = 1;
+        if (isset($_GET['page'])) {
+            $pageNumber = $_GET['page'];
+        }
+        $totalPages = ceil((float)($count / $pages->pageSize));
+
+        $pages->applyLimit($oCriteria);
+        $omAmazonProducts = AmazonProducts::model()->findAll($oCriteria);
+        $this->render('selectedCategories',
+            array(
+                'model' => $omAmazonProducts,
+                'pages' => $pages,
+                'totalPages' => $totalPages,
+                'pageNumber' => $pageNumber,
+                'pagesize' => $pages->pageSize,
+                'catId' => $catId,
+
+                'isEdit'=>'0'
+            )
+        );
+
+    }
 
     public function actionPlanEventAccessoriesEdit($id)
     {
@@ -543,6 +613,31 @@ class EventPlannerController extends Controller
         ));
     }
 
+
+
+    public function actionSendCloseMail()
+    {
+        //************************** START SENDING MAIL ********************************* //
+        // FOR GET WELCOME MAIL CONTENT FROM DB //
+        $amUserData = $user = User::model()->findByPk($_GET['userid']);
+        if ($_GET['sendmail'] == 2)
+        $omMailContent = EmailFormat::model()->findByAttributes(array('file_name' => 'PROFILE_STEP_2'));
+        else
+            $omMailContent = EmailFormat::model()->findByAttributes(array('file_name' => 'PROFILE_STEP_3'));
+        // REPLACE SOME CONTENT TO PRINT //
+        $amReplaceParams = array(
+            '{USERNAME}' => $amUserData->email
+        );
+        $ssSubject = $omMailContent->subject;
+        $ssBody = Common::replaceMailContent($omMailContent->body, $amReplaceParams);
+
+        // FOR GET PARENT INFO //
+        $omAdminInfo = Users::model()->findByPk(Yii::app()->params['admin_id']);
+
+        // FOR SEND MAIL //
+        $bMailStatus = Common::sendMail($amUserData->email, array($omAdminInfo->email => ucfirst($omAdminInfo->first_name . ' ' . $omAdminInfo->last_name)), $ssSubject, $ssBody);
+        //************************** END SENDING MAIL ********************************* //
+    }
     /**
      * Performs the AJAX validation.
      * @param CModel the model to be validated

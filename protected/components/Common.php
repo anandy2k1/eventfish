@@ -355,8 +355,8 @@ class Common
     public static function getSubCategories($catId,$type)
     {
         $oCriteria = new CDbCriteria();
-        $type = ($type == 'panner_div') ? "EVENT" : "VENDOR";
-        $oCriteria->condition = ' parent_id = ' . $catId . " and category_type = '" . $type . "' ";
+        $type = ($type == 'planner_category') ? "EVENT" : "VENDOR";
+        $oCriteria->condition = ' parent_id = ' . $catId . " and category_type = '" . $type . "' and status = 1 ";
         $oCategories = Category::model()->findAll($oCriteria);
 
         return $oCategories;

@@ -19,7 +19,14 @@
      */ ?>
     <div class="row">
         <h1><?php echo $form->labelEx($model, 'category_type'); ?></h1>
-        <?php echo $form->dropDownList($model, 'category_type', Yii::app()->params['categoryType']); ?>
+        <?php echo $form->dropDownList($model, 'category_type', Yii::app()->params['categoryType'],
+            array(
+                'ajax' => array(
+                    'type'=>'POST', //request type
+                    'url'=>CController::createUrl('category/getCategoryList'),
+                    'update'=>'#Category_parent_id',
+                ))
+        ); ?>
         <?php echo $form->error($model, 'category_type'); ?>
     </div><!-- row -->
     <div class="row">

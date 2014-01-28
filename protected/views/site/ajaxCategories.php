@@ -11,7 +11,7 @@
                     <?php
                     } else {
                         ?>
-                        <li class="cbox-column">
+                        <li class="cbox-column cursor-pointer" onclick="window.location='<?php echo Yii::app()->createUrl('eventPlanner/accessoriesProduct', array('cid'=>$omDataSet->id) )?>'">
                     <?php
                     }
                     ?>
@@ -28,8 +28,10 @@
             endforeach;
         endif;
         ?>
+        <?php if ($_GET['parentId'] != 0 || $_GET['catId'] != 0) : ?>
         <li onclick="load_child_categories('<?php echo $_GET['parentId']?>','<?php echo $_GET['divId']?>','<?php echo $_GET['parentId']?>')" class="cursor-pointer">
-            Back
+            <img src="<?php echo Yii::app()->getBaseUrl()?>/images/back.png" title="Go Back" width="50%" style="margin-top: 32px;margin-left: 32px;" />
         </li>
+        <?php endif;?>
     </ul>
 </div>

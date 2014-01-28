@@ -108,4 +108,27 @@ class CategoryController extends AdminCoreController {
         ));
     }
 
+
+    public function actionGetCategoryList()
+    {
+        $data=Category::model()->findAll('category_type=:category_type and status = 1 and parent_id = 0 ',array(':category_type'=>$_POST['Category']['category_type']));
+        $data=CHtml::listData($data,'id','category_name');
+       // echo CHtml::tag('option',0,"Select",true);
+        echo CHtml::tag('option',array('value'=>0),CHtml::encode("Select"),true);
+        foreach($data as $value=>$name)
+        {
+            echo CHtml::tag('option',array('value'=>$value),CHtml::encode($name),true);
+        }
+
+        /*$oCriteria = new CDbCriteria;
+        $oCriteria->alias = 'c';
+        $oCriteria->condition = "c.status = 1";
+        if ($ssType != '') {
+            $oCriteria->addCondition("category_type = '$ssType'");
+        }
+        if ($bOnlyParent) {
+            $oCriteria->addCondition("parent_id = 0");
+        }
+        $omResultSet = self::model()->findAll($oCriteria);*/
+    }
 }

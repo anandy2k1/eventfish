@@ -98,3 +98,13 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    window.onbeforeunload = function() {
+        $.ajax({
+            url: '<?php echo Yii::app()->baseUrl;?>/index.php/eventPlanner/sendCloseMail?sendmail=2&userid=<?php echo Yii::app()->user->id?>',
+            type: 'GET',
+            async: false,
+            timeout: 4000
+        });
+    };
+</script>

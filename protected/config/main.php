@@ -24,6 +24,7 @@ return array(
         'ext.facebook.lib.*',
         'application.helpers.*',
         'application.extensions.inx.*',
+        'application.extensions.crontab.*', //for cron
         'application.extensions.yii-mail.*', //for mail
     ),
     'modules' => array(

@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/slider/engine1/style.css"/>
 <SCRIPT LANGUAGE="JavaScript">
     var ip = '<!--#echo var="REMOTE_ADDR"-->';
-    document.write("Your IP address is" + ip);
+    //document.write("Your IP address is" + ip);
 </script>
 
 <div id="wowslider-container1">
@@ -73,7 +73,7 @@
                             <?php
                             } else {
                                 ?>
-                                <li class="cbox-column">
+                                <li class="cbox-column cursor-pointer" onclick="window.location='<?php echo Yii::app()->createUrl('eventPlanner/accessoriesProduct/',array('cid'=> $omDataSet->id) )?>'">
                             <?php
                             }
                             ?>

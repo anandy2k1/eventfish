@@ -147,7 +147,7 @@ class SiteController extends Controller
                 $omAdminInfo = Users::model()->findByPk(Yii::app()->params['admin_id']);
 
                 // FOR SEND MAIL //
-                $bMailStatus = Common::sendMail($model->email, array($omAdminInfo->email => ucfirst($omAdminInfo->first_name . ' ' . $omAdminInfo->last_name)), $ssSubject, $ssBody);
+                //$bMailStatus = Common::sendMail($model->email, array($omAdminInfo->email => ucfirst($omAdminInfo->first_name . ' ' . $omAdminInfo->last_name)), $ssSubject, $ssBody);
                 //************************** END SENDING MAIL ********************************* //
 
                 $ssUrl = '';

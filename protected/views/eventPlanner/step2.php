@@ -60,6 +60,9 @@
         </div>
     </div>
 </div>
+<div id="sendmail" style="display: none;">
+
+</div>
 <script>
     $("#choose-cat").click(function() {
         if ($('input:checkbox:checked').length > 0) {
@@ -81,4 +84,31 @@
             $("#categoryid" + this.id).attr('checked', false);
         }
     });
+
+
+
+
+
+        /*window.onunload = window.onbeforeunload = function (evt) {
+        var message = 'Are you sure?';
+        if (typeof evt == 'undefined') {
+            evt = window.event;
+        }
+        if (evt) {
+            if (evt.type == "unload" && evt.returnValue) {
+                // ACTION WHICH SHOULD BE DONE ON CLOSE
+                ajaxCall('<?php echo Yii::app()->baseUrl;?>/index.php/eventPlanner/sendCloseMail','a&sendmail=1','sendmail','ac_lading','0px');
+            }
+            //evt.returnValue = message;
+        }
+        return message;
+    };*/
+    window.onbeforeunload = function() {
+        $.ajax({
+            url: '<?php echo Yii::app()->baseUrl;?>/index.php/eventPlanner/sendCloseMail?sendmail=2&userid=<?php echo Yii::app()->user->id?>',
+            type: 'GET',
+            async: false,
+            timeout: 4000
+        });
+    };
 </script>
